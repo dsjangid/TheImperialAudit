@@ -40,7 +40,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
             <span className="text-accent font-semibold">HISTORICAL DISPATCH · SPECIAL INVESTIGATIVE ARCHIVE</span>
             <span>VOL. I · DECLASSIFIED RECORD · 1757–1947</span>
-            <span>PUBLISHED IN LONDON &amp; NEW DELHI</span>
+            <span>INDIA · BRITISH ARCHIVAL RECORD · 1757–1947</span>
           </div>
 
           <div className="grid grid-cols-12 gap-8 items-end">
