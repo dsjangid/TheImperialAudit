@@ -51,13 +51,9 @@ html, body {
 }
 
 @media (pointer: fine) {
- /* Retain responsive pointer while rendering custom dot & halo */
- body {
- cursor: default;
- }
- a, button, input, select, summary, [role="button"] {
- cursor: pointer;
- }
+  *, *::before, *::after, html, body, a, button, input, select, textarea, summary, [role="button"] {
+    cursor: none !important;
+  }
 }
 
 /* Eye illustration breathing animation */
