@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { CustomCursor } from '@/components/CustomCursor';
-import { AwwardsRibbon } from '@/components/AwwardsRibbon';
+import { InitialLoader } from '@/components/InitialLoader';
 
 export const metadata: Metadata = {
   title: "The Imperial Audit · British Colonial Rule in India (1757–1947)",
@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col bg-bg text-text selection:bg-accent selection:text-white">
+        <InitialLoader />
         <CustomCursor />
         {children}
       </body>
