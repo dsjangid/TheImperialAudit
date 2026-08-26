@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps>= ({ lang = 'en' }) =>{
  return (
 <>
 <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] border-b border-text/10 transition-[background-color,backdrop-filter] duration-200 bg-bg/85 backdrop-blur-md">
-<div className="h-full px-6 lg:px-10 xl:px-12 py-2 flex items-center justify-between gap-6 font-mono text-[10px] uppercase">
+<div className="h-full px-6 lg:px-10 xl:px-12 py-2 flex items-center justify-between gap-6 font-mono text-[13px] uppercase">
 <Link
  href={lang === 'en' ? '/en': '/'}
  className="min-w-0 truncate tracking-[0.25em] text-text/55 max-w-[60vw] lg:max-w-[200px] xl:max-w-none hover:text-text transition-colors"
@@ -115,7 +115,7 @@ export const Navbar: React.FC<NavbarProps>= ({ lang = 'en' }) =>{
  onClick={() =>setMobileOpen(false)}
  className="flex items-baseline gap-6 py-7 group"
  >
-<span className="font-mono text-[11px] tracking-[0.25em] text-text/45 w-9 shrink-0">
+<span className="font-mono text-[13px] tracking-[0.25em] text-text/45 w-9 shrink-0">
  {ch.num}
 </span>
 <span
@@ -137,7 +137,7 @@ export const Navbar: React.FC<NavbarProps>= ({ lang = 'en' }) =>{
  );
  })}
 </ul>
-<div className="pt-10 flex items-center justify-end font-mono text-[10px] uppercase tracking-[0.25em] text-text/45">
+<div className="pt-10 flex items-center justify-end font-mono text-[13px] uppercase tracking-[0.25em] text-text/45">
 <span>MMXXVI</span>
 </div>
 </div>

@@ -13,7 +13,7 @@ export default function Rebellion1857ChapterPage() {
  
  {/* Article Masthead */}
 <header className="mb-16 border-b border-text/15 pb-10">
-<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-text/50 mb-6">
+<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
 <span className="text-accent font-semibold">PART II · HISTORICAL INVESTIGATION · 1857–1858</span>
 <span>30 MIN READ · 10 NARRATIVE INCIDENTS</span>
 <span>DECLASSIFIED WAR DISPATCHES</span>
@@ -29,13 +29,13 @@ export default function Rebellion1857ChapterPage() {
  The 1857 Uprising, the Sieges of Delhi &amp; Lucknow, and the Abolition of Company Rule.
 </p>
 
-<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] text-text/40">
+<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] text-text/40">
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">SOURCE CORPUS</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">SOURCE CORPUS</span>
 <span className="text-text/80">War Office Records, British Library &amp; Military Logs</span>
 </div>
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">TIMELINE</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">TIMELINE</span>
 <span className="text-text/80">10 May 1857 – 8 July 1858 (Crown Takeover: 1 Nov 1858)</span>
 </div>
 </div>
@@ -43,15 +43,15 @@ export default function Rebellion1857ChapterPage() {
 
 <div className="border-y border-text/20 py-10 my-12 max-w-[80ch] font-serif italic text-text/85 text-[17px] leading-[1.75]">
 <p>"The Bengal sepoys are the most martial body of men in India. They feel that it would be degrading to become the servants of a Christian Company."</p>
-<p className="mt-4 font-mono text-[11px] not-italic text-text/40 uppercase tracking-[0.1em]">Charles Napier, 1849</p>
+<p className="mt-4 font-mono text-[13px] not-italic text-text/40 uppercase tracking-[0.1em]">Charles Napier, 1849</p>
 </div>
 
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">INTRODUCTION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">INTRODUCTION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">The Crisis of 1857</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1857 · NORTHERN AND CENTRAL INDIA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1857 · NORTHERN AND CENTRAL INDIA</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -65,7 +65,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>THE MOST SIGNIFICANT CHALLENGE TO BRITISH POWER IN THE 19TH CENTURY</p>
 <p>HISTORIOGRAPHY DIVIDED BETWEEN 'MUTINY' AND 'WAR OF INDEPENDENCE'</p>
 </aside>
@@ -75,9 +75,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">CONTEXT · PRECONDITIONS</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">CONTEXT · PRECONDITIONS</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">The Causes of the Uprising</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">PRE-1857 · BRITISH INDIA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">PRE-1857 · BRITISH INDIA</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -91,7 +91,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>ENFIELD RIFLE PATTERN 1853 CARTRIDGE CONTROVERSY</p>
 <p>DOCTRINE OF LAPSE AND THE ANNEXATION OF AWADH</p>
 </aside>
@@ -101,9 +101,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · UPRISING</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · UPRISING</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">The Barrackpore Incident</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">29 MARCH 1857 · BARRACKPORE, BENGAL</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">29 MARCH 1857 · BARRACKPORE, BENGAL</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -117,7 +117,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>SEPOY MANGAL PANDEY OF THE 34TH BENGAL NATIVE INFANTRY</p>
 <p>EXECUTED 8 APRIL 1857</p>
 </aside>
@@ -127,9 +127,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">The Meerut Mutiny</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">10 MAY 1857 · MEERUT, UNITED PROVINCES</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">10 MAY 1857 · MEERUT, UNITED PROVINCES</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -143,7 +143,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>85 MEN OF THE 3RD BENGAL LIGHT CAVALRY IMPRISONED</p>
 <p>MUTINEERS MARCH 40 MILES TO DELHI OVERNIGHT</p>
 </aside>
@@ -153,9 +153,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · SIEGE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · SIEGE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">Delhi: The Siege and Recapture</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">MAY–SEPTEMBER 1857 · DELHI</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">MAY–SEPTEMBER 1857 · DELHI</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full sm:w-[48%] float-right ml-6 mb-6 mt-2 clear-right">
@@ -165,7 +165,7 @@ export default function Rebellion1857ChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Bahadur Shah Zafar: last Mughal Emperor in British captivity, 1858
 </p>
 </div>
@@ -180,7 +180,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>BAHADUR SHAH ZAFAR PROCLAIMED LEADER</p>
 <p>KASHMIR GATE BREACHED SEPTEMBER 1857</p>
 <p>EMPEROR EXILED TO RANGOON, DIED 1862</p>
@@ -191,9 +191,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · SIEGE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · SIEGE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">Kanpur (Cawnpore)</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">JUNE–JULY 1857 · KANPUR, UNITED PROVINCES</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">JUNE–JULY 1857 · KANPUR, UNITED PROVINCES</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -207,7 +207,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>SATICHAURA GHAT INCIDENT: 27 JUNE 1857</p>
 <p>THE BIBIGHAR MASSACRE: 15 JULY 1857</p>
 </aside>
@@ -217,9 +217,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · SIEGE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · SIEGE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">The Siege of Lucknow</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">JUNE 1857 – MARCH 1858 · LUCKNOW, AWADH</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">JUNE 1857 – MARCH 1858 · LUCKNOW, AWADH</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
@@ -229,7 +229,7 @@ export default function Rebellion1857ChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Begum Hazrat Mahal: Regent of Awadh, commander at Lucknow, 1857
 </p>
 </div>
@@ -244,7 +244,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>BEGUM HAZRAT MAHAL LED AWADH RESISTANCE</p>
 <p>FIRST RELIEF BY HAVELOCK (SEPTEMBER 1857)</p>
 <p>FINAL RELIEF BY CAMPBELL (NOVEMBER 1857)</p>
@@ -255,9 +255,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">Jhansi and Rani Lakshmibai</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1857–1858 · JHANSI, CENTRAL INDIA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1857–1858 · JHANSI, CENTRAL INDIA</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full sm:w-[48%] float-right ml-6 mb-6 mt-2 clear-right">
@@ -267,7 +267,7 @@ export default function Rebellion1857ChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Rani Lakshmibai of Jhansi: leader of Central Indian resistance, 1858
 </p>
 </div>
@@ -282,7 +282,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>RANI LAKSHMIBAI ESCAPED JHANSI FORTRESS 3 APRIL 1858</p>
 <p>KILLED IN BATTLE 17 JUNE 1858</p>
 <p>"THE BEST AND BRAVEST MILITARY LEADER": GEN. ROSE</p>
@@ -293,9 +293,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">Bihar and Kunwar Singh</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1857–1858 · JAGDISHPUR, BIHAR</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1857–1858 · JAGDISHPUR, BIHAR</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
@@ -305,7 +305,7 @@ export default function Rebellion1857ChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Veer Kunwar Singh of Jagdishpur: commander in Bihar, 1857
 </p>
 </div>
@@ -320,7 +320,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>KUNWAR SINGH, 80-YEAR-OLD ZAMINDAR</p>
 <p>LED GUERRILLA CAMPAIGN ACROSS BIHAR</p>
 <p>DIED OF WOUNDS 26 APRIL 1858</p>
@@ -331,9 +331,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">COLONIAL REPRESSION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">COLONIAL REPRESSION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">British Reprisals</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1857–1858 · ACROSS NORTHERN INDIA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1857–1858 · ACROSS NORTHERN INDIA</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -347,7 +347,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>SYSTEMATIC DESTRUCTION OF VILLAGES</p>
 <p>ESTIMATED 100,000 TO 800,000 INDIAN DEATHS</p>
 </aside>
@@ -357,9 +357,9 @@ export default function Rebellion1857ChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">CONSTITUTIONAL · POLITICAL</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">CONSTITUTIONAL · POLITICAL</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">Aftermath and the End of Company Rule</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1858 · LONDON AND CALCUTTA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1858 · LONDON AND CALCUTTA</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -373,7 +373,7 @@ export default function Rebellion1857ChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>GOVERNMENT OF INDIA ACT 1858</p>
 <p>EAST INDIA COMPANY ABOLISHED</p>
 <p>DIRECT CROWN RULE ESTABLISHED</p>
@@ -383,7 +383,7 @@ export default function Rebellion1857ChapterPage() {
 
  {/* Footer Navigation */}
 <hr className="border-t border-text/10 my-12" />
-<div className="flex justify-between items-center font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mt-24">
+<div className="flex justify-between items-center font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mt-24">
 <Link href="/en/chapters/timer" className="hover:text-accent transition-colors">
  ← 01. PREVIOUS CHAPTER
 </Link>

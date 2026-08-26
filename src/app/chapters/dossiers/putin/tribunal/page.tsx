@@ -11,12 +11,12 @@ export default function PutinTribunalPageRu() {
 <main className="px-[6vw] pt-[120px] pb-24 max-w-[1400px] mx-auto" vt-update="auto">
 <header className="pb-16">
 <Link
- className="font-mono text-[11px] uppercase tracking-[0.2em] text-text/60 hover:text-text underline-offset-4 hover:underline transition-colors"
+ className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/60 hover:text-text underline-offset-4 hover:underline transition-colors"
  href="/chapters/dossiers"
  >
  ← НАЗАД К РЕЕСТРУ · 03
 </Link>
-<p className="font-mono text-[12px] uppercase tracking-[0.25em] text-text/60 mt-12">
+<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/60 mt-12">
  ПРИЛОЖЕНИЕ 02 · ДЕЛО 03 / 01
 </p>
 <h1 className="font-serif text-[clamp(44px,7vw,100px)] font-black leading-[0.95] mt-4">

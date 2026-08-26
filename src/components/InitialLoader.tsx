@@ -55,7 +55,7 @@ export const InitialLoader: React.FC = () =>{
  }`}
  >
 <div className="text-center space-y-3 px-6">
-<p className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.25em] text-text/70 font-medium">
+<p className="font-mono text-[13px] sm:text-[13px] uppercase tracking-[0.25em] text-text/70 font-medium">
  THE IMPERIAL AUDIT
 </p>
 
@@ -67,7 +67,7 @@ export const InitialLoader: React.FC = () =>{
  />
 </div>
 
-<p className="font-mono text-[9px] uppercase tracking-[0.2em] text-text/40 tabular-nums">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 tabular-nums">
  1757–1947 ·<span className="text-accent font-semibold">{progress.toString().padStart(2, '0')}%</span>
 </p>
 </div>

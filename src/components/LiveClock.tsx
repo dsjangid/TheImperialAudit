@@ -24,10 +24,10 @@ export const LiveClock: React.FC = () =>{
  }, []);
 
  return (
-<div className="flex items-center gap-1.5 font-mono text-[11px] tracking-[0.15em] select-none">
+<div className="flex items-center gap-1.5 font-mono text-[13px] tracking-[0.15em] select-none">
 <span className="w-1.5 h-1.5 rounded-full bg-[#FF0000] inline-block"></span>
 <span className="font-bold text-[#FF0000] tabular-nums">{timeStr}</span>
-<span className="text-[9px] text-[#888888] uppercase">{tzStr}</span>
+<span className="text-[13px] text-[#888888] uppercase">{tzStr}</span>
 </div>
  );
 };

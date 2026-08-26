@@ -33,7 +33,7 @@ export const PageCornerBadges: React.FC<PageCornerBadgesProps>= ({
 <>
  {/* Bottom Left File Badge */}
 <div
- className="hidden md:flex fixed bottom-6 left-6 z-50 w-[124px] h-[40px] border border-white/50 rounded-[50%] flex-col items-center justify-center gap-[1px] font-mono text-white/80 text-[8px] tracking-[0.12em] uppercase leading-[1.2] pointer-events-none select-none px-2 mix-blend-difference"
+ className="hidden md:flex fixed bottom-6 left-6 z-50 w-[124px] h-[40px] border border-white/50 rounded-[50%] flex-col items-center justify-center gap-[1px] font-mono text-white/80 text-[13px] tracking-[0.12em] uppercase leading-[1.2] pointer-events-none select-none px-2 mix-blend-difference"
  vt-update="auto"
  >
 <span className="whitespace-nowrap">FILE No. {fileNo}</span>
@@ -42,7 +42,7 @@ export const PageCornerBadges: React.FC<PageCornerBadgesProps>= ({
 
  {/* Bottom Right Page Number */}
 <div
- className="hidden md:block fixed bottom-5 right-5 z-40 font-mono text-[9px] text-white/35 uppercase tracking-[0.15em] pointer-events-none mix-blend-difference"
+ className="hidden md:block fixed bottom-5 right-5 z-40 font-mono text-[13px] text-white/35 uppercase tracking-[0.15em] pointer-events-none mix-blend-difference"
  vt-update="auto"
  >
  P. {pageNum} / {totalPages}

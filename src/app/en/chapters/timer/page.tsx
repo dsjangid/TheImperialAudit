@@ -14,7 +14,7 @@ export default function ConquestChapterPage() {
  
  {/* Article Masthead */}
 <header className="mb-16 border-b border-text/15 pb-10">
-<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-text/50 mb-6">
+<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
 <span className="text-accent font-semibold">PART I · HISTORICAL INVESTIGATION · 1757–1857</span>
 <span>26 MIN READ · 12 PRIMARY DISPATCHES</span>
 <span>DECLASSIFIED IMPERIAL PAPERS</span>
@@ -30,13 +30,13 @@ export default function ConquestChapterPage() {
  How a Joint-Stock Trading Monopoly Subjugated an Empire: From Plassey to the Annexation of Awadh.
 </p>
 
-<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] text-text/40">
+<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] text-text/40">
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">RESEARCH DOSSIER</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">RESEARCH DOSSIER</span>
 <span className="text-text/80">India Office Records &amp; Parliamentary Debates (Hansard)</span>
 </div>
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">PRIMARY PERIOD</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">PRIMARY PERIOD</span>
 <span className="text-text/80">23 June 1757 – 7 February 1856</span>
 </div>
 </div>
@@ -47,7 +47,7 @@ export default function ConquestChapterPage() {
 <p className="font-serif italic text-[19px] leading-[1.75] text-text/85 mb-4">
  "The rise of our Indian Empire is not recorded in history; it is occluded in the archives of a Company, and in the debates of Parliament."
 </p>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40">Attributed to John Stuart Mill, 1858
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40">Attributed to John Stuart Mill, 1858
 </p>
 </div>
 
@@ -67,7 +67,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8 md:pt-0">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8 md:pt-0">
 <p>THE ARCHIVE</p>
 <p>1757 TO 1857</p>
 <p>THE EAST INDIA COMPANY</p>
@@ -81,9 +81,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">CONQUEST · MILITARY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">CONQUEST · MILITARY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BATTLE OF PLASSEY</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">23 JUNE 1757 · PALASHI, BENGAL</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">23 JUNE 1757 · PALASHI, BENGAL</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  The confrontation at Palashi on the banks of the Bhagirathi River is traditionally chronicled as the genesis of British dominion in India. However, historical scrutiny reveals an engagement decided less by martial superiority than by clandestine financial negotiations. Robert Clive, commanding a modest detachment of<span className="text-accent font-semibold">3,000 Company troops</span>, faced the seemingly overwhelming<span className="text-accent font-semibold">50,000-strong army of Siraj ud-Daulah</span>, the Nawab of Bengal. Yet the outcome was preordained in the counting houses of Calcutta, where the Company had successfully<span className="text-accent font-semibold">conspired with the wealthy Jagat Seth banking family and Mir Jafar</span>, the Nawab’s primary military commander.
@@ -96,7 +96,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>3,000 COMPANY TROOPS VS 50,000 NAWAB FORCES</p>
 <p>£234,000 EXTRACTED BY ROBERT CLIVE PERSONALLY</p>
@@ -110,9 +110,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">FAMINE · COLONIAL POLICY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">FAMINE · COLONIAL POLICY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">THE BENGAL FAMINE OF 1770</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1769–1773 · BENGAL PRESIDENCY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1769–1773 · BENGAL PRESIDENCY</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  Between 1769 and 1773, the newly acquired territory of Bengal suffered a catastrophe of apocalyptic proportions. The Great Bengal Famine eradicated<span className="text-accent font-bold">between seven and ten million people</span>nearly one-third of the entire population. While a failure of the monsoon initially triggered crop shortages, the catastrophic loss of life was fundamentally a product of colonial economic policy and the aggressive restructuring of traditional agrarian systems.
@@ -125,7 +125,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>EST. 7-10 MILLION FATALITIES</p>
 <p>1/4 TO 1/3 OF BENGAL POPULATION PERISHED</p>
@@ -139,9 +139,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">REBELLION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">REBELLION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">SANNYASI AND FAKIR REBELLIONS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">c. 1763–1800 · BENGAL, BIHAR</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">c. 1763–1800 · BENGAL, BIHAR</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  In the desolate aftermath of the Bengal Famine, the countryside ignited with one of the earliest sustained armed challenges to Company authority. The Sannyasi and Fakir rebellions constituted a protracted guerrilla war spearheaded by itinerant Hindu ascetics (Sannyasis) and Sufi mendicants (Fakirs). These groups, historically reliant on alms and customary rights to pilgrimage routes, found their traditional socio-economic survival threatened by the East India Company’s aggressive resumption of rent-free lands and draconian taxation policies.
@@ -154,7 +154,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>ARMED ASCETICS TARGETED REVENUE APPARATUS</p>
 <p>DECADES OF GUERRILLA WARFARE</p>
@@ -168,9 +168,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">TRIBAL RESISTANCE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">TRIBAL RESISTANCE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">THE CHUAR REBELLIONS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1767–1800s · JUNGLE MAHALS, BENGAL</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1767–1800s · JUNGLE MAHALS, BENGAL</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  Along the porous, forested frontiers of southwestern Bengal, a region designated by the British as the Jungle Mahals, the advent of Company rule precipitated a series of violent, protracted uprisings collectively termed the Chuar Rebellions. The indigenous Bhumij and other forest-dwelling tribal communities, whom the British pejoratively labeled 'Chuars' (meaning uncivilized or barbaric), fiercely resisted the imposition of an alien property system that sought to commodify their ancestral woodlands and exact unprecedented cash revenues.
@@ -183,7 +183,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>RESISTANCE TO FOREST COMMODIFICATION</p>
 <p>INDIGENOUS COMMUNITIES VS. OUTSIDE SPECULATORS</p>
@@ -206,11 +206,11 @@ export default function ConquestChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Veerapandiya Kattabomman, hanged at Kayathar, 1799
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>Tamil Nadu State Archives</p>
 <p>Historical archive</p>
 </aside>
@@ -220,9 +220,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">RESISTANCE · MILITARY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">RESISTANCE · MILITARY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">POLYGAR WARS: VEERAPANDIYA KATTABOMMAN</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1799 · PANCHALANKURICHI, MADRAS PRESIDENCY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1799 · PANCHALANKURICHI, MADRAS PRESIDENCY</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  As the East India Company expanded its hegemony over the Madras Presidency, it encountered entrenched opposition from the Palayakkarars, or Polygars, powerful local chieftains who administered autonomous territories and commanded private militias. The most legendary resistance emerged from Panchalankurichi, under the defiant leadership of Veerapandiya Kattabomman. Confronted with aggressive demands for tribute by Company administrators, Kattabomman famously repudiated their authority, asserting that the British had no legitimate claim to tax the independent sovereigns of Tamil lands.
@@ -234,7 +234,7 @@ export default function ConquestChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Veerapandiya Kattabomman, hanged at Kayathar, 1799
 </p>
 </div>
@@ -246,7 +246,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>KATTABOMMAN HANGED PUBLICLY IN 1799</p>
 <p>TIRUCHIRAPPALLI PROCLAMATION (1801)</p>
@@ -260,9 +260,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MILITARY · REBELLION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">VELLORE MUTINY</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">10 JULY 1806 · VELLORE, MADRAS PRESIDENCY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">10 JULY 1806 · VELLORE, MADRAS PRESIDENCY</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  Decades before the eruption of 1857, the vulnerability of the Company’s military apparatus was violently exposed within the heavy stone walls of Vellore Fort. On the dawn of 10 July 1806, Indian sepoys of the Madras Army launched a meticulously coordinated and entirely unexpected assault on their British commanding officers and the European garrison. The catalyst for this sudden explosion of violence was a seemingly trivial administrative order that mandated severe cultural erasure within the ranks.
@@ -275,7 +275,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>TRIGGERED BY INSENSITIVE DRESS REGULATIONS</p>
 <p>100-200 BRITISH KILLED</p>
@@ -298,11 +298,11 @@ export default function ConquestChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Robert Clive, 1st Baron Clive of Plassey, architect of Company conquest
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Portrait Gallery, London</p>
 <p>Historical archive</p>
 </aside>
@@ -312,9 +312,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">REBELLION · MILITARY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">REBELLION · MILITARY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">PAIKA REBELLION</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1817 · KHURDA, ODISHA (BENGAL PRESIDENCY)</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1817 · KHURDA, ODISHA (BENGAL PRESIDENCY)</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
  
 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
@@ -324,7 +324,7 @@ export default function ConquestChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Pazhassi Raja (Kerala Varma), led the Cotiote guerrilla war against the Company in Wayanad jungles (1793–1805)
 </p>
 </div>
@@ -339,7 +339,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>TRADITIONAL WARRIOR CASTE DISPOSSESSED</p>
 <p>WIDESPREAD REGIONAL UPRISING</p>
@@ -362,11 +362,11 @@ export default function ConquestChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Rani Chennamma of Kittur, imprisoned at Bailhongal Fort, died 1829
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>Karnataka State Archives</p>
 <p>Historical archive</p>
 </aside>
@@ -376,9 +376,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">REBELLION · MILITARY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">REBELLION · MILITARY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">KITTUR REBELLION</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1824 · KITTUR, KARNATAKA (BOMBAY PRESIDENCY)</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1824 · KITTUR, KARNATAKA (BOMBAY PRESIDENCY)</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  Long before Lord Dalhousie formalized the notorious "Doctrine of Lapse," the East India Company violently tested the principle of arbitrary annexation on the small, prosperous principality of Kittur in northern Karnataka. Following the death of Raja Mallasarja and his legitimate heir, his formidable widow, Rani Chennamma, adopted a son to succeed to the throne, adhering strictly to Hindu customary law. The British administration, however, explicitly refused to recognize the adoption, decreeing that Kittur would be immediately absorbed into the Bombay Presidency.
@@ -391,7 +391,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>EARLY USE OF DOCTRINE OF LAPSE MECHANISM</p>
 <p>BRITISH POLITICAL AGENT KILLED IN BATTLE</p>
@@ -405,9 +405,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">TRIBAL RESISTANCE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">TRIBAL RESISTANCE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BHIL AND KOL UPRISINGS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1819–1839 · KHANDESH / CHOTA NAGPUR</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1819–1839 · KHANDESH / CHOTA NAGPUR</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  The expansion of the colonial frontier frequently encroached upon rugged, forested terrains inhabited by fiercely independent indigenous communities. This collision precipitated decades of unrelenting tribal warfare. In the Khandesh and Satpura regions, the Bhil communities rose in sustained resistance from 1819 to 1825. Facing the influx of outsiders and the stringent imposition of British agricultural taxation, various Bhil chiefs utilized their intimate knowledge of the mountainous terrain to wage highly effective guerrilla campaigns against Company supply lines and administrative outposts.
@@ -420,7 +420,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>RESISTANCE AGAINST OUTSIDE MONEYLENDERS (DIKUS)</p>
 <p>DECADES OF GUERRILLA WARFARE</p>
@@ -434,9 +434,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">CONQUEST · MILITARY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">CONQUEST · MILITARY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">FIRST AND SECOND ANGLO-SIKH WARS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1845–1849 · PUNJAB</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1845–1849 · PUNJAB</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  The Sikh Empire of Maharaja Ranjit Singh stood for decades as the final formidable bulwark against complete British domination of the subcontinent. Following the Maharaja's death in 1839, the kingdom descended into factional instability, providing the East India Company with the pretext for aggressive military intervention. The First Anglo-Sikh War (1845–46) witnessed some of the most phenomenally bloody engagements in colonial history at Mudki, Ferozeshah, Aliwal, and Sobraon. The fierce and highly disciplined Khalsa army inflicted staggering casualties upon the British before ultimately succumbing to the treacherous collusion of their own elite commanders with the Company.
@@ -449,7 +449,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>KASHMIR SOLD FOR 75 LAKH RUPEES</p>
 <p>MAHARAJA DALIP SINGH DEPOSED AT AGE 10</p>
@@ -463,9 +463,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">CONQUEST · DIPLOMATIC</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">CONQUEST · DIPLOMATIC</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">ANNEXATION OF AWADH</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1856 · LUCKNOW, AWADH (MODERN UTTAR PRADESH)</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1856 · LUCKNOW, AWADH (MODERN UTTAR PRADESH)</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  If the Punjab was conquered through the grim attrition of artillery, the prosperous kingdom of Awadh was consumed by the stroke of a bureaucratic pen. For over half a century, Awadh had functioned as the most loyal and financially lucrative ally of the East India Company, bound by a Treaty in 1801 that explicitly guaranteed its sovereignty. Yet, in February 1856, Governor-General Lord Dalhousie unilaterally abrogated this historic treaty, formally deposing the reigning Nawab, Wajid Ali Shah, on vaguely defined charges of chronic "misgovernment" and internal corruption.
@@ -478,7 +478,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>TREATY OF 1801 UNILATERALLY ABROGATED</p>
 <p>40,000 SEPOYS' STATUS THREATENED</p>
@@ -492,9 +492,9 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">TRIBAL RESISTANCE · REBELLION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">TRIBAL RESISTANCE · REBELLION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">SANTHAL HUL</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1855–56 · SANTHAL PARGANAS, RAJMAHAL HILLS</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1855–56 · SANTHAL PARGANAS, RAJMAHAL HILLS</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  On the eve of the Great Rebellion, the colonial state faced its most ferocious agrarian uprising in the forested Rajmahal Hills. The Santhal Hul (rebellion) was a desperate, messianic uprising against a suffocating nexus of exploitation forged by the colonial administration, corrupt police officers, rapacious zamindars, and predatory moneylenders (mahajans). Driven into crippling, intergenerational debt by extortionate interest rates, often exceeding 500 percent, the Santhals found themselves legally dispossessed of their lands by British courts that uniformly favored the literate elites.
@@ -507,7 +507,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>10,000+ ARMED REBELS MOBILISED</p>
 <p>ESTIMATED 10,000–20,000 FATALITIES</p>
@@ -521,7 +521,7 @@ export default function ConquestChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mb-6">ECONOMIC ANALYSIS</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mb-6">ECONOMIC ANALYSIS</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-8">THE FISCAL ARCHITECTURE OF DRAIN</h3>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -535,7 +535,7 @@ export default function ConquestChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4">
 <p>SYSTEMIC WEALTH EXTRACTION</p>
 <p>COUNCIL BILLS FINANCED EXPORTS WITH LOCAL TAXES</p>
@@ -551,7 +551,7 @@ export default function ConquestChapterPage() {
 <footer className="flex justify-end pb-12">
 <Link 
  href="/en/chapters/comparison" 
- className="font-mono text-[10px] text-text/40 hover:text-text uppercase tracking-[0.15em] transition-colors flex items-center gap-4 group"
+ className="font-mono text-[13px] text-text/40 hover:text-text uppercase tracking-[0.15em] transition-colors flex items-center gap-4 group"
  >
 <span>NEXT CHAPTER: 1857</span>
 <span className="w-12 h-[1px] bg-text/20 group-hover:bg-text group-hover:w-16 transition-all duration-300"></span>

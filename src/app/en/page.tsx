@@ -14,7 +14,7 @@ export default function CoverPage() {
 <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32" vt-update="auto">
  {/* Article Publication Masthead & Metadata */}
 <div className="border-b border-text/15 pb-8 mb-12">
-<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-text/50 mb-6">
+<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
 <span>HISTORICAL DISPATCH · SPECIAL INVESTIGATIVE ARCHIVE</span>
 <span>VOL. I · DECLASSIFIED RECORD · 1757–1947</span>
 <span>PUBLISHED IN LONDON &amp; NEW DELHI</span>
@@ -22,7 +22,7 @@ export default function CoverPage() {
 
 <div className="grid grid-cols-12 gap-8 items-end">
 <div className="col-span-12 lg:col-span-8">
-<p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent font-semibold mb-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent font-semibold mb-3">
  AN UNREDACTED INVESTIGATION INTO 190 YEARS OF COLONIAL RULE
 </p>
 <h1
@@ -36,21 +36,21 @@ export default function CoverPage() {
 </p>
 </div>
 
-<div className="col-span-12 lg:col-span-4 font-mono text-[11px] text-text/60 space-y-4 pt-4 lg:pt-0 border-t lg:border-t-0 lg:border-l border-text/15 lg:pl-8">
+<div className="col-span-12 lg:col-span-4 font-mono text-[13px] text-text/60 space-y-4 pt-4 lg:pt-0 border-t lg:border-t-0 lg:border-l border-text/15 lg:pl-8">
 <div>
-<span className="block text-[9px] uppercase tracking-[0.2em] text-text/35">CURATED BY</span>
+<span className="block text-[13px] uppercase tracking-[0.2em] text-text/35">CURATED BY</span>
 <span className="text-text/90 font-medium">The Declassified Colonial Archive</span>
 </div>
 <div>
-<span className="block text-[9px] uppercase tracking-[0.2em] text-text/35">ESTIMATED WEALTH EXTRACTION</span>
+<span className="block text-[13px] uppercase tracking-[0.2em] text-text/35">ESTIMATED WEALTH EXTRACTION</span>
 <span className="text-accent font-bold">~$45 Trillion (1765–1938)</span>
 </div>
 <div>
-<span className="block text-[9px] uppercase tracking-[0.2em] text-text/35">PRIMARY ARCHIVES CITED</span>
+<span className="block text-[13px] uppercase tracking-[0.2em] text-text/35">PRIMARY ARCHIVES CITED</span>
 <span className="text-text/90">32 Verified Parliamentary &amp; State Records</span>
 </div>
 <div>
-<span className="block text-[9px] uppercase tracking-[0.2em] text-text/35">CURRENT TIME ELAPSED</span>
+<span className="block text-[13px] uppercase tracking-[0.2em] text-text/35">CURRENT TIME ELAPSED</span>
 <div className="text-text/90 pt-0.5">
 <LiveClock />
 </div>
@@ -63,7 +63,7 @@ export default function CoverPage() {
 <section className="my-16">
 <div className="grid grid-cols-12 gap-8">
 <div className="col-span-12 md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.25em] text-text/40 mb-4">EDITORIAL PROLOGUE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/40 mb-4">EDITORIAL PROLOGUE</p>
 <div className="space-y-6 font-serif text-[18px] md:text-[19px] leading-[1.75] text-text/85">
 <p>
 <span className="float-left text-[68px] leading-[0.75] font-serif font-bold text-accent pr-4 pt-2">I</span>
@@ -78,7 +78,7 @@ export default function CoverPage() {
 </div>
 </div>
 
-<aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-6 pt-6">
+<aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-6 pt-6">
 <div className="border-l border-text/20 pl-4 space-y-2">
 <p className="text-accent">PRIMARY CORPUS</p>
 <p>India Office Records, British Library</p>
@@ -102,7 +102,7 @@ export default function CoverPage() {
 <section className="my-16">
 <div className="grid grid-cols-12 gap-8">
 <div className="col-span-12 md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.25em] text-accent mb-2">
+<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-accent mb-2">
  FISCAL MECHANISM · THE DRAIN OF WEALTH
 </p>
 <h2 className="font-serif text-[28px] md:text-[38px] font-bold leading-tight mb-4">
@@ -117,7 +117,7 @@ export default function CoverPage() {
 </div>
 </div>
 
-<aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>SOURCE: COLUMBIA UNIV. PRESS</p>
 <p>MECHANISM: COUNCIL BILLS &amp; HOME CHARGES</p>
 <p>RESULT: STRUCTURAL DEINDUSTRIALISATION</p>
@@ -139,10 +139,10 @@ export default function CoverPage() {
  {/* Unframed Newspaper-Style Photo Strip */}
 <section className="my-20 border-t border-b border-text/15 py-12">
 <div className="flex justify-between items-baseline mb-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.25em] text-text/50">
+<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/50">
  ARCHIVAL PHOTOGRAPHS &amp; CONTEMPORARY ENGRAVINGS · 1757–1947
 </p>
-<span className="font-mono text-[9px] text-text/35 uppercase">MONOCHROME ARCHIVE</span>
+<span className="font-mono text-[13px] text-text/35 uppercase">MONOCHROME ARCHIVE</span>
 </div>
 
 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -170,13 +170,13 @@ export default function CoverPage() {
  />
 </div>
 <div className="mt-2.5 space-y-0.5">
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/80 font-bold leading-tight">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/80 font-bold leading-tight">
  {item.name}
 </p>
-<p className="font-serif italic text-[11px] text-text/50 leading-tight">
+<p className="font-serif italic text-[13px] text-text/50 leading-tight">
  {item.role}
 </p>
-<p className="font-mono text-[8px] text-text/30 tracking-[0.05em]">
+<p className="font-mono text-[13px] text-text/30 tracking-[0.05em]">
  {item.yr}
 </p>
 </div>
@@ -189,14 +189,14 @@ export default function CoverPage() {
 <section className="my-20">
 <div className="flex justify-between items-baseline mb-10 pb-4 border-b border-text/15">
 <div>
-<p className="font-mono text-[10px] uppercase tracking-[0.25em] text-text/40 mb-1">
+<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/40 mb-1">
  TABLE OF CONTENTS
 </p>
 <h2 className="font-serif text-[32px] md:text-[44px] font-bold">
  The Five Dispatches
 </h2>
 </div>
-<span className="font-mono text-[11px] text-text/40 uppercase tracking-[0.15em]">
+<span className="font-mono text-[13px] text-text/40 uppercase tracking-[0.15em]">
  UNREDACTED EDITIONS
 </span>
 </div>
@@ -264,10 +264,10 @@ export default function CoverPage() {
 <span className="font-mono text-[40px] md:text-[52px] leading-none text-text/20 group-hover:text-accent transition-colors font-bold block">
  {item.num}
 </span>
-<span className="font-mono text-[9px] uppercase tracking-[0.2em] text-accent mt-2 block font-semibold">
+<span className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mt-2 block font-semibold">
  {item.tag}
 </span>
-<span className="font-mono text-[9px] uppercase tracking-[0.1em] text-text/40 mt-1 block">
+<span className="font-mono text-[13px] uppercase tracking-[0.1em] text-text/40 mt-1 block">
  {item.readTime}
 </span>
 </div>
@@ -282,7 +282,7 @@ export default function CoverPage() {
 <p className="font-serif text-[15px] text-text/60 mt-3 leading-relaxed">
  {item.desc}
 </p>
-<div className="mt-4 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-accent font-semibold group-hover:translate-x-1 transition-transform">
+<div className="mt-4 flex items-center gap-2 font-mono text-[13px] uppercase tracking-[0.2em] text-accent font-semibold group-hover:translate-x-1 transition-transform">
 <span>Read Full Dispatch</span>
 <span>→</span>
 </div>
@@ -306,7 +306,7 @@ export default function CoverPage() {
 <footer className="py-20 border-t border-text/15">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
 <div className="md:col-span-12 space-y-4">
-<p className="font-mono text-[10px] uppercase tracking-[0.25em] text-text/40">COLOPHON</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/40">COLOPHON</p>
 <p className="font-serif text-[14px] text-text/60 leading-relaxed max-w-[65ch]">
  The Imperial Audit is an independent open-access digital archive dedicated to documenting the history of British colonial governance in India with academic rigor, primary documentation, and unfiltered historical narrative.
 </p>

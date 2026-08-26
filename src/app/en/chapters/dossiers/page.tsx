@@ -13,7 +13,7 @@ export default function SubjectsChapterPage() {
  
  {/* Article Masthead */}
 <header className="mb-16 border-b border-text/15 pb-10">
-<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-text/50 mb-6">
+<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
 <span className="text-accent font-semibold">PART III · BIOGRAPHICAL MONOGRAPHS · 1757–1947</span>
 <span>24 MIN READ · 12 FORENSIC DOSSIERS</span>
 <span>ARCHIVAL PROFILES</span>
@@ -29,13 +29,13 @@ export default function SubjectsChapterPage() {
  Twelve Monographic Profiles of the Men and Women Who Built, Governed, and Resisted the British Raj.
 </p>
 
-<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] text-text/40">
+<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] text-text/40">
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">DOCUMENTARY EVIDENCE</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">DOCUMENTARY EVIDENCE</span>
 <span className="text-text/80">Select Parliamentary Committees, Trial Transcripts &amp; Vernacular Proclamations</span>
 </div>
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">CATEGORIES</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">CATEGORIES</span>
 <span className="text-text/80">Imperial Architects, Military Commanders, Satyagrahis &amp; Martyrs</span>
 </div>
 </div>
@@ -64,9 +64,9 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">ARCHITECT OF COMPANY CONQUEST</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">ARCHITECT OF COMPANY CONQUEST</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">ROBERT CLIVE (1st Baron Clive of Plassey)</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1725, SHROPSHIRE · KEY PERIOD: 1757–1767</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1725, SHROPSHIRE · KEY PERIOD: 1757–1767</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
  Robert Clive emerged as the quintessential figure of early British imperialism in India, transforming the East India Company from a precarious trading enterprise into a territorial power. His decisive victory at the Battle of Plassey in 1757 was less a military triumph than a masterstroke of political subversion. By pre-arranging the betrayal of the Nawab of Bengal, Siraj ud-Daulah, through a secret pact with the commander Mir Jafar, Clive fundamentally altered the balance of power in the subcontinent without fighting a conventional battle.
@@ -79,7 +79,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>SECURED BENGAL DIWANI (1765)</p>
 <p>£234,000 IN PRIVATE "GIFTS"</p>
 <p>INVESTIGATED BY PARLIAMENT 1772</p>
@@ -92,9 +92,9 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">FIRST GOVERNOR-GENERAL OF INDIA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">FIRST GOVERNOR-GENERAL OF INDIA</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">WARREN HASTINGS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1732, WORCESTERSHIRE · KEY PERIOD: 1772–1785</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1732, WORCESTERSHIRE · KEY PERIOD: 1772–1785</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
@@ -104,7 +104,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Imperial Administrative Portrait India Office Records
 </p>
 </div>
@@ -119,7 +119,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>REORGANIZED REVENUE SYSTEM</p>
 <p>RULED POST-1770 FAMINE</p>
 <p>IMPEACHED BY BURKE</p>
@@ -132,9 +132,9 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">GOVERNOR-GENERAL · ARCHITECT OF PERMANENT SETTLEMENT</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">GOVERNOR-GENERAL · ARCHITECT OF PERMANENT SETTLEMENT</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD CORNWALLIS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1738, SUFFOLK · KEY PERIOD: 1786–1793, 1805</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1738, SUFFOLK · KEY PERIOD: 1786–1793, 1805</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
@@ -144,7 +144,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Lord Cornwallis: Architect of the Permanent Settlement (1793)
 </p>
 </div>
@@ -159,7 +159,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>PERMANENT SETTLEMENT (1793)</p>
 <p>CREATED ZAMINDARI LANDLORDS</p>
 <p>CORNWALLIS CODE</p>
@@ -172,9 +172,9 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">GOVERNOR-GENERAL · AUTHOR OF THE DOCTRINE OF LAPSE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">GOVERNOR-GENERAL · AUTHOR OF THE DOCTRINE OF LAPSE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD DALHOUSIE</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1812, SCOTLAND · KEY PERIOD: 1848–1856</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1812, SCOTLAND · KEY PERIOD: 1848–1856</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
@@ -184,7 +184,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Imperial Viceroyalty Portrait: Declassified State Papers
 </p>
 </div>
@@ -195,7 +195,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Lord Curzon (Viceroy 1899–1905): a later embodiment of the Doctrine of Lapse era's imperial ideology
 </p>
 </div>
@@ -210,7 +210,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>DOCTRINE OF LAPSE</p>
 <p>ANNEXED AWADH (1856)</p>
 <p>INTRODUCED RAILWAYS & TELEGRAPH</p>
@@ -223,9 +223,9 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">VICEROY OF INDIA</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">VICEROY OF INDIA</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD CURZON</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1859, DERBYSHIRE · KEY PERIOD: 1899–1905</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1859, DERBYSHIRE · KEY PERIOD: 1899–1905</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
@@ -235,7 +235,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Lord Curzon, Viceroy of India (1899–1905), architect of the 1905 Partition of Bengal
 </p>
 </div>
@@ -250,7 +250,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>PARTITION OF BENGAL (1905)</p>
 <p>1903 IMPERIAL DURBAR</p>
 <p>STRICT FAMINE AUSTERITY</p>
@@ -263,9 +263,9 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">BRIGADIER-GENERAL · AMRITSAR GARRISON COMMANDER</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">BRIGADIER-GENERAL · AMRITSAR GARRISON COMMANDER</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">GENERAL REGINALD DYER</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1864, MURREE · KEY PERIOD: APRIL 1919</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1864, MURREE · KEY PERIOD: APRIL 1919</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
@@ -275,7 +275,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Brigadier-General Reginald Dyer, Hunter Commission testimony portrait, 1920
 </p>
 </div>
@@ -290,7 +290,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>JALLIANWALA BAGH MASSACRE</p>
 <p>FIRED 1,650 ROUNDS</p>
 <p>ENFORCED CRAWLING ORDER</p>
@@ -303,7 +303,7 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">SEPOY · 34TH BENGAL NATIVE INFANTRY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">SEPOY · 34TH BENGAL NATIVE INFANTRY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">MANGAL PANDEY</h3>
  {/* ARCHIVAL PHOTO */}
 <div className="my-12 border-t border-text/10 pt-12">
@@ -317,18 +317,18 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Khudiram Bose, Bengal's youngest executed revolutionary, 1908
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Archives of India</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1827, UNITED PROVINCES · KEY PERIOD: 29 MARCH 1857</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1827, UNITED PROVINCES · KEY PERIOD: 29 MARCH 1857</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full mb-6 clear-both">
 <img
@@ -337,7 +337,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Khudiram Bose, like Mangal Pandey, became a symbol of Bengali revolutionary martyrdom
 </p>
 </div>
@@ -352,7 +352,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>ATTACKED OFFICERS (MARCH 1857)</p>
 <p>HANGED 8 APRIL 1857</p>
 <p>34TH REGIMENT DISBANDED</p>
@@ -365,7 +365,7 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">RULER OF JHANSI · MILITARY COMMANDER</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">RULER OF JHANSI · MILITARY COMMANDER</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">RANI LAKSHMIBAI</h3>
  {/* ARCHIVAL PHOTO */}
 <div className="my-12 border-t border-text/10 pt-12">
@@ -379,18 +379,18 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Rani Lakshmibai of Jhansi, contemporary portrait
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Archives of India</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1828, VARANASI · KEY PERIOD: 1857–1858</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1828, VARANASI · KEY PERIOD: 1857–1858</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full mb-6 clear-both">
 <img
@@ -399,7 +399,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Rani Lakshmibai of Jhansi, contemporary portrait, c.1850s
 </p>
 </div>
@@ -414,7 +414,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>DEPOSED BY DOCTRINE OF LAPSE</p>
 <p>DEFENDED JHANSI (1858)</p>
 <p>KILLED IN BATTLE NEAR GWALIOR</p>
@@ -427,7 +427,7 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">REGENT OF AWADH · COMMANDER OF LUCKNOW UPRISING</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">REGENT OF AWADH · COMMANDER OF LUCKNOW UPRISING</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BEGUM HAZRAT MAHAL</h3>
  {/* ARCHIVAL PHOTO */}
 <div className="my-12 border-t border-text/10 pt-12">
@@ -441,18 +441,18 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Begum Hazrat Mahal: Regent of Awadh
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Archives of India</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1820, FAIZABAD · KEY PERIOD: 1857–1858</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1820, FAIZABAD · KEY PERIOD: 1857–1858</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full mb-6 clear-both">
 <img
@@ -461,7 +461,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Begum Hazrat Mahal: Regent of Awadh, refused British amnesty, died in Kathmandu 1879
 </p>
 </div>
@@ -476,7 +476,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>ORGANIZED AWADH RESISTANCE</p>
 <p>BESIEGED LUCKNOW RESIDENCY</p>
 <p>REFUSED BRITISH AMNESTY</p>
@@ -489,7 +489,7 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">POLITICAL ECONOMIST · MP FOR FINSBURY · INC PRESIDENT</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">POLITICAL ECONOMIST · MP FOR FINSBURY · INC PRESIDENT</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">DADABHAI NAOROJI</h3>
  {/* ARCHIVAL PHOTO */}
 <div className="my-12 border-t border-text/10 pt-12">
@@ -503,18 +503,18 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Dadabhai Naoroji: first Indian elected to the British Parliament, 1892
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>India Office Records, British Library</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1825, BOMBAY · KEY PERIOD: 1867–1906</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1825, BOMBAY · KEY PERIOD: 1867–1906</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full mb-6 clear-both">
 <img
@@ -523,7 +523,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Dr. Rajendra Prasad: championed the same economic nationalism Naoroji founded
 </p>
 </div>
@@ -538,7 +538,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>FIRST INDIAN MP IN UK (1892)</p>
 <p>FORMULATED THE DRAIN THEORY</p>
 <p>WROTE "POVERTY AND UN-BRITISH RULE"</p>
@@ -551,7 +551,7 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">NATIONALIST LEADER · JOURNALIST · POLITICAL THEORIST</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">NATIONALIST LEADER · JOURNALIST · POLITICAL THEORIST</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BAL GANGADHAR TILAK</h3>
  {/* ARCHIVAL PHOTO */}
 <div className="my-12 border-t border-text/10 pt-12">
@@ -565,18 +565,18 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Bal Gangadhar Tilak: editor of Kesari, twice imprisoned for sedition
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>Maharashtra State Archives</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1856, RATNAGIRI · KEY PERIOD: 1890–1920</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1856, RATNAGIRI · KEY PERIOD: 1890–1920</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full mb-6 clear-both">
 <img
@@ -585,7 +585,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Bal Gangadhar Tilak: editor of Kesari, twice imprisoned for sedition, died 1920
 </p>
 </div>
@@ -600,7 +600,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>"SWARAJ IS MY BIRTHRIGHT"</p>
 <p>EDITOR OF KESARI</p>
 <p>JAILED FOR SEDITION (1908-1914)</p>
@@ -613,7 +613,7 @@ export default function SubjectsChapterPage() {
 <section className="py-12 border-t border-text/10 mb-24">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">POLITICAL LEADER · INDEPENDENCE MOVEMENT</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">POLITICAL LEADER · INDEPENDENCE MOVEMENT</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">MOHANDAS KARAMCHAND GANDHI</h3>
  {/* ARCHIVAL PHOTO */}
 <div className="my-12 border-t border-text/10 pt-12">
@@ -627,18 +627,18 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
  ▲ Mahatma Gandhi, photographed during the Salt March, 1930
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>India Office Records, British Library</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1869, PORBANDAR · KEY PERIOD: 1915–1948</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1869, PORBANDAR · KEY PERIOD: 1915–1948</p>
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <div className="w-full mb-6 clear-both">
 <img
@@ -647,7 +647,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
  Mahatma Gandhi, photographed during the historic Dandi Salt March, March 1930
 </p>
 </div>
@@ -662,7 +662,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>NON-COOPERATION & QUIT INDIA</p>
 <p>1930 DANDI SALT MARCH</p>
 <p>ASSASSINATED JAN 1948</p>
@@ -674,7 +674,7 @@ export default function SubjectsChapterPage() {
  {/* Footer Navigation */}
 <hr className="border-t border-text/10 my-12" />
  
-<div className="flex justify-between items-center font-mono text-[11px] uppercase tracking-[0.1em] text-text/60">
+<div className="flex justify-between items-center font-mono text-[13px] uppercase tracking-[0.1em] text-text/60">
 <Link href="/en/chapters/comparison" className="hover:text-accent transition-colors">
  ← PREVIOUS: COMPARISON
 </Link>

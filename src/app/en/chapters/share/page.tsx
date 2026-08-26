@@ -14,7 +14,7 @@ export default function JallianwalaChapterPage() {
  
  {/* Article Masthead */}
 <div className="mb-16 border-b border-text/15 pb-10">
-<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.25em] text-text/50 mb-6">
+<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
 <span className="text-accent font-semibold">PART IV · SPECIAL INVESTIGATION · 13 APRIL 1919</span>
 <span>35 MIN READ · MINUTE-BY-MINUTE FORENSIC RECORD</span>
 <span>DISORDERS INQUIRY COMMITTEE (CMD. 681)</span>
@@ -30,13 +30,13 @@ export default function JallianwalaChapterPage() {
  The Forensic Anatomy of the Jallianwala Bagh Massacre, the Hunter Commission Inquiries, and the 21-Year Retribution.
 </p>
 
-<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] text-text/40">
+<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] text-text/40">
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">INCIDENT LOCATION</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">INCIDENT LOCATION</span>
 <span className="text-text/80">Jallianwala Bagh, Amritsar, Punjab (5:15 PM, 13 April 1919)</span>
 </div>
 <div>
-<span className="text-text/25 uppercase text-[9px] block tracking-[0.15em]">AMMUNITION EXPENDED</span>
+<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">AMMUNITION EXPENDED</span>
 <span className="text-accent font-bold">1,650 Rounds of .303 Ball Mark VII</span>
 </div>
 </div>
@@ -59,7 +59,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Sarojini Naidu: addressed mass protest rallies in London and India exposing the atrocities of martial law in Punjab
 </p>
 </div>
@@ -69,7 +69,7 @@ export default function JallianwalaChapterPage() {
 </div>
 </div>
  
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-2">
 <div className="p-8 bg-accent/[0.04] border border-accent/30 space-y-4 text-text mb-8">
 <p className="text-accent font-bold tracking-widest">KEY DATA</p>
 <p>1,650 ROUNDS</p>
@@ -87,9 +87,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">CONTEXT</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">CONTEXT</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">PUNJAB DURING WORLD WAR I</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">1914–1919 · PUNJAB PROVINCE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">1914–1919 · PUNJAB PROVINCE</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -105,7 +105,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto object-cover block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
  Lala Lajpat Rai: died from police lathis, Lahore, 1928
 </p>
 </div>
@@ -122,9 +122,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">ESCALATION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">ESCALATION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">AMRITSAR: 10 APRIL 1919</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">10–12 APRIL 1919 · AMRITSAR CITY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">10–12 APRIL 1919 · AMRITSAR CITY</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -138,7 +138,7 @@ export default function JallianwalaChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>THE CRAWLING ORDER DEMONSTRATED A PATHOLOGICAL NEED TO REASSERT RACIAL DOMINANCE THROUGH PHYSICAL HUMILIATION.</p>
 </aside>
 </div>
@@ -149,9 +149,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">GATHERING</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">GATHERING</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BAISAKHI: 13 APRIL 1919</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">MORNING & AFTERNOON, 13 APRIL 1919 · JALLIANWALA BAGH</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">MORNING & AFTERNOON, 13 APRIL 1919 · JALLIANWALA BAGH</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -173,9 +173,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">MASSACRE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">MASSACRE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">THE FIRING</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">5:15 PM, 13 APRIL 1919 · JALLIANWALA BAGH</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">5:15 PM, 13 APRIL 1919 · JALLIANWALA BAGH</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -188,7 +188,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto object-cover block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.9)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
  Jallianwala Bagh, Amritsar, bullet marks on the northern wall. Forensic record, 1919.
 </p>
 </div>
@@ -210,16 +210,16 @@ export default function JallianwalaChapterPage() {
 <p className="font-serif italic text-[22px] leading-relaxed text-text/90">
  "The time has come when badges of honour make our shame glaring in their incongruous context of humiliation, and I for my part wish to stand, shorn of all special distinctions, by the side of those of my countrymen, who, for their so-called insignificance, are liable to suffer degradation not fit for human beings."
 </p>
-<p className="mt-6 font-mono text-[11px] uppercase tracking-[0.1em] text-text/50">RABINDRANATH TAGORE, LETTER RENOUNCING HIS KNIGHTHOOD (30 MAY 1919)
+<p className="mt-6 font-mono text-[13px] uppercase tracking-[0.1em] text-text/50">RABINDRANATH TAGORE, LETTER RENOUNCING HIS KNIGHTHOOD (30 MAY 1919)
 </p>
 </div>
 
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">REPRESSION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">REPRESSION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">AFTER THE FIRING</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">APRIL–MAY 1919 · PUNJAB</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">APRIL–MAY 1919 · PUNJAB</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -233,7 +233,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Sir Michael O'Dwyer: Lt. Governor of Punjab who approved Dyer's action by telegram and was assassinated by Udham Singh in London in 1940
 </p>
 </div>
@@ -250,7 +250,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto object-cover block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
  Rabindranath Tagore: renounced his knighthood, May 1919
 </p>
 </div>
@@ -259,7 +259,7 @@ export default function JallianwalaChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>THE MORNING POST RAISED £26,000 FOR DYER, CHAMPIONING HIM AS 'THE MAN WHO SAVED INDIA.'</p>
 </aside>
 </div>
@@ -270,9 +270,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">INVESTIGATION</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">INVESTIGATION</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">THE HUNTER COMMISSION</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">LATE 1919–1920 · LAHORE & LONDON</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">LATE 1919–1920 · LAHORE & LONDON</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -285,7 +285,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto object-cover block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/35 mt-1.5 leading-tight italic">
  Brigadier-General Dyer, Hunter Commission, 1920
 </p>
 </div>
@@ -305,9 +305,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">HISTORIOGRAPHY</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">HISTORIOGRAPHY</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">HISTORICAL INTERPRETATIONS</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">COMPETING NARRATIVES OF THE MASSACRE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">COMPETING NARRATIVES OF THE MASSACRE</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
 <p>
@@ -329,9 +329,9 @@ export default function JallianwalaChapterPage() {
 <section className="py-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent mb-2">EPILOGUE</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">EPILOGUE</p>
 <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">UDHAM SINGH: THE AVENGER</h3>
-<p className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 mb-8">13 MARCH 1940 · CAXTON HALL, LONDON</p>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">13 MARCH 1940 · CAXTON HALL, LONDON</p>
  
 <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
  
@@ -342,7 +342,7 @@ export default function JallianwalaChapterPage() {
  className="w-full h-auto max-h-[280px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[9px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
  ▲ Shaheed Udham Singh, photographed at the Old Bailey during his 1940 trial, where he gave his name as &ldquo;Ram Mohammad Singh Azad&rdquo;
 </p>
 </div>
@@ -357,14 +357,14 @@ export default function JallianwalaChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[11px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>'RAM MOHAMMAD SINGH AZAD' WAS NOT JUST A NAME; IT WAS A REJECTION OF THE EMPIRE'S DIVIDE-AND-RULE POLICIES.</p>
 </aside>
 </div>
 </section>
 
 <div className="mt-32 pt-12 border-t border-text/20">
-<div className="flex justify-between items-center font-mono text-[12px] tracking-widest uppercase">
+<div className="flex justify-between items-center font-mono text-[13px] tracking-widest uppercase">
 <Link href="/en/chapters/dossiers" className="hover:text-accent transition-colors flex items-center gap-4">
 <span>← PREV</span>
 <span className="hidden sm:inline opacity-50">03 DOSSIERS</span>
