@@ -3,11 +3,25 @@
 import React, { useEffect, useState } from 'react';
 
 export const InitialLoader: React.FC = () => {
+  const [shouldShow, setShouldShow] = useState<boolean | null>(null);
   const [progress, setProgress] = useState(0);
   const [isFading, setIsFading] = useState(false);
   const [isMounted, setIsMounted] = useState(true);
 
   useEffect(() => {
+    try {
+      const hasLoaded = sessionStorage.getItem('imperial_audit_loaded');
+      if (hasLoaded) {
+        setShouldShow(false);
+        setIsMounted(false);
+        return;
+      }
+      sessionStorage.setItem('imperial_audit_loaded', 'true');
+      setShouldShow(true);
+    } catch {
+      setShouldShow(true);
+    }
+
     const startTime = Date.now();
     const duration = 2000; // 2 seconds
 
@@ -29,7 +43,7 @@ export const InitialLoader: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (!isMounted) {
+  if (shouldShow === false || !isMounted || shouldShow === null) {
     return null;
   }
 
