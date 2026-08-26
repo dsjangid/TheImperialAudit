@@ -2,7 +2,6 @@
 const nextConfig = {
   output: 'export',
   basePath: '/TheImperialAudit',
-  assetPrefix: '/TheImperialAudit',
   trailingSlash: true,
   reactStrictMode: true,
   images: {

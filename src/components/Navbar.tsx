@@ -15,13 +15,14 @@ export const Navbar: React.FC<NavbarProps>= ({ lang = 'en' }) =>{
  const [mobileOpen, setMobileOpen] = useState(false);
  const t = translations[lang];
 
- const getActiveChapterId = () =>{
- if (pathname.includes('/chapters/action')) return 'action';
- if (pathname.includes('/chapters/share')) return 'share';
- if (pathname.includes('/chapters/dossiers')) return 'dossiers';
- if (pathname.includes('/chapters/comparison')) return 'comparison';
- if (pathname.includes('/chapters/timer')) return 'timeline';
- return 'cover';
+ const getActiveChapterId = () => {
+   if (pathname.includes('/methodology')) return 'methodology';
+   if (pathname.includes('/chapters/action')) return 'action';
+   if (pathname.includes('/chapters/share')) return 'share';
+   if (pathname.includes('/chapters/dossiers')) return 'dossiers';
+   if (pathname.includes('/chapters/comparison')) return 'comparison';
+   if (pathname.includes('/chapters/timer')) return 'timeline';
+   return 'cover';
  };
 
  const activeId = getActiveChapterId();

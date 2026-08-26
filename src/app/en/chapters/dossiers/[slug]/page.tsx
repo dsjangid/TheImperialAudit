@@ -3,141 +3,180 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { PageCornerBadges } from '@/components/PageCornerBadges';
+import { ResearchStatusFooter } from '@/components/ResearchStatusFooter';
 import { dossiersList } from '@/data/dossiers';
 
 export function generateStaticParams() {
- return dossiersList.map((d) =>({
- slug: d.id,
- }));
+  return dossiersList.map((d) => ({
+    slug: d.id,
+  }));
 }
 
 export default function DossierDetailPage({
- params,
+  params,
 }: {
- params: { slug: string };
+  params: { slug: string };
 }) {
- const dossier = dossiersList.find((d) =>d.id === params.slug);
- if (!dossier) return notFound();
+  const dossier = dossiersList.find((d) => d.id === params.slug);
+  if (!dossier) return notFound();
 
- return (
-<>
-<Navbar lang="en" />
+  return (
+    <div className="min-h-screen bg-bg text-text selection:bg-accent/30 flex flex-col justify-between">
+      <Navbar lang="en" />
 
-<article className="bg-bg text-text" vt-update="auto">
- {/* Header */}
-<header className="px-[6vw] pt-24 pb-16 max-w-[1400px] mx-auto">
-<Link
- className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/60 hover:text-text underline-offset-4 hover:underline transition-colors"
- href="/en/chapters/dossiers"
- >
- ← BACK TO REGISTRY · 03
-</Link>
+      <article className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24 flex-1">
+        {/* Header */}
+        <header className="pb-16 border-b border-text/15">
+          <Link
+            className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/60 hover:text-accent underline-offset-4 hover:underline transition-colors"
+            href="/en/chapters/dossiers"
+          >
+            ← BACK TO REGISTRY · CHAPTER 03
+          </Link>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/60 mt-12">
- FILE № 03 / {dossier.fileNo}
-</p>
+          <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-accent mt-8 font-semibold">
+            PRIMARY DOSSIER № 03 / {dossier.fileNo}
+          </p>
 
-<div className="grid grid-cols-12 gap-6 mt-6">
-<div className="col-span-12 lg:col-span-9">
-<h1
- className="font-serif text-[clamp(56px,8vw,120px)] leading-[0.95] tracking-[-0.015em] font-black"
- >
- {dossier.name.en}
-</h1>
-<p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/70 mt-6">
- {dossier.role.en}
-</p>
-</div>
+          <div className="grid grid-cols-12 gap-8 mt-4 items-end">
+            <div className="col-span-12 lg:col-span-8">
+              <h1 className="font-serif text-[clamp(40px,7.5vw,96px)] leading-[0.95] tracking-[-0.015em] font-black uppercase">
+                {dossier.name.en}
+              </h1>
+              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/70 mt-4 font-semibold">
+                {dossier.role.en}
+              </p>
+            </div>
 
-<aside className="col-span-12 lg:col-span-3 lg:pt-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mb-6">CASE METADATA
-</p>
-<dl className="space-y-3 font-mono text-[13px] leading-[1.8] text-text/85">
-<div>
-<dt className="font-serif italic text-[13px] text-text/55">Subject</dt>
-<dd>{dossier.fullName.en}</dd>
-</div>
-<div>
-<dt className="font-serif italic text-[13px] text-text/55">Born</dt>
-<dd>{dossier.born.en}</dd>
-</div>
-<div>
-<dt className="font-serif italic text-[13px] text-text/55">In office</dt>
-<dd>{dossier.inOffice.en}</dd>
-</div>
-<div>
-<dt className="font-serif italic text-[13px] text-text/55">File opened</dt>
-<dd>{dossier.fileOpened}</dd>
-</div>
-<div>
-<dt className="font-serif italic text-[13px] text-text/55">Last updated</dt>
-<dd>{dossier.lastUpdated}</dd>
-</div>
-</dl>
-</aside>
-</div>
-</header>
+            <aside className="col-span-12 lg:col-span-4 border-t lg:border-t-0 lg:border-l border-text/15 lg:pl-8 pt-4 lg:pt-0">
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-text/40 mb-4 font-bold">
+                ARCHIVAL METADATA
+              </p>
+              <dl className="space-y-3 font-mono text-[12px] leading-[1.8] text-text/85">
+                <div>
+                  <dt className="font-serif italic text-[12px] text-text/50">Full Name / Title</dt>
+                  <dd className="font-semibold text-text">{dossier.fullName.en}</dd>
+                </div>
+                <div>
+                  <dt className="font-serif italic text-[12px] text-text/50">Born / Origins</dt>
+                  <dd>{dossier.born.en}</dd>
+                </div>
+                <div>
+                  <dt className="font-serif italic text-[12px] text-text/50">Tenure / Active Period</dt>
+                  <dd>{dossier.inOffice.en}</dd>
+                </div>
+                <div className="flex gap-6 pt-2 border-t border-text/10">
+                  <div>
+                    <dt className="font-serif italic text-[11px] text-text/40">File Opened</dt>
+                    <dd className="text-accent">{dossier.fileOpened}</dd>
+                  </div>
+                  <div>
+                    <dt className="font-serif italic text-[11px] text-text/40">Last Updated</dt>
+                    <dd>{dossier.lastUpdated}</dd>
+                  </div>
+                </div>
+              </dl>
+            </aside>
+          </div>
+        </header>
 
- {/* Hero Portrait */}
-<section className="px-[6vw] py-16 max-w-[1400px] mx-auto">
-<div className="relative w-full max-w-[720px] mx-auto aspect-[4/3] bg-text/[0.03] border border-text/15">
-<img
- alt={dossier.name.en}
- className="w-full h-full object-cover"
- src={dossier.image}
- />
-</div>
-</section>
+        {/* Hero Portrait & Summary Grid */}
+        <section className="py-16 border-b border-text/15">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-5 flex items-center justify-center">
+              <img
+                alt={dossier.name.en}
+                className="w-full h-auto max-h-[440px] object-contain block"
+                src={dossier.image}
+                style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
+              />
+            </div>
 
- {/* Biography & Findings */}
-<section className="px-[6vw] py-24 max-w-[1400px] mx-auto">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mb-6">BIOGRAPHY · CONTEXT · ASSETS
-</p>
-<h2
- className="font-serif text-[clamp(32px,6vw,80px)] leading-[1.0] font-black"
- >
- WHO THIS IS
-</h2>
-<p className="font-serif italic text-[clamp(18px,1.6vw,20px)] text-text/65 mt-8 max-w-[60ch]">
- {dossier.summary.en}
-</p>
+            <div className="md:col-span-7 space-y-6">
+              <div className="border-l-2 border-accent pl-4 space-y-1">
+                <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent font-bold block mb-1">
+                  FORENSIC SYNOPSIS
+                </span>
+                <p className="font-serif italic text-[18px] text-text/90 leading-relaxed">
+                  {dossier.summary.en}
+                </p>
+              </div>
 
-<div className="mt-16 space-y-8 max-w-[68ch]">
- {dossier.paragraphs.en.map((p, idx) =>(
-<p key={idx} className="font-serif text-[clamp(17px,1.5vw,19px)] leading-[1.7] text-text/90">
- {p}
-</p>
- ))}
-</div>
-</section>
+              {/* Official Income / Investigated Assets (if present) */}
+              {dossier.officialIncome && (
+                <div className="border-t border-text/10 pt-4 font-mono text-[12px] space-y-1">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+                    RECORDED INCOME &amp; PENSION
+                  </span>
+                  <p className="text-accent font-semibold">{dossier.officialIncome.en}</p>
+                </div>
+              )}
 
- {/* Related Cases */}
-<section className="px-[6vw] py-24 max-w-[1400px] mx-auto border-t border-text/20">
-<p className="font-mono text-[13px] uppercase tracking-[0.3em] text-text/40 mb-16 text-center">ALL SUBJECTS
-</p>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
- {dossiersList
- .filter((d) =>d.id !== dossier.id)
- .slice(0, 3)
- .map((d) =>(
-<Link
- key={d.id}
- href={'/en/chapters/dossiers/' + d.id}
- className="p-6 border border-text/10 hover:border-accent transition-colors block group"
- data-cursor="accent"
- >
-<span className="font-mono text-[13px] text-accent uppercase">FILE № 03 / {d.fileNo}</span>
-<h4 className="font-serif text-[20px] font-bold mt-2 group-hover:text-accent transition-colors">
- {d.name.en}
-</h4>
-<p className="font-mono text-[13px] text-text/50 mt-1 uppercase truncate">{d.role.en}</p>
-</Link>
- ))}
-</div>
-</section>
-</article>
+              {dossier.investigatedAssets && (
+                <div className="border-t border-text/10 pt-4 font-mono text-[12px] space-y-2">
+                  <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+                    INVESTIGATED ESTATES &amp; TRANSFERS
+                  </span>
+                  <ul className="list-disc pl-5 space-y-1 text-text/80">
+                    {dossier.investigatedAssets.en.map((asset, i) => (
+                      <li key={i}>{asset}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
 
-<PageCornerBadges fileNo={dossier.fileNo} chapterTitle="DOSSIER" pageNum="024" totalPages="047" />
-</>
- );
+        {/* Biography & Findings */}
+        <section className="py-16 border-b border-text/15">
+          <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mb-6">
+            PRIMARY INVESTIGATION &amp; FINDINGS
+          </p>
+          <div className="space-y-6 max-w-[80ch] font-serif text-[17px] sm:text-[18px] leading-[1.8] text-text/85">
+            {dossier.paragraphs.en.map((p, idx) => (
+              <p key={idx}>{p}</p>
+            ))}
+          </div>
+        </section>
+
+        {/* Related Subjects Directory */}
+        <section className="py-16">
+          <p className="font-mono text-[13px] uppercase tracking-[0.3em] text-text/40 mb-8">
+            RELATED DOSSIERS IN THIS ARCHIVE
+          </p>
+          <div className="divide-y divide-text/15">
+            {dossiersList
+              .filter((d) => d.id !== dossier.id)
+              .slice(0, 3)
+              .map((d) => (
+                <Link
+                  key={d.id}
+                  href={'/en/chapters/dossiers/' + d.id}
+                  className="py-4 flex items-center justify-between group transition-colors"
+                >
+                  <div>
+                    <span className="font-mono text-[11px] text-accent uppercase font-bold mr-3">
+                      FILE № 03 / {d.fileNo}
+                    </span>
+                    <span className="font-serif text-[18px] font-bold text-text group-hover:text-accent transition-colors">
+                      {d.name.en}
+                    </span>
+                    <span className="font-mono text-[11px] text-text/40 uppercase ml-3 hidden sm:inline">
+                      {d.role.en}
+                    </span>
+                  </div>
+                  <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/40 group-hover:text-accent transition-colors">
+                    Open File →
+                  </span>
+                </Link>
+              ))}
+          </div>
+        </section>
+      </article>
+
+      <ResearchStatusFooter lang="en" />
+      <PageCornerBadges fileNo={dossier.fileNo} chapterTitle="DOSSIER" pageNum="024" totalPages="047" />
+    </div>
+  );
 }

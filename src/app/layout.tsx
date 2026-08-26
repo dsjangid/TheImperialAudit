@@ -8,9 +8,9 @@ export const metadata: Metadata = {
  description:
  "A forensic investigative monograph on the financial drain, institutional racial hierarchy, and recurring famines under British colonial rule in India.",
  icons: {
- icon: '/favicon.ico',
+ icon: '/TheImperialAudit/favicon.ico',
  },
- manifest: '/manifest.webmanifest',
+ manifest: '/TheImperialAudit/manifest.webmanifest',
 };
 
 export default function RootLayout({

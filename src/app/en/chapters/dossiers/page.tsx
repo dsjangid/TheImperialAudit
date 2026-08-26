@@ -2,6 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { PageCornerBadges } from '@/components/PageCornerBadges';
+import { ResearchStatusFooter } from '@/components/ResearchStatusFooter';
+import { EvidenceBadge } from '@/components/EvidenceBadge';
+import { dossiersList } from '@/data/dossiers';
 
 export default function SubjectsChapterPage() {
  return (
@@ -58,7 +61,49 @@ export default function SubjectsChapterPage() {
 </div>
 </section>
 
-<hr className="border-t border-text/10 my-12" />
+        {/* 12 Forensic Dossiers Registry Grid */}
+        <section className="my-16 border-t border-text/15 pt-12">
+          <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+            <div>
+              <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-accent font-bold block mb-1">
+                INDEX OF MONOGRAPHS
+              </span>
+              <h2 className="font-serif text-[28px] sm:text-[34px] font-bold text-text">
+                The Twelve Biographical Files
+              </h2>
+            </div>
+            <span className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
+              12 AUDITED PROFILES
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 font-mono text-[12px] border-t border-text/15 pt-6">
+            {dossiersList.map((d) => (
+              <Link
+                key={d.id}
+                href={`/en/chapters/dossiers/${d.id}`}
+                className="group border-b border-text/15 pb-4 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="flex items-center justify-between text-[11px] text-text/40 mb-1">
+                    <span className="text-accent font-bold">FILE № 03 / {d.fileNo}</span>
+                    <span>{d.born.en.split('—')[1] || ''}</span>
+                  </div>
+                  <h3 className="font-serif text-[20px] font-bold text-text group-hover:text-accent transition-colors leading-snug">
+                    {d.name.en}
+                  </h3>
+                  <p className="text-[11px] text-text/50 uppercase mt-0.5 line-clamp-1">{d.role.en}</p>
+                </div>
+                <div className="pt-2 flex items-center justify-between text-text/40 group-hover:text-accent font-bold text-[10px] uppercase tracking-[0.15em] transition-colors">
+                  <span>Open Full File</span>
+                  <span>→</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <hr className="border-t border-text/10 my-12" />
 
  {/* 1. ROBERT CLIVE */}
 <section className="py-12 border-t border-text/10">
@@ -671,19 +716,22 @@ export default function SubjectsChapterPage() {
 </div>
 </section>
 
- {/* Footer Navigation */}
-<hr className="border-t border-text/10 my-12" />
- 
-<div className="flex justify-between items-center font-mono text-[13px] uppercase tracking-[0.1em] text-text/60">
-<Link href="/en/chapters/comparison" className="hover:text-accent transition-colors">
- ← PREVIOUS: COMPARISON
-</Link>
-<Link href="/en/chapters/share" className="hover:text-accent transition-colors">
- NEXT: SHARE →
-</Link>
-</div>
+        {/* Footer Navigation */}
+        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en/chapters/comparison" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+            ← Chapter 02: The Great Rupture
+          </Link>
+          <Link
+            href="/en/chapters/share"
+            className="text-accent hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2"
+          >
+            <span>Proceed to Part IV: Ten Minutes in Amritsar</span>
+            <span>→</span>
+          </Link>
+        </div>
+      </main>
 
-</main>
-</div>
- );
+      <ResearchStatusFooter lang="en" />
+    </div>
+  );
 }

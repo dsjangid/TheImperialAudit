@@ -1,312 +1,607 @@
 export interface DossierItem {
- id: string;
- fileNo: string;
- name: {
- en: string;
- ru: string;
- };
- fullName: {
- en: string;
- ru: string;
- };
- role: {
- en: string;
- ru: string;
- };
- born: {
- en: string;
- ru: string;
- };
- inOffice: {
- en: string;
- ru: string;
- };
- fileOpened: string;
- lastUpdated: string;
- image: string;
- summary: {
- en: string;
- ru: string;
- };
- paragraphs: {
- en: string[];
- ru: string[];
- };
- officialIncome?: {
- en: string;
- ru: string;
- };
- investigatedAssets?: {
- en: string[];
- ru: string[];
- };
+  id: string;
+  fileNo: string;
+  name: {
+    en: string;
+    ru: string;
+  };
+  fullName: {
+    en: string;
+    ru: string;
+  };
+  role: {
+    en: string;
+    ru: string;
+  };
+  born: {
+    en: string;
+    ru: string;
+  };
+  inOffice: {
+    en: string;
+    ru: string;
+  };
+  fileOpened: string;
+  lastUpdated: string;
+  image: string;
+  summary: {
+    en: string;
+    ru: string;
+  };
+  paragraphs: {
+    en: string[];
+    ru: string[];
+  };
+  officialIncome?: {
+    en: string;
+    ru: string;
+  };
+  investigatedAssets?: {
+    en: string[];
+    ru: string[];
+  };
 }
 
 export const dossiersList: DossierItem[] = [
- {
- "id": "dyer",
- "fileNo": "01",
- "name": {
- "en": "DYER, R. E. H.",
- "ru": "\u0414\u0410\u0419\u0415\u0420, \u0420. \u042d. \u0425."
- },
- "fullName": {
- "en": "Reginald Edward Harry Dyer",
- "ru": "\u0420\u0435\u0434\u0436\u0438\u043d\u0430\u043b\u044c\u0434 \u042d\u0434\u0432\u0430\u0440\u0434 \u0413\u0430\u0440\u0440\u0438 \u0414\u0430\u0439\u0435\u0440"
- },
- "role": {
- "en": "BRIGADIER-GENERAL \u00b7 45TH INFANTRY BRIGADE",
- "ru": "\u0411\u0420\u0418\u0413\u0410\u0414\u041d\u042b\u0419 \u0413\u0415\u041d\u0415\u0420\u0410\u041b \u00b7 45-\u042f \u041f\u0415\u0425\u041e\u0422\u041d\u0410\u042f \u0411\u0420\u0418\u0413\u0410\u0414\u0410"
- },
- "born": {
- "en": "Murree, British India \u2014 1864",
- "ru": "\u041c\u0430\u0440\u0440\u0438, \u0411\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u0418\u043d\u0434\u0438\u044f \u2014 1864"
- },
- "inOffice": {
- "en": "Commanding Officer in Amritsar (April 1919); relieved of command July 1920",
- "ru": "\u041a\u043e\u043c\u0430\u043d\u0434\u0443\u044e\u0449\u0438\u0439 \u0433\u0430\u0440\u043d\u0438\u0437\u043e\u043d\u043e\u043c \u0432 \u0410\u043c\u0440\u0438\u0442\u0441\u0430\u0440\u0435 (\u0430\u043f\u0440\u0435\u043b\u044c 1919); \u043e\u0442\u0441\u0442\u0440\u0430\u043d\u0451\u043d \u0432 \u0438\u044e\u043b\u0435 1920"
- },
- "fileOpened": "1919 / 04",
- "lastUpdated": "2026 / 08",
- "image": "/TheImperialAudit/illustrations/dossiers/dyer.jpg",
- "summary": {
- "en": "Commanding officer responsible for the Jallianwala Bagh massacre on 13 April 1919, ordering 1,650 rounds fired into an unarmed crowd without warning.",
- "ru": "\u041a\u043e\u043c\u0430\u043d\u0434\u0443\u044e\u0449\u0438\u0439, \u043e\u0442\u0434\u0430\u0432\u0448\u0438\u0439 \u043f\u0440\u0438\u043a\u0430\u0437 \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u043e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435 \u043f\u043e \u0431\u0435\u0437\u043e\u0440\u0443\u0436\u043d\u043e\u0439 \u0442\u043e\u043b\u043f\u0435 \u0432 \u043f\u0430\u0440\u043a\u0435 \u0414\u0436\u0430\u043b\u043b\u0438\u0430\u043d\u0432\u0430\u043b\u0430 \u0411\u0430\u0433 13 \u0430\u043f\u0440\u0435\u043b\u044f 1919 \u0433\u043e\u0434\u0430 \u0431\u0435\u0437 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f."
- },
- "paragraphs": {
- "en": [
- "On 13 April 1919, Brigadier-General Dyer marched 50 armed Gurkha and Sikh riflemen into the enclosed garden of Jallianwala Bagh during the Baisakhi festival and ordered firing without warning on a crowd of 15,000\u201320,000 people.",
- "Troops fired 1,650 rounds continuously for ten minutes until ammunition was virtually exhausted. Dyer positioned his men at the only broad exit, trapping the crowd, and directed fire specifically where the density was highest.",
- "Enacted the notorious Crawling Order in Amritsar, forcing all Indian residents passing through Kucha Kurrichhan lane to crawl on all fours on hands and knees under armed guard.",
- "Testified under oath before the Hunter Commission that his purpose was to produce a sufficient moral effect on Punjab. Relieved of his command but never criminally prosecuted."
- ],
- "ru": [
- "13 \u0430\u043f\u0440\u0435\u043b\u044f 1919 \u0433\u043e\u0434\u0430 \u0431\u0440\u0438\u0433\u0430\u0434\u043d\u044b\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u043b \u0414\u0430\u0439\u0435\u0440 \u0432\u0432\u0451\u043b 50 \u0432\u043e\u043e\u0440\u0443\u0436\u0451\u043d\u043d\u044b\u0445 \u0441\u043e\u043b\u0434\u0430\u0442 \u0432 \u0437\u0430\u043c\u043a\u043d\u0443\u0442\u044b\u0439 \u0441\u0430\u0434 \u0414\u0436\u0430\u043b\u043b\u0438\u0430\u043d\u0432\u0430\u043b\u0430 \u0411\u0430\u0433 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u043a\u0430 \u0411\u0430\u0439\u0441\u0430\u043a\u0445\u0438 \u0438 \u043f\u0440\u0438\u043a\u0430\u0437\u0430\u043b \u0441\u0442\u0440\u0435\u043b\u044f\u0442\u044c \u0431\u0435\u0437 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f \u0432 \u0442\u043e\u043b\u043f\u0443 \u0438\u0437 15\u201320 \u0442\u044b\u0441\u044f\u0447 \u0447\u0435\u043b\u043e\u0432\u0435\u043a.",
- "\u0421\u043e\u043b\u0434\u0430\u0442\u044b \u0432\u044b\u043f\u0443\u0441\u0442\u0438\u043b\u0438 1650 \u043f\u0430\u0442\u0440\u043e\u043d\u043e\u0432 \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 10 \u043c\u0438\u043d\u0443\u0442, \u043f\u043e\u043a\u0430 \u043d\u0435 \u0438\u0441\u0441\u044f\u043a\u043b\u0438 \u0431\u043e\u0435\u043f\u0440\u0438\u043f\u0430\u0441\u044b. \u041e\u0433\u043e\u043d\u044c \u043d\u0430\u043c\u0435\u0440\u0435\u043d\u043d\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u044f\u043b\u0441\u044f \u0432 \u0441\u0430\u043c\u044b\u0435 \u043f\u043b\u043e\u0442\u043d\u044b\u0435 \u0441\u043a\u043e\u043f\u043b\u0435\u043d\u0438\u044f \u043b\u044e\u0434\u0435\u0439 \u0438 \u043a \u0443\u0437\u043a\u0438\u043c \u0432\u044b\u0445\u043e\u0434\u0430\u043c.",
- "\u0412\u0432\u0451\u043b \u043f\u043e\u0437\u043e\u0440\u043d\u044b\u0439 \u043f\u0440\u0438\u043a\u0430\u0437 \u043e \u043f\u043e\u043b\u0437\u0430\u043d\u0438\u0438 \u0432 \u0410\u043c\u0440\u0438\u0442\u0441\u0430\u0440\u0435, \u0437\u0430\u0441\u0442\u0430\u0432\u043b\u044f\u044f \u0432\u0441\u0435\u0445 \u0438\u043d\u0434\u0438\u0439\u0446\u0435\u0432 \u043f\u043e\u043b\u0437\u0442\u0438 \u043d\u0430 \u0447\u0435\u0442\u0432\u0435\u0440\u0435\u043d\u044c\u043a\u0430\u0445 \u043f\u043e \u0443\u043b\u0438\u0446\u0435, \u0433\u0434\u0435 \u0440\u0430\u043d\u0435\u0435 \u043f\u043e\u0434\u0432\u0435\u0440\u0433\u043b\u0430\u0441\u044c \u043d\u0430\u043f\u0430\u0434\u0435\u043d\u0438\u044e \u0431\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0430\u044f \u043c\u0438\u0441\u0441\u0438\u043e\u043d\u0435\u0440\u043a\u0430.",
- "\u041f\u043e\u0434 \u043f\u0440\u0438\u0441\u044f\u0433\u043e\u0439 \u0437\u0430\u044f\u0432\u0438\u043b \u043a\u043e\u043c\u0438\u0441\u0441\u0438\u0438 \u0425\u0430\u043d\u0442\u0435\u0440\u0430, \u0447\u0442\u043e \u0435\u0433\u043e \u0446\u0435\u043b\u044c\u044e \u0431\u044b\u043b\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0441\u0442\u0438 \u043c\u043e\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u044d\u0444\u0444\u0435\u043a\u0442 \u043d\u0430 \u0432\u0435\u0441\u044c \u041f\u0435\u043d\u0434\u0436\u0430\u0431. \u0411\u044b\u043b \u043e\u0442\u0441\u0442\u0440\u0430\u043d\u0451\u043d \u043e\u0442 \u0441\u043b\u0443\u0436\u0431\u044b, \u043d\u043e \u0438\u0437\u0431\u0435\u0436\u0430\u043b \u0443\u0433\u043e\u043b\u043e\u0432\u043d\u043e\u0433\u043e \u0441\u0443\u0434\u0430."
- ]
- }
- },
- {
- "id": "odwyer",
- "fileNo": "02",
- "name": {
- "en": "O'DWYER, M. F.",
- "ru": "\u041e'\u0414\u0423\u0410\u0419\u0415\u0420, \u041c. \u0424."
- },
- "fullName": {
- "en": "Sir Michael Francis O'Dwyer",
- "ru": "\u0421\u044d\u0440 \u041c\u0430\u0439\u043a\u043b \u0424\u0440\u044d\u043d\u0441\u0438\u0441 \u041e'\u0414\u0443\u0430\u0439\u0435\u0440"
- },
- "role": {
- "en": "LIEUTENANT-GOVERNOR OF THE PUNJAB",
- "ru": "\u041b\u0415\u0419\u0422\u0415\u041d\u0410\u041d\u0422-\u0413\u0423\u0411\u0415\u0420\u041d\u0410\u0422\u041e\u0420 \u041f\u0415\u041d\u0414\u0416\u0410\u0411\u0410"
- },
- "born": {
- "en": "County Tipperary, Ireland \u2014 1864",
- "ru": "\u0413\u0440\u0430\u0444\u0441\u0442\u0432\u043e \u0422\u0438\u043f\u043f\u0435\u0440\u044d\u0440\u0438, \u0418\u0440\u043b\u0430\u043d\u0434\u0438\u044f \u2014 1864"
- },
- "inOffice": {
- "en": "Lieutenant-Governor of the Punjab (1913\u20131919)",
- "ru": "\u041b\u0435\u0439\u0442\u0435\u043d\u0430\u043d\u0442-\u0433\u0443\u0431\u0435\u0440\u043d\u0430\u0442\u043e\u0440 \u043f\u0440\u043e\u0432\u0438\u043d\u0446\u0438\u0438 \u041f\u0435\u043d\u0434\u0436\u0430\u0431 (1913\u20131919)"
- },
- "fileOpened": "1919 / 04",
- "lastUpdated": "2026 / 08",
- "image": "/TheImperialAudit/illustrations/dossiers/odwyer.jpg",
- "summary": {
- "en": "Head of civil administration in Punjab who approved Dyer's massacre by telegram, imposed martial law, and authorized RAF aerial bombing of civilians.",
- "ru": "\u0413\u043b\u0430\u0432\u0430 \u043a\u043e\u043b\u043e\u043d\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0430\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u041f\u0435\u043d\u0434\u0436\u0430\u0431\u0430, \u043e\u0434\u043e\u0431\u0440\u0438\u0432\u0448\u0438\u0439 \u0440\u0430\u0441\u0441\u0442\u0440\u0435\u043b \u0432 \u0410\u043c\u0440\u0438\u0442\u0441\u0430\u0440\u0435 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c\u043e\u0439, \u0432\u0432\u0451\u0434\u0448\u0438\u0439 \u0432\u043e\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0438 \u0441\u0430\u043d\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0432\u0448\u0438\u0439 \u0430\u0432\u0438\u0430\u0431\u043e\u043c\u0431\u0430\u0440\u0434\u0438\u0440\u043e\u0432\u043a\u0438 \u043c\u0438\u0440\u043d\u044b\u0445 \u0436\u0438\u0442\u0435\u043b\u0435\u0439."
- },
- "paragraphs": {
- "en": [
- "Enforced aggressive and coercive wartime conscription across Punjab during World War I, extracting hundreds of thousands of combatants and millions of pounds in war tribute.",
- "Upon receiving Dyer's report of the Amritsar massacre, immediately sent approval: Your action correct. Lieutenant Governor approves.",
- "Authorized martial law across Lahore and Gujranwala, including public whippings and the unprecedented deployment of Royal Air Force aircraft to bomb and strafe civilian gatherings in Gujranwala.",
- "Assassinated at Caxton Hall in London on 13 March 1940 by Indian revolutionary Udham Singh in explicit retaliation for the Punjab atrocities."
- ],
- "ru": [
- "\u041e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u043b \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u0443\u044e \u043c\u043e\u0431\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u044e \u0432 \u041f\u0435\u043d\u0434\u0436\u0430\u0431\u0435 \u0432 \u0433\u043e\u0434\u044b \u041f\u0435\u0440\u0432\u043e\u0439 \u043c\u0438\u0440\u043e\u0432\u043e\u0439 \u0432\u043e\u0439\u043d\u044b, \u0438\u0437\u044a\u044f\u0432 \u0441\u043e\u0442\u043d\u0438 \u0442\u044b\u0441\u044f\u0447 \u0441\u043e\u043b\u0434\u0430\u0442 \u0438 \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u044b \u0444\u0443\u043d\u0442\u043e\u0432 \u0432\u043e\u0435\u043d\u043d\u044b\u0445 \u0437\u0430\u0439\u043c\u043e\u0432.",
- "\u041f\u043e\u043b\u0443\u0447\u0438\u0432 \u0434\u043e\u043a\u043b\u0430\u0434 \u0414\u0430\u0439\u0435\u0440\u0430 \u043e \u0431\u043e\u0439\u043d\u0435 \u0432 \u0410\u043c\u0440\u0438\u0442\u0441\u0430\u0440\u0435, \u043d\u0435\u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u043b \u043e\u0442\u0432\u0435\u0442: \u0412\u0430\u0448\u0438 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0432\u0435\u0440\u043d\u044b. \u041b\u0435\u0439\u0442\u0435\u043d\u0430\u043d\u0442-\u0433\u0443\u0431\u0435\u0440\u043d\u0430\u0442\u043e\u0440 \u043e\u0434\u043e\u0431\u0440\u044f\u0435\u0442.",
- "\u0412\u0432\u0451\u043b \u0432\u043e\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0438 \u0441\u0430\u043d\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043b \u043f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u0435 \u0432\u043e\u0435\u043d\u043d\u043e\u0439 \u0430\u0432\u0438\u0430\u0446\u0438\u0438 \u0434\u043b\u044f \u0431\u043e\u043c\u0431\u0430\u0440\u0434\u0438\u0440\u043e\u0432\u043e\u043a \u0438 \u043e\u0431\u0441\u0442\u0440\u0435\u043b\u043e\u0432 \u0433\u0440\u0430\u0436\u0434\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u043d\u0430\u0441\u0435\u043b\u0435\u043d\u0438\u044f \u0432 \u0413\u0443\u0434\u0436\u0440\u0430\u043d\u0432\u0430\u043b\u0435.",
- "\u0417\u0430\u0441\u0442\u0440\u0435\u043b\u0435\u043d \u0432 \u041b\u043e\u043d\u0434\u043e\u043d\u0435 13 \u043c\u0430\u0440\u0442\u0430 1940 \u0433\u043e\u0434\u0430 \u0438\u043d\u0434\u0438\u0439\u0441\u043a\u0438\u043c \u0440\u0435\u0432\u043e\u043b\u044e\u0446\u0438\u043e\u043d\u0435\u0440\u043e\u043c \u0423\u0434\u0445\u0430\u043c\u043e\u043c \u0421\u0438\u043d\u0433\u0445\u043e\u043c \u0432 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0435 \u0432\u043e\u0437\u043c\u0435\u0437\u0434\u0438\u044f \u0437\u0430 \u0442\u0440\u0430\u0433\u0435\u0434\u0438\u044e 1919 \u0433\u043e\u0434\u0430."
- ]
- }
- },
- {
- "id": "churchill",
- "fileNo": "03",
- "name": {
- "en": "CHURCHILL, W. S.",
- "ru": "\u0427\u0415\u0420\u0427\u0418\u041b\u041b\u042c, \u0423. \u0421."
- },
- "fullName": {
- "en": "Sir Winston Leonard Spencer Churchill",
- "ru": "\u0421\u044d\u0440 \u0423\u0438\u043d\u0441\u0442\u043e\u043d \u041b\u0435\u043e\u043d\u0430\u0440\u0434 \u0421\u043f\u0435\u043d\u0441\u0435\u0440 \u0427\u0435\u0440\u0447\u0438\u043b\u043b\u044c"
- },
- "role": {
- "en": "PRIME MINISTER OF THE UNITED KINGDOM",
- "ru": "\u041f\u0420\u0415\u041c\u042c\u0415\u0420-\u041c\u0418\u041d\u0418\u0421\u0422\u0420 \u0412\u0415\u041b\u0418\u041a\u041e\u0411\u0420\u0418\u0422\u0410\u041d\u0418\u0418"
- },
- "born": {
- "en": "Blenheim Palace, Oxfordshire \u2014 1874",
- "ru": "\u0411\u043b\u0435\u043d\u0445\u0435\u0439\u043c, \u041e\u043a\u0441\u0444\u043e\u0440\u0434\u0448\u0438\u0440 \u2014 1874"
- },
- "inOffice": {
- "en": "Prime Minister 1940\u20131945, 1951\u20131955",
- "ru": "\u041f\u0440\u0435\u043c\u044c\u0435\u0440-\u043c\u0438\u043d\u0438\u0441\u0442\u0440 \u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u0438 1940\u20131945, 1951\u20131955"
- },
- "fileOpened": "1943 / 10",
- "lastUpdated": "2026 / 08",
- "image": "/TheImperialAudit/illustrations/dossiers/churchill.jpg",
- "summary": {
- "en": "British wartime leader who presided over the 1943 Bengal Famine (2\u20133 million dead), denying food relief shipping and implementing scorched-earth denial policies.",
- "ru": "\u0411\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0438\u0439 \u043f\u0440\u0435\u043c\u044c\u0435\u0440-\u043c\u0438\u043d\u0438\u0441\u0442\u0440, \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0437\u0430 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0443 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0413\u043e\u043b\u043e\u0434\u0430 \u0432 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 1943 \u0433\u043e\u0434\u0430 (2\u20133 \u043c\u043b\u043d \u043f\u043e\u0433\u0438\u0431\u0448\u0438\u0445), \u043e\u0442\u043a\u0430\u0437\u044b\u0432\u0430\u0432\u0448\u0438\u0439 \u0432 \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0430\u0445 \u0437\u0435\u0440\u043d\u0430."
- },
- "paragraphs": {
- "en": [
- "Presided over the British War Cabinet during the 1943 Bengal Famine, in which between 2.1 and 3 million civilians died of starvation, malnutrition, and disease.",
- "Enacted the coastal Denial Policy in Bengal in 1942, confiscating and destroying over 25,000 river craft and seizing grain stocks, crippling rural food transport and economy.",
- "Repeatedly rejected urgent appeals from Viceroy Lord Wavell, Secretary of State Leopold Amery, and the Australian government to divert commercial shipping to transport grain to famine-stricken Bengal.",
- "Archival records (Amery Diaries) record Churchill remarking that famine relief was futile because Indians breed like rabbits, and questioning why Gandhi had not died if food supplies were truly depleted."
- ],
- "ru": [
- "\u0412\u043e\u0437\u0433\u043b\u0430\u0432\u043b\u044f\u043b \u0431\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0438\u0439 \u0432\u043e\u0435\u043d\u043d\u044b\u0439 \u043a\u0430\u0431\u0438\u043d\u0435\u0442 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u043a\u0430\u0442\u0430\u0441\u0442\u0440\u043e\u0444\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0433\u043e\u043b\u043e\u0434\u0430 \u0432 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 1943 \u0433\u043e\u0434\u0430, \u0443\u043d\u0435\u0441\u0448\u0435\u0433\u043e \u0436\u0438\u0437\u043d\u0438 \u043e\u0442 2,1 \u0434\u043e 3 \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u043e\u0432 \u0447\u0435\u043b\u043e\u0432\u0435\u043a.",
- "\u0412\u0432\u0451\u043b \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0443 \u043e\u0442\u043a\u0430\u0437\u0430 \u0432 \u043f\u0440\u0438\u0431\u0440\u0435\u0436\u043d\u043e\u0439 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438, \u043a\u043e\u043d\u0444\u0438\u0441\u043a\u043e\u0432\u0430\u0432 \u0438 \u0443\u043d\u0438\u0447\u0442\u043e\u0436\u0438\u0432 \u0431\u043e\u043b\u0435\u0435 25 \u0442\u044b\u0441\u044f\u0447 \u043b\u043e\u0434\u043e\u043a \u0438 \u0437\u0430\u043f\u0430\u0441\u044b \u0440\u0438\u0441\u0430.",
- "\u041d\u0435\u043e\u0434\u043d\u043e\u043a\u0440\u0430\u0442\u043d\u043e \u043e\u0442\u043a\u043b\u043e\u043d\u044f\u043b \u0437\u0430\u043f\u0440\u043e\u0441\u044b \u0432\u0438\u0446\u0435-\u043a\u043e\u0440\u043e\u043b\u044f \u0423\u044d\u0439\u0432\u0435\u043b\u043b\u0430 \u0438 \u043f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u0430 \u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u0438 \u043e \u043f\u0435\u0440\u0435\u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0438 \u0441\u0443\u0434\u043e\u0432 \u0441 \u043f\u0440\u043e\u0434\u043e\u0432\u043e\u043b\u044c\u0441\u0442\u0432\u0438\u0435\u043c \u0432 \u041a\u0430\u043b\u044c\u043a\u0443\u0442\u0442\u0443.",
- "\u0412 \u043b\u0438\u0447\u043d\u044b\u0445 \u0434\u043d\u0435\u0432\u043d\u0438\u043a\u0430\u0445 \u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430 \u043f\u043e \u0434\u0435\u043b\u0430\u043c \u0418\u043d\u0434\u0438\u0438 \u041b\u0435\u043e\u043f\u043e\u043b\u044c\u0434\u0430 \u042d\u043c\u0435\u0440\u0438 \u0437\u0430\u0444\u0438\u043a\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u044b \u0440\u0430\u0441\u0438\u0441\u0442\u0441\u043a\u0438\u0435 \u0432\u044b\u0441\u043a\u0430\u0437\u044b\u0432\u0430\u043d\u0438\u044f \u0427\u0435\u0440\u0447\u0438\u043b\u043b\u044f \u043e\u0431 \u0438\u043d\u0434\u0438\u0439\u0446\u0430\u0445, \u0440\u0430\u0437\u043c\u043d\u043e\u0436\u0430\u044e\u0449\u0438\u0445\u0441\u044f \u043a\u0430\u043a \u043a\u0440\u043e\u043b\u0438\u043a\u0438."
- ]
- }
- },
- {
- "id": "curzon",
- "fileNo": "04",
- "name": {
- "en": "CURZON, G. N.",
- "ru": "\u041a\u0415\u0420\u0417\u041e\u041d, \u0414\u0416. \u041d."
- },
- "fullName": {
- "en": "George Nathaniel Curzon (1st Marquess Curzon)",
- "ru": "\u0414\u0436\u043e\u0440\u0434\u0436 \u041d\u0430\u0442\u0430\u043d\u0438\u044d\u043b \u041a\u0435\u0440\u0437\u043e\u043d (1-\u0439 \u043c\u0430\u0440\u043a\u0438\u0437 \u041a\u0435\u0440\u0437\u043e\u043d)"
- },
- "role": {
- "en": "VICEROY & GOVERNOR-GENERAL OF INDIA",
- "ru": "\u0412\u0418\u0426\u0415-\u041a\u041e\u0420\u041e\u041b\u042c \u0418 \u0413\u0415\u041d\u0415\u0420\u0410\u041b-\u0413\u0423\u0411\u0415\u0420\u041d\u0410\u0422\u041e\u0420 \u0418\u041d\u0414\u0418\u0418"
- },
- "born": {
- "en": "Kedleston Hall, Derbyshire \u2014 1859",
- "ru": "\u041a\u0435\u0434\u043b\u0441\u0442\u043e\u043d-\u0445\u043e\u043b\u043b, \u0414\u0435\u0440\u0431\u0438\u0448\u0438\u0440 \u2014 1859"
- },
- "inOffice": {
- "en": "Viceroy of India 1899\u20131905",
- "ru": "\u0412\u0438\u0446\u0435-\u043a\u043e\u0440\u043e\u043b\u044c \u0418\u043d\u0434\u0438\u0438 1899\u20131905"
- },
- "fileOpened": "1905 / 10",
- "lastUpdated": "2026 / 08",
- "image": "/TheImperialAudit/illustrations/dossiers/curzon.jpg",
- "summary": {
- "en": "Viceroy who enforced the communal 1905 Partition of Bengal and maintained severe austerity on famine relief during the 1899\u20131900 drought while staging the 1903 Imperial Durbar.",
- "ru": "\u0412\u0438\u0446\u0435-\u043a\u043e\u0440\u043e\u043b\u044c, \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0438\u0432\u0448\u0438\u0439 \u0440\u0430\u0437\u0434\u0435\u043b \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 \u043f\u043e \u0440\u0435\u043b\u0438\u0433\u0438\u043e\u0437\u043d\u043e\u043c\u0443 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0443 \u0432 1905 \u0433\u043e\u0434\u0443 \u0438 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0438\u0432\u0430\u0432\u0448\u0438\u0439 \u043f\u043e\u043c\u043e\u0449\u044c \u0433\u043e\u043b\u043e\u0434\u0430\u044e\u0449\u0438\u043c \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u0441\u0443\u0445\u0438 1899\u20131900 \u0433\u043e\u0434\u043e\u0432."
- },
- "paragraphs": {
- "en": [
- "Enacted the 1905 Partition of Bengal along religious lines to weaken the rising anti-colonial nationalist coalition, institutionalizing communal divide-and-rule.",
- "Maintained stringent restrictions on famine relief during the 1899\u20131900 famine, warning against indiscriminate state charity while continuing net grain exports from affected provinces.",
- "Expended massive public revenues on the ostentatious 1903 Delhi Durbar to celebrate King Edward VII's coronation amidst rural economic distress."
- ],
- "ru": [
- "\u0420\u0430\u0437\u0434\u0435\u043b\u0438\u043b \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u044e \u0432 1905 \u0433\u043e\u0434\u0443 \u043f\u043e \u043a\u043e\u043d\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0443, \u0437\u0430\u043b\u043e\u0436\u0438\u0432 \u043e\u0441\u043d\u043e\u0432\u0443 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0438 \u0440\u0430\u0437\u0434\u0435\u043b\u044f\u0439 \u0438 \u0432\u043b\u0430\u0441\u0442\u0432\u0443\u0439.",
- "\u0420\u0435\u0437\u043a\u043e \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0438\u043b \u0440\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u043f\u043e\u043c\u043e\u0449\u044c \u0433\u043e\u043b\u043e\u0434\u0430\u044e\u0449\u0438\u043c \u0432 1899\u20131900 \u0433\u043e\u0434\u0430\u0445, \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0435\u0440\u0435\u0433\u0430\u044f \u043e\u0442 \u0438\u0437\u043b\u0438\u0448\u043d\u0435\u0439 \u0431\u043b\u0430\u0433\u043e\u0442\u0432\u043e\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u043d\u0430 \u0444\u043e\u043d\u0435 \u043d\u0435\u043f\u0440\u0435\u043a\u0440\u0430\u0449\u0430\u044e\u0449\u0435\u0433\u043e\u0441\u044f \u044d\u043a\u0441\u043f\u043e\u0440\u0442\u0430 \u0437\u0435\u0440\u043d\u0430.",
- "\u041f\u043e\u0442\u0440\u0430\u0442\u0438\u043b \u043e\u0433\u0440\u043e\u043c\u043d\u044b\u0435 \u0441\u0440\u0435\u0434\u0441\u0442\u0432\u0430 \u043d\u0430 \u043e\u0440\u0433\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044e \u0440\u043e\u0441\u043a\u043e\u0448\u043d\u043e\u0433\u043e \u0414\u0435\u043b\u0438\u0439\u0441\u043a\u043e\u0433\u043e \u0434\u0430\u0440\u0431\u0430\u0440\u0430 \u0432 1903 \u0433\u043e\u0434\u0443 \u043d\u0430 \u0444\u043e\u043d\u0435 \u043d\u0438\u0449\u0435\u0442\u044b \u043d\u0430\u0441\u0435\u043b\u0435\u043d\u0438\u044f."
- ]
- }
- },
- {
- "id": "clive",
- "fileNo": "05",
- "name": {
- "en": "CLIVE, Robert",
- "ru": "\u041a\u041b\u0410\u0419\u0412, \u0420\u043e\u0431\u0435\u0440\u0442"
- },
- "fullName": {
- "en": "Robert Clive (1st Baron Clive of Plassey)",
- "ru": "\u0420\u043e\u0431\u0435\u0440\u0442 \u041a\u043b\u0430\u0439\u0432 (1-\u0439 \u0431\u0430\u0440\u043e\u043d \u041a\u043b\u0430\u0439\u0432 \u041f\u043b\u0435\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0439)"
- },
- "role": {
- "en": "ARCHITECT OF COMPANY MILITARY CONQUEST",
- "ru": "\u0410\u0420\u0425\u0418\u0422\u0415\u041a\u0422\u041e\u0420 \u0412\u041e\u0415\u041d\u041d\u041e\u0419 \u042d\u041a\u0421\u041f\u0410\u041d\u0421\u0418\u0418 \u041e\u0421\u0422-\u0418\u041d\u0414\u0421\u041a\u041e\u0419 \u041a\u041e\u041c\u041f\u0410\u041d\u0418\u0418"
- },
- "born": {
- "en": "Styche, Shropshire \u2014 1725",
- "ru": "\u0421\u0442\u0430\u0439\u0447, \u0428\u0440\u043e\u043f\u0448\u0438\u0440 \u2014 1725"
- },
- "inOffice": {
- "en": "Commander-in-Chief & Governor of Bengal (1757\u20131760, 1765\u20131767)",
- "ru": "\u0413\u043b\u0430\u0432\u043d\u043e\u043a\u043e\u043c\u0430\u043d\u0434\u0443\u044e\u0449\u0438\u0439 \u0438 \u0433\u0443\u0431\u0435\u0440\u043d\u0430\u0442\u043e\u0440 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 (1757\u20131760, 1765\u20131767)"
- },
- "fileOpened": "1772 / 05",
- "lastUpdated": "2026 / 08",
- "image": "/TheImperialAudit/illustrations/dossiers/clive.jpg",
- "summary": {
- "en": "Commander at Plassey who secured the Diwani of Bengal, initiating the systematic fiscal drain of India and amassing vast illicit private fortunes.",
- "ru": "\u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u044c \u043f\u0440\u0438 \u041f\u043b\u0435\u0441\u0441\u0438, \u0434\u043e\u0431\u0438\u0432\u0448\u0438\u0439\u0441\u044f \u043f\u0440\u0430\u0432\u0430 \u0441\u0431\u043e\u0440\u0430 \u043d\u0430\u043b\u043e\u0433\u043e\u0432 (\u0434\u0438\u0432\u0430\u043d\u0438) \u0432 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 \u0438 \u043d\u0430\u0447\u0430\u0432\u0448\u0438\u0439 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u043d\u0443\u044e \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432\u0443\u044e \u044d\u043a\u0441\u043f\u0440\u043e\u043f\u0440\u0438\u0430\u0446\u0438\u044e \u0438\u043d\u0434\u0438\u0439\u0441\u043a\u0438\u0445 \u0431\u043e\u0433\u0430\u0442\u0441\u0442\u0432."
- },
- "paragraphs": {
- "en": [
- "Led Company troops at the Battle of Plassey (1757) and negotiated the Treaty of Allahabad (1765), obtaining the Diwani (revenue collection rights) over Bengal, Bihar, and Orissa.",
- "Extracted personal fortunes exceeding \u00a3234,000 in cash and an unconditional annual tribute jagir of \u00a327,000 from Indian land taxes.",
- "Instituted predatory private trade monopolies over essential commodities (salt, tobacco), driving local artisans into debt prior to the 1770 Bengal Famine."
- ],
- "ru": [
- "\u041a\u043e\u043c\u0430\u043d\u0434\u043e\u0432\u0430\u043b \u0432\u043e\u0439\u0441\u043a\u0430\u043c\u0438 \u043f\u0440\u0438 \u041f\u043b\u0435\u0441\u0441\u0438 (1757) \u0438 \u0437\u0430\u043a\u043b\u044e\u0447\u0438\u043b \u0410\u043b\u043b\u0430\u0445\u0430\u0431\u0430\u0434\u0441\u043a\u0438\u0439 \u0434\u043e\u0433\u043e\u0432\u043e\u0440 (1765), \u043f\u0435\u0440\u0435\u0434\u0430\u0432\u0448\u0438\u0439 \u041a\u043e\u043c\u043f\u0430\u043d\u0438\u0438 \u043f\u0440\u0430\u0432\u043e \u0441\u0431\u043e\u0440\u0430 \u043d\u0430\u043b\u043e\u0433\u043e\u0432 \u0432 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438, \u0411\u0438\u0445\u0430\u0440\u0435 \u0438 \u041e\u0440\u0438\u0441\u0441\u0435.",
- "\u0412\u044b\u0432\u0435\u043b \u0432 \u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u044e \u043a\u043e\u043b\u043e\u0441\u0441\u0430\u043b\u044c\u043d\u043e\u0435 \u043b\u0438\u0447\u043d\u043e\u0435 \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u0435 (\u0441\u0432\u044b\u0448\u0435 234 000 \u0444\u0443\u043d\u0442\u043e\u0432 \u0441\u0442\u0435\u0440\u043b\u0438\u043d\u0433\u043e\u0432 \u0438 \u043f\u043e\u0436\u0438\u0437\u043d\u0435\u043d\u043d\u0443\u044e \u0440\u0435\u043d\u0442\u0443 \u0432 27 000 \u0444\u0443\u043d\u0442\u043e\u0432 \u0432 \u0433\u043e\u0434).",
- "\u041e\u0441\u043d\u043e\u0432\u0430\u043b \u043c\u043e\u043d\u043e\u043f\u043e\u043b\u0438\u044e \u043d\u0430 \u0442\u043e\u0440\u0433\u043e\u0432\u043b\u044e \u0441\u043e\u043b\u044c\u044e \u0438 \u0442\u0430\u0431\u0430\u043a\u043e\u043c, \u043f\u043e\u0434\u043e\u0440\u0432\u0430\u0432 \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043e\u043d\u043d\u0443\u044e \u0431\u0435\u043d\u0433\u0430\u043b\u044c\u0441\u043a\u0443\u044e \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0443 \u043f\u0435\u0440\u0435\u0434 \u0433\u043e\u043b\u043e\u0434\u043e\u043c 1770 \u0433\u043e\u0434\u0430."
- ]
- }
- },
- {
- "id": "mountbatten",
- "fileNo": "06",
- "name": {
- "en": "MOUNTBATTEN / RADCLIFFE",
- "ru": "\u041c\u0410\u0423\u041d\u0422\u0411\u0410\u0422\u0422\u0415\u041d / \u0420\u042d\u0414\u041a\u041b\u0418\u0424\u0424"
- },
- "fullName": {
- "en": "Louis Mountbatten & Sir Cyril Radcliffe",
- "ru": "\u041b\u0443\u0438\u0441 \u041c\u0430\u0443\u043d\u0442\u0431\u0430\u0442\u0442\u0435\u043d \u0438 \u0441\u044d\u0440 \u0421\u0438\u0440\u0438\u043b \u0420\u044d\u0434\u043a\u043b\u0438\u0444\u0444"
- },
- "role": {
- "en": "LAST VICEROY & BOUNDARY COMMISSION CHAIR",
- "ru": "\u041f\u041e\u0421\u041b\u0415\u0414\u041d\u0418\u0419 \u0412\u0418\u0426\u0415-\u041a\u041e\u0420\u041e\u041b\u042c \u0418 \u0413\u041b\u0410\u0412\u0410 \u041f\u041e\u0413\u0420\u0410\u041d\u0418\u0427\u041d\u041e\u0419 \u041a\u041e\u041c\u0418\u0421\u0421\u0418\u0418"
- },
- "born": {
- "en": "United Kingdom \u2014 1900 / 1899",
- "ru": "\u0412\u0435\u043b\u0438\u043a\u043e\u0431\u0440\u0438\u0442\u0430\u043d\u0438\u044f \u2014 1900 / 1899"
- },
- "inOffice": {
- "en": "Viceroyalty & Boundary Demarcation (March\u2013August 1947)",
- "ru": "\u0412\u0438\u0446\u0435-\u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u0442\u0432\u043e \u0438 \u0434\u0435\u043c\u0430\u0440\u043a\u0430\u0446\u0438\u044f \u0433\u0440\u0430\u043d\u0438\u0446 (\u043c\u0430\u0440\u0442\u2013\u0430\u0432\u0433\u0443\u0441\u0442 1947)"
- },
- "fileOpened": "1947 / 08",
- "lastUpdated": "2026 / 08",
- "image": "/TheImperialAudit/illustrations/dossiers/mountbatten.jpg",
- "summary": {
- "en": "Administrators who rushed British partition by ten months, drawing arbitrary borderlines in 36 days and withholding announcements, leading to 14M displaced and up to 1M dead.",
- "ru": "\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b, \u0441\u043e\u043a\u0440\u0430\u0442\u0438\u0432\u0448\u0438\u0435 \u0441\u0440\u043e\u043a \u0432\u044b\u0432\u043e\u0434\u0430 \u0432\u043e\u0439\u0441\u043a \u043d\u0430 10 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u0438 \u043d\u0430\u0447\u0435\u0440\u0442\u0438\u0432\u0448\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0437\u0430 36 \u0434\u043d\u0435\u0439, \u0447\u0442\u043e \u0441\u043f\u0440\u043e\u0432\u043e\u0446\u0438\u0440\u043e\u0432\u0430\u043b\u043e \u043c\u0430\u0441\u0441\u043e\u0432\u043e\u0435 \u043a\u0440\u043e\u0432\u043e\u043f\u0440\u043e\u043b\u0438\u0442\u0438\u0435 \u043f\u0440\u0438 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 \u0418\u043d\u0434\u0438\u0438."
- },
- "paragraphs": {
- "en": [
- "Mountbatten unilaterally advanced the British departure deadline by ten months (from June 1948 to August 1947), leaving no administrative or military mechanism to handle partition migration.",
- "Sir Cyril Radcliffe, a London lawyer who had never visited India and was unfamiliar with its geography or demographics, drew the partition boundary across 175,000 square miles in 36 days.",
- "Mountbatten deliberately withheld the publication of the Radcliffe boundary awards until two days after independence (17 August 1947) so that the British Crown would bear no legal liability for the resulting massacres.",
- "Resulted in the violent forced migration of 14 million people and between 500,000 and 1,000,000 fatalities."
- ],
- "ru": [
- "\u041c\u0430\u0443\u043d\u0442\u0431\u0430\u0442\u0442\u0435\u043d \u043f\u0435\u0440\u0435\u043d\u0435\u0441 \u0434\u0430\u0442\u0443 \u0443\u0445\u043e\u0434\u0430 \u0431\u0440\u0438\u0442\u0430\u043d\u0446\u0435\u0432 \u043d\u0430 10 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u0440\u0430\u043d\u044c\u0448\u0435 \u043d\u0430\u043c\u0435\u0447\u0435\u043d\u043d\u043e\u0433\u043e \u0441\u0440\u043e\u043a\u0430, \u043e\u0441\u0442\u0430\u0432\u0438\u0432 \u0441\u0442\u0440\u0430\u043d\u0443 \u0431\u0435\u0437 \u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c\u0430 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u044f \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438 \u043f\u0440\u0438 \u043c\u0438\u0433\u0440\u0430\u0446\u0438\u0438.",
- "\u0421\u044d\u0440 \u0421\u0438\u0440\u0438\u043b \u0420\u044d\u0434\u043a\u043b\u0438\u0444\u0444, \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u0440\u0430\u043d\u0435\u0435 \u043d\u0435 \u0431\u044b\u0432\u0430\u0432\u0448\u0438\u0439 \u0432 \u0418\u043d\u0434\u0438\u0438, \u043d\u0430\u0447\u0435\u0440\u0442\u0438\u043b \u0433\u0440\u0430\u043d\u0438\u0446\u044b \u0440\u0430\u0437\u0434\u0435\u043b\u0430 \u041f\u0435\u043d\u0434\u0436\u0430\u0431\u0430 \u0438 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 \u0432\u0441\u0435\u0433\u043e \u0437\u0430 36 \u0434\u043d\u0435\u0439 \u043f\u043e \u0443\u0441\u0442\u0430\u0440\u0435\u0432\u0448\u0438\u043c \u043a\u0430\u0440\u0442\u0430\u043c.",
- "\u041e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0435 \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446 \u0431\u044b\u043b\u043e \u043d\u0430\u043c\u0435\u0440\u0435\u043d\u043d\u043e \u043e\u0442\u043b\u043e\u0436\u0435\u043d\u043e \u0434\u043e 17 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1947 \u0433\u043e\u0434\u0430 (\u043f\u043e\u0441\u043b\u0435 \u0414\u043d\u044f \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438), \u0447\u0442\u043e\u0431\u044b \u0441\u043d\u044f\u0442\u044c \u0441 \u0431\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u043e\u0439 \u043a\u043e\u0440\u043e\u043d\u044b \u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u0443\u044e \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c.",
- "\u0418\u0442\u043e\u0433\u043e\u043c \u0441\u0442\u0430\u043b \u0438\u0441\u0445\u043e\u0434 14 \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u043e\u0432 \u0431\u0435\u0436\u0435\u043d\u0446\u0435\u0432 \u0438 \u0433\u0438\u0431\u0435\u043b\u044c \u043e\u0442 500 \u0442\u044b\u0441\u044f\u0447 \u0434\u043e 1 \u043c\u0438\u043b\u043b\u0438\u043e\u043d\u0430 \u0447\u0435\u043b\u043e\u0432\u0435\u043a \u0432 \u043c\u0435\u0436\u043e\u0431\u0449\u0438\u043d\u043d\u044b\u0445 \u0441\u0442\u043e\u043b\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u044f\u0445."
- ]
- }
- }
+  {
+    id: "clive",
+    fileNo: "01",
+    name: {
+      en: "CLIVE, R.",
+      ru: "КЛАЙВ, Р."
+    },
+    fullName: {
+      en: "Major-General Robert Clive (1st Baron Clive of Plassey)",
+      ru: "Генерал-майор Роберт Клайв (1-й барон Клайв Плессийский)"
+    },
+    role: {
+      en: "GOVERNOR OF THE PRESIDENCY OF FORT WILLIAM (BENGAL)",
+      ru: "ГУБЕРНАТОР ПРЕЗИДЕНТСТВА ФОРТ-УИЛЬЯМ (БЕНГАЛИЯ)"
+    },
+    born: {
+      en: "Shropshire, Kingdom of Great Britain — 1725",
+      ru: "Шропшир, Королевство Великобритания — 1725"
+    },
+    inOffice: {
+      en: "Commander-in-Chief & Governor of Bengal (1757–1760; 1765–1767)",
+      ru: "Главнокомандующий и губернатор Бенгалии (1757–1760; 1765–1767)"
+    },
+    fileOpened: "1757 / 06",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/clive.jpg",
+    summary: {
+      en: "Architect of the military coup at Plassey (1757) and negotiator of the Treaty of Allahabad (1765), securing the Diwani tax rights for the East India Company while amassing an unprecedented personal fortune.",
+      ru: "Организатор военного переворота при Плесси (1757) и договора в Аллахабаде (1765), обеспечивший Ост-Индской компании право дивани."
+    },
+    paragraphs: {
+      en: [
+        "In June 1757, Clive orchestrated the subversion of Nawab Siraj ud-Daulah by bribing army commander Mir Jafar and the banking family of Jagat Seth, establishing Company military supremacy over Bengal.",
+        "Negotiated the 1765 Treaty of Allahabad with Mughal Emperor Shah Alam II, legally transferring the Diwani (land revenue collection rights) of Bengal, Bihar, and Orissa to a private commercial corporation.",
+        "Secured personal plunder of £234,000 in cash and an annual jagir (revenue grant) of £27,000, returning to London as one of the wealthiest private citizens in Europe and sparking a parliamentary corruption inquiry."
+      ],
+      ru: [
+        "В июне 1757 года Клайв организовал свержение наваба Сираджа уд-Даулы, подкупив военачальника Мир Джафара.",
+        "Заключил Аллахабадский договор 1765 года, передавший право сбора налогов Ост-Индской компании.",
+        "Лично присвоил 234 000 фунтов стерлингов и пожизненный джагир в 27 000 фунтов в год."
+      ]
+    },
+    officialIncome: {
+      en: "Company Salary: £3,000/yr · Private Jagir Revenue: £27,000/yr",
+      ru: "Жалование: £3,000/год · Доход от джагира: £27,000/год"
+    },
+    investigatedAssets: {
+      en: [
+        "Clive Estate at Claremont, Surrey (£100,000 mansion)",
+        "Walcot Hall Estate, Shropshire",
+        "Personal bullion and diamond remittances exceeding £234,000 (1757)"
+      ],
+      ru: [
+        "Поместье Клермонт в Суррее",
+        "Уолкот-Холл в Шропшире",
+        "Личные переводы в золоте и бриллиантах на сумму более £234,000"
+      ]
+    }
+  },
+  {
+    id: "curzon",
+    fileNo: "02",
+    name: {
+      en: "CURZON, G. N.",
+      ru: "КЕРЗОН, ДЖ. Н."
+    },
+    fullName: {
+      en: "George Nathaniel Curzon (1st Marquess Curzon of Kedleston)",
+      ru: "Джордж Натаниэл Керзон (1-й маркиз Керзон Кедлстонский)"
+    },
+    role: {
+      en: "VICEROY AND GOVERNOR-GENERAL OF INDIA (1899–1905)",
+      ru: "ВИЦЕ-КОРОЛЬ И ГЕНЕРАЛ-ГУБЕРНАТОР ИНДИИ (1899–1905)"
+    },
+    born: {
+      en: "Kedleston Hall, Derbyshire — 1859",
+      ru: "Кедлстон-Холл, Дербишир — 1859"
+    },
+    inOffice: {
+      en: "Viceroy of India (6 January 1899 – 18 November 1905)",
+      ru: "Вице-король Индии (1899–1905)"
+    },
+    fileOpened: "1899 / 01",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/curzon.jpg",
+    summary: {
+      en: "Authoritarian viceroy who executed the 1905 Partition of Bengal to dismantle Indian nationalist solidarity, oversaw the famine of 1899–1900, and created the North-West Frontier Province.",
+      ru: "Вице-король, осуществивший раздел Бенгалии в 1905 году для ослабления национального движения."
+    },
+    paragraphs: {
+      en: [
+        "Enacted the Partition of Bengal in October 1905 along religious communal lines, explicitly writing in confidential dispatches that 'Bengal united is a power; Bengal divided will pull in several different ways.'",
+        "Presided over the 1899–1900 Indian Famine (1M–4M dead), maintaining rigid tax collection and criticizing relief works as encouraging 'demoralizing pauperism.'",
+        "Organized the opulent 1903 Delhi Durbar at massive public expense while rural famine mortality continued across central India."
+      ],
+      ru: [
+        "Осуществил раздел Бенгалии в 1905 году с целью раскола национального движения.",
+        "Руководил страной во время голода 1899–1900 годов, настаивая на строгом сборе налогов.",
+        "Организовал пышный Делийский дарбар в 1903 году за счет индийских налогоплательщиков."
+      ]
+    },
+    officialIncome: {
+      en: "Viceroy Salary: £20,000/yr (Rs. 250,000) from Indian Revenues",
+      ru: "Жалование вице-короля: £20,000/год"
+    },
+    investigatedAssets: {
+      en: [
+        "Kedleston Hall Estate, Derbyshire",
+        "Bodiam Castle restoration financing",
+        "1903 Delhi Durbar state expenditure: £200,000+ charged to India"
+      ],
+      ru: [
+        "Поместье Кедлстон-Холл",
+        "Финансирование реставрации замка Бодиам"
+      ]
+    }
+  },
+  {
+    id: "dyer",
+    fileNo: "03",
+    name: {
+      en: "DYER, R. E. H.",
+      ru: "ДАЙЕР, Р. Э. Х."
+    },
+    fullName: {
+      en: "Brigadier-General Reginald Edward Harry Dyer",
+      ru: "Бригадный генерал Реджинальд Эдвард Гарри Дайер"
+    },
+    role: {
+      en: "COMMANDING OFFICER · 45TH INFANTRY BRIGADE (AMRITSAR)",
+      ru: "КОМАНДУЮЩИЙ 45-Й ПЕХОТНОЙ БРИГАДОЙ (АМРИТСАР)"
+    },
+    born: {
+      en: "Murree, British India — 1864",
+      ru: "Марри, Британская Индия — 1864"
+    },
+    inOffice: {
+      en: "Commanding Officer in Amritsar (April 1919); relieved of command July 1920",
+      ru: "Командующий гарнизоном в Амритсаре (апрель 1919); отстранён в июле 1920"
+    },
+    fileOpened: "1919 / 04",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/dyer.jpg",
+    summary: {
+      en: "Officer responsible for the Jallianwala Bagh massacre on 13 April 1919, ordering 1,650 rounds fired without warning into an unarmed gathering, killing 379 to 1,000+ civilians.",
+      ru: "Офицер, отдавший приказ открыть огонь по безоружной толпе в парке Джаллианвала Баг 13 апреля 1919 года."
+    },
+    paragraphs: {
+      en: [
+        "Marched 50 armed Gurkha and Sikh riflemen into the walled garden of Jallianwala Bagh on 13 April 1919 and ordered firing without warning on a crowd of 15,000–20,000 unarmed festival attendees.",
+        "Expended 1,650 rounds of .303 ammunition continuously for ten minutes, deliberately directing fire where crowd density was highest and trapping victims at the single narrow exit.",
+        "Enacted the 'Crawling Order' in Amritsar, forcing Indian citizens to crawl on all fours along Kucha Kurrichhan lane under armed guard."
+      ],
+      ru: [
+        "13 апреля 1919 года приказал открыть огонь без предупреждения по мирным жителям в Амритсаре.",
+        "Было израсходовано 1650 патронов за 10 минут непрерывной стрельбы.",
+        "Ввёл унизительный приказ 'ползать на четвереньках' по улице Куча Курричхан."
+      ]
+    },
+    officialIncome: {
+      en: "Brigadier Pension + £26,000 Public Fund raised by London Morning Post",
+      ru: "Военная пенсия + £26,000 общественного сбора в Лондоне"
+    },
+    investigatedAssets: {
+      en: [
+        "Morning Post public testimonial fund of £26,317 (£1.2M in 2026 value)",
+        "Jeweled Sword of Honour presented by British imperial sympathizers"
+      ],
+      ru: [
+        "Фонд газеты Morning Post на сумму £26,317",
+        "Почетный меч от имперских сторонников"
+      ]
+    }
+  },
+  {
+    id: "odwyer",
+    fileNo: "04",
+    name: {
+      en: "O'DWYER, M. F.",
+      ru: "О'ДВАЙЕР, М. Ф."
+    },
+    fullName: {
+      en: "Sir Michael Francis O'Dwyer",
+      ru: "Сэр Майкл Фрэнсис О'Двайер"
+    },
+    role: {
+      en: "LIEUTENANT-GOVERNOR OF THE PUNJAB (1913–1919)",
+      ru: "ЛЕЙТЕНАНТ-ГУБЕРНАТОР ПЕНДЖАБА (1913–1919)"
+    },
+    born: {
+      en: "County Tipperary, Ireland — 1864",
+      ru: "Типперэри, Ирландия — 1864"
+    },
+    inOffice: {
+      en: "Lieutenant-Governor of the Punjab (May 1913 – May 1919)",
+      ru: "Лейтенант-губернатор Пенджаба (1913–1919)"
+    },
+    fileOpened: "1919 / 04",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/odwyer.jpg",
+    summary: {
+      en: "Head of the Punjab provincial government who approved General Dyer's actions at Jallianwala Bagh, enforced coercive wartime recruitment, and was assassinated in 1940 by Shaheed Udham Singh at Caxton Hall.",
+      ru: "Глава Пенджаба, одобривший действия Дайера в Амритсаре. Застрелен Удхамом Сингхом в Лондоне в 1940 году."
+    },
+    paragraphs: {
+      en: [
+        "Sent a formal telegram approving General Dyer’s firing immediately following the massacre: 'Your action correct. Lieutenant-Governor approves.'",
+        "Enacted harsh martial law across Punjab, utilizing aerial strafing of Gujranwala civilians, public whippings, and summary military tribunals.",
+        "Assassinated on 13 March 1940 at Caxton Hall, London, by revolutionary Shaheed Udham Singh in retribution for the Amritsar atrocities."
+      ],
+      ru: [
+        "Одобрил действия генерала Дайера в Амритсаре официальной телеграммой.",
+        "Ввёл военное положение и санкционировал бомбардировки гражданского населения в Гуджранвале.",
+        "Застрелен 13 марта 1940 года в Лондоне революционером Удхамом Сингхом."
+      ]
+    }
+  },
+  {
+    id: "churchill",
+    fileNo: "05",
+    name: {
+      en: "CHURCHILL, W. L. S.",
+      ru: "ЧЕРЧИЛЛЬ, У."
+    },
+    fullName: {
+      en: "Sir Winston Leonard Spencer Churchill",
+      ru: "Сэр Уинстон Леонард Спенсер Черчилль"
+    },
+    role: {
+      en: "PRIME MINISTER OF THE UNITED KINGDOM (1940–1945)",
+      ru: "ПРЕМЬЕР-МИНИСТР ВЕЛИКОБРИТАНИИ (1940–1945)"
+    },
+    born: {
+      en: "Blenheim Palace, Oxfordshire — 1874",
+      ru: "Бленхеймский дворец, Оксфордшир — 1874"
+    },
+    inOffice: {
+      en: "Prime Minister & Minister of Defence (1940–1945; 1951–1955)",
+      ru: "Премьер-министр Великобритании (1940–1945; 1951–1955)"
+    },
+    fileOpened: "1943 / 08",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/churchill.jpg",
+    summary: {
+      en: "Prime Minister whose War Cabinet systematically rejected emergency grain shipments to Bengal during the 1943 Famine, causing between 3.0 and 3.8 million civilian deaths.",
+      ru: "Премьер-министр, чей военный кабинет отклонял поставки зерна в Бенгалию во время голода 1943 года."
+    },
+    paragraphs: {
+      en: [
+        "Repeatedly denied requests from Viceroy Lord Wavell and Secretary of State Leopold Amery for 500,000 tons of emergency wheat for Bengal in 1943, prioritizing stockpiles for post-war European liberation.",
+        "Approved the 'Boat Denial' and 'Rice Denial' military policies in coastal Bengal (1942), confiscating over 66,000 boats and destroying rural distribution networks.",
+        "Privately recorded by Secretary Amery as stating during Cabinet debates that 'starvation of anyhow underfed Bengalis was less serious than shortage of Greeks' and asking 'why Gandhi hadn’t died yet.'"
+      ],
+      ru: [
+        "Неоднократно отклонял просьбы вице-короля Уэйвелла о направлении продовольствия в голодающую Бенгалию.",
+        "Утвердил 'политику изъятия лодок' в прибрежной Бенгалии, разрушившую систему распределения продовольствия.",
+        "Зафиксирован в дневниках Лео Эмери с высказываниями об индийцах как 'звероподобном народе с дикой религией'."
+      ]
+    }
+  },
+  {
+    id: "mountbatten",
+    fileNo: "06",
+    name: {
+      en: "MOUNTBATTEN, L.",
+      ru: "МАУНТБЕТТЕН, Л."
+    },
+    fullName: {
+      en: "Louis Francis Albert Victor Nicholas Mountbatten (1st Earl Mountbatten of Burma)",
+      ru: "Луис Маунтбеттен (1-й граф Маунтбеттен Бирманский)"
+    },
+    role: {
+      en: "LAST VICEROY AND FIRST GOVERNOR-GENERAL OF INDIA (1947–1948)",
+      ru: "ПОСЛЕДНИЙ ВИЦЕ-КОРОЛЬ И ПЕРВЫЙ ГЕНЕРАЛ-ГУБЕРНАТОР ИНДИИ"
+    },
+    born: {
+      en: "Frogmore House, Windsor — 1900",
+      ru: "Виндзор, Великобритания — 1900"
+    },
+    inOffice: {
+      en: "Viceroy of India (February 1947 – August 1947)",
+      ru: "Вице-король Индии (февраль 1947 – август 1947)"
+    },
+    fileOpened: "1947 / 03",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/mountbatten.jpg",
+    summary: {
+      en: "Viceroy who accelerated the British withdrawal timeline by ten months, overseeing a hasty partition that displaced 15 million people and caused up to one million sectarian deaths.",
+      ru: "Вице-король, ускоривший уход Британии из Индии на 10 месяцев, что привело к хаосу и миллиону жертв при разделе."
+    },
+    paragraphs: {
+      en: [
+        "Unilaterally advanced the British transfer of power deadline from June 1948 to August 1947, giving boundary commissioner Sir Cyril Radcliffe only five weeks to partition Punjab and Bengal.",
+        "Suppressed the Radcliffe Boundary Award map until two days after Independence Day (17 August 1947) to ensure Britain avoided administrative blame for the unfolding sectarian massacres.",
+        "Left provincial administrations with inadequate security forces, leading to the displacement of 15 million refugees and between 500,000 and 1,000,000 casualties."
+      ],
+      ru: [
+        "Перенес дату передачи власти с июня 1948 года на август 1947 года, оставив на демаркацию границ всего 5 недель.",
+        "Задержал публикацию карты раздела границ до 17 августа, сняв с британской армии ответственность за порядок.",
+        "Следствием спешки стал хаос раздела, приведший к бегству 15 миллионов человек и гибели до 1 миллиона."
+      ]
+    }
+  },
+  {
+    id: "lakshmibai",
+    fileNo: "07",
+    name: {
+      en: "RANI LAKSHMIBAI",
+      ru: "РАНИ ЛАКШМИБАЙ"
+    },
+    fullName: {
+      en: "Manikarnika Tambe · Rani Lakshmibai of Jhansi",
+      ru: "Маникарника Тамбе · Рани Лакшмибай из Джханси"
+    },
+    role: {
+      en: "LEADER OF ARMED RESISTANCE · 1857 REBELLION (JHANSI)",
+      ru: "ЛИДЕР ВООРУЖЕННОГО ВОССТАНИЯ 1857 ГОДА (ДЖХАНСИ)"
+    },
+    born: {
+      en: "Varanasi, Northern India — c. 1828",
+      ru: "Варанаси, Северная Индия — ок. 1828"
+    },
+    inOffice: {
+      en: "Rani of Jhansi (1842–1858); Commander of Insurgent Forces",
+      ru: "Правительница Джханси (1842–1858); главнокомандующая повстанцев"
+    },
+    fileOpened: "1857 / 06",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg",
+    summary: {
+      en: "Symbol of 1857 anti-colonial defiance who fought against Lord Dalhousie's Doctrine of Lapse, defending Jhansi Fort and dying in battle at Kotah-ki-Serai.",
+      ru: "Символ сопротивления 1857 года, сражавшаяся против аннексии княжества Джханси и погибшая в бою."
+    },
+    paragraphs: {
+      en: [
+        "Defied Lord Dalhousie’s Doctrine of Lapse in 1854 when the Company annexed Jhansi upon the death of Maharaja Gangadhar Rao, famously declaring 'Mera Jhansi nahi doongi' (I will not surrender my Jhansi).",
+        "Commanded the defense of Jhansi Fort against General Sir Hugh Rose in March–April 1858, escaped through enemy encirclement on horseback with her adopted son, and joined forces with Tatya Tope at Kalpi.",
+        "Fell in battle near Gwalior (Kotah-ki-Serai) on 18 June 1858. General Hugh Rose described her as 'the bravest and best military leader of the rebels.'"
+      ],
+      ru: [
+        "Отвергла доктрину выморочности лорда Дальхузи в 1854 году, отказавшись сдать княжество Джханси.",
+        "Руководила обороной крепости Джханси против генерала Хью Роуза в 1858 году.",
+        "Погибла в бою под Гвалиором 18 июня 1858 года. Британский командующий Роуз назвал её 'лучшим и храбрейшим вождем повстанцев'."
+      ]
+    }
+  },
+  {
+    id: "hazratmahal",
+    fileNo: "08",
+    name: {
+      en: "BEGUM HAZRAT MAHAL",
+      ru: "БЕГУМ ХАЗРАТ МАХАЛ"
+    },
+    fullName: {
+      en: "Muhammadi Khanum · Begum Hazrat Mahal of Awadh",
+      ru: "Мухаммади Ханум · Бегум Хазрат Махал из Авада"
+    },
+    role: {
+      en: "REGENT OF AWADH · LEADER OF 1857 LUCKNOW RESISTANCE",
+      ru: "РЕГЕНТ АВАДА · ЛИДЕР ОБОРОНЫ ЛАКХНАУ (1857)"
+    },
+    born: {
+      en: "Faizabad, Kingdom of Awadh — c. 1820",
+      ru: "Файзабад, Королевство Авад — ок. 1820"
+    },
+    inOffice: {
+      en: "Regent of Awadh (1857–1858); exiled in Nepal",
+      ru: "Регент Авада (1857–1858); в изгнании в Непале"
+    },
+    fileOpened: "1857 / 05",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg",
+    summary: {
+      en: "Ruler of Awadh who rallied Hindu and Muslim soldiers and talukdars to besiege the British Residency in Lucknow, rejecting Queen Victoria's 1858 amnesty proclamation.",
+      ru: "Правительница Авада, возглавившая объединенное сопротивление и осаду британской резиденции в Лакхнау."
+    },
+    paragraphs: {
+      en: [
+        "Following Dalhousie’s 1856 annexation of Awadh and Nawab Wajid Ali Shah's exile, she seized control of Lucknow in June 1857, crowning her 11-year-old son Birjis Qadr and establishing a functioning insurgent government.",
+        "Mobilized an army of over 100,000 sepoys, talukdars, and peasants, leading the protracted siege of the Lucknow British Residency for eight months.",
+        "Issued a counter-proclamation rejecting Queen Victoria’s 1858 pardon, warning Indians that British promises were deceptive. Refused British pensions and died in exile in Kathmandu (1879)."
+      ],
+      ru: [
+        "После аннексии Авада в 1856 году возглавила восстание в Лакхнау и сформировала революционное правительство.",
+        "Объединила индусов и мусульман, руководя 8-месячной осадой британской резиденции.",
+        "Отвергла амнистию королевы Виктории, отказалась от британской пенсии и умерла в изгнании в Непале."
+      ]
+    }
+  },
+  {
+    id: "gandhi",
+    fileNo: "09",
+    name: {
+      en: "GANDHI, M. K.",
+      ru: "ГАНДИ, М. К."
+    },
+    fullName: {
+      en: "Mohandas Karamchand Gandhi (Mahatma Gandhi)",
+      ru: "Мохандас Карамчанд Ганди (Махатма Ганди)"
+    },
+    role: {
+      en: "LEADER OF THE INDIAN NATIONAL MOVEMENT · SATYAGRAHA",
+      ru: "ЛИДЕР НАЦИОНАЛЬНО-ОСВОБОДИТЕЛЬНОГО ДВИЖЕНИЯ ИНДИИ"
+    },
+    born: {
+      en: "Porbandar, Gujarat — 1869",
+      ru: "Порбандар, Гуджарат — 1869"
+    },
+    inOffice: {
+      en: "President of Indian National Congress (1924); Mass Movement Leader",
+      ru: "Президент Индийского национального конгресса (1924)"
+    },
+    fileOpened: "1919 / 03",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/gandhi.jpg",
+    summary: {
+      en: "Pioneer of mass non-violent resistance (Satyagraha) who transformed the anti-colonial struggle through the Non-Cooperation Movement (1920), the Salt March (1930), and Quit India (1942).",
+      ru: "Основоположник ненасильственного сопротивления (сатьяграха), лидер общенационального движения за независимость."
+    },
+    paragraphs: {
+      en: [
+        "Launched the Non-Cooperation Movement (1920–1922) following the Jallianwala Bagh massacre, organizing the nationwide boycott of British courts, educational institutions, cloth, and titles.",
+        "Led the 240-mile Dandi Salt March in March–April 1930 to defy the British state salt monopoly, triggering the arrest of over 60,000 civil resisters nationwide.",
+        "Delivered the historic 'Do or Die' address at Gowalia Tank in Bombay on 8 August 1942, launching the Quit India Movement demanding the immediate cessation of British rule."
+      ],
+      ru: [
+        "Возглавил движение несотрудничества (1920–1922) после расстрела в Амритсаре, организовав бойкот британских товаров.",
+        "Провёл 240-мильный Соляной поход в 1930 году, разрушивший государственную монополию на соль.",
+        "Провозгласил лозунг 'Действуй или умри' в 1942 году, начав движение 'Вон из Индии'."
+      ]
+    }
+  },
+  {
+    id: "tilak",
+    fileNo: "10",
+    name: {
+      en: "TILAK, B. G.",
+      ru: "ТИЛАК, Б. Г."
+    },
+    fullName: {
+      en: "Lokmanya Bal Gangadhar Tilak",
+      ru: "Локманья Бал Гангадхар Тилак"
+    },
+    role: {
+      en: "NATIONALIST LEADER & EDITOR · KESARI & MAHRATTA",
+      ru: "ЛИДЕР НАЦИОНАЛЬНОГО ДВИЖЕНИЯ, РЕДАКТОР ГАЗЕТЫ 'КЕСАРИ'"
+    },
+    born: {
+      en: "Ratnagiri, Bombay Presidency — 1856",
+      ru: "Ратнагири, Бомбейское президентство — 1856"
+    },
+    inOffice: {
+      en: "Leader of All India Home Rule League; Founder of Swadeshi Boycott",
+      ru: "Основатель Лиги гомруля; идеолог бойкота 'свадеши'"
+    },
+    fileOpened: "1897 / 07",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/tilak.jpg",
+    summary: {
+      en: "Early radical leader who popularized the slogan 'Swaraj is my birthright and I shall have it,' prosecuted repeatedly by the British under Section 124A (Sedition) and exiled to Mandalay Prison.",
+      ru: "Лидер радикального крыла Конгресса, провозгласивший лозунг 'Сварадж — моё право по рождению', осуждён за мятеж."
+    },
+    paragraphs: {
+      en: [
+        "Authored scathing editorial critiques of British plague mismanagement in Pune (1897) in his Marathi newspaper <em>Kesari</em>, resulting in his landmark 18-month imprisonment for sedition.",
+        "Spearheaded the Swadeshi (indigenous goods) and Boycott movement following the 1905 Partition of Bengal, mobilizing working-class millworkers in Bombay.",
+        "Sentenced in 1908 to six years of hard labor in Mandalay Prison (Burma) for defending revolutionaries Khudiram Bose and Prafulla Chaki under Section 124A of the Indian Penal Code."
+      ],
+      ru: [
+        "Публиковал статьи против британских санитарных репрессий в Пуне (1897), впервые осужден по 124A статье о мятеже.",
+        "Возглавил движение 'Свадеши' и бойкот британского текстиля после раздела Бенгалии.",
+        "Приговорен в 1908 году к 6 годам каторги в тюрьме Мандалай (Бирма) за защиту революционеров."
+      ]
+    }
+  },
+  {
+    id: "bhagat",
+    fileNo: "11",
+    name: {
+      en: "BHAGAT SINGH",
+      ru: "БХАГАТ СИНГХ"
+    },
+    fullName: {
+      en: "Shaheed Bhagat Singh",
+      ru: "Шахид Бхагат Сингх"
+    },
+    role: {
+      en: "REVOLUTIONARY SOCIALIST · HINDUSTAN SOCIALIST REPUBLICAN ASSOCIATION",
+      ru: "РЕВОЛЮЦИОНЕР-СОЦИАЛИСТ · HSRA"
+    },
+    born: {
+      en: "Banga, Lyallpur District, Punjab — 1907",
+      ru: "Банга, Лайяллпур, Пенджаб — 1907"
+    },
+    inOffice: {
+      en: "Leader of HSRA and Naujawan Bharat Sabha",
+      ru: "Лидер HSRA и молодежной организации 'Науджаван Бхарат Сабха'"
+    },
+    fileOpened: "1928 / 12",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/bhagat.jpg",
+    summary: {
+      en: "Marxist revolutionary who avenged Lala Lajpat Rai's death, threw non-lethal leaflets/smoke bombs into the Central Legislative Assembly, and was hanged at age 23 in Lahore Central Jail.",
+      ru: "Революционер-социалист, отомстивший за гибель Лала Ладжпата Рая, повешен британскими властями в возрасте 23 лет."
+    },
+    paragraphs: {
+      en: [
+        "Assassinated British Assistant Superintendent of Police John Saunders in Lahore (17 December 1928) in response to the fatal police lathi charge on nationalist leader Lala Lajpat Rai.",
+        "Detonated two low-intensity smoke bombs in the Central Legislative Assembly in Delhi on 8 April 1929, distributing leaflets proclaiming 'To make the deaf hear' and peacefully courting arrest.",
+        "Conducted a historic 116-day hunger strike in Lahore Central Jail demanding political prisoner rights; executed by hanging alongside Sukhdev and Rajguru on 23 March 1931."
+      ],
+      ru: [
+        "Ликвидировал помощника суперинтенданта полиции Джона Сондерса в Лахоре (1928) в ответ на убийство Ладжпата Рая.",
+        "Взорвал шумовую гранату в Центральной ассамблее в Дели (1929), разбросав листовки 'Чтобы глухие услышали'.",
+        "Держал 116-дневную голодовку в тюрьме; казнен через повешение 23 марта 1931 года в возрасте 23 лет."
+      ]
+    }
+  },
+  {
+    id: "udham",
+    fileNo: "12",
+    name: {
+      en: "UDHAM SINGH",
+      ru: "УДХАМ СИНГХ"
+    },
+    fullName: {
+      en: "Shaheed Udham Singh (Ram Mohammad Singh Azad)",
+      ru: "Шахид Удхам Сингх (Рам Мохаммад Сингх Азад)"
+    },
+    role: {
+      en: "GHADAR PARTY REVOLUTIONARY · CAXTON HALL RETRIBUTION",
+      ru: "РЕВОЛЮЦИОНЕР ПАРТИИ 'ГАДАР'"
+    },
+    born: {
+      en: "Sunam, Punjab — 1899",
+      ru: "Сунам, Пенджаб — 1899"
+    },
+    inOffice: {
+      en: "Ghadar Party Organizer; Executed at Pentonville Prison (1940)",
+      ru: "Активист партии 'Гадар'; казнен в тюрьме Пентонвилл (1940)"
+    },
+    fileOpened: "1940 / 03",
+    lastUpdated: "2026 / 08",
+    image: "/TheImperialAudit/illustrations/dossiers/udham.jpg",
+    summary: {
+      en: "Eyewitness to the 1919 Jallianwala Bagh massacre who pursued Sir Michael O'Dwyer for 21 years, assassinating him at Caxton Hall in London on 13 March 1940.",
+      ru: "Очевидец бойни в Амритсаре, выслеживавший Майкла О'Двайера 21 год и застреливший его в Лондоне в 1940 году."
+    },
+    paragraphs: {
+      en: [
+        "Survived the 13 April 1919 massacre at Jallianwala Bagh as a 19-year-old serving water to the gathering, taking a personal vow to bring the architects of the massacre to justice.",
+        "Traveled across Africa, the United States, and Europe working with the anti-colonial Ghadar Party before establishing residence in London under various aliases.",
+        "Shot and killed Sir Michael O'Dwyer during a joint meeting of the East India Association and Central Asian Society at Caxton Hall on 13 March 1940; gave his name at trial as 'Ram Mohammad Singh Azad' to symbolize subcontinental religious unity before being hanged at Pentonville Prison on 31 July 1940."
+      ],
+      ru: [
+        "Пережил бойню 1919 года в Амритсаре, где раздавал воду прихожанам, поклявшись отомстить за погибших.",
+        "Работал с революционной партией 'Гадар', выслеживая бывших колониальных чиновников в Европе.",
+        "Застрелил Майкла О'Двайера в Лондоне 13 марта 1940 года; на суде назвал себя 'Рам Мохаммад Сингх Азад' в знак единства конфессий Индии."
+      ]
+    }
+  }
 ];
