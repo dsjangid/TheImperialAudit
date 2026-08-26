@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react';
 
 const CHAIR_FRAMES = [
-  '/illustrations/chair-rotoscope/01-front.png',
-  '/illustrations/chair-rotoscope/02-34-left.png',
-  '/illustrations/chair-rotoscope/03-side.png',
-  '/illustrations/chair-rotoscope/04-back-34.png',
-  '/illustrations/chair-rotoscope/05-34-right.png',
+  '/TheImperialAudit/illustrations/chair-rotoscope/01-front.png',
+  '/TheImperialAudit/illustrations/chair-rotoscope/02-34-left.png',
+  '/TheImperialAudit/illustrations/chair-rotoscope/03-side.png',
+  '/TheImperialAudit/illustrations/chair-rotoscope/04-back-34.png',
+  '/TheImperialAudit/illustrations/chair-rotoscope/05-34-right.png',
 ];
 
 interface ChairRotoscopeProps {

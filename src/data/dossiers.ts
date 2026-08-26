@@ -68,7 +68,7 @@ export const dossiersList: DossierItem[] = [
     },
     "fileOpened": "1919 / 04",
     "lastUpdated": "2026 / 08",
-    "image": "/illustrations/dossiers/dyer.jpg",
+    "image": "/TheImperialAudit/illustrations/dossiers/dyer.jpg",
     "summary": {
       "en": "Commanding officer responsible for the Jallianwala Bagh massacre on 13 April 1919, ordering 1,650 rounds fired into an unarmed crowd without warning.",
       "ru": "\u041a\u043e\u043c\u0430\u043d\u0434\u0443\u044e\u0449\u0438\u0439, \u043e\u0442\u0434\u0430\u0432\u0448\u0438\u0439 \u043f\u0440\u0438\u043a\u0430\u0437 \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u043e\u0433\u043e\u043d\u044c \u043d\u0430 \u043f\u043e\u0440\u0430\u0436\u0435\u043d\u0438\u0435 \u043f\u043e \u0431\u0435\u0437\u043e\u0440\u0443\u0436\u043d\u043e\u0439 \u0442\u043e\u043b\u043f\u0435 \u0432 \u043f\u0430\u0440\u043a\u0435 \u0414\u0436\u0430\u043b\u043b\u0438\u0430\u043d\u0432\u0430\u043b\u0430 \u0411\u0430\u0433 13 \u0430\u043f\u0440\u0435\u043b\u044f 1919 \u0433\u043e\u0434\u0430 \u0431\u0435\u0437 \u043f\u0440\u0435\u0434\u0443\u043f\u0440\u0435\u0436\u0434\u0435\u043d\u0438\u044f."
@@ -113,7 +113,7 @@ export const dossiersList: DossierItem[] = [
     },
     "fileOpened": "1919 / 04",
     "lastUpdated": "2026 / 08",
-    "image": "/illustrations/dossiers/odwyer.jpg",
+    "image": "/TheImperialAudit/illustrations/dossiers/odwyer.jpg",
     "summary": {
       "en": "Head of civil administration in Punjab who approved Dyer's massacre by telegram, imposed martial law, and authorized RAF aerial bombing of civilians.",
       "ru": "\u0413\u043b\u0430\u0432\u0430 \u043a\u043e\u043b\u043e\u043d\u0438\u0430\u043b\u044c\u043d\u043e\u0439 \u0430\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u041f\u0435\u043d\u0434\u0436\u0430\u0431\u0430, \u043e\u0434\u043e\u0431\u0440\u0438\u0432\u0448\u0438\u0439 \u0440\u0430\u0441\u0441\u0442\u0440\u0435\u043b \u0432 \u0410\u043c\u0440\u0438\u0442\u0441\u0430\u0440\u0435 \u0442\u0435\u043b\u0435\u0433\u0440\u0430\u043c\u043c\u043e\u0439, \u0432\u0432\u0451\u0434\u0448\u0438\u0439 \u0432\u043e\u0435\u043d\u043d\u043e\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0438 \u0441\u0430\u043d\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u0432\u0448\u0438\u0439 \u0430\u0432\u0438\u0430\u0431\u043e\u043c\u0431\u0430\u0440\u0434\u0438\u0440\u043e\u0432\u043a\u0438 \u043c\u0438\u0440\u043d\u044b\u0445 \u0436\u0438\u0442\u0435\u043b\u0435\u0439."
@@ -158,7 +158,7 @@ export const dossiersList: DossierItem[] = [
     },
     "fileOpened": "1943 / 10",
     "lastUpdated": "2026 / 08",
-    "image": "/illustrations/dossiers/churchill.jpg",
+    "image": "/TheImperialAudit/illustrations/dossiers/churchill.jpg",
     "summary": {
       "en": "British wartime leader who presided over the 1943 Bengal Famine (2\u20133 million dead), denying food relief shipping and implementing scorched-earth denial policies.",
       "ru": "\u0411\u0440\u0438\u0442\u0430\u043d\u0441\u043a\u0438\u0439 \u043f\u0440\u0435\u043c\u044c\u0435\u0440-\u043c\u0438\u043d\u0438\u0441\u0442\u0440, \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0437\u0430 \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0443 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0413\u043e\u043b\u043e\u0434\u0430 \u0432 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 1943 \u0433\u043e\u0434\u0430 (2\u20133 \u043c\u043b\u043d \u043f\u043e\u0433\u0438\u0431\u0448\u0438\u0445), \u043e\u0442\u043a\u0430\u0437\u044b\u0432\u0430\u0432\u0448\u0438\u0439 \u0432 \u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0430\u0445 \u0437\u0435\u0440\u043d\u0430."
@@ -203,7 +203,7 @@ export const dossiersList: DossierItem[] = [
     },
     "fileOpened": "1905 / 10",
     "lastUpdated": "2026 / 08",
-    "image": "/illustrations/dossiers/curzon.jpg",
+    "image": "/TheImperialAudit/illustrations/dossiers/curzon.jpg",
     "summary": {
       "en": "Viceroy who enforced the communal 1905 Partition of Bengal and maintained severe austerity on famine relief during the 1899\u20131900 drought while staging the 1903 Imperial Durbar.",
       "ru": "\u0412\u0438\u0446\u0435-\u043a\u043e\u0440\u043e\u043b\u044c, \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0438\u0432\u0448\u0438\u0439 \u0440\u0430\u0437\u0434\u0435\u043b \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 \u043f\u043e \u0440\u0435\u043b\u0438\u0433\u0438\u043e\u0437\u043d\u043e\u043c\u0443 \u043f\u0440\u0438\u0437\u043d\u0430\u043a\u0443 \u0432 1905 \u0433\u043e\u0434\u0443 \u0438 \u043e\u0433\u0440\u0430\u043d\u0438\u0447\u0438\u0432\u0430\u0432\u0448\u0438\u0439 \u043f\u043e\u043c\u043e\u0449\u044c \u0433\u043e\u043b\u043e\u0434\u0430\u044e\u0449\u0438\u043c \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u0441\u0443\u0445\u0438 1899\u20131900 \u0433\u043e\u0434\u043e\u0432."
@@ -246,7 +246,7 @@ export const dossiersList: DossierItem[] = [
     },
     "fileOpened": "1772 / 05",
     "lastUpdated": "2026 / 08",
-    "image": "/illustrations/dossiers/clive.jpg",
+    "image": "/TheImperialAudit/illustrations/dossiers/clive.jpg",
     "summary": {
       "en": "Commander at Plassey who secured the Diwani of Bengal, initiating the systematic fiscal drain of India and amassing vast illicit private fortunes.",
       "ru": "\u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u044c \u043f\u0440\u0438 \u041f\u043b\u0435\u0441\u0441\u0438, \u0434\u043e\u0431\u0438\u0432\u0448\u0438\u0439\u0441\u044f \u043f\u0440\u0430\u0432\u0430 \u0441\u0431\u043e\u0440\u0430 \u043d\u0430\u043b\u043e\u0433\u043e\u0432 (\u0434\u0438\u0432\u0430\u043d\u0438) \u0432 \u0411\u0435\u043d\u0433\u0430\u043b\u0438\u0438 \u0438 \u043d\u0430\u0447\u0430\u0432\u0448\u0438\u0439 \u043c\u0430\u0441\u0448\u0442\u0430\u0431\u043d\u0443\u044e \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432\u0443\u044e \u044d\u043a\u0441\u043f\u0440\u043e\u043f\u0440\u0438\u0430\u0446\u0438\u044e \u0438\u043d\u0434\u0438\u0439\u0441\u043a\u0438\u0445 \u0431\u043e\u0433\u0430\u0442\u0441\u0442\u0432."
@@ -289,7 +289,7 @@ export const dossiersList: DossierItem[] = [
     },
     "fileOpened": "1947 / 08",
     "lastUpdated": "2026 / 08",
-    "image": "/illustrations/dossiers/mountbatten.jpg",
+    "image": "/TheImperialAudit/illustrations/dossiers/mountbatten.jpg",
     "summary": {
       "en": "Administrators who rushed British partition by ten months, drawing arbitrary borderlines in 36 days and withholding announcements, leading to 14M displaced and up to 1M dead.",
       "ru": "\u0410\u0434\u043c\u0438\u043d\u0438\u0441\u0442\u0440\u0430\u0442\u043e\u0440\u044b, \u0441\u043e\u043a\u0440\u0430\u0442\u0438\u0432\u0448\u0438\u0435 \u0441\u0440\u043e\u043a \u0432\u044b\u0432\u043e\u0434\u0430 \u0432\u043e\u0439\u0441\u043a \u043d\u0430 10 \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u0438 \u043d\u0430\u0447\u0435\u0440\u0442\u0438\u0432\u0448\u0438\u0435 \u0433\u0440\u0430\u043d\u0438\u0446\u0443 \u0437\u0430 36 \u0434\u043d\u0435\u0439, \u0447\u0442\u043e \u0441\u043f\u0440\u043e\u0432\u043e\u0446\u0438\u0440\u043e\u0432\u0430\u043b\u043e \u043c\u0430\u0441\u0441\u043e\u0432\u043e\u0435 \u043a\u0440\u043e\u0432\u043e\u043f\u0440\u043e\u043b\u0438\u0442\u0438\u0435 \u043f\u0440\u0438 \u0440\u0430\u0437\u0434\u0435\u043b\u0435 \u0418\u043d\u0434\u0438\u0438."

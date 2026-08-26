@@ -51,7 +51,7 @@ export const EyeIllustration: React.FC<EyeIllustrationProps> = ({
         style={{ width: '120px', height: '78px' }}
       >
         <img
-          src="/illustrations/eye/eye.png"
+          src="/TheImperialAudit/illustrations/eye/eye.png"
           alt=""
           className="absolute inset-0 w-full h-full object-contain eye-pulse pointer-events-none"
           style={{

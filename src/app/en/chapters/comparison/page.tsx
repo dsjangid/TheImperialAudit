@@ -160,7 +160,7 @@ export default function Rebellion1857ChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full sm:w-[48%] float-right ml-6 mb-6 mt-2 clear-right">
                   <img
-                    src="/illustrations/dossiers/zafar.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/zafar.jpg"
                     alt="Bahadur Shah Zafar — the last Mughal Emperor, photographed in British captivity at Delhi before exile to Rangoon, 1858"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -224,7 +224,7 @@ export default function Rebellion1857ChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
                   <img
-                    src="/illustrations/dossiers/hazratmahal.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg"
                     alt="Begum Hazrat Mahal — Regent of Awadh, who mobilized 50,000 fighters during the Siege of Lucknow and refused British amnesty"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -262,7 +262,7 @@ export default function Rebellion1857ChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full sm:w-[48%] float-right ml-6 mb-6 mt-2 clear-right">
                   <img
-                    src="/illustrations/dossiers/lakshmibai.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg"
                     alt="Rani Lakshmibai of Jhansi — contemporary portrait, c.1850s"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -300,7 +300,7 @@ export default function Rebellion1857ChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
                   <img
-                    src="/illustrations/dossiers/kunwarsingh.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/kunwarsingh.jpg"
                     alt="Veer Kunwar Singh of Jagdishpur — 80-year-old military commander who routed British regiments in Bihar (1857–1858)"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}

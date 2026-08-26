@@ -54,7 +54,7 @@ export default function JallianwalaChapterPage() {
                 
                 <div className="w-full sm:w-[48%] float-right ml-6 mb-6 mt-2 clear-right">
                   <img
-                    src="/illustrations/dossiers/sarojini.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/sarojini.jpg"
                     alt="Sarojini Naidu — addressed mass protest rallies in London and India exposing the atrocities of martial law in Punjab"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -100,7 +100,7 @@ export default function JallianwalaChapterPage() {
                 </p>
                 <div className="w-1/2 float-right ml-6 mb-4 mt-2">
                   <img
-                    src="/illustrations/dossiers/lajpatrai.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/lajpatrai.jpg"
                     alt="Lala Lajpat Rai — struck by police lathis during Simon Commission protest, Lahore, 30 October 1928. He died of injuries weeks later."
                     className="w-full h-auto object-cover block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -183,7 +183,7 @@ export default function JallianwalaChapterPage() {
                 </p>
                 <div className="w-full my-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/jallianwala_bullet_marks.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/jallianwala_bullet_marks.jpg"
                     alt="Bullet holes still visible on the northern perimeter wall of Jallianwala Bagh, Amritsar. 1,650 rounds were fired in approximately ten minutes."
                     className="w-full h-auto object-cover block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.9)' }}
@@ -229,7 +229,7 @@ export default function JallianwalaChapterPage() {
                 
                 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
                   <img
-                    src="/illustrations/dossiers/odwyer.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/odwyer.jpg"
                     alt="Sir Michael O'Dwyer — Lt. Governor of Punjab who approved Dyer's action by telegram and was assassinated by Udham Singh in London in 1940"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -246,7 +246,7 @@ export default function JallianwalaChapterPage() {
                 </p>
                 <div className="w-2/5 float-right ml-6 mb-4 mt-1">
                   <img
-                    src="/illustrations/dossiers/tagore.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/tagore.jpg"
                     alt="Rabindranath Tagore — renounced his knighthood on 30 May 1919 in protest against the Jallianwala Bagh massacre"
                     className="w-full h-auto object-cover block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -281,7 +281,7 @@ export default function JallianwalaChapterPage() {
                 </p>
                 <div className="w-2/5 float-left mr-6 mb-4 mt-1">
                   <img
-                    src="/illustrations/dossiers/dyer.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/dyer.jpg"
                     alt="Brigadier-General Reginald Edward Harry Dyer — photographed before his testimony to the Hunter Commission, 1920"
                     className="w-full h-auto object-cover block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -338,7 +338,7 @@ export default function JallianwalaChapterPage() {
                 
                 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
                   <img
-                    src="/illustrations/dossiers/udham.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/udham.jpg"
                     alt="Shaheed Udham Singh — photographed at the Old Bailey during his 1940 trial, where he gave his name as 'Ram Mohammad Singh Azad'"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}

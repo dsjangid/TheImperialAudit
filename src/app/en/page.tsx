@@ -147,18 +147,18 @@ export default function CoverPage() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
             {[
-              { src: '/illustrations/dossiers/gandhi.jpg',      name: 'M. K. GANDHI',         role: 'Civil Disobedience',  yr: '1869–1948' },
-              { src: '/illustrations/dossiers/bhagat.jpg',      name: 'BHAGAT SINGH',         role: 'HSRA Revolutionary',  yr: '1907–1931' },
-              { src: '/illustrations/dossiers/bose.jpg',        name: 'SUBHAS CHANDRA BOSE',  role: 'Commander, INA',      yr: '1897–1945' },
-              { src: '/illustrations/dossiers/lakshmibai.jpg',  name: 'RANI LAKSHMIBAI',      role: 'Leader, 1857 Revolt', yr: 'c.1828–1858' },
-              { src: '/illustrations/dossiers/azad.jpg',        name: 'CHANDRASHEKHAR AZAD',  role: 'HSRA Commander',      yr: '1906–1931' },
-              { src: '/illustrations/dossiers/birsa.jpg',       name: 'BIRSA MUNDA',          role: 'Adivasi Ulgulan',     yr: '1875–1900' },
-              { src: '/illustrations/dossiers/tilak.jpg',       name: 'LOKMANYA TILAK',       role: 'Editor, Kesari',      yr: '1856–1920' },
-              { src: '/illustrations/dossiers/patel.jpg',       name: 'VALLABHBHAI PATEL',    role: 'Bardoli &amp; Union', yr: '1875–1950' },
-              { src: '/illustrations/dossiers/hazratmahal.jpg', name: 'BEGUM HAZRAT MAHAL',   role: 'Regent of Awadh',     yr: 'c.1820–1879' },
-              { src: '/illustrations/dossiers/dyer.jpg',        name: 'GEN. REGINALD DYER',   role: 'Amritsar Firing',     yr: '1864–1927' },
-              { src: '/illustrations/dossiers/clive.jpg',       name: 'ROBERT CLIVE',         role: 'Bengal Conquest',     yr: '1725–1774' },
-              { src: '/illustrations/dossiers/udham.jpg',       name: 'UDHAM SINGH',          role: 'Caxton Hall 1940',    yr: '1899–1940' },
+              { src: '/TheImperialAudit/illustrations/dossiers/gandhi.jpg',      name: 'M. K. GANDHI',         role: 'Civil Disobedience',  yr: '1869–1948' },
+              { src: '/TheImperialAudit/illustrations/dossiers/bhagat.jpg',      name: 'BHAGAT SINGH',         role: 'HSRA Revolutionary',  yr: '1907–1931' },
+              { src: '/TheImperialAudit/illustrations/dossiers/bose.jpg',        name: 'SUBHAS CHANDRA BOSE',  role: 'Commander, INA',      yr: '1897–1945' },
+              { src: '/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg',  name: 'RANI LAKSHMIBAI',      role: 'Leader, 1857 Revolt', yr: 'c.1828–1858' },
+              { src: '/TheImperialAudit/illustrations/dossiers/azad.jpg',        name: 'CHANDRASHEKHAR AZAD',  role: 'HSRA Commander',      yr: '1906–1931' },
+              { src: '/TheImperialAudit/illustrations/dossiers/birsa.jpg',       name: 'BIRSA MUNDA',          role: 'Adivasi Ulgulan',     yr: '1875–1900' },
+              { src: '/TheImperialAudit/illustrations/dossiers/tilak.jpg',       name: 'LOKMANYA TILAK',       role: 'Editor, Kesari',      yr: '1856–1920' },
+              { src: '/TheImperialAudit/illustrations/dossiers/patel.jpg',       name: 'VALLABHBHAI PATEL',    role: 'Bardoli &amp; Union', yr: '1875–1950' },
+              { src: '/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg', name: 'BEGUM HAZRAT MAHAL',   role: 'Regent of Awadh',     yr: 'c.1820–1879' },
+              { src: '/TheImperialAudit/illustrations/dossiers/dyer.jpg',        name: 'GEN. REGINALD DYER',   role: 'Amritsar Firing',     yr: '1864–1927' },
+              { src: '/TheImperialAudit/illustrations/dossiers/clive.jpg',       name: 'ROBERT CLIVE',         role: 'Bengal Conquest',     yr: '1725–1774' },
+              { src: '/TheImperialAudit/illustrations/dossiers/udham.jpg',       name: 'UDHAM SINGH',          role: 'Caxton Hall 1940',    yr: '1899–1940' },
             ].map((item) => (
               <div key={item.src} className="group">
                 <div className="w-full h-44 sm:h-52 flex items-center justify-center overflow-hidden">
@@ -211,7 +211,7 @@ export default function CoverPage() {
                 desc: 'From Clive’s bribery at Plassey and the catastrophic 1770 Bengal Famine to the Polygar Wars, Kittur resistance, Anglo-Sikh Wars, the annexation of Awadh, and the Santhal Hul.',
                 readTime: '26 MIN READ · 12 INCIDENTS',
                 href: '/en/chapters/timer',
-                img: '/illustrations/dossiers/clive.jpg',
+                img: '/TheImperialAudit/illustrations/dossiers/clive.jpg',
               },
               {
                 num: '02',
@@ -221,7 +221,7 @@ export default function CoverPage() {
                 desc: 'Mangal Pandey at Barrackpore, the breakout at Meerut, the siege of Delhi, the massacres and counter-massacres at Kanpur, the defense of Lucknow, Rani Lakshmibai of Jhansi, and the brutal reprisals that reshaped imperial race theory.',
                 readTime: '30 MIN READ · 10 NARRATIVE INCIDENTS',
                 href: '/en/chapters/comparison',
-                img: '/illustrations/dossiers/lakshmibai.jpg',
+                img: '/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg',
               },
               {
                 num: '03',
@@ -231,7 +231,7 @@ export default function CoverPage() {
                 desc: 'Detailed primary-source dossiers on Robert Clive, Lord Dalhousie, Lord Curzon, General Dyer, Mangal Pandey, Rani Lakshmibai, Begum Hazrat Mahal, Dadabhai Naoroji, Bal Gangadhar Tilak, and Mahatma Gandhi.',
                 readTime: '24 MIN READ · 12 PROFILES',
                 href: '/en/chapters/dossiers',
-                img: '/illustrations/dossiers/gandhi.jpg',
+                img: '/TheImperialAudit/illustrations/dossiers/gandhi.jpg',
               },
               {
                 num: '04',
@@ -241,7 +241,7 @@ export default function CoverPage() {
                 desc: 'The wartime mobilization of Punjab, the Rowlatt Act, the arrest of Kitchlew and Satyapal, the Crawling Order, 1,650 rounds in ten minutes, the Hunter Commission testimony, Churchill’s parliamentary speech, and Udham Singh’s 21-year revenge.',
                 readTime: '35 MIN READ · MINUTE-BY-MINUTE FORENSIC RECORD',
                 href: '/en/chapters/share',
-                img: '/illustrations/dossiers/jallianwala_bullet_marks.jpg',
+                img: '/TheImperialAudit/illustrations/dossiers/jallianwala_bullet_marks.jpg',
               },
               {
                 num: '05',
@@ -251,7 +251,7 @@ export default function CoverPage() {
                 desc: 'Organised chronicles across 12 distinct Indian regions, classification by resistance taxonomy (Tribal, Peasant, Revolutionary, Military, Famine), and full citations to the India Office Records and parliamentary papers.',
                 readTime: '20 MIN READ · 32 PRIMARY SOURCES',
                 href: '/en/chapters/action',
-                img: '/illustrations/dossiers/bhagat.jpg',
+                img: '/TheImperialAudit/illustrations/dossiers/bhagat.jpg',
               },
             ].map((item) => (
               <Link

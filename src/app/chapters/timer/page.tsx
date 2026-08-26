@@ -201,7 +201,7 @@ export default function ConquestChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/kattabomman.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/kattabomman.jpg"
                   alt="Veerapandiya Kattabomman — hanged at Kayathar, 1799"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -230,7 +230,7 @@ export default function ConquestChapterPage() {
                 </p>
                 <div className="w-1/2 float-left mr-6 mb-4 mt-2 mb-6 ">
                   <img
-                    src="/illustrations/dossiers/kattabomman.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/kattabomman.jpg"
                     alt="Veerapandiya Kattabomman — hanged at Kayathar, 1799"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -293,7 +293,7 @@ export default function ConquestChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/clive.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/clive.jpg"
                   alt="Robert Clive, 1st Baron Clive of Plassey — architect of Company conquest"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -320,7 +320,7 @@ export default function ConquestChapterPage() {
                 
                 <div className="w-full sm:w-[48%] float-left mr-6 mb-6 mt-2 clear-left">
                   <img
-                    src="/illustrations/dossiers/pazhassi.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/pazhassi.jpg"
                     alt="Pazhassi Raja (Kerala Varma) — led the Cotiote guerrilla war against the Company in Wayanad jungles (1793–1805)"
                     className="w-full h-auto max-h-[280px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -357,7 +357,7 @@ export default function ConquestChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/chennamma.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/chennamma.jpg"
                   alt="Rani Chennamma of Kittur — imprisoned at Bailhongal Fort, died 1829"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}

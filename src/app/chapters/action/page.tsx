@@ -54,18 +54,18 @@ export default function ArchiveChapterPage() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { src: '/illustrations/dossiers/gandhi.jpg', cap: 'Gandhi — Dandi Salt March, 1930', yr: '1930' },
-              { src: '/illustrations/dossiers/bhagat.jpg', cap: 'Shaheed Bhagat Singh — HSRA', yr: '1929' },
-              { src: '/illustrations/dossiers/bose.jpg', cap: 'Netaji Subhas Chandra Bose — INA', yr: '1942' },
-              { src: '/illustrations/dossiers/lakshmibai.jpg', cap: 'Rani Lakshmibai of Jhansi', yr: '1857' },
-              { src: '/illustrations/dossiers/tilak.jpg', cap: 'Bal Gangadhar Tilak', yr: '1897' },
-              { src: '/illustrations/dossiers/birsa.jpg', cap: 'Bhagwan Birsa Munda — Ulgulan', yr: '1899' },
-              { src: '/illustrations/dossiers/jallianwala_bullet_marks.jpg', cap: 'Jallianwala Bagh — bullet marks', yr: '1919' },
-              { src: '/illustrations/dossiers/dandi_march.jpg', cap: 'The Dandi Salt March', yr: '1930' },
-              { src: '/illustrations/dossiers/azad.jpg', cap: 'Chandrashekhar Azad — HSRA', yr: '1931' },
-              { src: '/illustrations/dossiers/suryasen.jpg', cap: 'Masterda Surya Sen — Chittagong', yr: '1930' },
-              { src: '/illustrations/dossiers/udham.jpg', cap: 'Udham Singh — Old Bailey trial', yr: '1940' },
-              { src: '/illustrations/dossiers/ina_trials.jpg', cap: 'INA Trials — Red Fort, Delhi', yr: '1945' },
+              { src: '/TheImperialAudit/illustrations/dossiers/gandhi.jpg', cap: 'Gandhi — Dandi Salt March, 1930', yr: '1930' },
+              { src: '/TheImperialAudit/illustrations/dossiers/bhagat.jpg', cap: 'Shaheed Bhagat Singh — HSRA', yr: '1929' },
+              { src: '/TheImperialAudit/illustrations/dossiers/bose.jpg', cap: 'Netaji Subhas Chandra Bose — INA', yr: '1942' },
+              { src: '/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg', cap: 'Rani Lakshmibai of Jhansi', yr: '1857' },
+              { src: '/TheImperialAudit/illustrations/dossiers/tilak.jpg', cap: 'Bal Gangadhar Tilak', yr: '1897' },
+              { src: '/TheImperialAudit/illustrations/dossiers/birsa.jpg', cap: 'Bhagwan Birsa Munda — Ulgulan', yr: '1899' },
+              { src: '/TheImperialAudit/illustrations/dossiers/jallianwala_bullet_marks.jpg', cap: 'Jallianwala Bagh — bullet marks', yr: '1919' },
+              { src: '/TheImperialAudit/illustrations/dossiers/dandi_march.jpg', cap: 'The Dandi Salt March', yr: '1930' },
+              { src: '/TheImperialAudit/illustrations/dossiers/azad.jpg', cap: 'Chandrashekhar Azad — HSRA', yr: '1931' },
+              { src: '/TheImperialAudit/illustrations/dossiers/suryasen.jpg', cap: 'Masterda Surya Sen — Chittagong', yr: '1930' },
+              { src: '/TheImperialAudit/illustrations/dossiers/udham.jpg', cap: 'Udham Singh — Old Bailey trial', yr: '1940' },
+              { src: '/TheImperialAudit/illustrations/dossiers/ina_trials.jpg', cap: 'INA Trials — Red Fort, Delhi', yr: '1945' },
             ].map((img) => (
               <div key={img.src} className="border border-text/15 overflow-hidden group">
                 <div className="overflow-hidden aspect-[4/5]">

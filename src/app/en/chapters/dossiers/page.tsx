@@ -99,7 +99,7 @@ export default function SubjectsChapterPage() {
 
                 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
                   <img
-                    src="/illustrations/dossiers/curzon.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/curzon.jpg"
                     alt="Imperial Administrative Portrait — India Office Records"
                     className="w-full h-auto max-h-[260px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -139,7 +139,7 @@ export default function SubjectsChapterPage() {
 
                 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
                   <img
-                    src="/illustrations/dossiers/curzon.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/curzon.jpg"
                     alt="Lord Cornwallis — Architect of the Permanent Settlement (1793)"
                     className="w-full h-auto max-h-[260px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -179,7 +179,7 @@ export default function SubjectsChapterPage() {
 
                 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
                   <img
-                    src="/illustrations/dossiers/churchill.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/churchill.jpg"
                     alt="Imperial Viceroyalty Portrait — Declassified State Papers"
                     className="w-full h-auto max-h-[260px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -190,7 +190,7 @@ export default function SubjectsChapterPage() {
                 </div>
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/curzon.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/curzon.jpg"
                     alt="Lord Curzon (Viceroy 1899–1905) — a later embodiment of the Doctrine of Lapse era's imperial ideology"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -230,7 +230,7 @@ export default function SubjectsChapterPage() {
 
                 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
                   <img
-                    src="/illustrations/dossiers/curzon.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/curzon.jpg"
                     alt="Lord Curzon — Viceroy of India (1899–1905), architect of the 1905 Partition of Bengal"
                     className="w-full h-auto max-h-[260px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -270,7 +270,7 @@ export default function SubjectsChapterPage() {
 
                 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
                   <img
-                    src="/illustrations/dossiers/dyer.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/dyer.jpg"
                     alt="Brigadier-General Reginald Dyer — Hunter Commission testimony portrait, 1920"
                     className="w-full h-auto max-h-[260px] object-contain block"
                     style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
@@ -311,7 +311,7 @@ export default function SubjectsChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/khudiram.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/khudiram.jpg"
                   alt="Khudiram Bose — Bengal's youngest executed revolutionary, 1908"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -332,7 +332,7 @@ export default function SubjectsChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/khudiram.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/khudiram.jpg"
                     alt="Khudiram Bose — like Mangal Pandey, became a symbol of Bengali revolutionary martyrdom"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -373,7 +373,7 @@ export default function SubjectsChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/lakshmibai.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg"
                   alt="Rani Lakshmibai of Jhansi — contemporary portrait"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -394,7 +394,7 @@ export default function SubjectsChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/lakshmibai.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg"
                     alt="Rani Lakshmibai of Jhansi — contemporary portrait, c.1850s"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -435,7 +435,7 @@ export default function SubjectsChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/hazratmahal.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg"
                   alt="Begum Hazrat Mahal — Regent of Awadh"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -456,7 +456,7 @@ export default function SubjectsChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/hazratmahal.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg"
                     alt="Begum Hazrat Mahal — Regent of Awadh, refused British amnesty, died in Kathmandu 1879"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -497,7 +497,7 @@ export default function SubjectsChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/rajendra.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/rajendra.jpg"
                   alt="Dadabhai Naoroji — first Indian elected to the British Parliament, 1892"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -518,7 +518,7 @@ export default function SubjectsChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/rajendra.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/rajendra.jpg"
                     alt="Dr. Rajendra Prasad — championed the same economic nationalism Naoroji founded"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -559,7 +559,7 @@ export default function SubjectsChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/tilak.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/tilak.jpg"
                   alt="Bal Gangadhar Tilak — editor of Kesari, twice imprisoned for sedition"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -580,7 +580,7 @@ export default function SubjectsChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/tilak.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/tilak.jpg"
                     alt="Bal Gangadhar Tilak — editor of Kesari, twice imprisoned for sedition, died 1920"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
@@ -621,7 +621,7 @@ export default function SubjectsChapterPage() {
             <div className="md:col-span-8">
               <div className="overflow-hidden border border-text/15">
                 <img
-                  src="/illustrations/dossiers/gandhi.jpg"
+                  src="/TheImperialAudit/illustrations/dossiers/gandhi.jpg"
                   alt="Mahatma Gandhi — photographed during the Salt March, 1930"
                   className="w-full h-auto object-cover"
                   style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
@@ -642,7 +642,7 @@ export default function SubjectsChapterPage() {
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
                 <div className="w-full  mb-6 clear-both">
                   <img
-                    src="/illustrations/dossiers/gandhi.jpg"
+                    src="/TheImperialAudit/illustrations/dossiers/gandhi.jpg"
                     alt="Mahatma Gandhi — photographed during the historic Dandi Salt March, March 1930"
                     className="w-full h-auto object-cover object-top block"
                     style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
