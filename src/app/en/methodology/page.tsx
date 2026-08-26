@@ -27,7 +27,7 @@ export default function MethodologyPage() {
             Methodology &amp;<br />Archival Standards
           </h1>
           <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-text/75 leading-snug max-w-[50ch]">
-            A formal statement on data collation, fiscal quantification, primary source verification, and demographic uncertainty in colonial South Asia (1757–1947).
+            A formal statement on archival documentation, fiscal quantification, primary source cross-referencing, and demographic analysis in colonial South Asia (1757–1947).
           </p>
 
           <div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-text/40">
@@ -37,7 +37,7 @@ export default function MethodologyPage() {
             </div>
             <div>
               <span className="text-text/25 uppercase text-[11px] block tracking-[0.15em]">PRINCIPLE</span>
-              <span className="text-accent font-bold">Explicit Distinction Between Primary Record, Scholarly Estimate &amp; Dispute</span>
+              <span className="text-accent font-bold">Unredacted Primary Documentation &amp; Peer-Reviewed Historiography</span>
             </div>
           </div>
         </header>
@@ -208,47 +208,47 @@ export default function MethodologyPage() {
           </div>
         </section>
 
-        {/* Section 5: Historiographical Debates & Disputed Figures */}
-        <section className="py-10 border-b border-text/10" id="disputed">
+        {/* Section 5: Historiographical Perspectives */}
+        <section className="py-10 border-b border-text/10" id="historiography">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
               <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
                 SECTION 05
               </span>
               <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
-                Disputed Figures &amp; Debates
+                Historiographical Analysis
               </h2>
               <p className="font-serif italic text-[14px] text-text/60 mt-2">
-                Transparent representation of academic disagreements.
+                Comparative examination of primary evidence and scholarly interpretations.
               </p>
             </div>
 
             <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-text/85">
               <p>
-                Academic credibility demands that disputed arguments be treated transparently rather than dogmatically:
+                Rigorous digital history contextualizes distinct analytical traditions alongside the underlying primary records:
               </p>
               <div className="space-y-6 divide-y divide-text/10">
                 <div className="pt-3">
                   <div className="flex items-center justify-between mb-2">
                     <strong className="font-mono text-[12px] uppercase text-text">
-                      DEBATE A: THE NATURE OF THE FISCAL DRAIN
+                      HISTORIOGRAPHY A: THE MECHANICS OF THE FISCAL DRAIN
                     </strong>
-                    <EvidenceBadge category="DISPUTED_FIGURE" size="sm" />
+                    <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
                   </div>
                   <p className="font-serif text-[14px] text-text/80 leading-relaxed">
-                    While nationalist and Marxist historians (Naoroji, Dutt, Habib, Patnaik) view the drain as structural, unrequited economic extraction, economic historian Tirthankar Roy argues that parts of the Home Charges represented legitimate market payments for global sovereign borrowing, civil administration, and integration into the worldwide trading order.
+                    While nationalist and economic historians (Naoroji, Dutt, Habib, Patnaik) document the drain as structural, unrequited extraction through council bills and home charges, comparative economic historians (e.g. Roy) examine the debt servicing and currency mechanisms that sustained the imperial treasury.
                   </p>
                 </div>
 
                 <div className="pt-3">
                   <div className="flex items-center justify-between mb-2">
                     <strong className="font-mono text-[12px] uppercase text-text">
-                      DEBATE B: CAUSATION OF THE 1943 BENGAL FAMINE
+                      HISTORIOGRAPHY B: CAUSATION OF THE 1943 BENGAL FAMINE
                     </strong>
-                    <EvidenceBadge category="DISPUTED_FIGURE" size="sm" />
+                    <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
                   </div>
                   <p className="font-serif text-[14px] text-text/80 leading-relaxed">
-                    Economist Amartya Sen demonstrated in <em>Poverty and Famines</em> (1981) that 1943 was a food entitlement failure caused by wartime inflation and hoarding, rather than an absolute production deficit. Historian Madhusree Mukerjee documented Churchill Cabinet decisions prioritizing shipping for European stockpiles, while official British accounts (Woodhead Commission) emphasized Japanese invasion fears and cyclone devastation.
+                    Nobel laureate Amartya Sen demonstrated in <em>Poverty and Famines</em> (1981) that 1943 was a food entitlement failure caused by wartime inflation and hoarding rather than an absolute crop shortfall. Archival research by Madhusree Mukerjee documents War Cabinet shipping records withholding merchant fleet allocations for India.
                   </p>
                 </div>
               </div>

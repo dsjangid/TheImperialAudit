@@ -9,11 +9,11 @@ interface EvidenceBadgeProps {
 
 const badgeLabels: Record<string, { label: string; isAccent?: boolean }> = {
   PRIMARY_RECORD: {
-    label: '[ PRIMARY RECORD ]',
+    label: '[ PRIMARY ARCHIVE ]',
     isAccent: true,
   },
   OFFICIAL_ENQUIRY: {
-    label: '[ OFFICIAL ENQUIRY ]',
+    label: '[ OFFICIAL RECORD ]',
     isAccent: false,
   },
   PARLIAMENTARY_RECORD: {
@@ -21,20 +21,20 @@ const badgeLabels: Record<string, { label: string; isAccent?: boolean }> = {
     isAccent: false,
   },
   ECONOMIC_DATA: {
-    label: '[ ECONOMIC DATA ]',
+    label: '[ ECONOMIC RECORD ]',
     isAccent: true,
   },
   SCHOLARLY_ESTIMATE: {
-    label: '[ SCHOLARLY ESTIMATE ]',
+    label: '[ HISTORICAL RESEARCH ]',
     isAccent: false,
   },
   SECONDARY_SCHOLARSHIP: {
-    label: '[ SECONDARY SCHOLARSHIP ]',
+    label: '[ HISTORICAL SCHOLARSHIP ]',
     isAccent: false,
   },
   DISPUTED_FIGURE: {
-    label: '[ DISPUTED / CONTESTED ]',
-    isAccent: true,
+    label: '[ HISTORIOGRAPHICAL RECORD ]',
+    isAccent: false,
   },
 };
 

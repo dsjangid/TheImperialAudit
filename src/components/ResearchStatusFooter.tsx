@@ -21,11 +21,11 @@ export const ResearchStatusFooter: React.FC<ResearchStatusFooterProps> = ({
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               <span className="text-accent uppercase tracking-[0.2em] font-bold">
-                RESEARCH STATUS: VERIFIED AUDIT
+                RESEARCH CORPUS: COMPLETE ARCHIVE
               </span>
             </div>
             <p className="font-serif text-[14px] text-text/70 leading-relaxed max-w-[45ch]">
-              All statistical estimates, administrative citations, casualty figures, and parliamentary excerpts across this publication are cross-referenced against the India Office Records, The National Archives (Kew), Hansard Parliamentary Debates, and peer-reviewed macroeconomic monographs.
+              All statistical records, administrative citations, casualty figures, and parliamentary excerpts across this publication are cataloged from the India Office Records, The National Archives (Kew), Hansard Parliamentary Debates, and peer-reviewed macroeconomic monographs.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export const ResearchStatusFooter: React.FC<ResearchStatusFooterProps> = ({
           <div className="md:col-span-4 font-mono text-[11px] uppercase tracking-[0.15em] text-text/50 space-y-2 border-l border-text/15 pl-6">
             <div>
               <span className="text-text/30 block">ARCHIVAL CORPUS</span>
-              <span className="text-text/85 font-medium">32 Primary Repositories · 47 Verified Incidents</span>
+              <span className="text-text/85 font-medium">32 Primary Repositories · 47 Documented Incidents</span>
             </div>
             <div>
               <span className="text-text/30 block">AUDIT METHODOLOGY</span>

@@ -39,7 +39,7 @@ export default function ArchiveChapterPage() {
             The Subcontinental Corpus
           </h1>
           <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-text/75 leading-snug max-w-[50ch]">
-            A Comprehensive Regional Incident Atlas, Archival Image Gallery, and Verified Primary Source Bibliography.
+            A Comprehensive Regional Incident Atlas, Archival Image Gallery, and Primary Source Bibliography.
           </p>
 
           <div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-text/40">
@@ -49,7 +49,7 @@ export default function ArchiveChapterPage() {
             </div>
             <div>
               <span className="text-text/25 uppercase text-[10px] block tracking-[0.15em]">BIBLIOGRAPHY</span>
-              <span className="text-accent font-bold">32 Verified Parliamentary &amp; Academic Records</span>
+              <span className="text-accent font-bold">32 Parliamentary &amp; Academic Records</span>
             </div>
           </div>
         </header>
@@ -105,7 +105,7 @@ export default function ArchiveChapterPage() {
         {/* 3. SEARCHABLE ARCHIVAL RECORDS INTERFACE */}
         <SearchableArchive onOpenSourceDoc={handleOpenSourceDoc} />
 
-        {/* 4. PRIMARY BIBLIOGRAPHY & VERIFIED REPOSITORY REGISTRY */}
+        {/* 4. PRIMARY BIBLIOGRAPHY & REPOSITORY REGISTRY */}
         <section className="my-20 border-t border-text/15 pt-16" id="bibliography-registry">
           <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
             <div>
@@ -117,7 +117,7 @@ export default function ArchiveChapterPage() {
               </h2>
             </div>
             <span className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
-              32 VERIFIED CITATIONS
+              32 ARCHIVAL CITATIONS
             </span>
           </div>
 
@@ -126,7 +126,7 @@ export default function ArchiveChapterPage() {
               <div key={src.id} className="py-4 space-y-1.5">
                 <div className="flex items-center justify-between">
                   <span className="text-accent font-bold">{src.name}</span>
-                  <span className="text-text/40 text-[10px] uppercase">{src.verifiedStatus}</span>
+                  <span className="text-text/40 text-[10px] uppercase">{src.verifiedStatus.replace(/Verified\s*/i, '')}</span>
                 </div>
                 <p className="font-serif text-[14px] text-text/75 leading-relaxed">
                   {src.shortDesc.en}

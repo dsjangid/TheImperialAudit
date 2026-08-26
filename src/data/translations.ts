@@ -87,7 +87,7 @@ export const translations = {
       ratio465: " - Drain Ratio: ~$45 Trillion",
       militaryPercent: " - Military coercion: constant",
       socialPercent: " - Famine relief: withheld",
-      sourcesCount: " - 32 verified primary sources",
+      sourcesCount: " - 32 primary sources",
       methodologyBelow: " - Methodology below",
       fz426: "India Office Records, British Library",
       fz425: " - Parliamentary Debates (Hansard)",

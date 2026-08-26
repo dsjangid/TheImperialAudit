@@ -85,7 +85,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
 
               <div>
                 <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">PRIMARY ARCHIVES CITED</span>
-                <span className="text-text/90">32 Verified Parliamentary &amp; State Records</span>
+                <span className="text-text/90">32 Parliamentary &amp; State Records</span>
               </div>
 
               <div>

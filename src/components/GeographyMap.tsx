@@ -305,15 +305,15 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
                 CHRONOLOGY OF DOCUMENTED INCIDENTS
               </span>
               <span className="text-accent font-bold">
-                {selectedRegion.keyIncidents.length} VERIFIED EVENTS
+                {selectedRegion.keyIncidents.length} RECORDED EVENTS
               </span>
             </div>
 
             <div className="divide-y divide-text/10">
               {selectedRegion.keyIncidents.map((incident, i) => (
-                <div key={i} className="py-2 font-mono text-[12px] flex items-baseline justify-between gap-4">
+                <div key={i} className="py-2.5 font-mono text-[12px] flex items-baseline justify-between gap-4">
                   <span className="text-text/90 font-medium">{incident}</span>
-                  <span className="text-[10px] text-accent uppercase shrink-0 font-bold">[ VERIFIED ]</span>
+                  <span className="text-[10px] text-text/40 font-mono tracking-wider shrink-0">№ {String(i + 1).padStart(2, '0')}</span>
                 </div>
               ))}
             </div>
