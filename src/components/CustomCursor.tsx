@@ -1,65 +1,88 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export const CustomCursor: React.FC = () => {
   const dotRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
-  const mousePos = useRef({ x: -100, y: -100 });
-  const ringPos = useRef({ x: -100, y: -100 });
-  const isHovered = useRef(false);
+  const [isPointerFine, setIsPointerFine] = useState(false);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    // Only activate for devices with a precision pointer (mouse/trackpad)
+    if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
+      setIsPointerFine(true);
+    } else {
+      return;
+    }
+
+    let mouseX = -100;
+    let mouseY = -100;
+    let ringX = -100;
+    let ringY = -100;
+    let isHovering = false;
+    let isVisible = false;
+    let animationFrameId: number;
+
     const onMouseMove = (e: MouseEvent) => {
-      mousePos.current = { x: e.clientX, y: e.clientY };
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      if (!isVisible) {
+        isVisible = true;
+        if (dotRef.current) dotRef.current.style.opacity = '1';
+        if (ringRef.current) ringRef.current.style.opacity = '1';
+      }
 
       if (dotRef.current) {
-        dotRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
-        dotRef.current.style.opacity = '1';
+        dotRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
       }
     };
 
     const onMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement | null;
-      if (
-        target &&
-        (target.closest('a') ||
-          target.closest('button') ||
-          target.closest('input') ||
-          target.closest('select') ||
-          target.closest('article') ||
-          target.closest('.interactive') ||
-          target.closest('[data-cursor="accent"]'))
-      ) {
-        isHovered.current = true;
+      if (!target) return;
+
+      // Detect interactive elements without catching broad page article/section containers
+      const isInteractive = Boolean(
+        target.closest('a') ||
+        target.closest('button') ||
+        target.closest('input') ||
+        target.closest('select') ||
+        target.closest('textarea') ||
+        target.closest('[role="button"]') ||
+        target.closest('summary') ||
+        target.closest('[data-cursor="accent"]') ||
+        target.closest('.interactive')
+      );
+
+      if (isInteractive !== isHovering) {
+        isHovering = isInteractive;
         if (ringRef.current) {
-          ringRef.current.classList.add('cursor-ring-hover');
-        }
-        if (dotRef.current) {
-          dotRef.current.classList.add('cursor-dot-hover');
-        }
-      } else {
-        isHovered.current = false;
-        if (ringRef.current) {
-          ringRef.current.classList.remove('cursor-ring-hover');
-        }
-        if (dotRef.current) {
-          dotRef.current.classList.remove('cursor-dot-hover');
+          if (isHovering) {
+            ringRef.current.classList.add('cursor-ring-active');
+          } else {
+            ringRef.current.classList.remove('cursor-ring-active');
+          }
         }
       }
     };
 
-    let animationFrameId: number;
+    const onMouseLeave = () => {
+      isVisible = false;
+      if (dotRef.current) dotRef.current.style.opacity = '0';
+      if (ringRef.current) ringRef.current.style.opacity = '0';
+    };
 
     const renderLoop = () => {
-      // Lerp for smooth trailing ring
+      // Smooth linear interpolation for the trailing ring
       const ease = 0.22;
-      ringPos.current.x += (mousePos.current.x - ringPos.current.x) * ease;
-      ringPos.current.y += (mousePos.current.y - ringPos.current.y) * ease;
+      ringX += (mouseX - ringX) * ease;
+      ringY += (mouseY - ringY) * ease;
 
       if (ringRef.current) {
-        ringRef.current.style.transform = `translate3d(${ringPos.current.x}px, ${ringPos.current.y}px, 0)`;
-        ringRef.current.style.opacity = mousePos.current.x < 0 ? '0' : '1';
+        ringRef.current.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
       }
 
       animationFrameId = requestAnimationFrame(renderLoop);
@@ -67,14 +90,20 @@ export const CustomCursor: React.FC = () => {
 
     window.addEventListener('mousemove', onMouseMove, { passive: true });
     document.addEventListener('mouseover', onMouseOver, { passive: true });
+    document.addEventListener('mouseleave', onMouseLeave, { passive: true });
     animationFrameId = requestAnimationFrame(renderLoop);
 
     return () => {
       window.removeEventListener('mousemove', onMouseMove);
       document.removeEventListener('mouseover', onMouseOver);
+      document.removeEventListener('mouseleave', onMouseLeave);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);
+
+  if (!isPointerFine) {
+    return null;
+  }
 
   return (
     <>
@@ -82,25 +111,24 @@ export const CustomCursor: React.FC = () => {
       <div
         ref={dotRef}
         aria-hidden="true"
-        className="fixed top-0 left-0 w-2 h-2 -ml-[4px] -mt-[4px] bg-[#FF0000] rounded-full pointer-events-none z-[99999] opacity-0 transition-transform duration-75 ease-out"
+        className="fixed top-0 left-0 w-2 h-2 -ml-1 -mt-1 bg-[#FF0000] rounded-full pointer-events-none z-[99999] opacity-0 transition-opacity duration-150 ease-out"
+        style={{ willChange: 'transform' }}
       />
-      {/* Flat Trailing Ring */}
+      {/* Trailing Ring */}
       <div
         ref={ringRef}
         aria-hidden="true"
-        className="fixed top-0 left-0 w-8 h-8 -ml-[16px] -mt-[16px] border border-[#FF0000] rounded-full pointer-events-none z-[99998] opacity-0 transition-[width,height,border-color] duration-150 ease-out"
+        className="fixed top-0 left-0 w-8 h-8 -ml-4 -mt-4 border border-[#FF0000]/60 rounded-full pointer-events-none z-[99998] opacity-0 transition-[width,height,margin,border-color,background-color] duration-200 ease-out"
+        style={{ willChange: 'transform' }}
       />
       <style jsx global>{`
-        .cursor-ring-hover {
-          width: 48px !important;
-          height: 48px !important;
-          margin-left: -24px !important;
-          margin-top: -24px !important;
+        .cursor-ring-active {
+          width: 46px !important;
+          height: 46px !important;
+          margin-left: -23px !important;
+          margin-top: -23px !important;
           border-color: #FF0000 !important;
-        }
-        .cursor-dot-hover {
-          transform: scale(1.5) !important;
-          background-color: #FFFFFF !important;
+          background-color: rgba(255, 0, 0, 0.08) !important;
         }
       `}</style>
     </>
