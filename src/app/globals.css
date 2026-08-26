@@ -25,72 +25,72 @@
 @font-face{font-family:JetBrains Mono Fallback;src:local(Arial);ascent-override:75.79%;descent-override:22.29%;line-gap-override:0.0%;size-adjust:134.59%}
 
 :root {
-  --bg: #0A0A0A;
-  --text: #F2F2F2;
-  --accent: #FF0000;
-  --font-serif: 'Source Serif 4', Georgia, serif;
-  --font-mono: 'JetBrains Mono', monospace;
+ --bg: #0A0A0A;
+ --text: #F2F2F2;
+ --accent: #FF0000;
+ --font-serif: 'Source Serif 4', Georgia, serif;
+ --font-mono: 'JetBrains Mono', monospace;
 }
 
 html, body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: var(--font-serif);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-  scrollbar-width: none !important;
-  -ms-overflow-style: none !important;
+ background-color: var(--bg);
+ color: var(--text);
+ font-family: var(--font-serif);
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ overflow-x: hidden;
+ scrollbar-width: none !important;
+ -ms-overflow-style: none !important;
 }
 
 ::-webkit-scrollbar {
-  display: none !important;
-  width: 0px !important;
-  height: 0px !important;
+ display: none !important;
+ width: 0px !important;
+ height: 0px !important;
 }
 
 @media (pointer: fine) {
-  /* Retain responsive pointer while rendering custom dot & halo */
-  body {
-    cursor: default;
-  }
-  a, button, input, select, summary, [role="button"] {
-    cursor: pointer;
-  }
+ /* Retain responsive pointer while rendering custom dot & halo */
+ body {
+ cursor: default;
+ }
+ a, button, input, select, summary, [role="button"] {
+ cursor: pointer;
+ }
 }
 
 /* Eye illustration breathing animation */
 @keyframes eye-pulse {
-  0%, 100% {
-    opacity: 0.55;
-  }
-  50% {
-    opacity: 1;
-  }
+ 0%, 100% {
+ opacity: 0.55;
+ }
+ 50% {
+ opacity: 1;
+ }
 }
 
 .eye-pulse {
-  animation: eye-pulse 2.8s ease-in-out infinite;
+ animation: eye-pulse 2.8s ease-in-out infinite;
 }
 
 /* Selection */
 ::selection {
-  background-color: var(--accent);
-  color: #FFFFFF;
+ background-color: var(--accent);
+ color: #FFFFFF;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+ width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+ background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(244, 242, 238, 0.2);
-  border-radius: 2px;
+ background: rgba(244, 242, 238, 0.2);
+ border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+ background: var(--accent);
 }
