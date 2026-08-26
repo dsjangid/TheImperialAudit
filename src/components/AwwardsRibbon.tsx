@@ -14,7 +14,7 @@ export const AwwardsRibbon: React.FC = () =>{
  }}
  >
 <a
- href="https://www.awwwards.com/sites/peoples-audit"
+ href="https://www.awwwards.com/sites/the-imperial-audit"
  target="_blank"
  rel="noreferrer"
  aria-label="Awwwards Site of the Day"

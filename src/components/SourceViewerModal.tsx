@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { PrimaryDocument, primaryDocuments } from '@/data/primary-documents';
 import { EvidenceBadge } from './EvidenceBadge';
@@ -16,7 +16,6 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
   customDoc,
   onClose,
 }) => {
-  const modalRef = useRef<HTMLDivElement>(null);
   const doc = customDoc || (docId ? primaryDocuments[docId] : null);
 
   useEffect(() => {
@@ -46,7 +45,6 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
       onClick={onClose}
     >
       <div
-        ref={modalRef}
         className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0A0A0A] text-[#F2F2F2] border border-text/20 shadow-2xl p-6 sm:p-8 md:p-10"
         onClick={(e) => e.stopPropagation()}
       >

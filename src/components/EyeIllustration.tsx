@@ -41,7 +41,7 @@ export const EyeIllustration: React.FC<EyeIllustrationProps>= ({
  className="flex flex-col items-center justify-center my-12 md:my-24"
  >
 <p className="font-mono text-[13px] tracking-[0.25em] text-[#F4F2EE]/40 uppercase mb-6">
- {lang === 'ru' ? ', открыть дело, ': ', open the case, '}
+ {lang === 'ru' ? '· открыть дело · ' : '· open the case · '}
 </p>
 <Link
  href={href}

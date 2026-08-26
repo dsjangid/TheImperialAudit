@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { LiveSpendCounter } from '@/components/LiveSpendCounter';
-import { LiveClock } from '@/components/LiveClock';
 import { EyeIllustration } from '@/components/EyeIllustration';
 import { PageCornerBadges } from '@/components/PageCornerBadges';
 import { ImperialLedger } from '@/components/ImperialLedger';
@@ -89,10 +88,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </div>
 
               <div>
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">CURRENT TIME ELAPSED</span>
-                <div className="text-text/90 pt-0.5">
-                  <LiveClock />
-                </div>
+                <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">PUBLICATION DATE</span>
+                <span className="text-text/90">August 2026 · First Edition</span>
               </div>
             </div>
           </div>
@@ -168,7 +165,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </div>
 
               <div className="mt-4">
-                <LiveSpendCounter lang="en" ratePerSecondUsd={5868} ratePerSecondRub={534000} />
+                <LiveSpendCounter lang="en" />
               </div>
             </div>
 
@@ -325,7 +322,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                 tag: 'REGIONAL ATLAS & ARCHIVE',
                 title: 'Part V: The Subcontinental Corpus',
                 subtitle: 'Regional Incident Explorer, Historiography & Primary Bibliography',
-                desc: 'Organised chronicles across 12 distinct Indian regions, classification by resistance taxonomy (Tribal, Peasant, Revolutionary, Military, Famine), and full citations to the India Office Records and parliamentary papers.',
+                desc: 'Organised chronicles across 10 distinct Indian regions, classification by resistance taxonomy (Tribal, Peasant, Revolutionary, Military, Famine), and full citations to the India Office Records and parliamentary papers.',
                 readTime: '20 MIN READ · 32 PRIMARY SOURCES',
                 href: '/en/chapters/action',
                 img: '/TheImperialAudit/illustrations/dossiers/bhagat.jpg',

@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface ResearchStatusFooterProps {
   className?: string;
+  // Kept for API compatibility, not used
   lang?: 'en' | 'ru';
 }
 

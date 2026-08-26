@@ -41,7 +41,9 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
       // Region
       const matchesRegion =
         selectedRegion === 'ALL' ||
-        doc.location.toLowerCase().includes(selectedRegion.toLowerCase());
+        doc.location.toLowerCase().includes(selectedRegion.toLowerCase()) ||
+        doc.context.toLowerCase().includes(selectedRegion.toLowerCase()) ||
+        doc.title.toLowerCase().includes(selectedRegion.toLowerCase());
 
       return matchesTerm && matchesCategory && matchesEra && matchesRegion;
     });
@@ -129,9 +131,9 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
             >
               <option value="ALL" className="bg-black text-white">All Regions</option>
               <option value="Bengal" className="bg-black text-white">Bengal / Calcutta</option>
-              <option value="Punjab" className="bg-black text-white">Punjab / Amritsar</option>
-              <option value="Awadh" className="bg-black text-white">Awadh / Lucknow</option>
-              <option value="Delhi" className="bg-black text-white">Delhi</option>
+              <option value="Punjab" className="bg-black text-white">Punjab / Lahore</option>
+              <option value="Awadh" className="bg-black text-white">Awadh / Allahabad</option>
+              <option value="Madras" className="bg-black text-white">Madras Presidency</option>
               <option value="London" className="bg-black text-white">London (Whitehall / IOR)</option>
             </select>
           </div>

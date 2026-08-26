@@ -42,28 +42,35 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
           SELECT A FISCAL STAGE TO AUDIT:
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 border-y border-text/15 py-6">
-          {revenueFlowNodes.map((node) => {
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 border-y border-text/15 py-6">
+          {revenueFlowNodes.map((node, index) => {
             const isSelected = selectedNode.id === node.id;
             return (
               <button
                 key={node.id}
                 onClick={() => setSelectedNodeId(node.id)}
-                className={`text-left transition-colors flex flex-col justify-between ${
-                  isSelected ? 'text-accent' : 'text-text/60 hover:text-text'
+                className={`text-left p-3.5 transition-all relative border flex flex-col justify-between ${
+                  isSelected
+                    ? 'border-accent bg-accent/[0.06] text-accent'
+                    : 'border-text/15 bg-text/[0.01] text-text/60 hover:text-text hover:border-text/30'
                 }`}
               >
                 <div>
-                  <span className="font-mono text-[10px] uppercase tracking-wider block mb-1">
-                    STAGE {node.stepNumber}
-                  </span>
-                  <h4 className={`font-serif text-[14px] sm:text-[15px] font-bold leading-tight ${
+                  <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-wider mb-1.5">
+                    <span className={isSelected ? 'text-accent font-bold' : 'text-text/50'}>
+                      STAGE {node.stepNumber}
+                    </span>
+                    {index < revenueFlowNodes.length - 1 && (
+                      <span className="hidden lg:inline text-text/25 font-mono">→</span>
+                    )}
+                  </div>
+                  <h4 className={`font-serif text-[13px] font-bold leading-tight ${
                     isSelected ? 'text-accent' : 'text-text'
                   }`}>
                     {node.title}
                   </h4>
                 </div>
-                <div className="mt-2 font-mono text-[10px] text-text/40">
+                <div className="mt-3 font-mono text-[10px] text-text/40">
                   <span>{node.dateRange}</span>
                 </div>
               </button>

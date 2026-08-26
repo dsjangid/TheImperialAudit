@@ -72,23 +72,8 @@ html, body {
 
 /* Selection */
 ::selection {
- background-color: var(--accent);
- color: #FFFFFF;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
- width: 4px;
-}
-::-webkit-scrollbar-track {
- background: var(--bg);
-}
-::-webkit-scrollbar-thumb {
- background: rgba(244, 242, 238, 0.2);
- border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
- background: var(--accent);
+  background-color: var(--accent);
+  color: #FFFFFF;
 }
 
 .no-scrollbar::-webkit-scrollbar {

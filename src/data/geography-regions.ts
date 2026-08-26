@@ -39,7 +39,7 @@ export const regionalAudits: Record<string, RegionalAudit> = {
     revenueSystem: 'Permanent Settlement (1793) — Fixed Zamindari Assessment',
     economicExtraction:
       '£3.4M fixed annual land tax, absolute monopoly over salt production and opium cultivation; systematic deindustrialisation of Dacca muslin textile manufacture.',
-    documentedIncidentsCount: 8,
+    documentedIncidentsCount: 7,
     keyIncidents: [
       'Battle of Plassey (1757)',
       'Great Bengal Famine: 10M dead (1770)',
@@ -78,7 +78,7 @@ export const regionalAudits: Record<string, RegionalAudit> = {
     revenueSystem: 'Mahalwari / Village Assessment System with canal colony water rates',
     economicExtraction:
       'Heavy agrarian water taxes on Indus canal colonies, massive wartime military recruitment levies (over 500,000 soldiers for WWI), and export of Punjab wheat.',
-    documentedIncidentsCount: 6,
+    documentedIncidentsCount: 7,
     keyIncidents: [
       'Second Anglo-Sikh War and Annexation of Lahore (1849)',
       'Kuka / Namdhari Movement executions by cannon (1872)',
@@ -304,7 +304,7 @@ export const regionalAudits: Record<string, RegionalAudit> = {
     revenueSystem: 'Wasteland Grant Rules for European Tea Estates; Poll and Land Taxes',
     economicExtraction:
       'Vast European tea plantation monopolies worked by indentured coolie labour from central India under penal contract; coal and crude oil extraction at Digboi.',
-    documentedIncidentsCount: 4,
+    documentedIncidentsCount: 5,
     keyIncidents: [
       'Anglo-Khasi War led by U Tirot Sing (1829–1833)',
       'Phulaguri Dhawa: First peasant uprising against opium tax (1861)',

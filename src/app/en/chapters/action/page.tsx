@@ -126,7 +126,7 @@ export default function ArchiveChapterPage() {
               <div key={src.id} className="py-4 space-y-1.5">
                 <div className="flex items-center justify-between">
                   <span className="text-accent font-bold">{src.name}</span>
-                  <span className="text-text/40 text-[10px] uppercase">{src.verifiedStatus.replace(/Verified\s*/i, '')}</span>
+                  <span className="text-text/40 text-[10px] uppercase">{src.archivalCategory}</span>
                 </div>
                 <p className="font-serif text-[14px] text-text/75 leading-relaxed">
                   {src.shortDesc.en}

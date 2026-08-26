@@ -4,7 +4,7 @@ export interface SourceItem {
  name: string;
  shortDesc: { en: string; ru: string };
  url: string;
- verifiedStatus: string;
+ archivalCategory: string;
 }
 
 export const sourcesList: SourceItem[] = [
@@ -17,7 +17,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Основной архив Ост-Индской компании и её преемника: Индийского ведомства, хранящийся в Британской библиотеке, Лондон.',
  },
  url: 'https://www.bl.uk/collection-guides/india-office-records',
- verifiedStatus: 'Primary Archive',
+ archivalCategory: 'Primary Archive',
  },
  {
  id: 'national-archives-kew',
@@ -28,7 +28,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Содержит материалы Колониального ведомства, Военного министерства и Кабинета министров, касающиеся Британской Индии.',
  },
  url: 'https://www.nationalarchives.gov.uk',
- verifiedStatus: 'State Archive',
+ archivalCategory: 'State Archive',
  },
  {
  id: 'hunter-commission',
@@ -39,7 +39,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Доклад Комитета по расследованию беспорядков, изучавшего события в Пенджабе 1919 года.',
  },
  url: 'https://www.bl.uk',
- verifiedStatus: 'Parliamentary Report',
+ archivalCategory: 'Parliamentary Report',
  },
  {
  id: 'hansard',
@@ -50,7 +50,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Официальная запись дебатов Парламента Великобритании, включая дебаты об амритсарской резне и голоде в Бенгалии.',
  },
  url: 'https://hansard.parliament.uk',
- verifiedStatus: 'Official Parliamentary Record',
+ archivalCategory: 'Official Parliamentary Record',
  },
  {
  id: 'patnaik-drain',
@@ -61,7 +61,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Исследование Колумбийского университета, оценивающее чистый вывоз из Индии примерно в 45 триллионов долларов за 1765–1938 годы.',
  },
  url: 'https://cup.columbia.edu',
- verifiedStatus: 'Peer-Reviewed Academic',
+ archivalCategory: 'Peer-Reviewed Academic',
  },
  {
  id: 'amery-diaries',
@@ -72,7 +72,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Частные дневники государственного секретаря по делам Индии Леопольда Эмери, фиксирующие дискуссии Кабинета по голоду в Бенгалии.',
  },
  url: 'https://www.worldcat.org/title/empire-at-bay',
- verifiedStatus: 'Primary Diary: Published',
+ archivalCategory: 'Primary Diary: Published',
  },
  {
  id: 'davis-late-victorian',
@@ -83,7 +83,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Исследование колониальных голодоморов в период Эль-Ниньо, аргументирующее структурную причастность британской политики к гибели 12–29 миллионов индийцев.',
  },
  url: 'https://www.versobooks.com',
- verifiedStatus: 'Peer-Reviewed Academic',
+ archivalCategory: 'Peer-Reviewed Academic',
  },
  {
  id: 'sen-poverty-famines',
@@ -94,7 +94,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Анализ Оксфордского университета, доказывающий, что голод 1943 года в Бенгалии был вызван не абсолютной нехваткой продовольствия, а коллапсом прав на продовольствие.',
  },
  url: 'https://global.oup.com',
- verifiedStatus: 'Nobel Laureate Research',
+ archivalCategory: 'Nobel Laureate Research',
  },
  {
  id: 'famine-inquiry-1945',
@@ -105,7 +105,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Доклад комиссии по расследованию голода, оценивающий 1,5 миллиона избыточных смертей при признании политического контекста.',
  },
  url: 'https://www.bl.uk',
- verifiedStatus: 'Official Inquiry Report',
+ archivalCategory: 'Official Inquiry Report',
  },
  {
  id: 'guha-india-before-gandhi',
@@ -116,7 +116,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Всесторонняя история индийского движения за независимость с 1857 по 1948 год.',
  },
  url: 'https://www.penguin.co.uk',
- verifiedStatus: 'Peer-Reviewed Academic',
+ archivalCategory: 'Peer-Reviewed Academic',
  },
  {
  id: 'metcalf-aftermath',
@@ -127,7 +127,7 @@ export const sourcesList: SourceItem[] = [
  ru: 'Исследование трансформации британской политики после 1857 года.',
  },
  url: 'https://press.princeton.edu',
- verifiedStatus: 'Peer-Reviewed Academic',
+ archivalCategory: 'Peer-Reviewed Academic',
  },
  {
  id: 'wolpert-india',
@@ -138,6 +138,6 @@ export const sourcesList: SourceItem[] = [
  ru: 'Обзор истории Индии от цивилизации долины Инда до XXI века.',
  },
  url: 'https://global.oup.com',
- verifiedStatus: 'Authoritative Survey',
+ archivalCategory: 'Authoritative Survey',
  },
 ];

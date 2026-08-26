@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { PageCornerBadges } from '@/components/PageCornerBadges';
-import { LiveSpendCounter } from '@/components/LiveSpendCounter';
 import { EvidenceBadge } from '@/components/EvidenceBadge';
 import { SourceViewerModal } from '@/components/SourceViewerModal';
 import { ClaimEvidenceConclusion } from '@/components/ClaimEvidenceConclusion';
