@@ -121,14 +121,14 @@ export default function ArchiveChapterPage() {
             </span>
           </div>
 
-          <div className="divide-y divide-text/15 font-mono text-[12px]">
+          <div className="divide-y divide-[#2A2A2A] font-mono text-[12px]">
             {sourcesList.map((src) => (
               <div key={src.id} className="py-4 space-y-1.5">
                 <div className="flex items-center justify-between">
-                  <span className="text-accent font-bold">{src.name}</span>
-                  <span className="text-text/40 text-[10px] uppercase">{src.archivalCategory}</span>
+                  <span className="text-[#F5F5F0] font-bold">{src.name}</span>
+                  <span className="text-[#A3A39D] text-[10px] uppercase">{src.archivalCategory}</span>
                 </div>
-                <p className="font-serif text-[14px] text-text/75 leading-relaxed">
+                <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed">
                   {src.shortDesc.en}
                 </p>
                 <div className="pt-1">
@@ -136,7 +136,7 @@ export default function ArchiveChapterPage() {
                     href={src.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-accent hover:underline uppercase text-[10px] tracking-[0.15em] font-semibold"
+                    className="text-[#C62828] hover:text-[#E53935] hover:underline uppercase text-[10px] tracking-[0.15em] font-semibold transition-colors"
                   >
                     Open Archive Guide ↗
                   </a>
@@ -147,13 +147,13 @@ export default function ArchiveChapterPage() {
         </section>
 
         {/* Chapter Transition Link */}
-        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
-          <Link href="/en/chapters/share" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+        <div className="pt-16 border-t border-[#2A2A2A] flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en/chapters/share" className="text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-[0.15em] transition-colors">
             ← Chapter 04: Ten Minutes in Amritsar
           </Link>
           <Link
             href="/en/methodology"
-            className="text-accent hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2"
+            className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2 transition-colors"
           >
             <span>Proceed to Academic Methodology Appendix</span>
             <span>→</span>
