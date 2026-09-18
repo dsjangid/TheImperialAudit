@@ -73,23 +73,11 @@ export const CustomCursor: React.FC = () => {
   }
 
   return (
-    <>
-      {/* Pure Red Precision Dot Cursor */}
-      <div
-        ref={dotRef}
-        aria-hidden="true"
-        className="fixed top-0 left-0 w-2.5 h-2.5 -ml-[5px] -mt-[5px] bg-[#FF0000] rounded-full pointer-events-none z-[100000] opacity-0 transition-[width,height,margin,background-color] duration-150 ease-out"
-        style={{ willChange: 'transform' }}
-      />
-      <style jsx global>{`
-        .cursor-dot-active {
-          width: 14px !important;
-          height: 14px !important;
-          margin-left: -7px !important;
-          margin-top: -7px !important;
-          background-color: #FF0000 !important;
-        }
-      `}</style>
-    </>
+    <div
+      ref={dotRef}
+      aria-hidden="true"
+      className="fixed top-0 left-0 w-2.5 h-2.5 -ml-[5px] -mt-[5px] bg-[#FF0000] rounded-full pointer-events-none z-[100000] opacity-0 transition-[width,height,margin,background-color] duration-150 ease-out"
+      style={{ willChange: 'transform' }}
+    />
   );
 };
