@@ -189,22 +189,22 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-[#A3A39D] mt-1.5 leading-tight italic">
  ▲ Lord Cornwallis: Architect of the Permanent Settlement (1793)
 </p>
 </div>
 <p>
- Arriving in India after his defeat by American revolutionaries at Yorktown, Lord Cornwallis was dispatched to reform an administration plagued by scandal and inefficiency. His most enduring and catastrophic legacy was the <span className="text-accent font-semibold">Permanent Settlement of Bengal in 1793</span>. Driven by a Whig belief in private property as the basis of prosperity, Cornwallis transformed traditional revenue collectors (zamindars) into absolute landlords, fixing the state land tax permanently. 
+ Arriving in India after his defeat by American revolutionaries at Yorktown, Lord Cornwallis was dispatched to reform an administration plagued by scandal and inefficiency. His most enduring and catastrophic legacy was the <span className="font-semibold">Permanent Settlement of Bengal in 1793</span>. Driven by a Whig belief in private property as the basis of prosperity, Cornwallis transformed traditional revenue collectors (zamindars) into absolute landlords, fixing the state land tax permanently. 
 </p>
 <p>
  While intended to create a stable, English-style agrarian society and reliable tax base, the Settlement proved disastrous for rural India. It summarily stripped millions of tenant farmers of their customary land rights, reducing them to tenants-at-will. When initial tax demands were set unsustainably high, many traditional zamindars lost their lands to urban speculators, creating a vicious class of absentee landlords. This structure laid the volatile groundwork for subsequent agrarian crises, most notably the Indigo Revolt of the 1860s.
 </p>
 <p>
- Equally significant was the Cornwallis Code, a comprehensive body of legislation that formalized the administration of justice and revenue. Crucially, it instituted a rigid racial hierarchy by <span className="text-accent font-semibold">systematically excluding Indians from all higher administrative and judicial positions</span>. Cornwallis harbored deep prejudices regarding the trustworthiness of Indian officials, ensuring that the nascent Indian Civil Service became a purely European preserve, an institutionalized racial bar that would characterize the British Raj until its final decades.
+ Equally significant was the Cornwallis Code, a comprehensive body of legislation that formalized the administration of justice and revenue. Crucially, it instituted a rigid racial hierarchy by <span className="font-semibold">systematically excluding Indians from all higher administrative and judicial positions</span>. Cornwallis harbored deep prejudices regarding the trustworthiness of Indian officials, ensuring that the nascent Indian Civil Service became a purely European preserve, an institutionalized racial bar that would characterize the British Raj until its final decades.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>PERMANENT SETTLEMENT (1793)</p>
 <p>CREATED ZAMINDARI LANDLORDS</p>
 <p>CORNWALLIS CODE</p>
@@ -214,13 +214,13 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 4. LORD DALHOUSIE */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">GOVERNOR-GENERAL · AUTHOR OF THE DOCTRINE OF LAPSE</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD DALHOUSIE</h3>
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1812, SCOTLAND · KEY PERIOD: 1848–1856</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">GOVERNOR-GENERAL · AUTHOR OF THE DOCTRINE OF LAPSE</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD DALHOUSIE</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1812</span>, SCOTLAND · KEY PERIOD: <span className="text-[#E53935]">1848–1856</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
 <img
@@ -229,7 +229,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-[#A3A39D] mt-1.5 leading-tight italic">
  ▲ Imperial Viceroyalty Portrait: Declassified State Papers
 </p>
 </div>
@@ -240,7 +240,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Lord Curzon (Viceroy 1899–1905): a later embodiment of the Doctrine of Lapse era's imperial ideology
 </p>
 </div>
@@ -248,14 +248,14 @@ export default function SubjectsChapterPage() {
  James Broun-Ramsay, Lord Dalhousie, was an aggressive imperial modernizer whose tenure irrevocably accelerated the collision between the East India Company and the Indian populace. He is most notoriously associated with the Doctrine of Lapse, an expansionist legal fiction dictating that if an Indian ruler died without a natural biological male heir, the state's sovereignty lapsed and it was automatically annexed by the Company. This policy actively dismissed traditional Hindu laws of adoption.
 </p>
 <p>
- Under this doctrine, Dalhousie ruthlessly swallowed principalities including Satara (1848), Jhansi (1853), and Nagpur (1854). However, his most explosive act was the <span className="text-accent font-semibold">annexation of Awadh in 1856</span>. Deposing Nawab Wajid Ali Shah on dubious claims of "misgovernment" - despite explicit treaty guarantees, Dalhousie shattered the loyalty of the Bengal Army's sepoys, many of whom hailed from Awadh. Historians universally identify this annexation as a primary catalyst for the catastrophic Uprising of 1857.
+ Under this doctrine, Dalhousie ruthlessly swallowed principalities including Satara (1848), Jhansi (1853), and Nagpur (1854). However, his most explosive act was the <span className="font-semibold">annexation of Awadh in 1856</span>. Deposing Nawab Wajid Ali Shah on dubious claims of "misgovernment" - despite explicit treaty guarantees, Dalhousie shattered the loyalty of the Bengal Army's sepoys, many of whom hailed from Awadh. Historians universally identify this annexation as a primary catalyst for the catastrophic Uprising of 1857.
 </p>
 <p>
  Paradoxically, Dalhousie was also the architect of India's infrastructural modernization. He introduced the railway system, the electric telegraph, a unified postal service, and the Public Works Department. This presented the core contradiction of his rule: he rapidly modernized the physical landscape of the subcontinent while systematically and arrogantly destroying the political sovereignty of its traditional elites. The very telegraph lines he laid would soon be used to coordinate the suppression of the rebellion his policies provoked.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>DOCTRINE OF LAPSE</p>
 <p>ANNEXED AWADH (1856)</p>
 <p>INTRODUCED RAILWAYS & TELEGRAPH</p>
@@ -265,13 +265,13 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 5. LORD CURZON */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">VICEROY OF INDIA</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD CURZON</h3>
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1859, DERBYSHIRE · KEY PERIOD: 1899–1905</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">VICEROY OF INDIA</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD CURZON</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1859</span>, DERBYSHIRE · KEY PERIOD: <span className="text-[#E53935]">1899–1905</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
 <img
