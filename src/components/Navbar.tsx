@@ -78,9 +78,9 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
             </div>
           </div>
 
-          {/* Right Controls: Night Light + Live Clock + Mobile Toggle */}
-          <div className="shrink-0 flex items-center gap-3 sm:gap-4 z-10">
-            <NightLightToggle variant="desktop" className="hidden md:inline-block" />
+          {/* Right Controls: Night Light Moon Icon + Live Clock + Mobile Toggle */}
+          <div className="shrink-0 flex items-center gap-2.5 sm:gap-4 z-10">
+            <NightLightToggle />
             <div className="hidden lg:inline-block">
               <LiveClock />
             </div>
@@ -173,8 +173,6 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
               );
             })}
           </ul>
-
-          <NightLightToggle variant="mobile" />
 
           <div className="pt-8 flex items-center justify-between font-mono text-[12px] uppercase tracking-[0.25em] text-text/45">
             <LiveClock />
