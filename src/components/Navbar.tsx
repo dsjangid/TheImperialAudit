@@ -40,8 +40,8 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
             <span className="text-text font-black text-[13px] tracking-[0.24em] whitespace-nowrap">
               THE IMPERIAL AUDIT
             </span>
-            <span className="hidden sm:inline text-text/35 text-[11px] font-medium tracking-[0.18em] pl-2 border-l border-text/20 whitespace-nowrap">
-              1757–1947
+            <span className="hidden sm:inline text-[#A3A39D] text-[11px] font-medium tracking-[0.18em] pl-2 border-l border-[#2A2A2A] whitespace-nowrap">
+              <span className="text-[#E53935]">1757–1947</span>
             </span>
           </Link>
 
