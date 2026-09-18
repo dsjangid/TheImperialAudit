@@ -15,34 +15,34 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
     revenueFlowNodes.find((n) => n.id === selectedNodeId) || revenueFlowNodes[0];
 
   return (
-    <section className="my-24 border-t border-text/15 pt-16" id="follow-the-money">
+    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="follow-the-money">
       {/* Section Masthead */}
       <div className="flex flex-wrap items-baseline justify-between gap-4 mb-10">
         <div>
           <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-            <span className="text-accent font-semibold">FISCAL FLOW DIAGRAM</span>
-            <span className="text-text/40 border-l border-text/20 pl-3">STRUCTURAL DRAIN ARCHITECTURE</span>
+            <span className="text-[#C62828] font-semibold">FISCAL FLOW DIAGRAM</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">STRUCTURAL DRAIN ARCHITECTURE</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-text leading-[0.95]">
+          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
             FOLLOW THE MONEY
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-2">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2">
             How Revenue Moved Through the Colonial System: From Indian Agrarian Taxes to the Metropolitan Treasury
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
+        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
           <span>7-STAGE FISCAL PIPELINE</span>
         </div>
       </div>
 
       {/* Interactive Flow Pathway List */}
       <div className="mb-10">
-        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-text/40 mb-4">
+        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] mb-4">
           SELECT A FISCAL STAGE TO AUDIT:
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 border-y border-text/15 py-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 border-y border-[#2A2A2A] py-6">
           {revenueFlowNodes.map((node, index) => {
             const isSelected = selectedNode.id === node.id;
             return (
@@ -51,26 +51,26 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
                 onClick={() => setSelectedNodeId(node.id)}
                 className={`text-left p-3.5 transition-all relative border flex flex-col justify-between ${
                   isSelected
-                    ? 'border-accent bg-accent/[0.06] text-accent'
-                    : 'border-text/15 bg-text/[0.01] text-text/60 hover:text-text hover:border-text/30'
+                    ? 'border-[#C62828] bg-[#C62828]/[0.08] text-[#C62828]'
+                    : 'border-[#2A2A2A] bg-text/[0.01] text-[#D6D6D0] hover:text-[#F5F5F0] hover:border-[#A3A39D]/40'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between font-mono text-[10px] uppercase tracking-wider mb-1.5">
-                    <span className={isSelected ? 'text-accent font-bold' : 'text-text/50'}>
+                    <span className={isSelected ? 'text-[#C62828] font-bold' : 'text-[#A3A39D]'}>
                       STAGE {node.stepNumber}
                     </span>
                     {index < revenueFlowNodes.length - 1 && (
-                      <span className="hidden lg:inline text-text/25 font-mono">→</span>
+                      <span className="hidden lg:inline text-[#A3A39D]/40 font-mono">→</span>
                     )}
                   </div>
                   <h4 className={`font-serif text-[13px] font-bold leading-tight ${
-                    isSelected ? 'text-accent' : 'text-text'
+                    isSelected ? 'text-[#F5F5F0]' : 'text-[#D6D6D0]'
                   }`}>
                     {node.title}
                   </h4>
                 </div>
-                <div className="mt-3 font-mono text-[10px] text-text/40">
+                <div className="mt-3 font-mono text-[10px] text-[#E53935]">
                   <span>{node.dateRange}</span>
                 </div>
               </button>
@@ -83,12 +83,12 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
       {selectedNode && (
         <div className="pt-2">
           {/* Header Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-text/15 pb-4 mb-6">
+          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#2A2A2A] pb-4 mb-6">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="font-mono text-[20px] font-bold text-accent">
+              <span className="font-mono text-[20px] font-bold text-[#C62828]">
                 STAGE {selectedNode.stepNumber}
               </span>
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-text/40 border-l border-text/20 pl-3">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#A3A39D] border-l border-[#2A2A2A] pl-3">
                 {selectedNode.category}
               </span>
               <span className="font-mono text-[12px] text-text/60 border-l border-text/20 pl-3">
