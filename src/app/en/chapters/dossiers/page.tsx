@@ -506,7 +506,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Begum Hazrat Mahal: Regent of Awadh, refused British amnesty, died in Kathmandu 1879
 </p>
 </div>
@@ -521,7 +521,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>ORGANIZED AWADH RESISTANCE</p>
 <p>BESIEGED LUCKNOW RESIDENCY</p>
 <p>REFUSED BRITISH AMNESTY</p>
@@ -531,16 +531,16 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 10. DADABHAI NAOROJI */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">POLITICAL ECONOMIST · MP FOR FINSBURY · INC PRESIDENT</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">DADABHAI NAOROJI</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">POLITICAL ECONOMIST · MP FOR FINSBURY · INC PRESIDENT</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">DADABHAI NAOROJI</h3>
  {/* ARCHIVAL PHOTO */}
-<div className="my-12 border-t border-text/10 pt-12">
+<div className="my-12 border-t border-[#2A2A2A] pt-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<div className="overflow-hidden border border-text/15">
+<div className="overflow-hidden border border-[#2A2A2A]">
 <img
  src="/TheImperialAudit/illustrations/dossiers/rajendra.jpg"
  alt="Dadabhai Naoroji: first Indian elected to the British Parliament, 1892"
@@ -548,19 +548,19 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] mt-3">
  ▲ Dadabhai Naoroji: first Indian elected to the British Parliament, 1892
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>India Office Records, British Library</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1825, BOMBAY · KEY PERIOD: 1867–1906</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1825</span>, BOMBAY · KEY PERIOD: <span className="text-[#E53935]">1867–1906</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <div className="w-full mb-6 clear-both">
 <img
  src="/TheImperialAudit/illustrations/dossiers/rajendra.jpg"
@@ -568,7 +568,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Dr. Rajendra Prasad: championed the same economic nationalism Naoroji founded
 </p>
 </div>
@@ -576,7 +576,7 @@ export default function SubjectsChapterPage() {
  Affectionately known as the "Grand Old Man of India," Dadabhai Naoroji shifted the battleground against the British Empire from the military domain to the realm of political economy. A brilliant scholar and moderate nationalist, Naoroji achieved the historic milestone of becoming the first Indian elected to the British Parliament, winning the seat of Finsbury Central in London by a margin of merely five votes in 1892. From this platform, he tirelessly lobbied for Indian representation and civil rights within the imperial framework.
 </p>
 <p>
- His paramount historical contribution was the articulation of the "Drain Theory." In his seminal 1901 work,<i>Poverty and Un-British Rule in India</i>, Naoroji provided the first systematic, quantitative analysis proving that the British administration was systematically bleeding India of its wealth. He demonstrated that India's massive export surplus was not returning as imports or investment; instead, it was being drained away to London as "Home Charges," pensions for British officials, and profit remittances. Naoroji estimated this extraction at approximately £30 million annually.
+ His paramount historical contribution was the articulation of the "Drain Theory." In his seminal 1901 work, <i>Poverty and Un-British Rule in India</i>, Naoroji provided the first systematic, quantitative analysis proving that the British administration was systematically bleeding India of its wealth. He demonstrated that India's massive export surplus was not returning as imports or investment; instead, it was being drained away to London as "Home Charges," pensions for British officials, and profit remittances. Naoroji estimated this extraction at approximately £30 million annually.
 </p>
 <p>
  Naoroji's economic critique destroyed the paternalistic British narrative that colonial rule was bringing prosperity to the subcontinent. Modern economic historians have validated his core thesis; contemporary estimates, such as those by Utsa Patnaik (2018), suggest the total wealth extracted between 1765 and 1938 amounted to an astronomical $45 trillion in modern terms. Serving three times as the President of the Indian National Congress, Naoroji's intellectual framework profoundly influenced the next generation of nationalists, including both Tilak and Gandhi, laying the ideological foundation for the demand for Swaraj (self-rule).
