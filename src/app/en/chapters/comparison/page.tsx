@@ -113,11 +113,11 @@ export default function Rebellion1857ChapterPage() {
               <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Meerut Outbreak &amp; March on Delhi
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                10 MAY 1857 · MEERUT TO RED FORT, DELHI
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">10 MAY 1857</span> · MEERUT TO RED FORT, DELHI
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
                   The true ignition point occurred in the massive military cantonment at Meerut. On 9 May, eighty-five cavalrymen of the 3rd Bengal Light Cavalry were publicly shackled and sentenced to ten years' hard labor for refusing the greased Enfield cartridges. On the evening of Sunday, 10 May, Indian soldiers broke open the jail, liberated their comrades, and commenced the historic 40-mile night march to Delhi, proclaiming Mughal Emperor Bahadur Shah Zafar as the sovereign head of the uprising.
                 </p>
@@ -126,7 +126,7 @@ export default function Rebellion1857ChapterPage() {
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-meerut-telegram-1857')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW PRIMARY TELEGRAPH LOG: MEERUT OUTBREAK (10 MAY 1857) → ]
                   </button>
@@ -144,9 +144,9 @@ export default function Rebellion1857ChapterPage() {
               />
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-text font-bold">KEY RECORDS</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#F5F5F0] font-bold">KEY RECORDS</p>
                 <p>85 CAVALRYMEN SHACKLED</p>
                 <p>40-MILE NIGHT MARCH</p>
                 <p>DELHI RESTORATION PROCLAIMED</p>
@@ -161,10 +161,10 @@ export default function Rebellion1857ChapterPage() {
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PARLIAMENTARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">GOVERNANCE · CROWN RAJ</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">GOVERNANCE · CROWN RAJ</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Government of India Act 1858 &amp; The Queen’s Proclamation
               </h3>
               <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
