@@ -147,13 +147,13 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
                   <div
                     className={`w-3 h-3 rounded-full border transition-all ${
                       isActive
-                        ? 'border-accent bg-accent scale-125'
-                        : 'border-text/40 bg-bg group-hover:border-text group-hover:scale-110'
+                        ? 'border-[#C62828] bg-[#C62828] scale-125'
+                        : 'border-[#2A2A2A] bg-bg group-hover:border-[#D6D6D0] group-hover:scale-110'
                     }`}
                   />
                   <span
                     className={`mt-2 font-mono text-[9px] uppercase tracking-tighter max-w-[65px] truncate text-center transition-colors ${
-                      isActive ? 'text-text font-semibold' : 'text-text/30 group-hover:text-text/60'
+                      isActive ? 'text-[#F5F5F0] font-semibold' : 'text-[#A3A39D] group-hover:text-[#D6D6D0]'
                     }`}
                   >
                     {ev.region.split(',')[0]}
@@ -166,21 +166,21 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
       </div>
 
       {/* Scrubber Controls (Mobile) */}
-      <div className="flex items-center justify-between gap-4 lg:hidden mb-8 py-2 border-y border-text/15 font-mono text-[12px]">
+      <div className="flex items-center justify-between gap-4 lg:hidden mb-8 py-2 border-y border-[#2A2A2A] font-mono text-[12px]">
         <button
           type="button"
           onClick={handlePrev}
-          className="text-text/60 hover:text-accent uppercase tracking-[0.1em]"
+          className="text-[#D6D6D0] hover:text-[#E53935] uppercase tracking-[0.1em]"
         >
           ← PREV YEAR
         </button>
-        <span className="text-accent font-bold">
+        <span className="text-[#E53935] font-bold">
           {activeEventIndex + 1} / {filteredEvents.length} · {currentEvent?.year}
         </span>
         <button
           type="button"
           onClick={handleNext}
-          className="text-text/60 hover:text-accent uppercase tracking-[0.1em]"
+          className="text-[#D6D6D0] hover:text-[#E53935] uppercase tracking-[0.1em]"
         >
           NEXT YEAR →
         </button>
@@ -190,22 +190,22 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
       {currentEvent && (
         <div className="pt-4 relative">
           {/* Top Ledger Stamp Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-text/15 pb-4 mb-6">
+          <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#2A2A2A] pb-4 mb-6">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="font-mono text-[24px] sm:text-[30px] font-black text-accent tracking-tighter">
+              <span className="font-mono text-[24px] sm:text-[30px] font-black text-[#E53935] tracking-tighter">
                 {currentEvent.year}
               </span>
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-text/40 border-l border-text/20 pl-3">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#E53935] border-l border-[#2A2A2A] pl-3">
                 {currentEvent.dateStr}
               </span>
-              <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-text/60 border-l border-text/20 pl-3">
+              <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-[#B5B5AF] border-l border-[#2A2A2A] pl-3">
                 {currentEvent.region}
               </span>
             </div>
 
             <div className="flex items-center gap-3 font-mono text-[11px]">
               <EvidenceBadge category={currentEvent.evidenceStatus} size="sm" />
-              <span className="text-text/50 uppercase tracking-[0.15em]">
+              <span className="text-[#A3A39D] uppercase tracking-[0.15em]">
                 {currentEvent.category}
               </span>
             </div>
@@ -213,7 +213,7 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
 
           {/* Event Title & Subtitle */}
           <div className="mb-6">
-            <h3 className="font-serif text-[26px] sm:text-[34px] md:text-[38px] font-bold leading-tight text-text">
+            <h3 className="font-serif text-[26px] sm:text-[34px] md:text-[38px] font-bold leading-tight text-[#F5F5F0]">
               {currentEvent.title}
             </h3>
             <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-1">
