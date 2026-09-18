@@ -26,33 +26,33 @@ export const ClaimEvidenceConclusion: React.FC<ClaimEvidenceConclusionProps> = (
   className = '',
 }) => {
   return (
-    <div className={`border-t border-b border-text/15 py-8 space-y-6 my-8 ${className}`}>
+    <div className={`border-t border-b border-[#2A2A2A] py-8 space-y-6 my-8 ${className}`}>
       {/* 1. CLAIM */}
       <div>
         <div className="flex items-center justify-between mb-2 font-mono text-[11px]">
-          <span className="uppercase tracking-[0.2em] text-accent font-semibold">
+          <span className="uppercase tracking-[0.2em] text-[#C62828] font-semibold">
             CLAIM AUDIT
           </span>
           <EvidenceBadge category={evidenceCategory} size="sm" />
         </div>
-        <p className="font-serif text-[17px] sm:text-[18px] font-bold text-text leading-snug">
+        <p className="font-serif text-[17px] sm:text-[18px] font-bold text-[#F5F5F0] leading-snug">
           &ldquo;{claim}&rdquo;
         </p>
       </div>
 
       {/* 2. EVIDENCE */}
-      <div className="border-t border-text/10 pt-4">
-        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-text/40 block mb-1">
+      <div className="border-t border-[#2A2A2A] pt-4">
+        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
           ARCHIVAL EVIDENCE &amp; DATA
         </span>
-        <p className="font-serif text-[15px] leading-relaxed text-text/80">
+        <p className="font-serif text-[15px] leading-relaxed text-[#D6D6D0]">
           {evidence}
         </p>
         {sourceDocId && onOpenSourceDoc && (
           <button
             type="button"
             onClick={() => onOpenSourceDoc(sourceDocId)}
-            className="mt-2 font-mono text-[11px] uppercase tracking-[0.15em] text-accent hover:underline font-bold block"
+            className="mt-2 font-mono text-[11px] uppercase tracking-[0.15em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold block transition-colors"
           >
             [ VIEW ARCHIVAL RECORD {sourceRef ? `(${sourceRef})` : ''} → ]
           </button>
@@ -60,11 +60,11 @@ export const ClaimEvidenceConclusion: React.FC<ClaimEvidenceConclusionProps> = (
       </div>
 
       {/* 3. CONCLUSION */}
-      <div className="border-t border-text/10 pt-4">
-        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent block mb-1 font-semibold">
+      <div className="border-t border-[#2A2A2A] pt-4">
+        <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] block mb-1 font-semibold">
           EVALUATION CONCLUSION
         </span>
-        <p className="font-serif italic text-[15px] leading-relaxed text-text/90">
+        <p className="font-serif italic text-[15px] leading-relaxed text-[#D6D6D0]">
           {conclusion}
         </p>
       </div>
