@@ -106,35 +106,35 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
 
           {/* Category Filter */}
           <div>
-            <label className="block text-text/40 mb-1">DOCUMENT CATEGORY:</label>
+            <label className="block text-[#A3A39D] mb-1">DOCUMENT CATEGORY:</label>
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full bg-transparent border-b border-text/20 py-1 text-text text-[11px] focus:outline-none focus:border-accent cursor-pointer"
+              className="w-full bg-transparent border-b border-[#2A2A2A] py-1 text-[#D6D6D0] text-[11px] focus:outline-none focus:border-[#C62828] cursor-pointer"
             >
-              <option value="ALL" className="bg-black text-white">All Categories</option>
-              <option value="PRIMARY_RECORD" className="bg-black text-white">Primary Records</option>
-              <option value="OFFICIAL_ENQUIRY" className="bg-black text-white">Official Enquiries</option>
-              <option value="PARLIAMENTARY_RECORD" className="bg-black text-white">Parliamentary Papers</option>
-              <option value="ECONOMIC_DATA" className="bg-black text-white">Economic Data</option>
-              <option value="SCHOLARLY_ESTIMATE" className="bg-black text-white">Scholarly Estimates</option>
+              <option value="ALL" className="bg-[#0A0A0A] text-[#F5F5F0]">All Categories</option>
+              <option value="PRIMARY_RECORD" className="bg-[#0A0A0A] text-[#F5F5F0]">Primary Records</option>
+              <option value="OFFICIAL_ENQUIRY" className="bg-[#0A0A0A] text-[#F5F5F0]">Official Enquiries</option>
+              <option value="PARLIAMENTARY_RECORD" className="bg-[#0A0A0A] text-[#F5F5F0]">Parliamentary Papers</option>
+              <option value="ECONOMIC_DATA" className="bg-[#0A0A0A] text-[#F5F5F0]">Economic Data</option>
+              <option value="SCHOLARLY_ESTIMATE" className="bg-[#0A0A0A] text-[#F5F5F0]">Scholarly Estimates</option>
             </select>
           </div>
 
           {/* Region Filter */}
           <div>
-            <label className="block text-text/40 mb-1">GEOGRAPHIC REGION:</label>
+            <label className="block text-[#A3A39D] mb-1">GEOGRAPHIC REGION:</label>
             <select
               value={selectedRegion}
               onChange={(e) => setSelectedRegion(e.target.value)}
-              className="w-full bg-transparent border-b border-text/20 py-1 text-text text-[11px] focus:outline-none focus:border-accent cursor-pointer"
+              className="w-full bg-transparent border-b border-[#2A2A2A] py-1 text-[#D6D6D0] text-[11px] focus:outline-none focus:border-[#C62828] cursor-pointer"
             >
-              <option value="ALL" className="bg-black text-white">All Regions</option>
-              <option value="Bengal" className="bg-black text-white">Bengal / Calcutta</option>
-              <option value="Punjab" className="bg-black text-white">Punjab / Lahore</option>
-              <option value="Awadh" className="bg-black text-white">Awadh / Allahabad</option>
-              <option value="Madras" className="bg-black text-white">Madras Presidency</option>
-              <option value="London" className="bg-black text-white">London (Whitehall / IOR)</option>
+              <option value="ALL" className="bg-[#0A0A0A] text-[#F5F5F0]">All Regions</option>
+              <option value="Bengal" className="bg-[#0A0A0A] text-[#F5F5F0]">Bengal / Calcutta</option>
+              <option value="Punjab" className="bg-[#0A0A0A] text-[#F5F5F0]">Punjab / Lahore</option>
+              <option value="Awadh" className="bg-[#0A0A0A] text-[#F5F5F0]">Awadh / Allahabad</option>
+              <option value="Madras" className="bg-[#0A0A0A] text-[#F5F5F0]">Madras Presidency</option>
+              <option value="London" className="bg-[#0A0A0A] text-[#F5F5F0]">London (Whitehall / IOR)</option>
             </select>
           </div>
         </div>
@@ -142,11 +142,11 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
 
       {/* Document Results List */}
       {filteredDocs.length === 0 ? (
-        <div className="py-16 text-center font-mono text-[13px] text-text/40">
+        <div className="py-16 text-center font-mono text-[13px] text-[#A3A39D]">
           NO ARCHIVAL RECORDS MATCH THE SELECTED FILTER CRITERIA.
         </div>
       ) : (
-        <div className="divide-y divide-text/10">
+        <div className="divide-y divide-[#2A2A2A]">
           {filteredDocs.map((doc) => (
             <div
               key={doc.id}
@@ -154,27 +154,27 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
             >
               <div className="md:w-3/4 space-y-2">
                 <div className="flex flex-wrap items-center gap-3 font-mono text-[11px]">
-                  <span className="text-accent font-bold">{doc.archiveRef}</span>
-                  <span className="text-text/40">{doc.date}</span>
-                  <span className="text-text/60">· {doc.location}</span>
+                  <span className="text-[#C62828] font-bold">{doc.archiveRef}</span>
+                  <span className="text-[#E53935]">{doc.date}</span>
+                  <span className="text-[#B5B5AF]">· {doc.location}</span>
                   <EvidenceBadge category={doc.category} size="sm" />
                 </div>
 
-                <h3 className="font-serif text-[19px] sm:text-[22px] font-bold text-text group-hover:text-accent transition-colors leading-snug">
+                <h3 className="font-serif text-[19px] sm:text-[22px] font-bold text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-snug">
                   {doc.title}
                 </h3>
 
-                <p className="font-serif text-[14px] text-text/70 line-clamp-2 leading-relaxed">
+                <p className="font-serif text-[14px] text-[#D6D6D0] line-clamp-2 leading-relaxed">
                   {doc.excerpt}
                 </p>
               </div>
 
               <div className="md:w-1/4 flex flex-col md:items-end justify-between self-stretch font-mono text-[11px]">
-                <span className="text-text/40 text-[10px] uppercase">{doc.repository}</span>
+                <span className="text-[#B5B5AF] text-[10px] uppercase">{doc.repository}</span>
                 <button
                   type="button"
                   onClick={() => onOpenSourceDoc(doc.id)}
-                  className="mt-3 text-accent hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1"
+                  className="mt-3 px-3 py-1.5 bg-[#C62828] hover:bg-[#E53935] text-white font-mono text-[11px] uppercase tracking-[0.15em] font-bold transition-colors inline-flex items-center gap-1.5"
                 >
                   <span>[ OPEN RECORD ]</span>
                   <span>→</span>
