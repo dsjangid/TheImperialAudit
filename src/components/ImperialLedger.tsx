@@ -49,33 +49,33 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
   };
 
   return (
-    <section className="my-24 border-t border-text/15 pt-16" id="imperial-ledger">
+    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="imperial-ledger">
       {/* Section Masthead */}
       <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
         <div>
           <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-            <span className="text-accent font-semibold">SIGNATURE TIMELINE</span>
-            <span className="text-text/40 border-l border-text/20 pl-3">CHRONOLOGY · 1757–1947</span>
+            <span className="text-[#C62828] font-semibold">SIGNATURE TIMELINE</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">CHRONOLOGY · 1757–1947</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-text leading-[0.95]">
+          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
             THE IMPERIAL LEDGER
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-2">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2">
             1757 — 1947 / A Chronological Record of Extraction, Resistance, and Direct Rule
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em] text-right">
+        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-right">
           <span>{filteredEvents.length} DOCUMENTED MILESTONES</span>
-          <span className="block text-[10px] text-text/30">AUDITED HISTORICAL CORPUS</span>
+          <span className="block text-[10px] text-[#A3A39D]/60">AUDITED HISTORICAL CORPUS</span>
         </div>
       </div>
 
       {/* Era & Category Filter Tabs */}
-      <div className="space-y-4 mb-10 pb-6 border-b border-text/10 font-mono text-[11px] uppercase tracking-[0.15em]">
+      <div className="space-y-4 mb-10 pb-6 border-b border-[#2A2A2A] font-mono text-[11px] uppercase tracking-[0.15em]">
         {/* Era Selector */}
         <div className="flex flex-wrap items-center gap-4">
-          <span className="text-text/35">ERA:</span>
+          <span className="text-[#A3A39D]">ERA:</span>
           {[
             { key: 'ALL', label: 'ALL 190 YEARS' },
             { key: 'COMPANY_RULE', label: 'COMPANY RULE (1757–1858)' },
@@ -89,8 +89,8 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
               }}
               className={`pb-1 transition-colors ${
                 selectedEra === era.key
-                  ? 'border-b-2 border-accent text-accent font-bold'
-                  : 'text-text/50 hover:text-text'
+                  ? 'border-b-2 border-[#C62828] text-[#C62828] font-bold'
+                  : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
               }`}
             >
               {era.label}
@@ -100,7 +100,7 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
 
         {/* Category Filter Tabs */}
         <div className="flex flex-wrap items-center gap-4 pt-2">
-          <span className="text-text/35">CATEGORY:</span>
+          <span className="text-[#A3A39D]">CATEGORY:</span>
           {categories.map((cat) => (
             <button
               key={cat.key}
@@ -110,8 +110,8 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
               }}
               className={`pb-0.5 transition-colors text-[10px] ${
                 selectedCategory === cat.key
-                  ? 'border-b border-text text-text font-bold'
-                  : 'text-text/45 hover:text-text'
+                  ? 'border-b border-[#C62828] text-[#C62828] font-bold'
+                  : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
               }`}
             >
               {cat.label}
@@ -124,7 +124,7 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
       <div className="hidden lg:block mb-12">
         <div className="relative py-6 px-1">
           {/* Central Timeline Axis */}
-          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px bg-text/20" />
+          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px bg-[#2A2A2A]" />
 
           {/* Timeline Nodes */}
           <div className="relative flex justify-between items-center z-10">
@@ -139,7 +139,7 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
                 >
                   <span
                     className={`font-mono text-[10px] tracking-wider mb-2 transition-colors ${
-                      isActive ? 'text-accent font-bold' : 'text-text/40 group-hover:text-text/80'
+                      isActive ? 'text-[#E53935] font-bold' : 'text-[#A3A39D] group-hover:text-[#F5F5F0]'
                     }`}
                   >
                     {ev.year}
