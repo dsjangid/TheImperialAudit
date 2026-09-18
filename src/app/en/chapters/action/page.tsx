@@ -44,25 +44,25 @@ export default function ArchiveChapterPage() {
 
           <div className="mt-8 pt-6 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-[#A3A39D]">
             <div>
-              <span className="text-text/25 uppercase text-[10px] block tracking-[0.15em]">REGIONAL SCOPE</span>
-              <span className="text-text/80">10 Subcontinental Territories &amp; Frontier Agencies</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">REGIONAL SCOPE</span>
+              <span className="text-[#D6D6D0]">10 Subcontinental Territories &amp; Frontier Agencies</span>
             </div>
             <div>
-              <span className="text-text/25 uppercase text-[10px] block tracking-[0.15em]">BIBLIOGRAPHY</span>
-              <span className="text-accent font-bold">32 Parliamentary &amp; Academic Records</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">BIBLIOGRAPHY</span>
+              <span className="text-[#C62828] font-bold">32 Parliamentary &amp; Academic Records</span>
             </div>
           </div>
         </header>
 
         {/* 1. ARCHIVAL PHOTO GALLERY */}
-        <section className="py-12 border-b border-text/10">
-          <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mb-3">
+        <section className="py-12 border-b border-[#2A2A2A]">
+          <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-3">
             05.1 / ARCHIVAL PHOTOGRAPHIC CORPUS
           </p>
-          <h2 className="font-serif text-[30px] sm:text-[40px] font-bold leading-tight mb-4">
+          <h2 className="font-serif text-[#F5F5F0] text-[30px] sm:text-[40px] font-bold leading-tight mb-4">
             The Archive in Images
           </h2>
-          <p className="font-serif italic text-[16px] text-text/65 max-w-[65ch] mb-10 leading-relaxed">
+          <p className="font-serif italic text-[16px] text-[#D6D6D0] max-w-[65ch] mb-10 leading-relaxed">
             Monochrome historical reproductions from the British Library, National Archives (Kew), and National Archives of India.
           </p>
 
@@ -81,7 +81,7 @@ export default function ArchiveChapterPage() {
               { src: '/TheImperialAudit/illustrations/dossiers/udham.jpg', cap: 'Udham Singh: Old Bailey Trial', yr: '1940' },
               { src: '/TheImperialAudit/illustrations/dossiers/ina_trials.jpg', cap: 'INA Trials, Red Fort, Delhi', yr: '1945' },
             ].map((img) => (
-              <div key={img.src} className="border border-text/15 bg-black/40 overflow-hidden group">
+              <div key={img.src} className="border border-[#2A2A2A] bg-black/40 overflow-hidden group">
                 <div className="overflow-hidden aspect-[4/5] flex items-center justify-center p-2">
                   <img
                     src={img.src}
