@@ -166,13 +166,13 @@ export default function ConquestChapterPage() {
               <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Bengal Famine of 1770
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                1769–1773 · BENGAL PRESIDENCY (10 MILLION DEAD)
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">1769–1773</span> · BENGAL PRESIDENCY (<span className="text-[#E53935]">10 MILLION DEAD</span>)
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
-                  Between 1769 and 1773, the newly acquired territory of Bengal suffered an existential catastrophe. The Great Bengal Famine eradicated <span className="text-accent font-bold">between seven and ten million people</span>—nearly one-third of the entire population. While a failure of the monsoon initially triggered crop shortages, the catastrophic loss of life was fundamentally a product of colonial economic policy and the aggressive restructuring of traditional agrarian safety nets.
+                  Between 1769 and 1773, the newly acquired territory of Bengal suffered an existential catastrophe. The Great Bengal Famine eradicated <span className="text-[#E53935] font-bold">between seven and ten million people</span>—nearly one-third of the entire population. While a failure of the monsoon initially triggered crop shortages, the catastrophic loss of life was fundamentally a product of colonial economic policy and the aggressive restructuring of traditional agrarian safety nets.
                 </p>
                 <p>
                   The East India Company, having just acquired the Diwani revenue-collecting rights, drastically altered local grain markets and taxation structures. Pre-colonial mechanisms that stored surplus grain and provided tax relief during droughts were dismantled in favour of inflexible revenue maximization. Even as corpses choked the streets of Murshidabad and Calcutta, the Company's revenue councils enforced 100% tax collection, raising assessments by 10% under Warren Hastings.
@@ -182,7 +182,7 @@ export default function ConquestChapterPage() {
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-bengal-famine-1770')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW PRIMARY ARCHIVE RECORD: 1770 CALCUTTA REVENUE DISPATCH → ]
                   </button>
@@ -200,9 +200,9 @@ export default function ConquestChapterPage() {
               />
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">CASUALTY AUDIT</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">CASUALTY AUDIT</p>
                 <p>EST. 7–10 MILLION FATALITIES</p>
                 <p>1/3 OF POPULATION PERISHED</p>
                 <p>REVENUE KEPT AT 100% QUOTA</p>
@@ -212,22 +212,22 @@ export default function ConquestChapterPage() {
         </section>
 
         {/* 3. PERMANENT SETTLEMENT 1793 */}
-        <section className="py-12 border-b border-text/10" id="permanent-settlement">
+        <section className="py-12 border-b border-[#2A2A2A]" id="permanent-settlement">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">AGRARIAN APPARATUS · LEGISLATION</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">AGRARIAN APPARATUS · LEGISLATION</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Permanent Settlement of 1793
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                1 MAY 1793 · CORNWALLIS CODE (REGULATION I)
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">1 MAY 1793</span> · CORNWALLIS CODE (REGULATION I)
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
                   Enacted by Governor-General Lord Cornwallis, Regulation I of 1793 fixed land revenue assessments on Bengal zamindars forever. Traditional revenue collectors were converted into absolute private landlords, while millions of actual peasant cultivators (ryots) were stripped of customary hereditary rights and reduced to tenants-at-will.
                 </p>
@@ -239,7 +239,7 @@ export default function ConquestChapterPage() {
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-cornwallis-1793')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW PRIMARY ARCHIVE RECORD: REGULATION I OF 1793 → ]
                   </button>
