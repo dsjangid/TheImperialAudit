@@ -14,27 +14,27 @@ export const ResearchStatusFooter: React.FC<ResearchStatusFooterProps> = ({
   lang = 'en',
 }) => {
   return (
-    <footer className={`border-t border-text/15 py-16 bg-black/40 ${className}`}>
+    <footer className={`border-t border-[#2A2A2A] py-16 bg-black/40 ${className}`}>
       <div className="max-w-[1440px] mx-auto px-5 sm:px-8 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
           {/* Col 1: Research Status Audit */}
           <div className="md:col-span-5 space-y-3 font-mono text-[12px]">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="text-accent uppercase tracking-[0.2em] font-bold">
+              <span className="w-2 h-2 rounded-full bg-[#C62828] animate-pulse" />
+              <span className="text-[#C62828] uppercase tracking-[0.2em] font-bold">
                 RESEARCH CORPUS: COMPLETE ARCHIVE
               </span>
             </div>
-            <p className="font-serif text-[14px] text-text/70 leading-relaxed max-w-[45ch]">
+            <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed max-w-[45ch]">
               All statistical records, administrative citations, casualty figures, and parliamentary excerpts across this publication are cataloged from the India Office Records, The National Archives (Kew), Hansard Parliamentary Debates, and peer-reviewed macroeconomic monographs.
             </p>
           </div>
 
           {/* Col 2: Corpus Metadata */}
-          <div className="md:col-span-4 font-mono text-[11px] uppercase tracking-[0.15em] text-text/50 space-y-2 border-l border-text/15 pl-6">
+          <div className="md:col-span-4 font-mono text-[11px] uppercase tracking-[0.15em] text-[#A3A39D] space-y-2 border-l border-[#2A2A2A] pl-6">
             <div>
-              <span className="text-text/30 block">ARCHIVAL CORPUS</span>
-              <span className="text-text/85 font-medium">32 Primary Repositories · 47 Documented Incidents</span>
+              <span className="text-[#A3A39D]/70 block">ARCHIVAL CORPUS</span>
+              <span className="text-[#D6D6D0] font-medium">32 Primary Repositories · 47 Documented Incidents</span>
             </div>
             <div>
               <span className="text-text/30 block">AUDIT METHODOLOGY</span>
