@@ -11,7 +11,23 @@ module.exports = {
       colors: {
         bg: "var(--bg)",
         text: "var(--text)",
+        heading: "#F5F5F0",
+        body: "#D6D6D0",
+        "card-title": "#F5F5F0",
+        "card-meta": "#B5B5AF",
+        source: "#A3A39D",
+        metadata: "#A3A39D",
+        muted: "#A3A39D",
         accent: "var(--accent)",
+        "accent-bright": "#E53935",
+        "accent-deep": "#C62828",
+        stat: "#E53935",
+        date: "#E53935",
+        border: "#2A2A2A",
+      },
+      borderColor: {
+        DEFAULT: "#2A2A2A",
+        border: "#2A2A2A",
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Source Serif 4", "Georgia", "serif"],
