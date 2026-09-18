@@ -19,30 +19,30 @@ export default function ArchiveChapterPage() {
   };
 
   return (
-    <div className="bg-[#0A0A0A] min-h-screen text-[#F2F2F2] selection:bg-[#FF0000]/20 flex flex-col justify-between">
+    <div className="bg-[#0A0A0A] min-h-screen text-[#D6D6D0] selection:bg-accent/30 flex flex-col justify-between">
       <Navbar lang="en" />
       <PageCornerBadges fileNo="005" chapterTitle="ARCHIVE" pageNum="156" totalPages="190" />
 
       <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24 flex-1">
         {/* Chapter Header */}
-        <header className="mb-16 border-b border-text/15 pb-10">
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-            <span className="text-accent font-semibold">CASE № IA-1757-1947-005 · DISPATCH V</span>
+        <header className="mb-16 border-b border-[#2A2A2A] pb-10">
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+            <span className="text-[#C62828] font-semibold">CASE № IA-1757-1947-005 · DISPATCH V</span>
             <span>20 MIN READ · 32 PRIMARY CORPUS CITATIONS</span>
             <span>HISTORIOGRAPHY &amp; ATLAS</span>
           </div>
 
           <h1
-            className="font-serif text-text text-[clamp(36px,8.2vw,100px)] leading-[0.95] tracking-[0] uppercase font-black mb-4"
+            className="font-serif text-[#F5F5F0] text-[clamp(36px,8.2vw,100px)] leading-[0.95] tracking-[0] uppercase font-black mb-4"
             style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
           >
             The Subcontinental Corpus
           </h1>
-          <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-text/75 leading-snug max-w-[50ch]">
+          <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-[#D6D6D0] leading-snug max-w-[50ch]">
             A Comprehensive Regional Incident Atlas, Archival Image Gallery, and Primary Source Bibliography.
           </p>
 
-          <div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-text/40">
+          <div className="mt-8 pt-6 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-[#A3A39D]">
             <div>
               <span className="text-text/25 uppercase text-[10px] block tracking-[0.15em]">REGIONAL SCOPE</span>
               <span className="text-text/80">10 Subcontinental Territories &amp; Frontier Agencies</span>
