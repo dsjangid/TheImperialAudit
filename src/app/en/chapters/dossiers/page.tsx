@@ -655,16 +655,16 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 12. MOHANDAS KARAMCHAND GANDHI */}
-<section className="py-12 border-t border-text/10 mb-24">
+<section className="py-12 border-t border-[#2A2A2A] mb-24">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">POLITICAL LEADER · INDEPENDENCE MOVEMENT</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">MOHANDAS KARAMCHAND GANDHI</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">POLITICAL LEADER · INDEPENDENCE MOVEMENT</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">MOHANDAS KARAMCHAND GANDHI</h3>
  {/* ARCHIVAL PHOTO */}
-<div className="my-12 border-t border-text/10 pt-12">
+<div className="my-12 border-t border-[#2A2A2A] pt-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<div className="overflow-hidden border border-text/15">
+<div className="overflow-hidden border border-[#2A2A2A]">
 <img
  src="/TheImperialAudit/illustrations/dossiers/gandhi.jpg"
  alt="Mahatma Gandhi, photographed during the Salt March, 1930"
@@ -672,19 +672,19 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] mt-3">
  ▲ Mahatma Gandhi, photographed during the Salt March, 1930
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>India Office Records, British Library</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1869, PORBANDAR · KEY PERIOD: 1915–1948</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1869</span>, PORBANDAR · KEY PERIOD: <span className="text-[#E53935]">1915–1948</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <div className="w-full mb-6 clear-both">
 <img
  src="/TheImperialAudit/illustrations/dossiers/gandhi.jpg"
@@ -692,7 +692,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Mahatma Gandhi, photographed during the historic Dandi Salt March, March 1930
 </p>
 </div>
@@ -707,7 +707,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>NON-COOPERATION & QUIT INDIA</p>
 <p>1930 DANDI SALT MARCH</p>
 <p>ASSASSINATED JAN 1948</p>
@@ -717,13 +717,13 @@ export default function SubjectsChapterPage() {
 </section>
 
         {/* Footer Navigation */}
-        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
-          <Link href="/en/chapters/comparison" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+        <div className="pt-16 border-t border-[#2A2A2A] flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en/chapters/comparison" className="text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-[0.15em] transition-colors">
             ← Chapter 02: The Great Rupture
           </Link>
           <Link
             href="/en/chapters/share"
-            className="text-accent hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2"
+            className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2 transition-colors"
           >
             <span>Proceed to Part IV: Ten Minutes in Amritsar</span>
             <span>→</span>
