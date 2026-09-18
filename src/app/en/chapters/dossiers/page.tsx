@@ -50,9 +50,9 @@ export default function SubjectsChapterPage() {
  
 <section className="my-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-<div className="md:col-span-8 space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<div className="md:col-span-8 space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <p>
-<span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-accent pr-3 pt-1">T</span>he 190-year history of British India was not solely shaped by abstract geopolitical forces; it was forged by the specific individuals who enacted policy and those who resisted it. The subjects profiled in this archive represent the dichotomy of colonial rule. Some commanded armies, drafted annexation treaties, and designed systemic revenue models. Others burned tax offices, led fierce jungle campaigns, and mounted the gallows in public executions that radicalized generations. 
+<span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-[#C62828] pr-3 pt-1">T</span>he 190-year history of British India was not solely shaped by abstract geopolitical forces; it was forged by the specific individuals who enacted policy and those who resisted it. The subjects profiled in this archive represent the dichotomy of colonial rule. Some commanded armies, drafted annexation treaties, and designed systemic revenue models. Others burned tax offices, led fierce jungle campaigns, and mounted the gallows in public executions that radicalized generations. 
 </p>
 <p>
  These dossiers are constructed directly from primary source materials, ranging from parliamentary inquiries and military dispatches to sedition trial transcripts and revolutionary proclamations. By examining these individuals, we trace the arc of the British Raj from its mercantile origins to its violent conclusion.
@@ -62,34 +62,34 @@ export default function SubjectsChapterPage() {
 </section>
 
         {/* 12 Forensic Dossiers Registry Grid */}
-        <section className="my-16 border-t border-text/15 pt-12">
+        <section className="my-16 border-t border-[#2A2A2A] pt-12">
           <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
             <div>
-              <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-accent font-bold block mb-1">
+              <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#C62828] font-bold block mb-1">
                 INDEX OF MONOGRAPHS
               </span>
-              <h2 className="font-serif text-[28px] sm:text-[34px] font-bold text-text">
+              <h2 className="font-serif text-[28px] sm:text-[34px] font-bold text-[#F5F5F0]">
                 The Twelve Biographical Files
               </h2>
             </div>
-            <span className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
               12 AUDITED PROFILES
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 font-mono text-[12px] border-t border-text/15 pt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 font-mono text-[12px] border-t border-[#2A2A2A] pt-6">
             {dossiersList.map((d) => (
               <Link
                 key={d.id}
                 href={`/en/chapters/dossiers/${d.id}`}
-                className="group border-b border-text/15 pb-4 flex flex-col justify-between"
+                className="group border-b border-[#2A2A2A] pb-4 flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between text-[11px] text-text/40 mb-1">
-                    <span className="text-accent font-bold">FILE № 03 / {d.fileNo}</span>
-                    <span>{d.born.en.split('—')[1] || ''}</span>
+                  <div className="flex items-center justify-between text-[11px] text-[#A3A39D] mb-1">
+                    <span className="text-[#C62828] font-bold">FILE № 03 / {d.fileNo}</span>
+                    <span className="text-[#E53935]">{d.born.en.split('—')[1] || ''}</span>
                   </div>
-                  <h3 className="font-serif text-[20px] font-bold text-text group-hover:text-accent transition-colors leading-snug">
+                  <h3 className="font-serif text-[20px] font-bold text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-snug">
                     {d.name.en}
                   </h3>
                   <p className="text-[11px] text-text/50 uppercase mt-0.5 line-clamp-1">{d.role.en}</p>
