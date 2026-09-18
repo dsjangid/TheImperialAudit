@@ -184,24 +184,24 @@ export default function MethodologyPage() {
               <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Casualties &amp; Demographic Uncertainty
               </h2>
-              <p className="font-serif italic text-[14px] text-text/60 mt-2">
+              <p className="font-serif italic text-[14px] text-[#A3A39D] mt-2">
                 Addressing gaps in colonial demographic registries.
               </p>
             </div>
 
-            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-text/85">
+            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-[#D6D6D0]">
               <p>
                 Demographic statistics from the colonial era are inherently subject to administrative bias, incomplete census coverage, and under-registration of rural mortality. This archive adheres to the following principles:
               </p>
-              <ul className="list-disc pl-6 space-y-3 font-serif text-[15px] text-text/80">
+              <ul className="list-disc pl-6 space-y-3 font-serif text-[15px] text-[#D6D6D0]">
                 <li>
-                  <strong>Famine Mortality Ranges:</strong> For the Great Bengal Famine of 1770, colonial records indicate approximately 10 million deaths (one-third of the population). For the 1876–78 famine, estimates range from 5.5 million (official Famine Commission) to 10.3 million (demographer A. Maharatna and Mike Davis). Both the conservative official figures and modern demographic reconstructions are recorded.
+                  <strong className="text-[#F5F5F0]">Famine Mortality Ranges:</strong> For the Great Bengal Famine of 1770, colonial records indicate approximately 10 million deaths (one-third of the population). For the 1876–78 famine, estimates range from 5.5 million (official Famine Commission) to 10.3 million (demographer A. Maharatna and Mike Davis). Both the conservative official figures and modern demographic reconstructions are recorded.
                 </li>
                 <li>
-                  <strong>The 1857 Uprising:</strong> British civilian casualties (estimated at ~2,000–3,000) are thoroughly documented in military logs, whereas Indian deaths—resulting from indiscriminate village burnings, mass hangings, and martial law executions across the Gangetic plains—are estimated by historians (e.g. Amar Farooqui, Thomas Metcalf) to exceed 100,000 to 150,000.
+                  <strong className="text-[#F5F5F0]">The 1857 Uprising:</strong> British civilian casualties (estimated at ~2,000–3,000) are thoroughly documented in military logs, whereas Indian deaths—resulting from indiscriminate village burnings, mass hangings, and martial law executions across the Gangetic plains—are estimated by historians (e.g. Amar Farooqui, Thomas Metcalf) to exceed 100,000 to 150,000.
                 </li>
                 <li>
-                  <strong>Jallianwala Bagh (1919):</strong> The official Hunter Commission report recorded 379 dead and 1,200 wounded based on hospital registers. The Indian National Congress Inquiry, led by Pandit Madan Mohan Malaviya through door-to-door eyewitness documentation, established over 1,000 fatalities. Both figures are presented side-by-side.
+                  <strong className="text-[#F5F5F0]">Jallianwala Bagh (1919):</strong> The official Hunter Commission report recorded 379 dead and 1,200 wounded based on hospital registers. The Indian National Congress Inquiry, led by Pandit Madan Mohan Malaviya through door-to-door eyewitness documentation, established over 1,000 fatalities. Both figures are presented side-by-side.
                 </li>
               </ul>
             </div>
@@ -209,10 +209,10 @@ export default function MethodologyPage() {
         </section>
 
         {/* Section 5: Historiographical Perspectives */}
-        <section className="py-10 border-b border-text/10" id="historiography">
+        <section className="py-10 border-b border-[#2A2A2A]" id="historiography">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 05
               </span>
               <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
