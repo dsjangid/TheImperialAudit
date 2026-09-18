@@ -583,7 +583,7 @@ export default function SubjectsChapterPage() {
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>FIRST INDIAN MP IN UK (1892)</p>
 <p>FORMULATED THE DRAIN THEORY</p>
 <p>WROTE "POVERTY AND UN-BRITISH RULE"</p>
@@ -593,16 +593,16 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 11. BAL GANGADHAR TILAK */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">NATIONALIST LEADER · JOURNALIST · POLITICAL THEORIST</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BAL GANGADHAR TILAK</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">NATIONALIST LEADER · JOURNALIST · POLITICAL THEORIST</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">BAL GANGADHAR TILAK</h3>
  {/* ARCHIVAL PHOTO */}
-<div className="my-12 border-t border-text/10 pt-12">
+<div className="my-12 border-t border-[#2A2A2A] pt-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<div className="overflow-hidden border border-text/15">
+<div className="overflow-hidden border border-[#2A2A2A]">
 <img
  src="/TheImperialAudit/illustrations/dossiers/tilak.jpg"
  alt="Bal Gangadhar Tilak: editor of Kesari, twice imprisoned for sedition"
@@ -610,19 +610,19 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] mt-3">
  ▲ Bal Gangadhar Tilak: editor of Kesari, twice imprisoned for sedition
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>Maharashtra State Archives</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1856, RATNAGIRI · KEY PERIOD: 1890–1920</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1856</span>, RATNAGIRI · KEY PERIOD: <span className="text-[#E53935]">1890–1920</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <div className="w-full mb-6 clear-both">
 <img
  src="/TheImperialAudit/illustrations/dossiers/tilak.jpg"
@@ -630,7 +630,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Bal Gangadhar Tilak: editor of Kesari, twice imprisoned for sedition, died 1920
 </p>
 </div>
@@ -638,14 +638,14 @@ export default function SubjectsChapterPage() {
  Bal Gangadhar Tilak transformed the Indian nationalist movement from an elite debating society into a forceful, mass-based political struggle. Rejecting the moderate Congress faction's strategy of polite petitioning and constitutional reform, Tilak advocated for aggressive agitation and non-cooperation. His legendary declaration, "Swaraj is my birthright and I shall have it", became the defining battle cry for a radicalized generation of Indians who were no longer willing to accept the legitimacy of the British Raj.
 </p>
 <p>
- A brilliant propagandist and cultural organizer, Tilak utilized his Marathi newspaper<i>Kesari</i>to launch blistering critiques of colonial policies. Recognizing the need to mobilize the masses outside the English-speaking intelligentsia, he pioneered the use of public religious festivals for political organization. By transforming the private worship of Ganesh (Ganesh Chaturthi) into a massive public community festival, he successfully created an organizational network that the British struggled to suppress under the guise of religious interference.
+ A brilliant propagandist and cultural organizer, Tilak utilized his Marathi newspaper <i>Kesari</i> to launch blistering critiques of colonial policies. Recognizing the need to mobilize the masses outside the English-speaking intelligentsia, he pioneered the use of public religious festivals for political organization. By transforming the private worship of Ganesh (Ganesh Chaturthi) into a massive public community festival, he successfully created an organizational network that the British struggled to suppress under the guise of religious interference.
 </p>
 <p>
  The colonial state deeply feared his influence, prosecuting him for sedition in 1897 and again in 1908. He served a grueling six-year sentence in the notorious Mandalay prison in Burma. Despite his reputation as a Hindu traditionalist, Tilak demonstrated immense political pragmatism; in 1916, he was instrumental in forging the historic Lucknow Pact with Muhammad Ali Jinnah, securing a crucial, albeit temporary, alliance between the Congress and the Muslim League. Tilak died in 1920, just as Mahatma Gandhi was rising to inherit the mobilized nation he had helped awaken.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>"SWARAJ IS MY BIRTHRIGHT"</p>
 <p>EDITOR OF KESARI</p>
 <p>JAILED FOR SEDITION (1908-1914)</p>
