@@ -53,7 +53,7 @@ export const EvidenceBadge: React.FC<EvidenceBadgeProps> = ({
   return (
     <span
       className={`inline-block font-mono uppercase tracking-[0.18em] ${
-        meta.isAccent ? 'text-accent font-semibold' : 'text-text/65'
+        meta.isAccent ? 'text-[#C62828] font-semibold' : 'text-[#A3A39D]'
       } ${isSmall ? 'text-[10px]' : 'text-[11px]'} ${className}`}
     >
       {meta.label}
