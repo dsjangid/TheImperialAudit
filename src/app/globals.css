@@ -49,15 +49,42 @@
 }
 
 html, body {
- background-color: var(--bg);
- color: var(--text);
- font-family: var(--font-serif);
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
- text-rendering: optimizeLegibility;
- overflow-x: hidden;
- scrollbar-width: none !important;
- -ms-overflow-style: none !important;
+  background-color: var(--bg);
+  color: var(--body);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* Headings default to #F5F5F0 */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading);
+}
+
+/* Body paragraphs default to #D6D6D0 */
+p, li {
+  color: var(--body);
+}
+
+/* Base borders rule */
+[class*="border-text/"] {
+  border-color: #2A2A2A !important;
+}
+[class*="divide-text/"] > :not([hidden]) ~ :not([hidden]) {
+  border-color: #2A2A2A !important;
+}
+
+/* Form input elements */
+input, select, textarea {
+  color: #F5F5F0;
+}
+::placeholder {
+  color: #A3A39D !important;
+  opacity: 1;
 }
 
 ::-webkit-scrollbar {
