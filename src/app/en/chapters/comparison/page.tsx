@@ -167,11 +167,11 @@ export default function Rebellion1857ChapterPage() {
               <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Government of India Act 1858 &amp; The Queen’s Proclamation
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                1 NOVEMBER 1858 · ALLAHABAD &amp; WHITEHALL
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">1 NOVEMBER 1858</span> · ALLAHABAD &amp; WHITEHALL
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
                   The suppression of the rebellion marked the final demise of the English East India Company. By the Government of India Act 1858, Parliament transferred direct sovereignty to Queen Victoria. The proclamation promised non-interference in religious customs and guaranteed princely state boundaries, freezing feudal social relations to create a permanent loyalist buffer against democratic reform.
                 </p>
@@ -180,7 +180,7 @@ export default function Rebellion1857ChapterPage() {
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-proclamation-1858')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW PARLIAMENTARY RECORD: QUEEN VICTORIA’S PROCLAMATION → ]
                   </button>
@@ -188,9 +188,9 @@ export default function Rebellion1857ChapterPage() {
               </div>
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">AFTERMATH STATS</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">AFTERMATH STATS</p>
                 <p>EIC LIQUIDATED</p>
                 <p>£40M WAR DEBT CHARGED TO INDIA</p>
                 <p>RACIAL SEPARATION CODIFIED</p>
@@ -200,13 +200,13 @@ export default function Rebellion1857ChapterPage() {
         </section>
 
         {/* Chapter Transition Link */}
-        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
-          <Link href="/en/chapters/timer" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+        <div className="pt-16 border-t border-[#2A2A2A] flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en/chapters/timer" className="text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-[0.15em] transition-colors">
             ← Chapter 01: The Conquest
           </Link>
           <Link
             href="/en/chapters/dossiers"
-            className="text-accent hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2"
+            className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2 transition-colors"
           >
             <span>Proceed to Part III: The Actors of Empire &amp; Resistance</span>
             <span>→</span>
