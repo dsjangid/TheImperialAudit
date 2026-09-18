@@ -17,45 +17,45 @@ export default function Rebellion1857ChapterPage() {
   };
 
   return (
-    <div className="bg-bg min-h-screen text-text selection:bg-accent/30 flex flex-col justify-between">
+    <div className="bg-bg min-h-screen text-[#D6D6D0] selection:bg-accent/30 flex flex-col justify-between">
       <Navbar lang="en" />
       <PageCornerBadges fileNo="002" chapterTitle="1857" pageNum="032" totalPages="190" />
 
       <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24 flex-1">
         {/* Case File Masthead */}
-        <header className="mb-16 border-b border-text/15 pb-10">
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-            <span className="text-accent font-semibold">CASE № IA-1857-1858-002 · DISPATCH II</span>
+        <header className="mb-16 border-b border-[#2A2A2A] pb-10">
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+            <span className="text-[#C62828] font-semibold">CASE № IA-1857-1858-002 · DISPATCH II</span>
             <span>30 MIN READ · 10 NARRATIVE INCIDENTS</span>
             <span>DECLASSIFIED WAR DISPATCHES</span>
           </div>
 
           <h1
-            className="font-serif text-text text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
+            className="font-serif text-[#F5F5F0] text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
             style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
           >
             The Great Rupture
           </h1>
-          <p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-text/75 leading-snug max-w-[45ch]">
+          <p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-[#D6D6D0] leading-snug max-w-[45ch]">
             The 1857 Uprising, the Sieges of Delhi &amp; Lucknow, and the Abolition of Company Rule.
           </p>
 
-          <div className="mt-8 pt-6 border-t border-text/10 grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-text/60">
+          <div className="mt-8 pt-6 border-t border-[#2A2A2A] grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-[#A3A39D]">
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">ACTIVE CONFLICT</span>
-              <span className="text-text/90 font-medium">10 May 1857 – 8 July 1858</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">ACTIVE CONFLICT</span>
+              <span className="text-[#D6D6D0] font-medium"><span className="text-[#E53935]">10 May 1857 – 8 July 1858</span></span>
             </div>
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">PRIMARY CORPUS</span>
-              <span className="text-text/90">War Office Records &amp; Telegraph Logs</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">PRIMARY CORPUS</span>
+              <span className="text-[#D6D6D0]">War Office Records &amp; Telegraph Logs</span>
             </div>
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">MAJOR SITES</span>
-              <span className="text-text/90">Meerut, Delhi, Kanpur, Lucknow, Jhansi</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">MAJOR SITES</span>
+              <span className="text-[#D6D6D0]">Meerut, Delhi, Kanpur, Lucknow, Jhansi</span>
             </div>
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">CROWN TAKEOVER</span>
-              <span className="text-accent font-semibold">1 November 1858 (Proclamation)</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">CROWN TAKEOVER</span>
+              <span className="text-[#E53935] font-semibold">1 November 1858</span> <span className="text-[#D6D6D0]">(Proclamation)</span>
             </div>
           </div>
         </header>
