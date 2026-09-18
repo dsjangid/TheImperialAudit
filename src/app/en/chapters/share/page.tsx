@@ -17,7 +17,7 @@ export default function JallianwalaChapterPage() {
   };
 
   return (
-    <div className="bg-bg min-h-screen text-text selection:bg-accent/30 flex flex-col justify-between">
+    <div className="bg-bg min-h-screen text-[#D6D6D0] selection:bg-accent/30 flex flex-col justify-between">
       <Navbar lang="en" />
 
       <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24 flex-1">
@@ -25,24 +25,24 @@ export default function JallianwalaChapterPage() {
           <PageCornerBadges fileNo="004" chapterTitle="JALLIANWALA" pageNum="092" totalPages="190" />
 
           {/* Article Masthead */}
-          <div className="mb-16 border-b border-text/15 pb-10">
-            <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-              <span className="text-accent font-semibold">CASE № IA-1919-004 · DISPATCH IV</span>
+          <div className="mb-16 border-b border-[#2A2A2A] pb-10">
+            <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+              <span className="text-[#C62828] font-semibold">CASE № IA-1919-004 · DISPATCH IV</span>
               <span>35 MIN READ · MINUTE-BY-MINUTE FORENSIC RECORD</span>
               <span>DISORDERS INQUIRY COMMITTEE (CMD. 681)</span>
             </div>
 
             <h1
-              className="font-serif text-text text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
+              className="font-serif text-[#F5F5F0] text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
               style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
             >
               Ten Minutes in Amritsar
             </h1>
-            <p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-text/75 leading-snug max-w-[45ch]">
+            <p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-[#D6D6D0] leading-snug max-w-[45ch]">
               The Forensic Anatomy of the Jallianwala Bagh Massacre, the Hunter Commission Inquiries, and the 21-Year Retribution.
             </p>
 
-            <div className="mt-8 pt-6 border-t border-text/10 grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-text/60">
+            <div className="mt-8 pt-6 border-t border-[#2A2A2A] grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-[#A3A39D]">
               <div>
                 <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">INCIDENT LOCATION</span>
                 <span className="text-text/90 font-medium">Jallianwala Bagh, Amritsar (5:15 PM)</span>
