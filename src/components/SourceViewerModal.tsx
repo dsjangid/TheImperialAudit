@@ -45,16 +45,16 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0A0A0A] text-[#F2F2F2] border border-text/20 shadow-2xl p-6 sm:p-8 md:p-10"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0A0A0A] text-[#F5F5F0] border border-[#2A2A2A] shadow-2xl p-6 sm:p-8 md:p-10"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Archival Reading Room Header */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-text/20 pb-4 mb-6">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#2A2A2A] pb-4 mb-6">
           <div className="flex items-center gap-3 font-mono text-[12px]">
-            <span className="text-accent font-semibold uppercase tracking-[0.25em]">
+            <span className="text-[#C62828] font-semibold uppercase tracking-[0.25em]">
               ARCHIVAL READING ROOM
             </span>
-            <span className="text-text/40 tracking-[0.15em] border-l border-text/20 pl-3">
+            <span className="text-[#A3A39D] tracking-[0.15em] border-l border-[#2A2A2A] pl-3">
               REF: {doc.archiveRef}
             </span>
           </div>
@@ -62,7 +62,7 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="font-mono text-[12px] uppercase tracking-[0.2em] text-text/60 hover:text-accent transition-colors flex items-center gap-1"
+            className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#A3A39D] hover:text-[#E53935] transition-colors flex items-center gap-1"
             aria-label="Close document viewer"
           >
             <span>[ CLOSE ESC ]</span>
@@ -74,29 +74,29 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
         <div className="space-y-3 mb-8">
           <div className="flex flex-wrap items-center gap-3">
             <EvidenceBadge category={doc.category} />
-            <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-text/45">
-              {doc.location} · {doc.date}
+            <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-[#B5B5AF]">
+              {doc.location} · <span className="text-[#E53935]">{doc.date}</span>
             </span>
           </div>
 
           <h2
             id="modal-doc-title"
-            className="font-serif text-[24px] sm:text-[30px] md:text-[34px] font-bold leading-tight text-text"
+            className="font-serif text-[24px] sm:text-[30px] md:text-[34px] font-bold leading-tight text-[#F5F5F0]"
           >
             {doc.title}
           </h2>
         </div>
 
         {/* Archival Metadata Ledger */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 border-y border-text/15 font-mono text-[12px] mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 border-y border-[#2A2A2A] font-mono text-[12px] mb-8">
           <div>
-            <span className="block text-[10px] uppercase tracking-[0.2em] text-text/40 mb-1">
+            <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] mb-1">
               REPOSITORY ARCHIVE
             </span>
-            <span className="text-text/90 font-medium">{doc.repository}</span>
+            <span className="text-[#D6D6D0] font-medium">{doc.repository}</span>
           </div>
           <div>
-            <span className="block text-[10px] uppercase tracking-[0.2em] text-text/40 mb-1">
+            <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] mb-1">
               SHELFMARK / ACCESSION REF
             </span>
             <span className="text-accent font-bold">{doc.archiveRef}</span>
