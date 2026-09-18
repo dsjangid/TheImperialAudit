@@ -90,9 +90,9 @@ export default function ArchiveChapterPage() {
                     style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
                   />
                 </div>
-                <div className="p-3 border-t border-text/10">
-                  <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-accent font-bold">{img.yr}</p>
-                  <p className="font-serif text-[13px] text-text/80 mt-1 leading-snug">{img.cap}</p>
+                <div className="p-3 border-t border-[#2A2A2A]">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#E53935] font-bold">{img.yr}</p>
+                  <p className="font-serif text-[13px] text-[#F5F5F0] mt-1 leading-snug">{img.cap}</p>
                 </div>
               </div>
             ))}
@@ -106,17 +106,17 @@ export default function ArchiveChapterPage() {
         <SearchableArchive onOpenSourceDoc={handleOpenSourceDoc} />
 
         {/* 4. PRIMARY BIBLIOGRAPHY & REPOSITORY REGISTRY */}
-        <section className="my-20 border-t border-text/15 pt-16" id="bibliography-registry">
+        <section className="my-20 border-t border-[#2A2A2A] pt-16" id="bibliography-registry">
           <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
             <div>
-              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-accent mb-2">
+              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-[#C62828] font-semibold mb-2">
                 05.4 / ARCHIVAL REPOSITORY REGISTRY
               </p>
-              <h2 className="font-serif text-[32px] sm:text-[40px] font-bold text-text">
+              <h2 className="font-serif text-[32px] sm:text-[40px] font-bold text-[#F5F5F0]">
                 Primary Archival Repositories
               </h2>
             </div>
-            <span className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
               32 ARCHIVAL CITATIONS
             </span>
           </div>
