@@ -43,16 +43,16 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0A0A0A] text-[#F2F2F2] border border-text/20 shadow-2xl p-6 sm:p-8 md:p-10"
+        className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-[#0A0A0A] text-[#F5F5F0] border border-[#2A2A2A] shadow-2xl p-6 sm:p-8 md:p-10"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-text/20 pb-4 mb-6">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-b border-[#2A2A2A] pb-4 mb-6">
           <div className="flex items-center gap-3 font-mono text-[12px]">
-            <span className="text-accent font-semibold uppercase tracking-[0.25em]">
+            <span className="text-[#C62828] font-semibold uppercase tracking-[0.25em]">
               FISCAL AUDIT DOSSIER
             </span>
-            <span className="text-text/40 tracking-[0.15em] border-l border-text/20 pl-3">
+            <span className="text-[#A3A39D] tracking-[0.15em] border-l border-[#2A2A2A] pl-3">
               ESTIMATE № 045-T · CUP (2018)
             </span>
           </div>
@@ -60,7 +60,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="font-mono text-[12px] uppercase tracking-[0.2em] text-text/60 hover:text-accent transition-colors flex items-center gap-1"
+            className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#A3A39D] hover:text-[#E53935] transition-colors flex items-center gap-1"
             aria-label="Close audit dossier"
           >
             <span>[ CLOSE ESC ]</span>
@@ -73,7 +73,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
           <div className="flex flex-wrap items-center gap-3">
             <EvidenceBadge category="SCHOLARLY_ESTIMATE" />
             <EvidenceBadge category="ECONOMIC_DATA" />
-            <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-text/45">
+            <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#A3A39D]">
               PEER-REVIEWED ECONOMETRIC MODEL
             </span>
           </div>
@@ -81,34 +81,34 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
           <div className="flex flex-wrap items-baseline gap-4">
             <h2
               id="audit-modal-title"
-              className="font-serif text-[38px] sm:text-[48px] md:text-[56px] font-black leading-none text-accent"
+              className="font-serif text-[38px] sm:text-[48px] md:text-[56px] font-black leading-none text-[#E53935]"
             >
               ~$44.63 Trillion
             </h2>
-            <span className="font-mono text-[13px] text-text/60 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.15em]">
               (2016 USD EQUIVALENT · £9.184 TRILLION NOMINAL COMPOUNDED)
             </span>
           </div>
 
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/80 leading-relaxed max-w-[65ch]">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] leading-relaxed max-w-[65ch]">
             An audit of the mathematical calculation, archival data sources, transaction mechanics, and scholarly limits behind the total estimated wealth transfer from India to Great Britain (1765–1938).
           </p>
         </div>
 
         {/* Fact vs Estimate Taxonomy */}
-        <div className="border-y border-text/15 py-4 mb-8 font-mono text-[12px] space-y-2">
-          <p className="text-accent font-bold uppercase tracking-[0.15em]">
+        <div className="border-y border-[#2A2A2A] py-4 mb-8 font-mono text-[12px] space-y-2">
+          <p className="text-[#C62828] font-bold uppercase tracking-[0.15em]">
             TAXONOMY DISTINCTION: FACT VS. CALCULATION
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-serif text-[14px] text-text/80">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-serif text-[14px] text-[#D6D6D0]">
             <div>
-              <span className="font-mono text-[11px] uppercase text-text/50 block mb-1">
+              <span className="font-mono text-[11px] uppercase text-[#A3A39D] block mb-1">
                 [ EMPIRICAL HISTORICAL RECORD ]
               </span>
               The physical mechanism of Council Bills, unreturned export surpluses, Home Charges, and zero capital inflow from London are indisputable facts documented in official British trade returns and parliamentary registers.
             </div>
             <div>
-              <span className="font-mono text-[11px] uppercase text-accent block mb-1">
+              <span className="font-mono text-[11px] uppercase text-[#C62828] block mb-1">
                 [ COMPOUNDED STATISTICAL ESTIMATE ]
               </span>
               The ~$45 Trillion sum is a counterfactual compounding estimate (applying a standard 5% commercial interest rate over 173 years) calculating the opportunity cost if India had retained and reinvested its surplus.
@@ -117,7 +117,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
         </div>
 
         {/* Nav Tabs */}
-        <div className="flex flex-wrap gap-4 border-b border-text/15 mb-6 font-mono text-[11px] uppercase tracking-[0.2em]">
+        <div className="flex flex-wrap gap-4 border-b border-[#2A2A2A] mb-6 font-mono text-[11px] uppercase tracking-[0.2em]">
           {[
             { key: 'methodology', label: '1. Methodology' },
             { key: 'dataset', label: '2. Underlying Data' },
@@ -129,8 +129,8 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
               onClick={() => setActiveTab(tab.key as any)}
               className={`pb-3 transition-colors ${
                 activeTab === tab.key
-                  ? 'border-b-2 border-accent text-accent font-bold'
-                  : 'text-text/50 hover:text-text'
+                  ? 'border-b-2 border-[#C62828] text-[#C62828] font-bold'
+                  : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
               }`}
             >
               {tab.label}
@@ -139,19 +139,19 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
         </div>
 
         {/* Tab Content */}
-        <div className="space-y-6 font-serif text-[15px] sm:text-[16px] leading-[1.8] text-text/85">
+        <div className="space-y-6 font-serif text-[15px] sm:text-[16px] leading-[1.8] text-[#D6D6D0]">
           {activeTab === 'methodology' && (
             <div className="space-y-4">
-              <h3 className="font-serif text-[20px] font-bold text-text">
+              <h3 className="font-serif text-[20px] font-bold text-[#F5F5F0]">
                 How Prof. Utsa Patnaik Calculated the Extraction
               </h3>
               <p>
                 In <em>Essays on Agrarian Issues and Exploitation</em> (Columbia University Press, 2018), Professor Utsa Patnaik divided the colonial extraction period into two distinct administrative eras:
               </p>
-              <ul className="space-y-3 font-mono text-[12px] text-text/80 pl-2">
-                <li className="border-l-2 border-accent pl-3">
-                  <strong className="text-text">Phase 1: Company Rule (1765–1837)</strong>
-                  <p className="font-serif text-[14px] mt-1">
+              <ul className="space-y-3 font-mono text-[12px] text-[#D6D6D0] pl-2">
+                <li className="border-l-2 border-[#C62828] pl-3">
+                  <strong className="text-[#F5F5F0]">Phase 1: Company Rule (1765–1837)</strong>
+                  <p className="font-serif text-[14px] mt-1 text-[#D6D6D0]">
                     The East India Company used up to one-third of collected Bengal land revenues directly to purchase Indian commodities (textiles, spices, saltpetre) for export to Europe, requiring zero capital outlay from Britain.
                   </p>
                 </li>
