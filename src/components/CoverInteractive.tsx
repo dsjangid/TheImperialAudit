@@ -335,28 +335,28 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               >
                 <div className="grid grid-cols-12 gap-8 items-start">
                   <div className="col-span-12 md:col-span-3 lg:col-span-2">
-                    <span className="font-mono text-[40px] md:text-[52px] leading-none text-text/20 group-hover:text-accent transition-colors font-bold block">
+                    <span className="font-mono text-[40px] md:text-[52px] leading-none text-text/20 group-hover:text-[#E53935] transition-colors font-bold block">
                       {item.num}
                     </span>
-                    <span className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mt-2 block font-semibold">
+                    <span className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] mt-2 block font-semibold">
                       {item.tag}
                     </span>
-                    <span className="font-mono text-[13px] uppercase tracking-[0.1em] text-text/40 mt-1 block">
+                    <span className="font-mono text-[13px] uppercase tracking-[0.1em] text-[#A3A39D] mt-1 block">
                       {item.readTime}
                     </span>
                   </div>
 
                   <div className="col-span-12 md:col-span-6 lg:col-span-7">
-                    <h3 className="font-serif text-[26px] md:text-[34px] font-bold leading-tight group-hover:text-accent transition-colors">
+                    <h3 className="font-serif text-[#F5F5F0] text-[26px] md:text-[34px] font-bold leading-tight group-hover:text-[#E53935] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-serif italic text-[16px] text-text/75 mt-1">
+                    <p className="font-serif italic text-[16px] text-[#B5B5AF] mt-1">
                       {item.subtitle}
                     </p>
-                    <p className="font-serif text-[15px] text-text/60 mt-3 leading-relaxed">
+                    <p className="font-serif text-[15px] text-[#D6D6D0] mt-3 leading-relaxed">
                       {item.desc}
                     </p>
-                    <div className="mt-4 flex items-center gap-2 font-mono text-[13px] uppercase tracking-[0.2em] text-accent font-semibold group-hover:translate-x-1 transition-transform">
+                    <div className="mt-4 flex items-center gap-2 font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] group-hover:text-[#E53935] font-semibold group-hover:translate-x-1 transition-transform">
                       <span>Read Full Dispatch</span>
                       <span>→</span>
                     </div>
