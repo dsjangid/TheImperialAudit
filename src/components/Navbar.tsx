@@ -136,7 +136,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
               const isActive = activeId === ch.id;
               const href = lang === 'en' ? ch.path.en : ch.path.ru;
               return (
-                <li key={ch.id} className="border-b border-text/10">
+                <li key={ch.id} className="border-b border-[#2A2A2A]">
                   <Link
                     href={href}
                     onClick={() => setMobileOpen(false)}
