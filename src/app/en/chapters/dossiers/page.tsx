@@ -8,43 +8,43 @@ import { dossiersList } from '@/data/dossiers';
 
 export default function SubjectsChapterPage() {
  return (
-<div className="min-h-screen bg-bg selection:bg-accent/30 text-text">
+<div className="min-h-screen bg-bg selection:bg-accent/30 text-[#D6D6D0]">
 <Navbar lang="en" />
 <PageCornerBadges fileNo="003" chapterTitle="SUBJECTS" pageNum="064" totalPages="190" />
 
 <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24">
  
  {/* Article Masthead */}
-<header className="mb-16 border-b border-text/15 pb-10">
-<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-<span className="text-accent font-semibold">PART III · BIOGRAPHICAL MONOGRAPHS · 1757–1947</span>
+<header className="mb-16 border-b border-[#2A2A2A] pb-10">
+<div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+<span className="text-[#C62828] font-semibold">PART III · BIOGRAPHICAL MONOGRAPHS · 1757–1947</span>
 <span>24 MIN READ · 12 FORENSIC DOSSIERS</span>
 <span>ARCHIVAL PROFILES</span>
 </div>
 
 <h1 
- className="font-serif text-text text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
+ className="font-serif text-[#F5F5F0] text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
  style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
  >
  The Actors of Empire &amp; Resistance
 </h1>
-<p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-text/75 leading-snug max-w-[45ch]">
+<p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-[#D6D6D0] leading-snug max-w-[45ch]">
  Twelve Monographic Profiles of the Men and Women Who Built, Governed, and Resisted the British Raj.
 </p>
 
-<div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] text-text/40">
+<div className="mt-8 pt-6 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] text-[#A3A39D]">
 <div>
-<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">DOCUMENTARY EVIDENCE</span>
-<span className="text-text/80">Select Parliamentary Committees, Trial Transcripts &amp; Vernacular Proclamations</span>
+<span className="text-[#A3A39D]/60 uppercase text-[13px] block tracking-[0.15em]">DOCUMENTARY EVIDENCE</span>
+<span className="text-[#D6D6D0]">Select Parliamentary Committees, Trial Transcripts &amp; Vernacular Proclamations</span>
 </div>
 <div>
-<span className="text-text/25 uppercase text-[13px] block tracking-[0.15em]">CATEGORIES</span>
-<span className="text-text/80">Imperial Architects, Military Commanders, Satyagrahis &amp; Martyrs</span>
+<span className="text-[#A3A39D]/60 uppercase text-[13px] block tracking-[0.15em]">CATEGORIES</span>
+<span className="text-[#D6D6D0]">Imperial Architects, Military Commanders, Satyagrahis &amp; Martyrs</span>
 </div>
 </div>
 </header>
  
-<blockquote className="border-y border-text/20 py-10 my-12 max-w-[80ch] font-serif italic text-text/80 text-[20px] leading-[1.6]">
+<blockquote className="border-y border-[#2A2A2A] py-10 my-12 max-w-[80ch] font-serif italic text-[#D6D6D0] text-[20px] leading-[1.6]">
  "History is written by the victors. The vanquished version is told in rebellion, in exile, and in the testimony of those they imprisoned."
 </blockquote>
  
