@@ -17,30 +17,30 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
     mythRecordAudits.find((c) => c.id === selectedCaseId) || mythRecordAudits[0];
 
   return (
-    <section className="my-24 border-t border-text/15 pt-16" id="myth-record">
+    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="myth-record">
       {/* Section Masthead */}
       <div className="flex flex-wrap items-baseline justify-between gap-4 mb-10">
         <div>
           <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-            <span className="text-accent font-semibold">CRITICAL HISTORIOGRAPHY</span>
-            <span className="text-text/40 border-l border-text/20 pl-3">CLAIM · EVIDENCE · ASSESSMENT</span>
+            <span className="text-[#C62828] font-semibold">CRITICAL HISTORIOGRAPHY</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">CLAIM · EVIDENCE · ASSESSMENT</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-text leading-[0.95]">
+          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
             AUDITING THE RECORD
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-2">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2">
             Examining Pervasive Historical Claims Against Archival Dispatches and Economic Datasets
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
+        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
           <span>4 FORENSIC CASE AUDITS</span>
         </div>
       </div>
 
       {/* Case Selector Tabs */}
-      <div className="flex flex-wrap items-center gap-4 mb-10 pb-4 border-b border-text/10 font-mono text-[11px] uppercase tracking-[0.15em]">
-        <span className="text-text/35">CASE:</span>
+      <div className="flex flex-wrap items-center gap-4 mb-10 pb-4 border-b border-[#2A2A2A] font-mono text-[11px] uppercase tracking-[0.15em]">
+        <span className="text-[#A3A39D]">CASE:</span>
         {mythRecordAudits.map((item) => {
           const isSelected = currentCase.id === item.id;
           return (
@@ -49,8 +49,8 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
               onClick={() => setSelectedCaseId(item.id)}
               className={`pb-1 transition-colors ${
                 isSelected
-                  ? 'border-b-2 border-accent text-accent font-bold'
-                  : 'text-text/50 hover:text-text'
+                  ? 'border-b-2 border-[#C62828] text-[#C62828] font-bold'
+                  : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
               }`}
             >
               {item.caseNumber} · {item.topic}
@@ -62,18 +62,18 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
       {/* Selected 3-Stage Investigation Layout */}
       <div className="space-y-10">
         {/* STAGE 1: THE CLAIM */}
-        <div className="border-b border-text/15 pb-8">
+        <div className="border-b border-[#2A2A2A] pb-8">
           <div className="flex items-center justify-between mb-3 font-mono text-[11px]">
-            <span className="uppercase tracking-[0.25em] text-accent font-semibold">
+            <span className="uppercase tracking-[0.25em] text-[#C62828] font-semibold">
               STAGE 01 · THE IMPERIAL CLAIM
             </span>
-            <span className="uppercase tracking-[0.15em] text-text/40">
+            <span className="uppercase tracking-[0.15em] text-[#A3A39D]">
               ORIGIN: {currentCase.claimOrigin}
             </span>
           </div>
 
-          <div className="border-l-2 border-accent pl-4 py-1">
-            <blockquote className="font-serif italic text-[20px] sm:text-[24px] font-semibold text-text leading-snug">
+          <div className="border-l-2 border-[#C62828] pl-4 py-1">
+            <blockquote className="font-serif italic text-[20px] sm:text-[24px] font-semibold text-[#F5F5F0] leading-snug">
               &ldquo;{currentCase.claim}&rdquo;
             </blockquote>
           </div>
