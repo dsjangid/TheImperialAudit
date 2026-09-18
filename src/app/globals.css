@@ -58,6 +58,52 @@ html, body {
   overflow-x: hidden;
   scrollbar-width: none !important;
   -ms-overflow-style: none !important;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+/* Night Light (Eye Comfort Mode) overrides */
+html[data-night-light="true"] {
+  --accent-bright: #E5533D;
+}
+
+html[data-night-light="true"][data-soft-contrast="true"] {
+  --bg: #0D0B08;
+  --text: #F3EDE3;
+  --heading: #F3EDE3;
+  --body: #D1C7B7;
+  --card-title: #F3EDE3;
+  --card-meta: #B8AD9B;
+  --muted: #A39785;
+  --source: #A39785;
+  --inactive-filter: #D1C7B7;
+  --border: #2D241C;
+}
+
+html[data-night-light="true"][data-soft-contrast="true"][data-night-light-preset="candlelight"] {
+  --bg: #110E0A;
+  --text: #F6EBDD;
+  --heading: #F6EBDD;
+  --body: #CEBEA8;
+  --card-title: #F6EBDD;
+  --card-meta: #BCAE97;
+  --muted: #A6957E;
+  --source: #A6957E;
+  --border: #35291E;
+}
+
+html[data-night-light="true"][data-soft-contrast="true"][data-night-light-preset="mild"] {
+  --bg: #0C0A09;
+  --text: #F4EFE7;
+  --heading: #F4EFE7;
+  --body: #D4CCC0;
+  --card-title: #F4EFE7;
+  --border: #2A241F;
+}
+
+/* Attenuate harsh contrast on archival scans and imagery in night mode */
+html[data-night-light="true"] img {
+  filter: brightness(0.93) contrast(0.96) sepia(calc(var(--nl-sepia-amount, 0.1) * 0.4));
+  transition: filter 400ms ease;
 }
 
 /* Headings default to #F5F5F0 */
