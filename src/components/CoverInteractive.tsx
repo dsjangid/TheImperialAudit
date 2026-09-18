@@ -122,8 +122,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                 <p>Hansard Parliamentary Debates</p>
                 <p>Hunter Commission Report, 1920</p>
               </div>
-              <div className="border-l border-text/20 pl-4 space-y-2 pt-2">
-                <p className="text-text/70">SCOPE</p>
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2 pt-2">
+                <p className="text-[#B5B5AF] font-semibold">SCOPE</p>
                 <p>190 Years of Rule</p>
                 <p>5 Standalone Dispatches</p>
                 <p>47 Documented Incidents</p>
@@ -132,7 +132,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           </div>
         </section>
 
-        <hr className="border-t border-text/10 my-16" />
+        <hr className="border-t border-[#2A2A2A] my-16" />
 
         {/* Live Economic Extraction Counter & Interactive Audit Trigger */}
         <section className="my-16">
@@ -140,16 +140,16 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             <div className="col-span-12 md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="ECONOMIC_DATA" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-accent">
+                <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-[#C62828] font-semibold">
                   FISCAL MECHANISM · THE DRAIN OF WEALTH
                 </p>
               </div>
 
-              <h2 className="font-serif text-[28px] md:text-[38px] font-bold leading-tight mb-4">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[38px] font-bold leading-tight mb-4">
                 Compounded Imperial Transfer: ~$45 Trillion
               </h2>
-              <p className="font-serif text-[16px] text-text/70 leading-relaxed max-w-[65ch] mb-6">
-                In a landmark econometric study published by Columbia University Press (2018), economist Professor Utsa Patnaik calculated that between 1765 and 1938, Britain drained a total of <span className="text-accent font-bold">~$44.63 trillion (in 2016 USD)</span> from India. This extraction operated through the Council Bills mechanism and export surplus interception, where Indian tax revenues were used to buy Indian export goods for London without British capital outlay. The real-time counter below represents the compounded per-second rate of that historical transfer.
+              <p className="font-serif text-[16px] text-[#D6D6D0] leading-relaxed max-w-[65ch] mb-6">
+                In a landmark econometric study published by Columbia University Press (2018), economist Professor Utsa Patnaik calculated that between 1765 and 1938, Britain drained a total of <span className="text-[#E53935] font-bold">~$44.63 trillion (in 2016 USD)</span> from India. This extraction operated through the Council Bills mechanism and export surplus interception, where Indian tax revenues were used to buy Indian export goods for London without British capital outlay. The real-time counter below represents the compounded per-second rate of that historical transfer.
               </p>
 
               {/* Interactive Audit Button */}
@@ -157,7 +157,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                 <button
                   type="button"
                   onClick={() => setIsAuditModalOpen(true)}
-                  className="px-5 py-3 bg-accent text-white font-mono text-[12px] uppercase tracking-[0.2em] font-bold hover:bg-accent/90 transition-all flex items-center gap-2"
+                  className="px-5 py-3 bg-[#C62828] text-white font-mono text-[12px] uppercase tracking-[0.2em] font-bold hover:bg-[#E53935] transition-all flex items-center gap-2"
                 >
                   <span>AUDIT THE $45 TRILLION FIGURE</span>
                   <span>→</span>
