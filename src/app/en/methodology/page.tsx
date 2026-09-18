@@ -215,39 +215,39 @@ export default function MethodologyPage() {
               <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 05
               </span>
-              <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Historiographical Analysis
               </h2>
-              <p className="font-serif italic text-[14px] text-text/60 mt-2">
+              <p className="font-serif italic text-[14px] text-[#A3A39D] mt-2">
                 Comparative examination of primary evidence and scholarly interpretations.
               </p>
             </div>
 
-            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-text/85">
+            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-[#D6D6D0]">
               <p>
                 Rigorous digital history contextualizes distinct analytical traditions alongside the underlying primary records:
               </p>
-              <div className="space-y-6 divide-y divide-text/10">
+              <div className="space-y-6 divide-y divide-[#2A2A2A]">
                 <div className="pt-3">
                   <div className="flex items-center justify-between mb-2">
-                    <strong className="font-mono text-[12px] uppercase text-text">
+                    <strong className="font-mono text-[12px] uppercase text-[#F5F5F0]">
                       HISTORIOGRAPHY A: THE MECHANICS OF THE FISCAL DRAIN
                     </strong>
                     <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
                   </div>
-                  <p className="font-serif text-[14px] text-text/80 leading-relaxed">
+                  <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed">
                     While nationalist and economic historians (Naoroji, Dutt, Habib, Patnaik) document the drain as structural, unrequited extraction through council bills and home charges, comparative economic historians (e.g. Roy) examine the debt servicing and currency mechanisms that sustained the imperial treasury.
                   </p>
                 </div>
 
                 <div className="pt-3">
                   <div className="flex items-center justify-between mb-2">
-                    <strong className="font-mono text-[12px] uppercase text-text">
+                    <strong className="font-mono text-[12px] uppercase text-[#F5F5F0]">
                       HISTORIOGRAPHY B: CAUSATION OF THE 1943 BENGAL FAMINE
                     </strong>
                     <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
                   </div>
-                  <p className="font-serif text-[14px] text-text/80 leading-relaxed">
+                  <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed">
                     Nobel laureate Amartya Sen demonstrated in <em>Poverty and Famines</em> (1981) that 1943 was a food entitlement failure caused by wartime inflation and hoarding rather than an absolute crop shortfall. Archival research by Madhusree Mukerjee documents War Cabinet shipping records withholding merchant fleet allocations for India.
                   </p>
                 </div>
