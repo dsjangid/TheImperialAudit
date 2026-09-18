@@ -244,57 +244,57 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
           <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-[#2A2A2A] pb-4">
             <div>
               <div className="flex items-center gap-2 mb-1 font-mono text-[11px]">
-                <span className="uppercase tracking-[0.2em] text-accent font-bold">
+                <span className="uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   STATE DOSSIER · {selectedRegion.code}
                 </span>
                 <EvidenceBadge category={selectedRegion.evidenceStatus} size="sm" />
               </div>
 
-              <h3 className="font-serif text-[28px] sm:text-[38px] font-bold text-text leading-tight">
+              <h3 className="font-serif text-[28px] sm:text-[38px] font-bold text-[#F5F5F0] leading-tight">
                 {selectedRegion.name}
               </h3>
-              <p className="font-mono text-[11px] text-text/50 uppercase mt-1">
+              <p className="font-mono text-[11px] text-[#B5B5AF] uppercase mt-1">
                 HISTORICAL SEAT: {selectedRegion.capital}
               </p>
             </div>
 
             <div className="font-mono text-[11px] text-left sm:text-right space-y-0.5 border-t sm:border-t-0 pt-2 sm:pt-0">
-              <span className="text-text/40 uppercase block">CONQUEST / ANNEXATION</span>
-              <span className="text-accent font-bold text-[13px]">{selectedRegion.annexationYear}</span>
+              <span className="text-[#A3A39D] uppercase block">CONQUEST / ANNEXATION</span>
+              <span className="text-[#E53935] font-bold text-[13px]">{selectedRegion.annexationYear}</span>
             </div>
           </div>
 
           {/* Territory & Geographic Scope */}
           <div className="font-mono text-[12px]">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block mb-0.5">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-0.5">
               PRIMARY DISTRICTS &amp; JURISDICTIONS
             </span>
-            <p className="text-text/80">{selectedRegion.territory}</p>
+            <p className="text-[#D6D6D0]">{selectedRegion.territory}</p>
           </div>
 
           {/* Subtitle & Historical Context */}
           <div className="space-y-3">
-            <p className="font-serif italic text-[16px] text-text/85">
+            <p className="font-serif italic text-[16px] text-[#B5B5AF]">
               {selectedRegion.subtitle}
             </p>
-            <div className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-text/80">
+            <div className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-[#D6D6D0]">
               {selectedRegion.economicExtraction}
             </div>
           </div>
 
           {/* Key Administrative & Extractive Attributes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 border-y border-text/15 font-mono text-[12px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 border-y border-[#2A2A2A] font-mono text-[12px]">
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                 REVENUE EXTRACTION MODEL
               </span>
-              <p className="font-serif text-[14px] text-text/90 mt-1">{selectedRegion.revenueSystem}</p>
+              <p className="font-serif text-[14px] text-[#D6D6D0] mt-1">{selectedRegion.revenueSystem}</p>
             </div>
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                 ANNEXATION MECHANISM
               </span>
-              <p className="font-serif text-[14px] text-text/90 mt-1">{selectedRegion.annexationMechanism}</p>
+              <p className="font-serif text-[14px] text-[#D6D6D0] mt-1">{selectedRegion.annexationMechanism}</p>
             </div>
           </div>
 
