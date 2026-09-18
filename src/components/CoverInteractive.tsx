@@ -169,14 +169,14 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </div>
             </div>
 
-            <aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+            <aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
               <p>SOURCE: COLUMBIA UNIV. PRESS</p>
               <p>MECHANISM: COUNCIL BILLS &amp; HOME CHARGES</p>
               <p>RESULT: STRUCTURAL DEINDUSTRIALISATION</p>
               <button
                 type="button"
                 onClick={() => handleOpenSourceDoc('doc-patnaik-drain-calc')}
-                className="pt-3 text-accent hover:underline block font-bold text-left uppercase tracking-[0.15em] text-[12px]"
+                className="pt-3 text-[#C62828] hover:text-[#E53935] hover:underline block font-bold text-left uppercase tracking-[0.15em] text-[12px] transition-colors"
               >
                 [ VIEW ECONOMETRIC RECORD → ]
               </button>
@@ -211,12 +211,12 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         <MythRecordInspector onOpenSourceDoc={handleOpenSourceDoc} />
 
         {/* Unframed Archival Photo Strip */}
-        <section className="my-20 border-t border-b border-text/15 py-12">
+        <section className="my-20 border-t border-b border-[#2A2A2A] py-12">
           <div className="flex justify-between items-baseline mb-8">
-            <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/50">
+            <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D]">
               ARCHIVAL PHOTOGRAPHS &amp; CONTEMPORARY ENGRAVINGS · 1757–1947
             </p>
-            <span className="font-mono text-[13px] text-text/35 uppercase">MONOCHROME ARCHIVE</span>
+            <span className="font-mono text-[13px] text-[#A3A39D] uppercase">MONOCHROME ARCHIVE</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
@@ -244,10 +244,10 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                   />
                 </div>
                 <div className="mt-2.5 space-y-0.5">
-                  <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/80 font-bold leading-tight">
+                  <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#F5F5F0] font-bold leading-tight">
                     {item.name}
                   </p>
-                  <p className="font-serif italic text-[13px] text-text/50 leading-tight">
+                  <p className="font-serif italic text-[13px] text-[#B5B5AF] leading-tight">
                     {item.role}
                   </p>
                   <p className="font-mono text-[13px] text-text/30 tracking-[0.05em]">
