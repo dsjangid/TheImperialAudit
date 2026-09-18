@@ -71,25 +71,25 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </div>
 
               <div className="pt-2">
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">ESTIMATED WEALTH EXTRACTION</span>
-                <span className="text-accent font-bold text-[16px] block mt-0.5">~$45 Trillion (1765–1938)</span>
+                <span className="block text-[11px] uppercase tracking-[0.2em] text-[#A3A39D]/70">ESTIMATED WEALTH EXTRACTION</span>
+                <span className="text-[#E53935] font-bold text-[16px] block mt-0.5">~$45 Trillion (1765–1938)</span>
                 <button
                   type="button"
                   onClick={() => setIsAuditModalOpen(true)}
-                  className="mt-1 text-[11px] text-accent uppercase tracking-[0.15em] font-semibold hover:underline flex items-center gap-1"
+                  className="mt-1 text-[11px] text-[#C62828] uppercase tracking-[0.15em] font-semibold hover:text-[#E53935] hover:underline flex items-center gap-1 transition-colors"
                 >
                   <span>[ AUDIT THE FIGURE → ]</span>
                 </button>
               </div>
 
               <div>
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">PRIMARY ARCHIVES CITED</span>
-                <span className="text-text/90">32 Parliamentary &amp; State Records</span>
+                <span className="block text-[11px] uppercase tracking-[0.2em] text-[#A3A39D]/70">PRIMARY ARCHIVES CITED</span>
+                <span className="text-[#D6D6D0]">32 Parliamentary &amp; State Records</span>
               </div>
 
               <div>
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">PUBLICATION DATE</span>
-                <span className="text-text/90">August 2026 · First Edition</span>
+                <span className="block text-[11px] uppercase tracking-[0.2em] text-[#A3A39D]/70">PUBLICATION DATE</span>
+                <span className="text-[#D6D6D0]">August 2026 · First Edition</span>
               </div>
             </div>
           </div>
@@ -99,11 +99,11 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         <section className="my-16">
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-8">
-              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/40 mb-4">EDITORIAL PROLOGUE</p>
-              <div className="space-y-6 font-serif text-[18px] md:text-[19px] leading-[1.75] text-text/85">
+              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-[#C62828] font-semibold mb-4">EDITORIAL PROLOGUE</p>
+              <div className="space-y-6 font-serif text-[18px] md:text-[19px] leading-[1.75] text-[#D6D6D0]">
                 <p>
-                  <span className="float-left text-[68px] leading-[0.75] font-serif font-bold text-accent pr-4 pt-2">I</span>
-                  n 1757, the East India Company, a private, profit-maximising joint-stock corporation chartered in London, won the Battle of Plassey through <span className="text-accent font-semibold">clandestine bribery and military treachery</span>, establishing corporate dominion over the vast revenues of Bengal. In August 1947, the British Crown evacuated the subcontinent in a hasty, three-month partition that displaced 15 million people and left <span className="text-accent font-semibold">between 500,000 and one million dead</span> in sectarian bloodshed.
+                  <span className="float-left text-[68px] leading-[0.75] font-serif font-bold text-[#C62828] pr-4 pt-2">I</span>
+                  n 1757, the East India Company, a private, profit-maximising joint-stock corporation chartered in London, won the Battle of Plassey through clandestine bribery and military treachery, establishing corporate dominion over the vast revenues of Bengal. In August 1947, the British Crown evacuated the subcontinent in a hasty, three-month partition that displaced 15 million people and left between 500,000 and one million dead in sectarian bloodshed.
                 </p>
                 <p>
                   Between these two terminal dates lies nearly two centuries of documented governance that transformed the wealthiest economy of the early modern world into a debt-burdened, deindustrialised territory governed by coercive force. This publication is not an ideological pamphlet; it is an evidence-first forensic chronicle constructed from the official dispatches of the India Office, the minutes of the British Cabinet, parliamentary inquiries in Hansard, and peer-reviewed macroeconomic datasets.
@@ -114,9 +114,9 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </div>
             </div>
 
-            <aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-6 pt-6">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent">PRIMARY CORPUS</p>
+            <aside className="col-span-12 md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-6 pt-6">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-semibold">PRIMARY CORPUS</p>
                 <p>India Office Records, British Library</p>
                 <p>National Archives, Kew</p>
                 <p>Hansard Parliamentary Debates</p>
