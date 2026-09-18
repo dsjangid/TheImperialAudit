@@ -280,7 +280,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-[#A3A39D] mt-1.5 leading-tight italic">
  ▲ Lord Curzon, Viceroy of India (1899–1905), architect of the 1905 Partition of Bengal
 </p>
 </div>
@@ -288,14 +288,14 @@ export default function SubjectsChapterPage() {
  George Nathaniel Curzon served as Viceroy at the zenith of high imperialism, bringing to India a brilliant intellect coupled with an aristocratic arrogance that profoundly alienated the growing Indian nationalist class. He fundamentally viewed Indians as subjects to be administered with efficient paternalism, entirely dismissing their capacities for self-governance. His tenure was marked by a severe austerity towards famine relief during the devastating 1899–1900 drought, even as he lavishly staged the 1903 Imperial Durbar in Delhi.
 </p>
 <p>
- Curzon's most momentous and disastrous administrative act was the <span className="text-accent font-semibold">1905 Partition of Bengal</span>. Officially justified as an administrative necessity to govern a massive province, the partition divided Bengal starkly along religious lines, creating a Muslim-majority Eastern Bengal and Assam, and a Hindu-majority West Bengal. Nationalist leaders immediately recognized this as a calculated application of "divide and rule." As Curzon himself noted in private correspondence,<span className="text-accent font-bold">&ldquo;Bengal united is a power. Bengal divided will pull in different ways.&rdquo;</span>
+ Curzon's most momentous and disastrous administrative act was the <span className="font-semibold">1905 Partition of Bengal</span>. Officially justified as an administrative necessity to govern a massive province, the partition divided Bengal starkly along religious lines, creating a Muslim-majority Eastern Bengal and Assam, and a Hindu-majority West Bengal. Nationalist leaders immediately recognized this as a calculated application of "divide and rule." As Curzon himself noted in private correspondence, <span className="font-bold">&ldquo;Bengal united is a power. Bengal divided will pull in different ways.&rdquo;</span>
 </p>
 <p>
  The partition sparked unprecedented mass protests, boycotts of British goods (the Swadeshi movement), and the rise of revolutionary terrorism. While the British were eventually forced to reverse the partition in 1911 to quell the escalating unrest, the damage was irrevocable. Curzon's policy had successfully sown the seeds of institutional communalism, deepening Hindu-Muslim political divisions that would plague the nationalist movement and culminate in the bloody partition of the subcontinent in 1947.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>PARTITION OF BENGAL (1905)</p>
 <p>1903 IMPERIAL DURBAR</p>
 <p>STRICT FAMINE AUSTERITY</p>
@@ -305,13 +305,13 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 6. GENERAL REGINALD DYER */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">BRIGADIER-GENERAL · AMRITSAR GARRISON COMMANDER</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">GENERAL REGINALD DYER</h3>
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1864, MURREE · KEY PERIOD: APRIL 1919</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">BRIGADIER-GENERAL · AMRITSAR GARRISON COMMANDER</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">GENERAL REGINALD DYER</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1864</span>, MURREE · KEY PERIOD: <span className="text-[#E53935]">APRIL 1919</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
 <img
@@ -320,7 +320,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-[#A3A39D] mt-1.5 leading-tight italic">
  ▲ Brigadier-General Reginald Dyer, Hunter Commission testimony portrait, 1920
 </p>
 </div>
@@ -328,14 +328,14 @@ export default function SubjectsChapterPage() {
  Brigadier-General Reginald Dyer became the face of the ultimate moral collapse of British rule in India. On 13 April 1919, during the festival of Baisakhi, Dyer marched a detachment of fifty Gurkha and Baluchi riflemen into the Jallianwala Bagh, an enclosed public square in Amritsar where thousands of unarmed civilians were gathering in defiance of martial law. Without issuing a warning to disperse, Dyer ordered his men to open fire, directing their aim at the thickest parts of the crowd and the narrow exits.
 </p>
 <p>
- His troops fired <span className="text-accent font-bold">1,650 rounds over ten agonizing minutes</span>, stopping only when ammunition ran out. Hundreds were killed and over a thousand wounded, whom Dyer left bleeding on the ground, forbidding medical aid. Testifying before the subsequent Hunter Commission, Dyer demonstrated absolutely no remorse. He coldly stated that his intention was not simply to disperse the crowd, but to produce a "moral effect" throughout the Punjab. He further admitted he would have used machine guns had his armored cars fit through the entrance.
+ His troops fired <span className="text-[#E53935] font-bold">1,650 rounds over ten agonizing minutes</span>, stopping only when ammunition ran out. Hundreds were killed and over a thousand wounded, whom Dyer left bleeding on the ground, forbidding medical aid. Testifying before the subsequent Hunter Commission, Dyer demonstrated absolutely no remorse. He coldly stated that his intention was not simply to disperse the crowd, but to produce a "moral effect" throughout the Punjab. He further admitted he would have used machine guns had his armored cars fit through the entrance.
 </p>
 <p>
- In the aftermath, Dyer enforced the humiliating "Crawling Order," forcing Indians to crawl on their bellies down a street where a British missionary had been assaulted. Though eventually relieved of his command in July 1920, Dyer was <span className="text-accent font-semibold">never prosecuted and was hailed as a hero by conservative factions</span>, who raised a massive public fund for his retirement. His actions fundamentally alienated moderate Indian nationalists and destroyed any remaining illusion that the British Empire rested on a foundation of justice rather than raw violence.
+ In the aftermath, Dyer enforced the humiliating "Crawling Order," forcing Indians to crawl on their bellies down a street where a British missionary had been assaulted. Though eventually relieved of his command in July 1920, Dyer was <span className="font-semibold">never prosecuted and was hailed as a hero by conservative factions</span>, who raised a massive public fund for his retirement. His actions fundamentally alienated moderate Indian nationalists and destroyed any remaining illusion that the British Empire rested on a foundation of justice rather than raw violence.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>JALLIANWALA BAGH MASSACRE</p>
 <p>FIRED 1,650 ROUNDS</p>
 <p>ENFORCED CRAWLING ORDER</p>
@@ -345,16 +345,16 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 7. MANGAL PANDEY */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">SEPOY · 34TH BENGAL NATIVE INFANTRY</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">MANGAL PANDEY</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">SEPOY · 34TH BENGAL NATIVE INFANTRY</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">MANGAL PANDEY</h3>
  {/* ARCHIVAL PHOTO */}
-<div className="my-12 border-t border-text/10 pt-12">
+<div className="my-12 border-t border-[#2A2A2A] pt-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<div className="overflow-hidden border border-text/15">
+<div className="overflow-hidden border border-[#2A2A2A]">
 <img
  src="/TheImperialAudit/illustrations/dossiers/khudiram.jpg"
  alt="Khudiram Bose, Bengal's youngest executed revolutionary, 1908"
@@ -362,7 +362,7 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] mt-3">
  ▲ Khudiram Bose, Bengal's youngest executed revolutionary, 1908
 </p>
 </div>
