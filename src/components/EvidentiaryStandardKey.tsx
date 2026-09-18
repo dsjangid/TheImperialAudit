@@ -6,7 +6,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="border border-[#2A2A2A] bg-[#0E0E0E]/90 p-5 md:p-6 transition-all duration-300">
+    <div className="border border-[#2A2A2A] bg-[#0E0E0E] p-5 md:p-6 transition-all duration-300">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-[#C62828]" />
@@ -26,8 +26,8 @@ export const EvidentiaryStandardKey: React.FC = () => {
 
       {/* Primary 3-Tier Badges Strip (Always Visible) */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 pt-4 border-t border-[#2A2A2A] font-mono text-[11px]">
-        <div className="flex items-center gap-2 p-2 border border-[#C62828]/40 bg-[#C62828]/5">
-          <span className="text-base">📜</span>
+        <div className="flex items-center gap-3 p-2.5 border border-[#C62828]/50 bg-[#C62828]/5">
+          <span className="font-bold text-[#E53935] text-[12px]">01</span>
           <div>
             <span className="block text-[#E53935] font-bold uppercase tracking-wider text-[10px]">
               TIER 1: PRIMARY ARCHIVE
@@ -38,10 +38,10 @@ export const EvidentiaryStandardKey: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 p-2 border border-[#D97706]/40 bg-[#D97706]/5">
-          <span className="text-base">🎓</span>
+        <div className="flex items-center gap-3 p-2.5 border border-[#2A2A2A] bg-[#141414]">
+          <span className="font-bold text-[#F5F5F0] text-[12px]">02</span>
           <div>
-            <span className="block text-[#F59E0B] font-bold uppercase tracking-wider text-[10px]">
+            <span className="block text-[#F5F5F0] font-bold uppercase tracking-wider text-[10px]">
               TIER 2: PEER-REVIEWED
             </span>
             <span className="text-[#A3A39D] text-[10px]">
@@ -50,8 +50,8 @@ export const EvidentiaryStandardKey: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2 p-2 border border-[#A3A39D]/30 bg-[#A3A39D]/5">
-          <span className="text-base">⚖️</span>
+        <div className="flex items-center gap-3 p-2.5 border border-[#2A2A2A] bg-[#0E0E0E]">
+          <span className="font-bold text-[#A3A39D] text-[12px]">03</span>
           <div>
             <span className="block text-[#D6D6D0] font-bold uppercase tracking-wider text-[10px]">
               TIER 3: EDITORIAL AUDIT
@@ -65,14 +65,14 @@ export const EvidentiaryStandardKey: React.FC = () => {
 
       {/* Expanded Explanatory Panel */}
       {isExpanded && (
-        <div className="mt-5 pt-4 border-t border-[#2A2A2A] space-y-4 font-serif text-[13px] leading-relaxed text-[#D6D6D0] animate-fade-in">
+        <div className="mt-5 pt-4 border-t border-[#2A2A2A] space-y-4 font-serif text-[13px] leading-relaxed text-[#D6D6D0]">
           <p>
             To uphold the highest threshold of historiographical rigor, every datum, dispatch, casualty estimate, and financial statistic in <em>The Imperial Audit</em> is explicitly categorized into one of three evidentiary tiers:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2 font-mono text-[11px]">
-            <div className="space-y-1.5">
-              <span className="text-[#E53935] font-bold uppercase block tracking-wider">
+            <div className="space-y-1.5 p-3 border border-[#2A2A2A] bg-[#0A0A0A]">
+              <span className="text-[#E53935] font-bold uppercase block tracking-wider text-[10px]">
                 1. PRIMARY EVIDENCE (PROVENANCE)
               </span>
               <p className="font-serif text-[12px] text-[#A3A39D] leading-normal">
@@ -80,8 +80,8 @@ export const EvidentiaryStandardKey: React.FC = () => {
               </p>
             </div>
 
-            <div className="space-y-1.5">
-              <span className="text-[#F59E0B] font-bold uppercase block tracking-wider">
+            <div className="space-y-1.5 p-3 border border-[#2A2A2A] bg-[#0A0A0A]">
+              <span className="text-[#F5F5F0] font-bold uppercase block tracking-wider text-[10px]">
                 2. SCHOLARLY CONSENSUS
               </span>
               <p className="font-serif text-[12px] text-[#A3A39D] leading-normal">
@@ -89,8 +89,8 @@ export const EvidentiaryStandardKey: React.FC = () => {
               </p>
             </div>
 
-            <div className="space-y-1.5">
-              <span className="text-[#D6D6D0] font-bold uppercase block tracking-wider">
+            <div className="space-y-1.5 p-3 border border-[#2A2A2A] bg-[#0A0A0A]">
+              <span className="text-[#D6D6D0] font-bold uppercase block tracking-wider text-[10px]">
                 3. FORENSIC AUDIT NOTES
               </span>
               <p className="font-serif text-[12px] text-[#A3A39D] leading-normal">

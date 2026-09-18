@@ -22,7 +22,7 @@ export const NightLightToggle: React.FC<NightLightToggleProps> = ({
       title={enabled ? 'Turn off night light (Alt+N)' : 'Turn on night light (Alt+N)'}
       className={`inline-flex items-center justify-center p-1.5 rounded-none border-0 bg-transparent transition-colors duration-200 focus:outline-none cursor-pointer ${
         enabled
-          ? 'text-[#F59E0B] hover:text-[#FBBF24]'
+          ? 'text-[#C62828] hover:text-[#E53935]'
           : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
       } ${className}`}
     >

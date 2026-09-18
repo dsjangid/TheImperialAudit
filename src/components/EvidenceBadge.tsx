@@ -22,49 +22,49 @@ const BADGE_MAP: Record<string, BadgeDefinition> = {
     label: 'PRIMARY ARCHIVE',
     tier: 'PRIMARY',
     tierLabel: 'PRIMARY SOURCE',
-    badgeClass: 'border border-[#C62828]/60 bg-[#C62828]/10 text-[#E53935]',
+    badgeClass: 'border border-[#C62828]/50 bg-[#C62828]/10 text-[#E53935]',
   },
   OFFICIAL_ENQUIRY: {
     label: 'OFFICIAL INQUIRY',
     tier: 'PRIMARY',
     tierLabel: 'PRIMARY SOURCE',
-    badgeClass: 'border border-[#C62828]/60 bg-[#C62828]/10 text-[#E53935]',
+    badgeClass: 'border border-[#C62828]/50 bg-[#C62828]/10 text-[#E53935]',
   },
   PARLIAMENTARY_RECORD: {
     label: 'PARLIAMENTARY RECORD',
     tier: 'PRIMARY',
     tierLabel: 'PRIMARY SOURCE',
-    badgeClass: 'border border-[#C62828]/60 bg-[#C62828]/10 text-[#E53935]',
+    badgeClass: 'border border-[#C62828]/50 bg-[#C62828]/10 text-[#E53935]',
   },
   ECONOMIC_DATA: {
     label: 'ECONOMETRIC MODEL',
     tier: 'SCHOLARSHIP',
     tierLabel: 'PEER-REVIEWED',
-    badgeClass: 'border border-[#D97706]/50 bg-[#D97706]/10 text-[#F59E0B]',
+    badgeClass: 'border border-[#2A2A2A] bg-[#141414] text-[#F5F5F0]',
   },
   SCHOLARLY_ESTIMATE: {
     label: 'SCHOLARLY ESTIMATE',
     tier: 'SCHOLARSHIP',
     tierLabel: 'PEER-REVIEWED',
-    badgeClass: 'border border-[#D97706]/50 bg-[#D97706]/10 text-[#F59E0B]',
+    badgeClass: 'border border-[#2A2A2A] bg-[#141414] text-[#F5F5F0]',
   },
   SECONDARY_SCHOLARSHIP: {
     label: 'SECONDARY SCHOLARSHIP',
     tier: 'SCHOLARSHIP',
     tierLabel: 'PEER-REVIEWED',
-    badgeClass: 'border border-[#D97706]/50 bg-[#D97706]/10 text-[#F59E0B]',
+    badgeClass: 'border border-[#2A2A2A] bg-[#141414] text-[#F5F5F0]',
   },
   DISPUTED_FIGURE: {
     label: 'HISTORICAL DISPUTE',
     tier: 'EDITORIAL',
     tierLabel: 'EDITORIAL AUDIT',
-    badgeClass: 'border border-[#A3A39D]/40 bg-[#A3A39D]/10 text-[#D6D6D0]',
+    badgeClass: 'border border-[#2A2A2A] bg-[#0E0E0E] text-[#A3A39D]',
   },
   EDITORIAL_AUDIT: {
     label: 'FORENSIC AUDIT NOTE',
     tier: 'EDITORIAL',
     tierLabel: 'EDITORIAL AUDIT',
-    badgeClass: 'border border-[#A3A39D]/40 bg-[#A3A39D]/10 text-[#D6D6D0]',
+    badgeClass: 'border border-[#2A2A2A] bg-[#0E0E0E] text-[#A3A39D]',
   },
 };
 
@@ -78,7 +78,7 @@ export const EvidenceBadge: React.FC<EvidenceBadgeProps> = ({
     label: category.replace(/_/g, ' '),
     tier: 'EDITORIAL',
     tierLabel: 'AUDIT NOTE',
-    badgeClass: 'border border-[#A3A39D]/40 bg-[#A3A39D]/10 text-[#D6D6D0]',
+    badgeClass: 'border border-[#2A2A2A] bg-[#0E0E0E] text-[#A3A39D]',
   };
 
   const sizeClasses = {
@@ -87,22 +87,16 @@ export const EvidenceBadge: React.FC<EvidenceBadgeProps> = ({
     lg: 'text-[12px] px-3 py-1 tracking-[0.18em]',
   }[size];
 
-  const tierIcon = {
-    PRIMARY: '📜',
-    SCHOLARSHIP: '🎓',
-    EDITORIAL: '⚖️',
-  }[meta.tier];
-
   return (
     <span
       className={`inline-flex items-center gap-1.5 font-mono uppercase font-semibold rounded-none select-none transition-colors ${sizeClasses} ${meta.badgeClass} ${className}`}
       title={`${meta.tierLabel}: ${meta.label} — Verified Archival Classification`}
     >
-      <span className="text-[10px] opacity-80" aria-hidden="true">
-        {tierIcon}
+      <span className="text-[#C62828] text-[9px]" aria-hidden="true">
+        ▪
       </span>
       {showTier && (
-        <span className="opacity-60 text-[9px] border-r border-current pr-1.5 mr-0.5">
+        <span className="opacity-60 text-[9px] border-r border-[#2A2A2A] pr-1.5 mr-0.5">
           {meta.tierLabel}
         </span>
       )}
