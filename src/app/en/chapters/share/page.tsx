@@ -105,7 +105,7 @@ export default function JallianwalaChapterPage() {
                 <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">FORENSIC CROSS-EXAMINATION</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-6">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-6">
                 The Hunter Commission &amp; Dyer’s Admissions
               </h3>
 
@@ -120,14 +120,14 @@ export default function JallianwalaChapterPage() {
               />
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-text font-bold">INTERNATIONAL IMPACT</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#F5F5F0] font-bold">INTERNATIONAL IMPACT</p>
                 <p>TAGORE RENOUNCED KNIGHTHOOD</p>
                 <button
                   type="button"
                   onClick={() => handleOpenSourceDoc('doc-tagore-knighthood-1919')}
-                  className="text-accent hover:underline font-semibold block text-[11px] pt-1"
+                  className="text-[#C62828] hover:text-[#E53935] hover:underline font-semibold block text-[11px] pt-1 transition-colors"
                 >
                   [ VIEW TAGORE LETTER → ]
                 </button>
@@ -137,13 +137,13 @@ export default function JallianwalaChapterPage() {
         </section>
 
         {/* Chapter Transition Link */}
-        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
-          <Link href="/en/chapters/dossiers" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+        <div className="pt-16 border-t border-[#2A2A2A] flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en/chapters/dossiers" className="text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-[0.15em] transition-colors">
             ← Chapter 03: The Subjects
           </Link>
           <Link
             href="/en/chapters/action"
-            className="text-accent hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2"
+            className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2 transition-colors"
           >
             <span>Proceed to Part V: The Subcontinental Corpus &amp; Archive</span>
             <span>→</span>
