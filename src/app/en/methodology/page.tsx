@@ -13,40 +13,40 @@ export default function MethodologyPage() {
 
       <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24 flex-1">
         {/* Masthead */}
-        <header className="mb-16 border-b border-text/15 pb-10">
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-            <span className="text-accent font-semibold">RESEARCH APPENDIX · METHODOLOGY &amp; HISTORIOGRAPHY</span>
+        <header className="mb-16 border-b border-[#2A2A2A] pb-10">
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+            <span className="text-[#C62828] font-semibold">RESEARCH APPENDIX · METHODOLOGY &amp; HISTORIOGRAPHY</span>
             <span>ACADEMIC INTEGRITY STATEMENT</span>
             <span>DECLASSIFIED COLONIAL ARCHIVE</span>
           </div>
 
           <h1
-            className="font-serif text-text text-[clamp(36px,7.5vw,90px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
+            className="font-serif text-[#F5F5F0] text-[clamp(36px,7.5vw,90px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
             style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
           >
             Methodology &amp;<br />Archival Standards
           </h1>
-          <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-text/75 leading-snug max-w-[50ch]">
+          <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-[#D6D6D0] leading-snug max-w-[50ch]">
             A formal statement on archival documentation, fiscal quantification, primary source cross-referencing, and demographic analysis in colonial South Asia (1757–1947).
           </p>
 
-          <div className="mt-8 pt-6 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-text/40">
+          <div className="mt-8 pt-6 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] text-[#A3A39D]">
             <div>
-              <span className="text-text/25 uppercase text-[11px] block tracking-[0.15em]">CORE METHOD</span>
-              <span className="text-text/80">Cross-Referencing Colonial Administrative Dispatches with Economic Datasets</span>
+              <span className="text-[#A3A39D] uppercase text-[11px] block tracking-[0.15em]">CORE METHOD</span>
+              <span className="text-[#D6D6D0]">Cross-Referencing Colonial Administrative Dispatches with Economic Datasets</span>
             </div>
             <div>
-              <span className="text-text/25 uppercase text-[11px] block tracking-[0.15em]">PRINCIPLE</span>
-              <span className="text-accent font-bold">Unredacted Primary Documentation &amp; Peer-Reviewed Historiography</span>
+              <span className="text-[#A3A39D] uppercase text-[11px] block tracking-[0.15em]">PRINCIPLE</span>
+              <span className="text-[#C62828] font-bold">Unredacted Primary Documentation &amp; Peer-Reviewed Historiography</span>
             </div>
           </div>
         </header>
 
         {/* Section 1: Sources & Archival Corpus */}
-        <section className="py-10 border-b border-text/10" id="sources">
+        <section className="py-10 border-b border-[#2A2A2A]" id="sources">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 01
               </span>
               <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
