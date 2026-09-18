@@ -247,9 +247,9 @@ export default function ConquestChapterPage() {
               </div>
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-text font-bold">SETTLEMENT RULES</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#F5F5F0] font-bold">SETTLEMENT RULES</p>
                 <p>89% TAX SHARE TO COMPANY</p>
                 <p>11% RETAINED BY ZAMINDAR</p>
                 <p>SUNSET LAW FORFEITURES</p>
@@ -264,17 +264,17 @@ export default function ConquestChapterPage() {
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">ANNEXATION · PRELUDE TO 1857</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">ANNEXATION · PRELUDE TO 1857</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Unilateral Annexation of Awadh (1856)
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                7 FEBRUARY 1856 · LUCKNOW &amp; CALCUTTA
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">7 FEBRUARY 1856</span> · LUCKNOW &amp; CALCUTTA
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
                   Governor-General Lord Dalhousie annexed the sovereign Kingdom of Awadh on the pretext of 'misgovernance', exiling Nawab Wajid Ali Shah to Calcutta and confiscating the estates of over 20,000 talukdars. Because Awadh was the primary recruitment basin for the Bengal Native Army, this annexation directly antagonized over 40,000 sepoys whose families were subjected to higher British land taxes.
                 </p>
@@ -283,7 +283,7 @@ export default function ConquestChapterPage() {
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-dalhousie-awadh-1856')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW PRIMARY ARCHIVE RECORD: DALHOUSIE AWADH MINUTE → ]
                   </button>
@@ -291,9 +291,9 @@ export default function ConquestChapterPage() {
               </div>
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">1857 CATALYST</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">1857 CATALYST</p>
                 <p>40,000 SEPOYS ALIENATED</p>
                 <p>20,000 TALUKDARS DISPOSSESSED</p>
                 <p>TREASURY SEIZED</p>
@@ -303,13 +303,13 @@ export default function ConquestChapterPage() {
         </section>
 
         {/* Chapter Transition Link */}
-        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
-          <Link href="/en" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+        <div className="pt-16 border-t border-[#2A2A2A] flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en" className="text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-[0.15em] transition-colors">
             ← Back to Cover
           </Link>
           <Link
             href="/en/chapters/comparison"
-            className="text-accent hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2"
+            className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-2 transition-colors"
           >
             <span>Proceed to Part II: The Great Rupture (1857)</span>
             <span>→</span>
