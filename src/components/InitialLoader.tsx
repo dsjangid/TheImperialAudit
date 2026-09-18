@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+
 export const InitialLoader: React.FC = () => {
-  const [shouldShow, setShouldShow] = useState<boolean | null>(null);
   const [progress, setProgress] = useState(0);
   const [isFading, setIsFading] = useState(false);
   const [isMounted, setIsMounted] = useState(true);
@@ -11,50 +11,60 @@ export const InitialLoader: React.FC = () => {
     try {
       const hasLoaded = sessionStorage.getItem('imperial_audit_loaded');
       if (hasLoaded) {
-        setShouldShow(false);
         setIsMounted(false);
         return;
       }
       sessionStorage.setItem('imperial_audit_loaded', 'true');
-      setShouldShow(true);
     } catch {
-      setShouldShow(true);
+      // Storage unavailable (e.g. private mode fallback)
     }
 
-    const startTime = Date.now();
-    const duration = 2000; // 2 seconds
+    const duration = 1100; // Snappy 1.1s initial load duration
+    const startTime = performance.now();
 
-    const interval = setInterval(() => {
-      const elapsed = Date.now() - startTime;
-      const pct = Math.min(Math.floor((elapsed / duration) * 100), 100);
-      setProgress(pct);
+    let animationFrameId: number;
 
-      if (elapsed >= duration) {
-        clearInterval(interval);
+    const updateProgress = (now: number) => {
+      const elapsed = now - startTime;
+      const progressRatio = Math.min(elapsed / duration, 1);
+
+      // Smooth cubic ease-out progression
+      const easedProgress = Math.min(100, Math.floor((1 - Math.pow(1 - progressRatio, 2.5)) * 100));
+      setProgress(easedProgress);
+
+      if (progressRatio < 1) {
+        animationFrameId = requestAnimationFrame(updateProgress);
+      } else {
         setProgress(100);
         setIsFading(true);
         setTimeout(() => {
           setIsMounted(false);
-        }, 400);
+        }, 350);
       }
-    }, 20);
+    };
 
-    return () => clearInterval(interval);
+    animationFrameId = requestAnimationFrame(updateProgress);
+
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, []);
 
-  if (shouldShow === false || !isMounted || shouldShow === null) {
+  if (!isMounted) {
     return null;
   }
 
   return (
     <div
       aria-hidden="true"
-      className={`fixed inset-0 z-[100000] bg-[#0A0A0A] text-[#F5F5F0] flex items-center justify-center select-none transition-opacity duration-400 ease-out ${
+      className={`fixed inset-0 z-[100000] bg-[#0A0A0A] text-[#F5F5F0] flex items-center justify-center select-none transition-opacity duration-350 ease-out ${
         isFading ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
     >
       <div className="text-center space-y-3 px-6">
-        <p className="font-mono text-[13px] sm:text-[13px] uppercase tracking-[0.25em] text-[#D6D6D0] font-medium">
+        <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-[#D6D6D0] font-medium">
           THE IMPERIAL AUDIT
         </p>
 
@@ -67,7 +77,10 @@ export const InitialLoader: React.FC = () => {
         </div>
 
         <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] tabular-nums">
-          <span className="text-[#E53935]">1757–1947</span> · <span className="text-[#E53935] font-semibold">{progress.toString().padStart(2, '0')}%</span>
+          <span className="text-[#E53935]">1757–1947</span> ·{' '}
+          <span className="text-[#E53935] font-semibold">
+            {progress.toString().padStart(2, '0')}%
+          </span>
         </p>
       </div>
     </div>
