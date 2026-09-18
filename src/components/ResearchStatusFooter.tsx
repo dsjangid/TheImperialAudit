@@ -37,32 +37,32 @@ export const ResearchStatusFooter: React.FC<ResearchStatusFooterProps> = ({
               <span className="text-[#D6D6D0] font-medium">32 Primary Repositories · 47 Documented Incidents</span>
             </div>
             <div>
-              <span className="text-text/30 block">AUDIT METHODOLOGY</span>
-              <Link href="/en/methodology" className="text-accent hover:underline font-semibold block">
+              <span className="text-[#A3A39D]/70 block">AUDIT METHODOLOGY</span>
+              <Link href="/en/methodology" className="text-[#C62828] hover:text-[#E53935] hover:underline font-semibold block transition-colors">
                 → Open Academic Methodology Appendix
               </Link>
             </div>
             <div>
-              <span className="text-text/30 block">LAST CORPUS AUDIT</span>
-              <span className="text-text/80">August 2026 · Release 2.0</span>
+              <span className="text-[#A3A39D]/70 block">LAST CORPUS AUDIT</span>
+              <span className="text-[#D6D6D0]">August 2026 · Release 2.0</span>
             </div>
           </div>
 
           {/* Col 3: Academic Citation */}
-          <div className="md:col-span-3 font-mono text-[11px] uppercase tracking-[0.15em] text-text/45 space-y-2 border-l border-text/15 pl-6">
-            <span className="text-text/30 block">PUBLICATION LICENSE</span>
-            <p className="text-[10px] text-text/60 leading-normal lowercase">
+          <div className="md:col-span-3 font-mono text-[11px] uppercase tracking-[0.15em] text-[#A3A39D] space-y-2 border-l border-[#2A2A2A] pl-6">
+            <span className="text-[#A3A39D]/70 block">PUBLICATION LICENSE</span>
+            <p className="text-[10px] text-[#A3A39D] leading-normal lowercase">
               Open-access digital humanities project. Public domain historical photography and parliamentary papers.
             </p>
             <div className="pt-2">
-              <span className="text-text/80 font-bold block">THE IMPERIAL AUDIT</span>
-              <span className="text-text/40 block">1757–1947</span>
+              <span className="text-[#F5F5F0] font-bold block">THE IMPERIAL AUDIT</span>
+              <span className="text-[#E53935] block">1757–1947</span>
             </div>
           </div>
         </div>
 
         {/* Bottom Colophon Bar */}
-        <div className="pt-8 border-t border-text/10 flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-text/35">
+        <div className="pt-8 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D]">
           <span>THE DECLASSIFIED COLONIAL ARCHIVE PROJECT · LONDON &amp; NEW DELHI</span>
           <span>SET IN SOURCE SERIF 4 &amp; JETBRAINS MONO</span>
         </div>
