@@ -80,8 +80,8 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
                     : isHovered
                     ? 'border-[#D6D6D0] text-[#F5F5F0]'
                     : isDimmed
-                    ? 'border-text/10 text-text/30 hover:border-text/30 hover:text-text/60'
-                    : 'border-text/20 text-text/75 hover:border-text/50 hover:text-text'
+                    ? 'border-[#2A2A2A] text-[#D6D6D0]/40 hover:border-[#2A2A2A] hover:text-[#D6D6D0]'
+                    : 'border-[#2A2A2A] text-[#D6D6D0] hover:border-[#D6D6D0]/50 hover:text-[#F5F5F0]'
                 }`}
               >
                 {region.name}
@@ -92,9 +92,9 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
       </div>
 
       {/* Thematic Lens Filter Toolbar */}
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-3 border-b border-text/10 font-mono text-[11px]">
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-3 border-b border-[#2A2A2A] font-mono text-[11px]">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-text/40 uppercase tracking-[0.15em] mr-2">AUDIT LENS:</span>
+          <span className="text-[#A3A39D] uppercase tracking-[0.15em] mr-2">AUDIT LENS:</span>
           {[
             ['all', '[ ALL 10 STATES ]'],
             ['1857', '[ 1857 REVOLT CORRIDOR ]'],
@@ -106,8 +106,8 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
               onClick={() => setFilterMode(id as MapFilterMode)}
               className={`px-2 py-0.5 uppercase tracking-[0.15em] transition-colors ${
                 filterMode === id
-                  ? 'text-accent font-bold border-b border-accent'
-                  : 'text-text/45 hover:text-text'
+                  ? 'text-[#C62828] font-bold border-b border-[#C62828]'
+                  : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
               }`}
             >
               {label}
@@ -115,7 +115,7 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
           ))}
         </div>
 
-        <div className="text-text/40 text-[11px] uppercase tracking-wider hidden md:block">
+        <div className="text-[#A3A39D] text-[11px] uppercase tracking-wider hidden md:block">
           Click map pins or state tabs above to explore
         </div>
       </div>
@@ -123,15 +123,15 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
       {/* Two-Column Side-by-Side Grid: Map on Left (Col 6), Forensic State History on Right (Col 6) */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         {/* LEFT COLUMN: Real Historical Pre-Partition Map Image (6 Cols) */}
-        <div className="lg:col-span-6 relative border border-text/20 bg-[#060606] p-4 sm:p-5 select-none">
+        <div className="lg:col-span-6 relative border border-[#2A2A2A] bg-[#060606] p-4 sm:p-5 select-none">
           {/* Map Header / Archival Registry */}
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-text/15 pb-3 mb-4 font-mono text-[10px] uppercase tracking-[0.2em] text-text/50">
-            <span className="text-accent font-bold">PLATE IV / SURVEY OF INDIA</span>
-            <span className="text-text/75 font-semibold">PRE-PARTITION IMPERIAL MAP · c. 1890</span>
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#2A2A2A] pb-3 mb-4 font-mono text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]">
+            <span className="text-[#C62828] font-bold">PLATE IV / SURVEY OF INDIA</span>
+            <span className="text-[#B5B5AF] font-semibold">PRE-PARTITION IMPERIAL MAP · c. 1890</span>
             <button
               type="button"
               onClick={() => setIsMapZoomed(!isMapZoomed)}
-              className="text-text/50 hover:text-accent font-bold transition-colors underline"
+              className="text-[#A3A39D] hover:text-[#E53935] font-bold transition-colors underline"
             >
               {isMapZoomed ? '[ FIT VIEW ]' : '[ ZOOM IN ]'}
             </button>
@@ -210,8 +210,8 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
                         isSelected
                           ? 'bg-accent text-white font-bold opacity-100 z-30 shadow-md'
                           : isHovered
-                          ? 'bg-black text-text border border-text/40 font-semibold opacity-100 z-20'
-                          : 'bg-black/80 text-text/80 border border-text/15 opacity-0 group-hover:opacity-100'
+                          ? 'bg-black text-[#F5F5F0] border border-[#2A2A2A] font-semibold opacity-100 z-20'
+                          : 'bg-black/80 text-[#D6D6D0] border border-[#2A2A2A] opacity-0 group-hover:opacity-100'
                       }`}
                     >
                       {region.code} · {region.name.split(' ')[0]}
@@ -223,7 +223,7 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
           </div>
 
           {/* Archival Map Legend Footer */}
-          <div className="mt-4 pt-3 border-t border-text/15 flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] text-text/50 uppercase">
+          <div className="mt-4 pt-3 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] text-[#A3A39D] uppercase">
             <div className="flex items-center gap-4">
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 bg-accent inline-block" />
@@ -241,7 +241,7 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
         {/* RIGHT COLUMN: Selected State Complete History Dossier (6 Cols, Sticky) */}
         <div className="lg:col-span-6 lg:sticky lg:top-28 space-y-6">
           {/* Territory Header */}
-          <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-text/15 pb-4">
+          <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-[#2A2A2A] pb-4">
             <div>
               <div className="flex items-center gap-2 mb-1 font-mono text-[11px]">
                 <span className="uppercase tracking-[0.2em] text-accent font-bold">
