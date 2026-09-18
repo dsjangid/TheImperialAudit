@@ -31,35 +31,35 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
   };
 
   return (
-    <section className="my-24 border-t border-text/15 pt-16" id="geography-of-empire">
+    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="geography-of-empire">
       {/* Section Masthead */}
       <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
         <div>
           <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-            <span className="text-accent font-semibold">CARTOGRAPHIC INVESTIGATION</span>
-            <span className="text-text/40 border-l border-text/20 pl-3">
+            <span className="text-[#C62828] font-semibold">CARTOGRAPHIC INVESTIGATION</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">
               ARCHIVAL MAP OF BRITISH INDIA · 1890 SURVEY
             </span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-text leading-[0.95]">
+          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
             THE GEOGRAPHY OF EMPIRE
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-2 max-w-[70ch]">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2 max-w-[70ch]">
             An unredacted cartographic audit of territorial conquest, agrarian extraction regimes, and popular resistance across the Indian Subcontinent before Partition.
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em] flex flex-col items-end gap-1">
+        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] flex flex-col items-end gap-1">
           <span>10 HISTORICAL JURISDICTIONS</span>
-          <span className="text-accent font-bold">PRE-PARTITION ARCHIVE</span>
+          <span className="text-[#C62828] font-bold">PRE-PARTITION ARCHIVE</span>
         </div>
       </div>
 
       {/* State & Province Navigation Ribbon */}
-      <div className="mb-6 pb-4 border-b border-text/15 font-mono text-[11px] uppercase">
-        <div className="flex items-center justify-between mb-3 text-text/40 tracking-[0.2em]">
+      <div className="mb-6 pb-4 border-b border-[#2A2A2A] font-mono text-[11px] uppercase">
+        <div className="flex items-center justify-between mb-3 text-[#A3A39D] tracking-[0.2em]">
           <span>SELECT ANY STATE / PROVINCE TO AUDIT ITS COMPLETE HISTORY:</span>
-          <span className="hidden sm:inline text-accent font-bold">10 AUDITED JURISDICTIONS</span>
+          <span className="hidden sm:inline text-[#C62828] font-bold">10 AUDITED JURISDICTIONS</span>
         </div>
 
         <div className="flex flex-wrap items-center gap-2 sm:gap-3">
@@ -76,9 +76,9 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
                 onMouseLeave={() => setHoveredRegionId(null)}
                 className={`px-3 py-1.5 transition-all text-[11px] tracking-[0.12em] font-semibold border ${
                   isSelected
-                    ? 'border-accent text-accent bg-accent/[0.08]'
+                    ? 'border-[#C62828] text-[#C62828] bg-[#C62828]/10'
                     : isHovered
-                    ? 'border-text/60 text-text'
+                    ? 'border-[#D6D6D0] text-[#F5F5F0]'
                     : isDimmed
                     ? 'border-text/10 text-text/30 hover:border-text/30 hover:text-text/60'
                     : 'border-text/20 text-text/75 hover:border-text/50 hover:text-text'
