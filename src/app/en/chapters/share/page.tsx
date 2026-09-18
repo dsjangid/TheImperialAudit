@@ -44,27 +44,27 @@ export default function JallianwalaChapterPage() {
 
             <div className="mt-8 pt-6 border-t border-[#2A2A2A] grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-[#A3A39D]">
               <div>
-                <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">INCIDENT LOCATION</span>
-                <span className="text-text/90 font-medium">Jallianwala Bagh, Amritsar (5:15 PM)</span>
+                <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">INCIDENT LOCATION</span>
+                <span className="text-[#D6D6D0] font-medium">Jallianwala Bagh, Amritsar (5:15 PM)</span>
               </div>
               <div>
-                <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">AMMUNITION EXPENDED</span>
-                <span className="text-accent font-bold">1,650 Rounds of .303 Mark VII</span>
+                <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">AMMUNITION EXPENDED</span>
+                <span className="text-[#E53935] font-bold">1,650 Rounds of .303 Mark VII</span>
               </div>
               <div>
-                <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">CASUALTIES (CONTESTED)</span>
-                <span className="text-text/90">379 (Hunter) / 1,000+ (Congress)</span>
+                <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">CASUALTIES (CONTESTED)</span>
+                <span className="text-[#D6D6D0]">379 (Hunter) / 1,000+ (Congress)</span>
               </div>
               <div>
-                <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">EVIDENCE STATUS</span>
-                <span className="text-accent font-semibold">Official Inquiry Report (Cmd. 681)</span>
+                <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">EVIDENCE STATUS</span>
+                <span className="text-[#C62828] font-semibold">Official Inquiry Report (Cmd. 681)</span>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
                   <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-accent pr-3 pt-1">J</span>
                   allianwala Bagh remains the single most documented act of colonial state violence in the history of the British Empire. Unlike many other atrocities of the imperial era, the events of 13 April 1919 were examined in the open daylight of official parliamentary inquiries. Brigadier-General Reginald Dyer testified freely and extensively before the Hunter Committee, offering no apologies and explicitly stating his intention to inflict massive casualties as a punitive moral measure.
