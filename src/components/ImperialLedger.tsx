@@ -216,32 +216,32 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
             <h3 className="font-serif text-[26px] sm:text-[34px] md:text-[38px] font-bold leading-tight text-[#F5F5F0]">
               {currentEvent.title}
             </h3>
-            <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-1">
+            <p className="font-serif italic text-[16px] sm:text-[18px] text-[#B5B5AF] mt-1">
               {currentEvent.subtitle}
             </p>
           </div>
 
           {/* Event Narrative Summary */}
-          <div className="font-serif text-[16px] sm:text-[17px] leading-[1.8] text-text/85 mb-8 max-w-[85ch]">
+          <div className="font-serif text-[16px] sm:text-[17px] leading-[1.8] text-[#D6D6D0] mb-8 max-w-[85ch]">
             {currentEvent.summary}
           </div>
 
           {/* Impact Breakdown (Two Columns) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 border-t border-b border-text/15 font-mono text-[12px] mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 border-t border-b border-[#2A2A2A] font-mono text-[12px] mb-8">
             <div className="space-y-2">
-              <span className="text-[11px] uppercase tracking-[0.2em] text-accent font-bold block">
+              <span className="text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold block">
                 ECONOMIC &amp; FISCAL IMPACT
               </span>
-              <p className="font-serif text-[14px] text-text/80 leading-relaxed">
+              <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed">
                 {currentEvent.economicImpact}
               </p>
             </div>
 
-            <div className="space-y-2 border-t md:border-t-0 md:border-l border-text/15 pt-4 md:pt-0 md:pl-8">
-              <span className="text-[11px] uppercase tracking-[0.2em] text-text/50 font-bold block">
+            <div className="space-y-2 border-t md:border-t-0 md:border-l border-[#2A2A2A] pt-4 md:pt-0 md:pl-8">
+              <span className="text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] font-bold block">
                 HUMAN &amp; DEMOGRAPHIC IMPACT
               </span>
-              <p className="font-serif text-[14px] text-text/80 leading-relaxed">
+              <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed">
                 {currentEvent.humanImpact}
               </p>
             </div>
@@ -250,17 +250,17 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
           {/* Primary Source & Associated Chapter */}
           <div className="flex flex-wrap items-center justify-between gap-6 font-mono text-[12px]">
             <div className="space-y-1">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                 PRIMARY ARCHIVAL SOURCE
               </span>
               <div className="flex flex-wrap items-center gap-3">
-                <span className="text-text/90 font-semibold">{currentEvent.primarySource.name}</span>
-                <span className="text-text/50 text-[11px]">({currentEvent.primarySource.archiveRef})</span>
+                <span className="text-[#F5F5F0] font-semibold">{currentEvent.primarySource.name}</span>
+                <span className="text-[#A3A39D] text-[11px]">({currentEvent.primarySource.archiveRef})</span>
                 {currentEvent.primarySource.docId && onOpenSourceDoc && (
                   <button
                     type="button"
                     onClick={() => onOpenSourceDoc(currentEvent.primarySource.docId!)}
-                    className="text-accent hover:underline font-bold text-[11px] uppercase tracking-[0.15em] ml-1"
+                    className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold text-[11px] uppercase tracking-[0.15em] ml-1"
                   >
                     [ VIEW ARCHIVAL RECORD → ]
                   </button>
@@ -269,12 +269,12 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
             </div>
 
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block mb-1">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
                 ASSOCIATED CHAPTER
               </span>
               <Link
                 href={currentEvent.dispatchHref}
-                className="text-accent hover:underline font-bold flex items-center gap-1 uppercase tracking-[0.15em]"
+                className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold flex items-center gap-1 uppercase tracking-[0.15em]"
               >
                 <span>{currentEvent.dispatchTitle}</span>
                 <span>→</span>
