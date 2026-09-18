@@ -301,19 +301,19 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
           {/* Documented Historical Incidents Checklist */}
           <div>
             <div className="flex items-center justify-between mb-2 font-mono text-[11px]">
-              <span className="uppercase tracking-[0.2em] text-text/40">
+              <span className="uppercase tracking-[0.2em] text-[#A3A39D]">
                 CHRONOLOGY OF DOCUMENTED INCIDENTS
               </span>
-              <span className="text-accent font-bold">
+              <span className="text-[#C62828] font-bold">
                 {selectedRegion.keyIncidents.length} RECORDED EVENTS
               </span>
             </div>
 
-            <div className="divide-y divide-text/10">
+            <div className="divide-y divide-[#2A2A2A]">
               {selectedRegion.keyIncidents.map((incident, i) => (
                 <div key={i} className="py-2.5 font-mono text-[12px] flex items-baseline justify-between gap-4">
-                  <span className="text-text/90 font-medium">{incident}</span>
-                  <span className="text-[10px] text-text/40 font-mono tracking-wider shrink-0">№ {String(i + 1).padStart(2, '0')}</span>
+                  <span className="text-[#D6D6D0] font-medium">{incident}</span>
+                  <span className="text-[10px] text-[#A3A39D] font-mono tracking-wider shrink-0">№ {String(i + 1).padStart(2, '0')}</span>
                 </div>
               ))}
             </div>
@@ -322,10 +322,10 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
           {/* Key Historical Actors */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-[12px] pt-2">
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block mb-1">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
                 KEY RESISTANCE ACTORS
               </span>
-              <div className="space-y-0.5 text-text/85 font-serif text-[14px]">
+              <div className="space-y-0.5 text-[#D6D6D0] font-serif text-[14px]">
                 {selectedRegion.keyFigures.resistance.map((figure) => (
                   <p key={figure}>{figure}</p>
                 ))}
@@ -333,10 +333,10 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
             </div>
 
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block mb-1">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
                 COLONIAL ADMINISTRATORS
               </span>
-              <div className="space-y-0.5 text-text/60 font-serif text-[14px]">
+              <div className="space-y-0.5 text-[#B5B5AF] font-serif text-[14px]">
                 {selectedRegion.keyFigures.administrators.map((figure) => (
                   <p key={figure}>{figure}</p>
                 ))}
@@ -345,16 +345,16 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
           </div>
 
           {/* Primary Sources & Chapter Dispatch Navigation */}
-          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-text/15 font-mono text-[12px]">
+          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#2A2A2A] font-mono text-[12px]">
             <Link
               href={selectedRegion.dispatchHref}
-              className="text-accent hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1"
+              className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1"
             >
               <span>{selectedRegion.dispatchTitle}</span>
               <span>→</span>
             </Link>
 
-            <span className="text-text/40 text-[11px]">
+            <span className="text-[#A3A39D] text-[11px]">
               {selectedRegion.primarySourceCitations[0] || 'India Office Records'}
             </span>
           </div>
