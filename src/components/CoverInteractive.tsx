@@ -250,7 +250,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                   <p className="font-serif italic text-[13px] text-[#B5B5AF] leading-tight">
                     {item.role}
                   </p>
-                  <p className="font-mono text-[13px] text-text/30 tracking-[0.05em]">
+                  <p className="font-mono text-[13px] text-[#E53935] tracking-[0.05em]">
                     {item.yr}
                   </p>
                 </div>
@@ -261,16 +261,16 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
 
         {/* Featured Long-Form Chapters Directory */}
         <section className="my-20">
-          <div className="flex justify-between items-baseline mb-10 pb-4 border-b border-text/15">
+          <div className="flex justify-between items-baseline mb-10 pb-4 border-b border-[#2A2A2A]">
             <div>
-              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-text/40 mb-1">
+              <p className="font-mono text-[13px] uppercase tracking-[0.25em] text-[#C62828] font-semibold mb-1">
                 TABLE OF CONTENTS
               </p>
-              <h2 className="font-serif text-[32px] md:text-[44px] font-bold">
+              <h2 className="font-serif text-[#F5F5F0] text-[32px] md:text-[44px] font-bold">
                 The Five Dispatches
               </h2>
             </div>
-            <span className="font-mono text-[13px] text-text/40 uppercase tracking-[0.15em]">
+            <span className="font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.15em]">
               UNREDACTED EDITIONS
             </span>
           </div>
@@ -331,7 +331,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               <Link
                 key={item.num}
                 href={item.href}
-                className="group block border-b border-text/10 pb-12 hover:border-text/30 transition-colors"
+                className="group block border-b border-[#2A2A2A] pb-12 hover:border-[#C62828] transition-colors"
               >
                 <div className="grid grid-cols-12 gap-8 items-start">
                   <div className="col-span-12 md:col-span-3 lg:col-span-2">
