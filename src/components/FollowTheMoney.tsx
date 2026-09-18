@@ -91,7 +91,7 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
               <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#A3A39D] border-l border-[#2A2A2A] pl-3">
                 {selectedNode.category}
               </span>
-              <span className="font-mono text-[12px] text-text/60 border-l border-text/20 pl-3">
+              <span className="font-mono text-[12px] text-[#E53935] border-l border-[#2A2A2A] pl-3">
                 {selectedNode.dateRange}
               </span>
             </div>
@@ -101,60 +101,60 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-8">
             <div className="md:col-span-8 space-y-4">
-              <h3 className="font-serif text-[24px] sm:text-[32px] font-bold text-text leading-tight">
+              <h3 className="font-serif text-[24px] sm:text-[32px] font-bold text-[#F5F5F0] leading-tight">
                 {selectedNode.title}
               </h3>
-              <p className="font-serif italic text-[16px] text-text/75">
+              <p className="font-serif italic text-[16px] text-[#D6D6D0]">
                 {selectedNode.summary}
               </p>
-              <div className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-text/85 pt-2">
+              <div className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-[#D6D6D0] pt-2">
                 {selectedNode.historicalContext}
               </div>
             </div>
 
-            <div className="md:col-span-4 border-t md:border-t-0 md:border-l border-text/15 pt-4 md:pt-0 md:pl-8 space-y-4 font-mono text-[12px]">
+            <div className="md:col-span-4 border-t md:border-t-0 md:border-l border-[#2A2A2A] pt-4 md:pt-0 md:pl-8 space-y-4 font-mono text-[12px]">
               <div>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                   TRANSACTION MECHANISM
                 </span>
-                <p className="font-serif text-[14px] text-text/80 mt-1 leading-snug">
+                <p className="font-serif text-[14px] text-[#D6D6D0] mt-1 leading-snug">
                   {selectedNode.mechanism}
                 </p>
               </div>
 
               <div>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                   RECORDED EXTRACTIVE VOLUME
                 </span>
-                <p className="text-accent font-bold text-[15px] mt-0.5">
+                <p className="text-[#E53935] font-bold text-[15px] mt-0.5">
                   {selectedNode.figure}
                 </p>
               </div>
 
               <div>
-                <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                   SCOPE &amp; POPULATION
                 </span>
-                <p className="text-text/80 mt-0.5">{selectedNode.percentageOrScope}</p>
+                <p className="text-[#D6D6D0] mt-0.5">{selectedNode.percentageOrScope}</p>
               </div>
             </div>
           </div>
 
           {/* Primary Source Reference Footer */}
-          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-text/15 font-mono text-[12px]">
+          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#2A2A2A] font-mono text-[12px]">
             <div className="space-y-0.5">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
                 PRIMARY SOURCE CITATION
               </span>
-              <span className="text-text/90 font-semibold">{selectedNode.primarySource.citation}</span>
-              <span className="text-text/40 text-[11px] ml-2">({selectedNode.primarySource.archiveRef})</span>
+              <span className="text-[#D6D6D0] font-semibold">{selectedNode.primarySource.citation}</span>
+              <span className="text-[#A3A39D] text-[11px] ml-2">({selectedNode.primarySource.archiveRef})</span>
             </div>
 
             {selectedNode.primarySource.docId && onOpenSourceDoc && (
               <button
                 type="button"
                 onClick={() => onOpenSourceDoc(selectedNode.primarySource.docId!)}
-                className="font-mono text-[11px] uppercase tracking-[0.15em] text-accent hover:underline font-bold"
+                className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
               >
                 [ VIEW ARCHIVAL RECORD → ]
               </button>
