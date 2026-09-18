@@ -80,41 +80,41 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
         </div>
 
         {/* STAGE 2: THE RECORD & EVIDENCE */}
-        <div className="border-b border-text/15 pb-8">
+        <div className="border-b border-[#2A2A2A] pb-8">
           <div className="flex items-center justify-between mb-4">
-            <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-text/50 font-bold">
+            <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#A3A39D] font-bold">
               STAGE 02 · ARCHIVAL EVIDENCE &amp; ECONOMIC DATA
             </span>
             <EvidenceBadge category={currentCase.evidenceCategory} size="sm" />
           </div>
 
-          <h3 className="font-serif text-[22px] sm:text-[26px] font-bold text-text mb-3">
+          <h3 className="font-serif text-[22px] sm:text-[26px] font-bold text-[#F5F5F0] mb-3">
             {currentCase.auditTitle}
           </h3>
 
-          <div className="font-serif text-[16px] sm:text-[17px] leading-[1.8] text-text/85 max-w-[85ch] mb-6">
+          <div className="font-serif text-[16px] sm:text-[17px] leading-[1.8] text-[#D6D6D0] max-w-[85ch] mb-6">
             {currentCase.scholarlyAnalysis}
           </div>
 
           {/* Primary Evidence Items */}
           <div className="space-y-4 font-mono text-[12px]">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-text/40 block">
+            <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
               PRIMARY ARCHIVAL FINDINGS
             </span>
-            <div className="divide-y divide-text/10">
+            <div className="divide-y divide-[#2A2A2A]">
               {currentCase.primaryEvidence.map((ev, i) => (
                 <div key={i} className="py-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-3">
                   <div>
-                    <span className="text-text/90 font-bold mr-2">{ev.recordTitle}</span>
-                    <span className="text-text/40 text-[11px]">({ev.archiveRef})</span>
-                    <p className="font-serif text-[14px] text-text/75 mt-1">{ev.finding}</p>
+                    <span className="text-[#F5F5F0] font-bold mr-2">{ev.recordTitle}</span>
+                    <span className="text-[#A3A39D] text-[11px]">({ev.archiveRef})</span>
+                    <p className="font-serif text-[14px] text-[#D6D6D0] mt-1">{ev.finding}</p>
                   </div>
 
                   {ev.docId && onOpenSourceDoc && (
                     <button
                       type="button"
                       onClick={() => onOpenSourceDoc(ev.docId!)}
-                      className="text-accent hover:underline font-bold text-[11px] uppercase tracking-[0.15em] shrink-0"
+                      className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold text-[11px] uppercase tracking-[0.15em] shrink-0 transition-colors"
                     >
                       [ VIEW ARCHIVE → ]
                     </button>
@@ -124,9 +124,9 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
             </div>
 
             {/* Economic Data Metric */}
-            <div className="pt-3 border-t border-text/10 flex items-baseline gap-3">
-              <span className="text-accent font-bold">{currentCase.economicDataset.name}:</span>
-              <span className="font-serif text-[14px] text-text/80">{currentCase.economicDataset.dataPoint}</span>
+            <div className="pt-3 border-t border-[#2A2A2A] flex items-baseline gap-3">
+              <span className="text-[#C62828] font-bold">{currentCase.economicDataset.name}:</span>
+              <span className="font-serif text-[14px] text-[#D6D6D0]">{currentCase.economicDataset.dataPoint}</span>
             </div>
           </div>
         </div>
@@ -134,15 +134,15 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
         {/* STAGE 3: ASSESSMENT */}
         <div className="pt-2">
           <div className="flex flex-wrap items-center justify-between gap-4 mb-3">
-            <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-accent font-bold">
+            <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#C62828] font-bold">
               STAGE 03 · HISTORIOGRAPHICAL ASSESSMENT
             </span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-accent font-bold">
+            <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#C62828] font-bold">
               {currentCase.assessmentLabel}
             </span>
           </div>
 
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/90 leading-relaxed max-w-[85ch]">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] leading-relaxed max-w-[85ch]">
             {currentCase.assessmentVerdict}
           </p>
         </div>
