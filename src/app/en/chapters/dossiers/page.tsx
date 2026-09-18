@@ -92,9 +92,9 @@ export default function SubjectsChapterPage() {
                   <h3 className="font-serif text-[20px] font-bold text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-snug">
                     {d.name.en}
                   </h3>
-                  <p className="text-[11px] text-text/50 uppercase mt-0.5 line-clamp-1">{d.role.en}</p>
+                  <p className="text-[11px] text-[#B5B5AF] uppercase mt-0.5 line-clamp-1">{d.role.en}</p>
                 </div>
-                <div className="pt-2 flex items-center justify-between text-text/40 group-hover:text-accent font-bold text-[10px] uppercase tracking-[0.15em] transition-colors">
+                <div className="pt-2 flex items-center justify-between text-[#A3A39D] group-hover:text-[#E53935] font-bold text-[10px] uppercase tracking-[0.15em] transition-colors">
                   <span>Open Full File</span>
                   <span>→</span>
                 </div>
@@ -103,16 +103,16 @@ export default function SubjectsChapterPage() {
           </div>
         </section>
 
-        <hr className="border-t border-text/10 my-12" />
+        <hr className="border-t border-[#2A2A2A] my-12" />
 
  {/* 1. ROBERT CLIVE */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">ARCHITECT OF COMPANY CONQUEST</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">ROBERT CLIVE (1st Baron Clive of Plassey)</h3>
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1725, SHROPSHIRE · KEY PERIOD: 1757–1767</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">ARCHITECT OF COMPANY CONQUEST</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">ROBERT CLIVE (1st Baron Clive of Plassey)</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1725</span>, SHROPSHIRE · KEY PERIOD: <span className="text-[#E53935]">1757–1767</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <p>
  Robert Clive emerged as the quintessential figure of early British imperialism in India, transforming the East India Company from a precarious trading enterprise into a territorial power. His decisive victory at the Battle of Plassey in 1757 was less a military triumph than a masterstroke of political subversion. By pre-arranging the betrayal of the Nawab of Bengal, Siraj ud-Daulah, through a secret pact with the commander Mir Jafar, Clive fundamentally altered the balance of power in the subcontinent without fighting a conventional battle.
 </p>
@@ -120,11 +120,11 @@ export default function SubjectsChapterPage() {
  In 1765, Clive secured the Diwani, the right to collect revenues in Bengal, Bihar, and Orissa, from the weakened Mughal Emperor. This administrative coup legalized the Company's control over one of the wealthiest regions in the world, establishing a direct pipeline of capital from Indian peasants to British shareholders. Clive personally amassed a staggering fortune, extracting over £234,000 in private gifts from Indian princes, alongside a massive annual jagir of £27,000, making him one of the wealthiest men in Europe.
 </p>
 <p>
- His rapacious accumulation of wealth drew intense scrutiny back in Britain, leading to a parliamentary investigation by a Select Committee in 1772. Defending his actions against charges of unprecedented corruption, Clive famously declared to Parliament,<span className="text-accent font-bold">&ldquo;I am astonished at my own moderation.&rdquo;</span> Although he secured parliamentary vindication, he died by his own hand in 1774. His lasting significance lies in establishing the systemic model of extraction and sovereign corporate governance that would define British rule for the next century.
+ His rapacious accumulation of wealth drew intense scrutiny back in Britain, leading to a parliamentary investigation by a Select Committee in 1772. Defending his actions against charges of unprecedented corruption, Clive famously declared to Parliament, <span className="font-bold">&ldquo;I am astonished at my own moderation.&rdquo;</span> Although he secured parliamentary vindication, he died by his own hand in 1774. His lasting significance lies in establishing the systemic model of extraction and sovereign corporate governance that would define British rule for the next century.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>SECURED BENGAL DIWANI (1765)</p>
 <p>£234,000 IN PRIVATE "GIFTS"</p>
 <p>INVESTIGATED BY PARLIAMENT 1772</p>
@@ -134,13 +134,13 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 2. WARREN HASTINGS */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">FIRST GOVERNOR-GENERAL OF INDIA</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">WARREN HASTINGS</h3>
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1732, WORCESTERSHIRE · KEY PERIOD: 1772–1785</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">FIRST GOVERNOR-GENERAL OF INDIA</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">WARREN HASTINGS</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1732</span>, WORCESTERSHIRE · KEY PERIOD: <span className="text-[#E53935]">1772–1785</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
 <img
@@ -149,7 +149,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto max-h-[260px] object-contain block"
  style={{ filter: 'grayscale(100%) contrast(1.12) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-text/40 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.12em] text-[#A3A39D] mt-1.5 leading-tight italic">
  ▲ Imperial Administrative Portrait India Office Records
 </p>
 </div>
@@ -160,11 +160,11 @@ export default function SubjectsChapterPage() {
  His tenure was profoundly marked by the aftermath of the catastrophic Bengal Famine of 1770, which wiped out an estimated one-third of the region's population. Despite the devastation, Hastings maintained ruthless revenue collection levels to appease Company directors in London, a policy that exacerbated agrarian collapse. Simultaneously, he sponsored the translation of Hindu and Islamic legal texts, demonstrating a complex orientalist fascination with Indian culture while ruthlessly expanding British hegemony.
 </p>
 <p>
- Upon his return to Britain, Hastings faced an <span className="text-accent font-semibold">epic seven-year impeachment trial</span> led by Edmund Burke, who charged him with high crimes, cruelty, and systemic corruption. Though ultimately acquitted by the House of Lords in 1795, the trial exposed the brutal reality of colonial governance to the British public. Today, historiographical debate continues: some view Hastings as a sympathetic scholar who attempted to rule Indians by their own laws, while others identify him as the principal architect who systematized the violent extraction of the early Raj.
+ Upon his return to Britain, Hastings faced an <span className="font-semibold">epic seven-year impeachment trial</span> led by Edmund Burke, who charged him with high crimes, cruelty, and systemic corruption. Though ultimately acquitted by the House of Lords in 1795, the trial exposed the brutal reality of colonial governance to the British public. Today, historiographical debate continues: some view Hastings as a sympathetic scholar who attempted to rule Indians by their own laws, while others identify him as the principal architect who systematized the violent extraction of the early Raj.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>REORGANIZED REVENUE SYSTEM</p>
 <p>RULED POST-1770 FAMINE</p>
 <p>IMPEACHED BY BURKE</p>
@@ -174,13 +174,13 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 3. LORD CORNWALLIS */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">GOVERNOR-GENERAL · ARCHITECT OF PERMANENT SETTLEMENT</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD CORNWALLIS</h3>
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. 1738, SUFFOLK · KEY PERIOD: 1786–1793, 1805</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">GOVERNOR-GENERAL · ARCHITECT OF PERMANENT SETTLEMENT</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">LORD CORNWALLIS</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. <span className="text-[#E53935]">1738</span>, SUFFOLK · KEY PERIOD: <span className="text-[#E53935]">1786–1793, 1805</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 
 <div className="w-full sm:w-[42%] float-right ml-6 mb-6 mt-1 clear-right">
 <img
