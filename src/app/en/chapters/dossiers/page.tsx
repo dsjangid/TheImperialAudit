@@ -366,15 +366,15 @@ export default function SubjectsChapterPage() {
  ▲ Khudiram Bose, Bengal's youngest executed revolutionary, 1908
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Archives of India</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1827, UNITED PROVINCES · KEY PERIOD: 29 MARCH 1857</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. c.<span className="text-[#E53935]">1827</span>, UNITED PROVINCES · KEY PERIOD: <span className="text-[#E53935]">29 MARCH 1857</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <div className="w-full mb-6 clear-both">
 <img
  src="/TheImperialAudit/illustrations/dossiers/khudiram.jpg"
@@ -382,7 +382,7 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Khudiram Bose, like Mangal Pandey, became a symbol of Bengali revolutionary martyrdom
 </p>
 </div>
@@ -393,11 +393,11 @@ export default function SubjectsChapterPage() {
  When British officers attempted to subdue him, violence ensued. Pandey wounded Adjutant Baugh with a sword after a brief firearm exchange. Crucially, the quarter guard and other sepoys present largely refused orders to arrest Pandey, demonstrating the profound breakdown of military discipline and the widespread anti-colonial sentiment simmering in the ranks over the introduction of the new Enfield rifle cartridges. Pandey eventually turned his musket on himself, though he survived his suicide attempt.
 </p>
 <p>
- British authorities reacted with swift and terrifying retribution. Brought to court-martial, Pandey was sentenced to death and hanged on <span className="text-accent font-semibold">8 April 1857</span> the execution deliberately moved forward by over a week out of British paranoia that a mutiny might rescue him. The 34th Native Infantry was aggressively disbanded in disgrace. While historians continue to debate whether Pandey's actions were a calculated political strike or an impulsive outburst exacerbated by bhang, his legacy was cemented immediately; the British adopted the pejorative "Pandies" to describe all subsequent mutineers, elevating him to the first named martyr of the rebellion.
+ British authorities reacted with swift and terrifying retribution. Brought to court-martial, Pandey was sentenced to death and hanged on <span className="text-[#E53935] font-semibold">8 April 1857</span> the execution deliberately moved forward by over a week out of British paranoia that a mutiny might rescue him. The 34th Native Infantry was aggressively disbanded in disgrace. While historians continue to debate whether Pandey's actions were a calculated political strike or an impulsive outburst exacerbated by bhang, his legacy was cemented immediately; the British adopted the pejorative "Pandies" to describe all subsequent mutineers, elevating him to the first named martyr of the rebellion.
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>ATTACKED OFFICERS (MARCH 1857)</p>
 <p>HANGED 8 APRIL 1857</p>
 <p>34TH REGIMENT DISBANDED</p>
@@ -407,16 +407,16 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 8. RANI LAKSHMIBAI OF JHANSI */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">RULER OF JHANSI · MILITARY COMMANDER</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">RANI LAKSHMIBAI</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">RULER OF JHANSI · MILITARY COMMANDER</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">RANI LAKSHMIBAI</h3>
  {/* ARCHIVAL PHOTO */}
-<div className="my-12 border-t border-text/10 pt-12">
+<div className="my-12 border-t border-[#2A2A2A] pt-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<div className="overflow-hidden border border-text/15">
+<div className="overflow-hidden border border-[#2A2A2A]">
 <img
  src="/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg"
  alt="Rani Lakshmibai of Jhansi, contemporary portrait"
@@ -424,11 +424,11 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] mt-3">
  ▲ Rani Lakshmibai of Jhansi, contemporary portrait
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Archives of India</p>
 <p>Historical archive</p>
 </aside>
