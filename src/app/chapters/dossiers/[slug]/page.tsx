@@ -1,7 +1,10 @@
-import DossierDetailPage, { generateStaticParams as getParams } from '@/app/en/chapters/dossiers/[slug]/page';
+import { dossiersList } from '@/data/dossiers';
+import { DossierDetailView } from '@/components/DossierDetailView';
 
 export function generateStaticParams() {
-  return getParams();
+  return dossiersList.map((d) => ({
+    slug: d.id,
+  }));
 }
 
 export default function ChaptersDossierDetailPage({
@@ -9,5 +12,5 @@ export default function ChaptersDossierDetailPage({
 }: {
   params: { slug: string };
 }) {
-  return <DossierDetailPage params={params} />;
+  return <DossierDetailView slug={params.slug} lang="en" />;
 }
