@@ -51,32 +51,32 @@ export default function ConquestChapterPage() {
               <span className="text-[#D6D6D0]">IOR (British Library) &amp; Hansard</span>
             </div>
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">KEY RESPONDENTS</span>
-              <span className="text-text/90">Clive, Hastings, Cornwallis, Dalhousie</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">KEY RESPONDENTS</span>
+              <span className="text-[#D6D6D0]">Clive, Hastings, Cornwallis, Dalhousie</span>
             </div>
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">EVIDENCE STATUS</span>
-              <span className="text-accent font-semibold">Primary Records &amp; State Papers</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">EVIDENCE STATUS</span>
+              <span className="text-[#C62828] font-semibold">Primary Records &amp; State Papers</span>
             </div>
           </div>
         </header>
 
         {/* Epigraph Block */}
-        <div className="border-y border-text/20 py-10 my-12 max-w-[80ch]">
-          <p className="font-serif italic text-[19px] leading-[1.75] text-text/85 mb-4">
+        <div className="border-y border-[#2A2A2A] py-10 my-12 max-w-[80ch]">
+          <p className="font-serif italic text-[19px] leading-[1.75] text-[#D6D6D0] mb-4">
             "The rise of our Indian Empire is not recorded in history; it is occluded in the archives of a Company, and in the debates of Parliament."
           </p>
-          <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40">
+          <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D]">
             Attributed to John Stuart Mill, 1858
           </p>
         </div>
 
         {/* The Four Inquiries */}
-        <section className="py-12 border-b border-text/10">
+        <section className="py-12 border-b border-[#2A2A2A]">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            <div className="md:col-span-8 space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+            <div className="md:col-span-8 space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
               <p>
-                <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-accent pr-3 pt-1">B</span>
+                <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-[#C62828] pr-3 pt-1">B</span>
                 etween 1757 and 1857, the Indian subcontinent bore witness to an unprecedented historical transformation: a London-based mercantile corporation engineered the acquisition of a territorial empire governing over two hundred million subjects. The East India Company, originally chartered by Queen Elizabeth I to secure a share in the lucrative spice trade, metastasised from a coastal trading enterprise into a sprawling military-bureaucratic state.
               </p>
               <p>
@@ -84,9 +84,9 @@ export default function ConquestChapterPage() {
               </p>
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[12px] text-text/50 uppercase tracking-[0.1em] leading-[1.9] space-y-4">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">THE INQUIRY</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">THE INQUIRY</p>
                 <p>· Corporate Sovereignty</p>
                 <p>· Diwani &amp; Famine</p>
                 <p>· Unbacked Extraction</p>
