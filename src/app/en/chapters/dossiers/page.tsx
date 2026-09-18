@@ -435,8 +435,8 @@ export default function SubjectsChapterPage() {
 </div>
 </div>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1828, VARANASI · KEY PERIOD: 1857–1858</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. c.<span className="text-[#E53935]">1828</span>, VARANASI · KEY PERIOD: <span className="text-[#E53935]">1857–1858</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <div className="w-full mb-6 clear-both">
 <img
  src="/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg"
@@ -444,22 +444,22 @@ export default function SubjectsChapterPage() {
  className="w-full h-auto object-cover object-top block"
  style={{ filter: 'grayscale(100%) contrast(1.1) brightness(0.93)' }}
  />
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/35 mt-1.5 leading-tight italic">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1.5 leading-tight italic">
  Rani Lakshmibai of Jhansi, contemporary portrait, c.1850s
 </p>
 </div>
 <p>
- Rani Lakshmibai stands as the most iconic and enduring figure of Indian resistance to British rule. Born Manikarnika Tambe, she became the Queen of Jhansi, a Maratha principality. When her husband died in 1853, Dalhousie applied the ruthless <span className="text-accent font-semibold">Doctrine of Lapse</span> to annex Jhansi, rejecting the claim of her adopted son. Despite her articulate legal petitions to London protesting this aggressive expropriation, the Company seized the state, granting her a mere pension.
+ Rani Lakshmibai stands as the most iconic and enduring figure of Indian resistance to British rule. Born Manikarnika Tambe, she became the Queen of Jhansi, a Maratha principality. When her husband died in 1853, Dalhousie applied the ruthless <span className="font-semibold">Doctrine of Lapse</span> to annex Jhansi, rejecting the claim of her adopted son. Despite her articulate legal petitions to London protesting this aggressive expropriation, the Company seized the state, granting her a mere pension.
 </p>
 <p>
  Interestingly, when the 1857 Uprising initially broke out, Lakshmibai was not an immediate rebel. She took control of Jhansi to maintain order on behalf of the British, defending the territory against rival Indian factions. However, recognizing that the British suspected her of complicity in a massacre of European civilians in her city, and realizing that the colonial state intended to try her, she unequivocally joined the rebellion when General Hugh Rose's forces advanced on Jhansi in early 1858.
 </p>
 <p>
- Her subsequent military campaign became legendary. She defended the fortress of Jhansi against a brutal British siege for two weeks before executing a daring nighttime escape on horseback through enemy lines. Joining forces with other rebel leaders like Tatya Tope, she continued to fight a highly mobile guerrilla war. Dressed in cavalry uniform, she was <span className="text-accent font-semibold">killed in combat at Kotah-ki-Serai on 17 June 1858</span>. Even her enemy, General Rose, famously conceded that she was "the best and bravest military leader of the rebels."
+ Her subsequent military campaign became legendary. She defended the fortress of Jhansi against a brutal British siege for two weeks before executing a daring nighttime escape on horseback through enemy lines. Joining forces with other rebel leaders like Tatya Tope, she continued to fight a highly mobile guerrilla war. Dressed in cavalry uniform, she was <span className="font-semibold">killed in combat at Kotah-ki-Serai on 17 June 1858</span>. Even her enemy, General Rose, famously conceded that she was "the best and bravest military leader of the rebels."
 </p>
 </div>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
 <p>DEPOSED BY DOCTRINE OF LAPSE</p>
 <p>DEFENDED JHANSI (1858)</p>
 <p>KILLED IN BATTLE NEAR GWALIOR</p>
@@ -469,16 +469,16 @@ export default function SubjectsChapterPage() {
 </section>
 
  {/* 9. BEGUM HAZRAT MAHAL */}
-<section className="py-12 border-t border-text/10">
+<section className="py-12 border-t border-[#2A2A2A]">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent mb-2">REGENT OF AWADH · COMMANDER OF LUCKNOW UPRISING</p>
-<h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">BEGUM HAZRAT MAHAL</h3>
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold mb-2">REGENT OF AWADH · COMMANDER OF LUCKNOW UPRISING</p>
+<h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">BEGUM HAZRAT MAHAL</h3>
  {/* ARCHIVAL PHOTO */}
-<div className="my-12 border-t border-text/10 pt-12">
+<div className="my-12 border-t border-[#2A2A2A] pt-12">
 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
 <div className="md:col-span-8">
-<div className="overflow-hidden border border-text/15">
+<div className="overflow-hidden border border-[#2A2A2A]">
 <img
  src="/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg"
  alt="Begum Hazrat Mahal: Regent of Awadh"
@@ -486,19 +486,19 @@ export default function SubjectsChapterPage() {
  style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.92)' }}
  />
 </div>
-<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-text/40 mt-3">
+<p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#A3A39D] mt-3">
  ▲ Begum Hazrat Mahal: Regent of Awadh
 </p>
 </div>
-<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
+<aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-3 pt-2">
 <p>National Archives of India</p>
 <p>Historical archive</p>
 </aside>
 </div>
 </div>
 
-<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">B. c.1820, FAIZABAD · KEY PERIOD: 1857–1858</p>
-<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+<p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">B. c.<span className="text-[#E53935]">1820</span>, FAIZABAD · KEY PERIOD: <span className="text-[#E53935]">1857–1858</span></p>
+<div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
 <div className="w-full mb-6 clear-both">
 <img
  src="/TheImperialAudit/illustrations/dossiers/hazratmahal.jpg"
