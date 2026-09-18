@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] border-b border-text/10 transition-[background-color,backdrop-filter] duration-200 bg-bg/90 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] border-b border-[#2A2A2A] transition-[background-color,backdrop-filter] duration-200 bg-bg/90 backdrop-blur-md">
         <div className="h-full px-5 sm:px-8 md:px-10 lg:px-12 flex items-center justify-between font-mono text-[12px] uppercase">
           {/* Main Brand Title - Guaranteed shrink-0 prominence, never hidden */}
           <Link
