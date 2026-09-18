@@ -17,38 +17,38 @@ export default function ConquestChapterPage() {
   };
 
   return (
-    <div className="min-h-screen bg-bg text-text selection:bg-accent/30 flex flex-col justify-between">
+    <div className="min-h-screen bg-bg text-[#D6D6D0] selection:bg-accent/30 flex flex-col justify-between">
       <Navbar lang="en" />
       <PageCornerBadges fileNo="001" chapterTitle="CONQUEST" pageNum="008" totalPages="190" />
 
       <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32 pb-24 flex-1">
         {/* Case File Masthead */}
-        <header className="mb-16 border-b border-text/15 pb-10">
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-            <span className="text-accent font-semibold">CASE № IA-1757-1857-001 · DISPATCH I</span>
+        <header className="mb-16 border-b border-[#2A2A2A] pb-10">
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+            <span className="text-[#C62828] font-semibold">CASE № IA-1757-1857-001 · DISPATCH I</span>
             <span>26 MIN READ · 12 PRIMARY DISPATCHES</span>
             <span>DECLASSIFIED IMPERIAL PAPERS</span>
           </div>
 
           <h1
-            className="font-serif text-text text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
+            className="font-serif text-[#F5F5F0] text-[clamp(36px,7.5vw,100px)] leading-[0.93] tracking-[-0.01em] uppercase font-black mb-4"
             style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
           >
             The Corporate Takeover
           </h1>
-          <p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-text/75 leading-snug max-w-[45ch]">
+          <p className="font-serif italic text-[clamp(18px,2.2vw,26px)] text-[#D6D6D0] leading-snug max-w-[45ch]">
             How a Joint-Stock Trading Monopoly Subjugated an Empire: From Plassey to the Annexation of Awadh.
           </p>
 
           {/* Case Dossier Metadata Table */}
-          <div className="mt-8 pt-6 border-t border-text/10 grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-text/60">
+          <div className="mt-8 pt-6 border-t border-[#2A2A2A] grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-[12px] text-[#A3A39D]">
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">CASE TIMELINE</span>
-              <span className="text-text/90 font-medium">1757 — 1857 (100 Years)</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">CASE TIMELINE</span>
+              <span className="text-[#D6D6D0] font-medium"><span className="text-[#E53935]">1757 — 1857</span> (100 Years)</span>
             </div>
             <div>
-              <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">PRIMARY ARCHIVES</span>
-              <span className="text-text/90">IOR (British Library) &amp; Hansard</span>
+              <span className="text-[#A3A39D]/60 uppercase text-[10px] block tracking-[0.15em]">PRIMARY ARCHIVES</span>
+              <span className="text-[#D6D6D0]">IOR (British Library) &amp; Hansard</span>
             </div>
             <div>
               <span className="text-text/30 uppercase text-[10px] block tracking-[0.15em]">KEY RESPONDENTS</span>
