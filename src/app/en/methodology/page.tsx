@@ -260,19 +260,19 @@ export default function MethodologyPage() {
         <section className="py-10" id="bibliography">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 06
               </span>
-              <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Academic Bibliography
               </h2>
-              <p className="font-serif italic text-[14px] text-text/60 mt-2">
+              <p className="font-serif italic text-[14px] text-[#A3A39D] mt-2">
                 Peer-reviewed historical and economic literature cited across this publication.
               </p>
             </div>
 
             <div className="md:col-span-8 font-mono text-[12px] space-y-4">
-              <div className="divide-y divide-text/10">
+              <div className="divide-y divide-[#2A2A2A]">
                 {[
                   {
                     author: "Patnaik, Utsa",
@@ -336,11 +336,11 @@ export default function MethodologyPage() {
                   },
                 ].map((item, idx) => (
                   <div key={idx} className="py-2.5">
-                    <span className="text-accent font-bold mr-2">{item.author} ({item.year}).</span>
-                    <span className="font-serif italic text-[14px] text-text/90">
+                    <span className="text-[#C62828] font-bold mr-2">{item.author} (<span className="text-[#E53935]">{item.year}</span>).</span>
+                    <span className="font-serif italic text-[14px] text-[#F5F5F0]">
                       {item.title}.
                     </span>{' '}
-                    <span className="text-text/50">{item.pub}</span>
+                    <span className="text-[#A3A39D]">{item.pub}</span>
                   </div>
                 ))}
               </div>
@@ -349,11 +349,11 @@ export default function MethodologyPage() {
         </section>
 
         {/* Back Link */}
-        <div className="pt-16 border-t border-text/15 flex justify-between items-center font-mono text-[13px]">
-          <Link href="/en/chapters/action" className="text-text/50 hover:text-text uppercase tracking-[0.15em]">
+        <div className="pt-16 border-t border-[#2A2A2A] flex justify-between items-center font-mono text-[13px]">
+          <Link href="/en/chapters/action" className="text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-[0.15em] transition-colors">
             ← Chapter 05: The Archive
           </Link>
-          <Link href="/en" className="text-accent hover:underline font-bold uppercase tracking-[0.2em]">
+          <Link href="/en" className="text-[#C62828] hover:text-[#E53935] font-bold uppercase tracking-[0.2em] transition-colors">
             Return to Cover Page ↑
           </Link>
         </div>
