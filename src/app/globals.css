@@ -25,11 +25,27 @@
 @font-face{font-family:JetBrains Mono Fallback;src:local(Arial);ascent-override:75.79%;descent-override:22.29%;line-gap-override:0.0%;size-adjust:134.59%}
 
 :root {
- --bg: #0A0A0A;
- --text: #F2F2F2;
- --accent: #FF0000;
- --font-serif: 'Source Serif 4', Georgia, serif;
- --font-mono: 'JetBrains Mono', monospace;
+  --bg: #0A0A0A;
+  --text: #F5F5F0;
+  --heading: #F5F5F0;
+  --body: #D6D6D0;
+  --card-title: #F5F5F0;
+  --card-meta: #B5B5AF;
+  --muted: #A3A39D;
+  --source: #A3A39D;
+  --placeholder: #A3A39D;
+  --inactive-filter: #D6D6D0;
+  --accent: #C62828;
+  --accent-bright: #E53935;
+  --stat: #E53935;
+  --date: #E53935;
+  --border: #2A2A2A;
+  --font-serif: 'Source Serif 4', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+*, ::before, ::after {
+  border-color: #2A2A2A;
 }
 
 html, body {
