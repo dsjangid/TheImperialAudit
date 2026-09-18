@@ -138,34 +138,34 @@ export default function MethodologyPage() {
               <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Incident Classification Taxonomy
               </h2>
-              <p className="font-serif italic text-[14px] text-text/60 mt-2">
+              <p className="font-serif italic text-[14px] text-[#A3A39D] mt-2">
                 Standardized criteria for categorizing 190 years of events.
               </p>
             </div>
 
             <div className="md:col-span-8 space-y-4 font-mono text-[12px]">
-              <div className="divide-y divide-text/10">
+              <div className="divide-y divide-[#2A2A2A]">
                 <div className="py-3 space-y-1">
-                  <span className="text-accent font-bold uppercase">1. FISCAL EXTRACTION</span>
-                  <p className="font-serif text-[14px] text-text/75">
+                  <span className="text-[#C62828] font-bold uppercase">1. FISCAL EXTRACTION</span>
+                  <p className="font-serif text-[14px] text-[#D6D6D0]">
                     Land revenue settlements, currency manipulation (Council Bills), salt monopolies, and guaranteed railway returns extracting capital without reciprocal return.
                   </p>
                 </div>
                 <div className="py-3 space-y-1">
-                  <span className="text-accent font-bold uppercase">2. ARMED RESISTANCE &amp; REVOLT</span>
-                  <p className="font-serif text-[14px] text-text/75">
+                  <span className="text-[#C62828] font-bold uppercase">2. ARMED RESISTANCE &amp; REVOLT</span>
+                  <p className="font-serif text-[14px] text-[#D6D6D0]">
                     Adivasi uprisings (Santhal Hul, Birsa Munda), peasant rebellions, sepoy mutinies (Vellore 1806, 1857), and revolutionary actions (HSRA, Chittagong).
                   </p>
                 </div>
                 <div className="py-3 space-y-1">
-                  <span className="text-accent font-bold uppercase">3. POLICY &amp; AGRARIAN FAMINES</span>
-                  <p className="font-serif text-[14px] text-text/75">
+                  <span className="text-[#C62828] font-bold uppercase">3. POLICY &amp; AGRARIAN FAMINES</span>
+                  <p className="font-serif text-[14px] text-[#D6D6D0]">
                     Mortality events where climatic shortfalls were converted into mass starvation by inflexible tax collection, grain exports, or wartime denial policies.
                   </p>
                 </div>
                 <div className="py-3 space-y-1">
-                  <span className="text-accent font-bold uppercase">4. LEGISLATIVE &amp; JURIDICAL ACTS</span>
-                  <p className="font-serif text-[14px] text-text/75">
+                  <span className="text-[#C62828] font-bold uppercase">4. LEGISLATIVE &amp; JURIDICAL ACTS</span>
+                  <p className="font-serif text-[14px] text-[#D6D6D0]">
                     Statutory acts transforming sovereignty (1793 Permanent Settlement, 1858 Government of India Act, 1919 Rowlatt Act, 1947 Independence Act).
                   </p>
                 </div>
@@ -175,13 +175,13 @@ export default function MethodologyPage() {
         </section>
 
         {/* Section 4: Casualties & Demographic Uncertainty */}
-        <section className="py-10 border-b border-text/10" id="casualties">
+        <section className="py-10 border-b border-[#2A2A2A]" id="casualties">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 04
               </span>
-              <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Casualties &amp; Demographic Uncertainty
               </h2>
               <p className="font-serif italic text-[14px] text-text/60 mt-2">
