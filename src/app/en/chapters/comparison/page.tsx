@@ -61,25 +61,25 @@ export default function Rebellion1857ChapterPage() {
         </header>
 
         {/* Epigraph */}
-        <div className="border-y border-text/20 py-10 my-12 max-w-[80ch] font-serif italic text-text/85 text-[17px] leading-[1.75]">
+        <div className="border-y border-[#2A2A2A] py-10 my-12 max-w-[80ch] font-serif italic text-[#D6D6D0] text-[17px] leading-[1.75]">
           <p>"The Bengal sepoys are the most martial body of men in India. They feel that it would be degrading to become the servants of a Christian Company."</p>
-          <p className="mt-4 font-mono text-[13px] not-italic text-text/40 uppercase tracking-[0.1em]">Charles Napier, 1849</p>
+          <p className="mt-4 font-mono text-[13px] not-italic text-[#A3A39D] uppercase tracking-[0.1em]">Charles Napier, 1849</p>
         </div>
 
         {/* 1. Introduction: The Crisis */}
-        <section className="py-12 border-b border-text/10">
+        <section className="py-12 border-b border-[#2A2A2A]">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">INTRODUCTION · THE RUPTURE</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">INTRODUCTION · THE RUPTURE</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Crisis of 1857
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                1857 · NORTHERN AND CENTRAL INDIA
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">1857</span> · NORTHERN AND CENTRAL INDIA
               </p>
 
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
