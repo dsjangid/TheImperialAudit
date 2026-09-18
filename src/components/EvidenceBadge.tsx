@@ -1,62 +1,112 @@
 import React from 'react';
 import { EvidenceCategory } from '@/data/primary-documents';
 
+export type EvidentiaryTier = 'PRIMARY' | 'SCHOLARSHIP' | 'EDITORIAL';
+
+interface BadgeDefinition {
+  label: string;
+  tier: EvidentiaryTier;
+  tierLabel: string;
+  badgeClass: string;
+}
+
 interface EvidenceBadgeProps {
   category: EvidenceCategory | string;
-  size?: 'sm' | 'md';
+  size?: 'sm' | 'md' | 'lg';
+  showTier?: boolean;
   className?: string;
 }
 
-const badgeLabels: Record<string, { label: string; isAccent?: boolean }> = {
+const BADGE_MAP: Record<string, BadgeDefinition> = {
   PRIMARY_RECORD: {
-    label: '[ PRIMARY ARCHIVE ]',
-    isAccent: true,
+    label: 'PRIMARY ARCHIVE',
+    tier: 'PRIMARY',
+    tierLabel: 'PRIMARY SOURCE',
+    badgeClass: 'border border-[#C62828]/60 bg-[#C62828]/10 text-[#E53935]',
   },
   OFFICIAL_ENQUIRY: {
-    label: '[ OFFICIAL RECORD ]',
-    isAccent: false,
+    label: 'OFFICIAL INQUIRY',
+    tier: 'PRIMARY',
+    tierLabel: 'PRIMARY SOURCE',
+    badgeClass: 'border border-[#C62828]/60 bg-[#C62828]/10 text-[#E53935]',
   },
   PARLIAMENTARY_RECORD: {
-    label: '[ PARLIAMENTARY RECORD ]',
-    isAccent: false,
+    label: 'PARLIAMENTARY RECORD',
+    tier: 'PRIMARY',
+    tierLabel: 'PRIMARY SOURCE',
+    badgeClass: 'border border-[#C62828]/60 bg-[#C62828]/10 text-[#E53935]',
   },
   ECONOMIC_DATA: {
-    label: '[ ECONOMIC RECORD ]',
-    isAccent: true,
+    label: 'ECONOMETRIC MODEL',
+    tier: 'SCHOLARSHIP',
+    tierLabel: 'PEER-REVIEWED',
+    badgeClass: 'border border-[#D97706]/50 bg-[#D97706]/10 text-[#F59E0B]',
   },
   SCHOLARLY_ESTIMATE: {
-    label: '[ HISTORICAL RESEARCH ]',
-    isAccent: false,
+    label: 'SCHOLARLY ESTIMATE',
+    tier: 'SCHOLARSHIP',
+    tierLabel: 'PEER-REVIEWED',
+    badgeClass: 'border border-[#D97706]/50 bg-[#D97706]/10 text-[#F59E0B]',
   },
   SECONDARY_SCHOLARSHIP: {
-    label: '[ HISTORICAL SCHOLARSHIP ]',
-    isAccent: false,
+    label: 'SECONDARY SCHOLARSHIP',
+    tier: 'SCHOLARSHIP',
+    tierLabel: 'PEER-REVIEWED',
+    badgeClass: 'border border-[#D97706]/50 bg-[#D97706]/10 text-[#F59E0B]',
   },
   DISPUTED_FIGURE: {
-    label: '[ HISTORIOGRAPHICAL RECORD ]',
-    isAccent: false,
+    label: 'HISTORICAL DISPUTE',
+    tier: 'EDITORIAL',
+    tierLabel: 'EDITORIAL AUDIT',
+    badgeClass: 'border border-[#A3A39D]/40 bg-[#A3A39D]/10 text-[#D6D6D0]',
+  },
+  EDITORIAL_AUDIT: {
+    label: 'FORENSIC AUDIT NOTE',
+    tier: 'EDITORIAL',
+    tierLabel: 'EDITORIAL AUDIT',
+    badgeClass: 'border border-[#A3A39D]/40 bg-[#A3A39D]/10 text-[#D6D6D0]',
   },
 };
 
 export const EvidenceBadge: React.FC<EvidenceBadgeProps> = ({
   category,
   size = 'md',
+  showTier = false,
   className = '',
 }) => {
-  const meta = badgeLabels[category] || {
-    label: `[ ${category.replace(/_/g, ' ')} ]`,
-    isAccent: false,
+  const meta = BADGE_MAP[category] || {
+    label: category.replace(/_/g, ' '),
+    tier: 'EDITORIAL',
+    tierLabel: 'AUDIT NOTE',
+    badgeClass: 'border border-[#A3A39D]/40 bg-[#A3A39D]/10 text-[#D6D6D0]',
   };
 
-  const isSmall = size === 'sm';
+  const sizeClasses = {
+    sm: 'text-[10px] px-2 py-0.5 tracking-[0.14em]',
+    md: 'text-[11px] px-2.5 py-0.5 tracking-[0.16em]',
+    lg: 'text-[12px] px-3 py-1 tracking-[0.18em]',
+  }[size];
+
+  const tierIcon = {
+    PRIMARY: '📜',
+    SCHOLARSHIP: '🎓',
+    EDITORIAL: '⚖️',
+  }[meta.tier];
 
   return (
     <span
-      className={`inline-block font-mono uppercase tracking-[0.18em] ${
-        meta.isAccent ? 'text-[#C62828] font-semibold' : 'text-[#A3A39D]'
-      } ${isSmall ? 'text-[10px]' : 'text-[11px]'} ${className}`}
+      className={`inline-flex items-center gap-1.5 font-mono uppercase font-semibold rounded-none select-none transition-colors ${sizeClasses} ${meta.badgeClass} ${className}`}
+      title={`${meta.tierLabel}: ${meta.label} — Verified Archival Classification`}
     >
-      {meta.label}
+      <span className="text-[10px] opacity-80" aria-hidden="true">
+        {tierIcon}
+      </span>
+      {showTier && (
+        <span className="opacity-60 text-[9px] border-r border-current pr-1.5 mr-0.5">
+          {meta.tierLabel}
+        </span>
+      )}
+      <span>{meta.label}</span>
     </span>
   );
 };
