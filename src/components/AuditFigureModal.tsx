@@ -155,49 +155,49 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
                     The East India Company used up to one-third of collected Bengal land revenues directly to purchase Indian commodities (textiles, spices, saltpetre) for export to Europe, requiring zero capital outlay from Britain.
                   </p>
                 </li>
-                <li className="border-l-2 border-accent pl-3">
-                  <strong className="text-text">Phase 2: Crown Raj &amp; Council Bills (1858–1938)</strong>
-                  <p className="font-serif text-[14px] mt-1">
-                    Foreign merchants wishing to purchase Indian exports were required to buy <strong>Council Bills</strong> from the Secretary of State in London in gold or sterling. The London treasury retained this hard currency; merchants cashed the bills in Calcutta in rupees generated from Indian taxes. Thus, India received no net foreign exchange for its vast export surplus.
+                <li className="border-l-2 border-[#C62828] pl-3">
+                  <strong className="text-[#F5F5F0]">Phase 2: Crown Raj &amp; Council Bills (1858–1938)</strong>
+                  <p className="font-serif text-[14px] mt-1 text-[#D6D6D0]">
+                    Foreign merchants wishing to purchase Indian exports were required to buy <strong className="text-[#F5F5F0]">Council Bills</strong> from the Secretary of State in London in gold or sterling. The London treasury retained this hard currency; merchants cashed the bills in Calcutta in rupees generated from Indian taxes. Thus, India received no net foreign exchange for its vast export surplus.
                   </p>
                 </li>
               </ul>
-              <p className="text-[14px] text-text/70">
-                To calculate current value, the annual uncompensated commodity export surpluses were compounded at a standard <strong>5% commercial rate</strong> from each year of extraction up to 2016, yielding a cumulative nominal total of <strong>£9.184 trillion</strong>, equivalent to <strong>~$44.63 trillion</strong> in 2016 US Dollars.
+              <p className="text-[14px] text-[#A3A39D]">
+                To calculate current value, the annual uncompensated commodity export surpluses were compounded at a standard <strong className="text-[#F5F5F0]">5% commercial rate</strong> from each year of extraction up to 2016, yielding a cumulative nominal total of <strong className="text-[#F5F5F0]">£9.184 trillion</strong>, equivalent to <strong className="text-[#E53935]">~$44.63 trillion</strong> in 2016 US Dollars.
               </p>
             </div>
           )}
 
           {activeTab === 'dataset' && (
             <div className="space-y-4">
-              <h3 className="font-serif text-[20px] font-bold text-text">
+              <h3 className="font-serif text-[20px] font-bold text-[#F5F5F0]">
                 Primary Archival Datasets Used
               </h3>
               <p>
                 The underlying figures were not estimated abstractly; they were transcribed from four primary colonial economic publications:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-[12px]">
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-accent font-bold block mb-1">STATISTICAL ABSTRACTS (1858–1947)</span>
-                  <span className="font-serif text-[13px] text-text/75">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#C62828] font-bold block mb-1">STATISTICAL ABSTRACTS (1858–1947)</span>
+                  <span className="font-serif text-[13px] text-[#D6D6D0]">
                     Official annual returns presented to British Parliament recording tax collections, currency flows, and trade balances.
                   </span>
                 </div>
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-accent font-bold block mb-1">TRADE &amp; NAVIGATION ACCOUNTS</span>
-                  <span className="font-serif text-[13px] text-text/75">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#C62828] font-bold block mb-1">TRADE &amp; NAVIGATION ACCOUNTS</span>
+                  <span className="font-serif text-[13px] text-[#D6D6D0]">
                     Detailed customs manifests tracking raw cotton, jute, wheat, and opium commodity shipments and bill clearing.
                   </span>
                 </div>
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-accent font-bold block mb-1">HOUSE OF COMMONS HOME CHARGES</span>
-                  <span className="font-serif text-[13px] text-text/75">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#C62828] font-bold block mb-1">HOUSE OF COMMONS HOME CHARGES</span>
+                  <span className="font-serif text-[13px] text-[#D6D6D0]">
                     Parliamentary records itemizing sterling pensions, military expeditions overseas, and guaranteed railway dividends.
                   </span>
                 </div>
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-accent font-bold block mb-1">K.N. CHAUDHURI &amp; S. AMBIRAJAN</span>
-                  <span className="font-serif text-[13px] text-text/75">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#C62828] font-bold block mb-1">K.N. CHAUDHURI &amp; S. AMBIRAJAN</span>
+                  <span className="font-serif text-[13px] text-[#D6D6D0]">
                     Historical trade indices and balance-of-payments reconstructions published by Cambridge University Press.
                   </span>
                 </div>
@@ -207,7 +207,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
 
           {activeTab === 'limitations' && (
             <div className="space-y-4">
-              <h3 className="font-serif text-[20px] font-bold text-text">
+              <h3 className="font-serif text-[20px] font-bold text-[#F5F5F0]">
                 Academic Limitations &amp; Sensitivities
               </h3>
               <p>
@@ -215,13 +215,13 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
               </p>
               <ul className="list-disc pl-5 space-y-2 text-[14px]">
                 <li>
-                  <strong>Interest Rate Sensitivity:</strong> Because the figure spans over 170 years, compounding at 5% vs. 3% vs. 1% produces dramatically different sums. The value of Patnaik’s calculation lies in illustrating the compounding opportunity cost of capital retention, rather than claiming a static pile of cash was removed in a single day.
+                  <strong className="text-[#F5F5F0]">Interest Rate Sensitivity:</strong> Because the figure spans over 170 years, compounding at 5% vs. 3% vs. 1% produces dramatically different sums. The value of Patnaik’s calculation lies in illustrating the compounding opportunity cost of capital retention, rather than claiming a static pile of cash was removed in a single day.
                 </li>
                 <li>
-                  <strong>Domestic Capital Absorption:</strong> Critics argue that 18th- and 19th-century India lacked the banking infrastructure to productively reinvest 100% of the retained surplus at 5% annually without diminishing returns.
+                  <strong className="text-[#F5F5F0]">Domestic Capital Absorption:</strong> Critics argue that 18th- and 19th-century India lacked the banking infrastructure to productively reinvest 100% of the retained surplus at 5% annually without diminishing returns.
                 </li>
                 <li>
-                  <strong>Price Index Inflation:</strong> Converting multi-century sterling series into modern USD involves varying price deflation indexes, meaning alternative deflators generate totals ranging between $20T and $50T.
+                  <strong className="text-[#F5F5F0]">Price Index Inflation:</strong> Converting multi-century sterling series into modern USD involves varying price deflation indexes, meaning alternative deflators generate totals ranging between $20T and $50T.
                 </li>
               </ul>
             </div>
@@ -229,25 +229,25 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
 
           {activeTab === 'alternatives' && (
             <div className="space-y-4">
-              <h3 className="font-serif text-[20px] font-bold text-text">
+              <h3 className="font-serif text-[20px] font-bold text-[#F5F5F0]">
                 Historiographical Spectrum of Estimates
               </h3>
               <div className="space-y-3 font-mono text-[12px]">
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-text font-bold">DADABHAI NAOROJI (1901) — <em>Poverty and Un-British Rule in India</em></span>
-                  <p className="font-serif text-[13px] text-text/75 mt-0.5">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#F5F5F0] font-bold">DADABHAI NAOROJI (1901) — <em>Poverty and Un-British Rule in India</em></span>
+                  <p className="font-serif text-[13px] text-[#D6D6D0] mt-0.5">
                     Calculated an annual unreturned drain of £20M–£30M per year in late 19th-century values (representing 25–30% of total Indian government revenue).
                   </p>
                 </div>
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-text font-bold">ANGUS MADDISON (2001) — OECD Development Centre</span>
-                  <p className="font-serif text-[13px] text-text/75 mt-0.5">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#F5F5F0] font-bold">ANGUS MADDISON (2001) — OECD Development Centre</span>
+                  <p className="font-serif text-[13px] text-[#D6D6D0] mt-0.5">
                     Calculated that India’s share of world GDP collapsed from 27% in 1700 to less than 3% in 1947, while Britain’s share grew sixfold.
                   </p>
                 </div>
-                <div className="border-l border-text/20 pl-3">
-                  <span className="text-text font-bold">TIRTHANKAR ROY (2018 CRITIQUE) — London School of Economics</span>
-                  <p className="font-serif text-[13px] text-text/75 mt-0.5">
+                <div className="border-l border-[#2A2A2A] pl-3">
+                  <span className="text-[#F5F5F0] font-bold">TIRTHANKAR ROY (2018 CRITIQUE) — London School of Economics</span>
+                  <p className="font-serif text-[13px] text-[#D6D6D0] mt-0.5">
                     Argues the drain was partially payment for imported services (governance, peace, global market integration) and cautions against long-term compounding models.
                   </p>
                 </div>
@@ -257,7 +257,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
         </div>
 
         {/* Footer Actions */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-text/15 pt-6 mt-8">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-[#2A2A2A] pt-6 mt-8">
           {onOpenSourceDoc && (
             <button
               type="button"
@@ -265,7 +265,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
                 onClose();
                 onOpenSourceDoc('doc-patnaik-drain-calc');
               }}
-              className="font-mono text-[12px] uppercase tracking-[0.15em] text-accent hover:underline font-bold"
+              className="font-mono text-[12px] uppercase tracking-[0.15em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
             >
               [ VIEW SOURCE RECORD IN READING ROOM → ]
             </button>
@@ -274,7 +274,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="font-mono text-[12px] uppercase tracking-[0.2em] text-text/50 hover:text-text px-4 py-2 border border-text/20"
+            className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#D6D6D0] hover:text-[#F5F5F0] px-4 py-2 border border-[#2A2A2A] transition-colors"
           >
             Close Dossier
           </button>
