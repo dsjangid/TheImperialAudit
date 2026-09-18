@@ -99,51 +99,51 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
             <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] mb-1">
               SHELFMARK / ACCESSION REF
             </span>
-            <span className="text-accent font-bold">{doc.archiveRef}</span>
+            <span className="text-[#C62828] font-bold">{doc.archiveRef}</span>
           </div>
           <div>
-            <span className="block text-[10px] uppercase tracking-[0.2em] text-text/40 mb-1">
+            <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] mb-1">
               TEMPORAL ERA
             </span>
-            <span className="text-text/90">{doc.year} ({doc.date})</span>
+            <span><span className="text-[#E53935]">{doc.year}</span> <span className="text-[#D6D6D0]">({doc.date})</span></span>
           </div>
         </div>
 
         {/* Verbatim Archival Excerpt (Typewritten / Monospace Style) */}
         <div className="mb-8">
-          <div className="flex items-center justify-between mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-text/50">
+          <div className="flex items-center justify-between mb-3 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D]">
             <span>VERBATIM ARCHIVAL TRANSCRIPTION:</span>
             <span>TYPEWRITTEN RECORD</span>
           </div>
 
-          <div className="border-l-2 border-accent pl-4 font-mono text-[13px] sm:text-[14px] leading-[1.8] text-text/95 whitespace-pre-line select-text">
+          <div className="border-l-2 border-[#C62828] pl-4 font-mono text-[13px] sm:text-[14px] leading-[1.8] text-[#D6D6D0] whitespace-pre-line select-text">
             &ldquo;{doc.excerpt}&rdquo;
           </div>
         </div>
 
         {/* Historiographical Context & Analysis */}
-        <div className="space-y-3 mb-8 border-t border-text/15 pt-6">
-          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-text/40 block">
+        <div className="space-y-3 mb-8 border-t border-[#2A2A2A] pt-6">
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] block">
             HISTORIOGRAPHICAL CONTEXT &amp; AUDIT
           </span>
-          <p className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-text/80">
+          <p className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-[#D6D6D0]">
             {doc.context}
           </p>
         </div>
 
         {/* Related Chapters & Archive Navigation */}
-        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-text/15 pt-6 font-mono text-[12px]">
+        <div className="flex flex-wrap items-center justify-between gap-4 border-t border-[#2A2A2A] pt-6 font-mono text-[12px]">
           {doc.relatedDispatchHref ? (
             <Link
               href={doc.relatedDispatchHref}
               onClick={onClose}
-              className="text-accent hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1"
+              className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1 transition-colors"
             >
               <span>{doc.relatedDispatch}</span>
               <span>→</span>
             </Link>
           ) : (
-            <span className="text-text/40 text-[11px]">CORPUS FILE: {doc.id}</span>
+            <span className="text-[#A3A39D] text-[11px]">CORPUS FILE: {doc.id}</span>
           )}
 
           {doc.verificationUrl && (
@@ -151,7 +151,7 @@ export const SourceViewerModal: React.FC<SourceViewerModalProps> = ({
               href={doc.verificationUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text/60 hover:text-text hover:underline uppercase tracking-[0.15em] text-[11px]"
+              className="text-[#A3A39D] hover:text-[#F5F5F0] hover:underline uppercase tracking-[0.15em] text-[11px] transition-colors"
             >
               Catalogue Registry Reference ↗
             </a>
