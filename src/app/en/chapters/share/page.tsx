@@ -66,7 +66,7 @@ export default function JallianwalaChapterPage() {
             <div className="md:col-span-8">
               <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
-                  <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-accent pr-3 pt-1">J</span>
+                  <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-[#C62828] pr-3 pt-1">J</span>
                   allianwala Bagh remains the single most documented act of colonial state violence in the history of the British Empire. Unlike many other atrocities of the imperial era, the events of 13 April 1919 were examined in the open daylight of official parliamentary inquiries. Brigadier-General Reginald Dyer testified freely and extensively before the Hunter Committee, offering no apologies and explicitly stating his intention to inflict massive casualties as a punitive moral measure.
                 </p>
                 <p>
@@ -77,7 +77,7 @@ export default function JallianwalaChapterPage() {
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-dyer-testimony-1919')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW SWORN HUNTER COMMISSION TRANSCRIPT (CMD. 681) → ]
                   </button>
@@ -85,24 +85,24 @@ export default function JallianwalaChapterPage() {
               </div>
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-2">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">KEY DATA</p>
-                <p>1,650 ROUNDS</p>
-                <p>10 MINUTES FIRING</p>
-                <p>13 APRIL 1919 (BAISAKHI)</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-2">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">KEY DATA</p>
+                <p><span className="text-[#E53935]">1,650 ROUNDS</span></p>
+                <p><span className="text-[#E53935]">10 MINUTES</span> FIRING</p>
+                <p><span className="text-[#E53935]">13 APRIL 1919</span> (BAISAKHI)</p>
               </div>
             </aside>
           </div>
         </header>
 
         {/* Structured Forensic Evaluation Block */}
-        <section className="py-12 border-y border-text/10">
+        <section className="py-12 border-y border-[#2A2A2A]">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="OFFICIAL_ENQUIRY" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">FORENSIC CROSS-EXAMINATION</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">FORENSIC CROSS-EXAMINATION</p>
               </div>
 
               <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-6">
