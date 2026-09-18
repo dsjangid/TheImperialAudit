@@ -101,23 +101,23 @@ export default function MethodologyPage() {
               <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Economic Models &amp; Fiscal Drain
               </h2>
-              <p className="font-serif italic text-[14px] text-text/60 mt-2">
+              <p className="font-serif italic text-[14px] text-[#A3A39D] mt-2">
                 Methodological breakdown of the ~$45 Trillion calculation and trade interception.
               </p>
             </div>
 
-            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-text/85">
+            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-[#D6D6D0]">
               <p>
                 A central pillar of this investigation is the quantification of unrequited financial transfers from India to Great Britain between 1765 and 1938. The primary econometric model cited across this publication was developed by Professor Utsa Patnaik (Columbia University Press, 2018).
               </p>
-              <div className="border-l-2 border-accent pl-4 space-y-2 font-mono text-[12px]">
-                <span className="text-accent font-bold block uppercase tracking-[0.15em]">
+              <div className="border-l-2 border-[#C62828] pl-4 space-y-2 font-mono text-[12px]">
+                <span className="text-[#C62828] font-bold block uppercase tracking-[0.15em]">
                   FORMULA &amp; TRANSACTION MECHANISM:
                 </span>
-                <p className="font-serif text-[14px] text-text/80 leading-relaxed">
-                  The model tracks the <strong>net merchandise export surplus</strong> of British India over 173 years. Because foreign importers purchased Indian goods by buying Council Bills from the Secretary of State in London using gold/sterling, the physical international currency was retained in the British exchequer. The Indian exporter was reimbursed in rupees drawn directly from the domestic taxes collected from Indian peasants.
+                <p className="font-serif text-[14px] text-[#D6D6D0] leading-relaxed">
+                  The model tracks the <strong className="text-[#F5F5F0]">net merchandise export surplus</strong> of British India over 173 years. Because foreign importers purchased Indian goods by buying Council Bills from the Secretary of State in London using gold/sterling, the physical international currency was retained in the British exchequer. The Indian exporter was reimbursed in rupees drawn directly from the domestic taxes collected from Indian peasants.
                 </p>
-                <div className="pt-2 text-[11px] text-text/60">
+                <div className="pt-2 text-[11px] text-[#A3A39D]">
                   Compounding Equation: <code>Total Drain = &Sigma; [ Annual Net Export Surplus(t) &times; (1 + r)^(2016 - t) ]</code> where <code>r = 0.05</code> (5% standard historical commercial rate).
                 </div>
               </div>
@@ -129,13 +129,13 @@ export default function MethodologyPage() {
         </section>
 
         {/* Section 3: Incident Classification Taxonomy */}
-        <section className="py-10 border-b border-text/10" id="incidents">
+        <section className="py-10 border-b border-[#2A2A2A]" id="incidents">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 03
               </span>
-              <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Incident Classification Taxonomy
               </h2>
               <p className="font-serif italic text-[14px] text-text/60 mt-2">
