@@ -6,17 +6,17 @@ export const LiveSpendCounter: React.FC<{ lang?: 'en' | 'ru' }> = ({ lang = 'en'
   return (
     <div>
       <div
-        className="font-serif text-text text-[clamp(36px,8vw,100px)] tracking-[-0.02em] leading-none tabular-nums"
+        className="font-serif text-[#E53935] text-[clamp(36px,8vw,100px)] tracking-[-0.02em] leading-none tabular-nums"
         style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
       >
         ~$44.63 TRILLION
       </div>
-      <p className="font-mono text-[13px] text-text/50 mt-3 tracking-[0.08em] uppercase">
+      <p className="font-mono text-[13px] text-[#A3A39D] mt-3 tracking-[0.08em] uppercase">
         Estimated cumulative extraction · 1765–1938 · 2016 USD equivalent
       </p>
 
       {/* Minimal Editorial Scale Comparison */}
-      <div className="mt-8 border border-text/15 p-6 space-y-4">
+      <div className="mt-8 border border-[#2A2A2A] p-6 space-y-4">
         <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em]">
           <span className="text-accent font-semibold">[ SCALE COMPARISON ]</span>
           <span className="text-text/40 border-l border-text/20 pl-3">COMPOUNDED VALUE</span>
