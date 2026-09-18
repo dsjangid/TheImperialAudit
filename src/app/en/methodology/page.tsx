@@ -49,40 +49,40 @@ export default function MethodologyPage() {
               <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 01
               </span>
-              <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 The Archival Corpus
               </h2>
-              <p className="font-serif italic text-[14px] text-text/60 mt-2">
+              <p className="font-serif italic text-[14px] text-[#A3A39D] mt-2">
                 Repositories, provenance, and criteria for inclusion.
               </p>
             </div>
 
-            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-text/85">
+            <div className="md:col-span-8 space-y-6 font-serif text-[16px] leading-[1.8] text-[#D6D6D0]">
               <p>
-                The Imperial Audit is constructed primarily from the administrative papers of the imperial state itself. Rather than relying on secondary retrospectives alone, the investigation utilizes the unredacted proceedings of the <strong>India Office Records (IOR)</strong> preserved at the British Library in London, the <strong>National Archives at Kew</strong>, and the official reports of the <strong>Hansard Parliamentary Debates</strong>.
+                The Imperial Audit is constructed primarily from the administrative papers of the imperial state itself. Rather than relying on secondary retrospectives alone, the investigation utilizes the unredacted proceedings of the <strong className="text-[#F5F5F0]">India Office Records (IOR)</strong> preserved at the British Library in London, the <strong className="text-[#F5F5F0]">National Archives at Kew</strong>, and the official reports of the <strong className="text-[#F5F5F0]">Hansard Parliamentary Debates</strong>.
               </p>
-              <div className="space-y-4 font-mono text-[12px] divide-y divide-text/10">
+              <div className="space-y-4 font-mono text-[12px] divide-y divide-[#2A2A2A]">
                 <div className="pt-3">
-                  <strong className="text-text block mb-1">1. India Office Records (IOR), British Library:</strong>
-                  <span className="font-serif text-text/75 text-[14px]">
+                  <strong className="text-[#F5F5F0] block mb-1">1. India Office Records (IOR), British Library:</strong>
+                  <span className="font-serif text-[#D6D6D0] text-[14px]">
                     Series L/PJ (Public &amp; Judicial), L/PS (Political &amp; Secret), L/MIL (Military Department), and E/4 (Correspondence with India). Provides the internal, uncensored communications between the Governor-General in Calcutta/Delhi and the Court of Directors/Secretary of State in London.
                   </span>
                 </div>
                 <div className="pt-3">
-                  <strong className="text-text block mb-1">2. The National Archives (TNA), Kew:</strong>
-                  <span className="font-serif text-text/75 text-[14px]">
+                  <strong className="text-[#F5F5F0] block mb-1">2. The National Archives (TNA), Kew:</strong>
+                  <span className="font-serif text-[#D6D6D0] text-[14px]">
                     Cabinet Papers (CAB 65 series) and Prime Minister’s Operational Papers (PREM 4 series), documenting War Cabinet decisions on the 1943 Bengal Famine shipping allocations and 1942 Quit India military responses.
                   </span>
                 </div>
                 <div className="pt-3">
-                  <strong className="text-text block mb-1">3. Statutory Inquiries &amp; Command Papers:</strong>
-                  <span className="font-serif text-text/75 text-[14px]">
+                  <strong className="text-[#F5F5F0] block mb-1">3. Statutory Inquiries &amp; Command Papers:</strong>
+                  <span className="font-serif text-[#D6D6D0] text-[14px]">
                     Official parliamentary investigative commission reports including the Hunter Committee Report (Cmd. 681, 1920), the Welby Commission on Indian Expenditure (Cmd. 131, 1900), and the Woodhead Famine Inquiry Commission (Cmd. 6635, 1945).
                   </span>
                 </div>
                 <div className="pt-3">
-                  <strong className="text-text block mb-1">4. Vernacular &amp; Nationalist Contemporary Records:</strong>
-                  <span className="font-serif text-text/75 text-[14px]">
+                  <strong className="text-[#F5F5F0] block mb-1">4. Vernacular &amp; Nationalist Contemporary Records:</strong>
+                  <span className="font-serif text-[#D6D6D0] text-[14px]">
                     The Congress Punjab Sub-Committee Report (1920), the journals <em>Kesari</em> (Tilak) and <em>Amrita Bazar Patrika</em>, and regional judicial trial records from the National Archives of India (New Delhi).
                   </span>
                 </div>
@@ -92,13 +92,13 @@ export default function MethodologyPage() {
         </section>
 
         {/* Section 2: Economic Datasets & Drain Quantification */}
-        <section className="py-10 border-b border-text/10" id="economic-data">
+        <section className="py-10 border-b border-[#2A2A2A]" id="economic-data">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-4">
-              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent font-bold block mb-2">
+              <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
                 SECTION 02
               </span>
-              <h2 className="font-serif text-[28px] md:text-[34px] font-bold leading-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] md:text-[34px] font-bold leading-tight">
                 Economic Models &amp; Fiscal Drain
               </h2>
               <p className="font-serif italic text-[14px] text-text/60 mt-2">
