@@ -82,17 +82,17 @@ export default function Rebellion1857ChapterPage() {
                 <span className="text-[#E53935]">1857</span> · NORTHERN AND CENTRAL INDIA
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
-                  <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-accent pr-3 pt-1">T</span>
+                  <span className="float-left text-[64px] leading-[0.8] font-serif font-bold text-[#C62828] pr-3 pt-1">T</span>
                   he events of 1857 constitute the most significant rupture in the history of British colonial rule in India. What began as a mutiny among the sepoy regiments of the Bengal Army rapidly evolved into a widespread popular uprising that engulfed large swathes of northern and central India. This was not a single, unified battle fought on a conventional field, but rather a complex sequence of localized mutinies, protracted sieges, bitter guerrilla campaigns, and devastating reprisals. It laid bare the fragile foundations of East India Company rule and exposed the deep-seated resentments that had been accumulating over decades of territorial expansion, economic exploitation, and cultural insensitivity.
                 </p>
               </div>
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">1857 INQUIRY</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">1857 INQUIRY</p>
                 <p>OVER 100,000 COMBATANTS</p>
                 <p>COMPANY ABOLISHED 1858</p>
                 <p>CROWN RAJ ESTABLISHED</p>
@@ -102,15 +102,15 @@ export default function Rebellion1857ChapterPage() {
         </section>
 
         {/* 2. The Meerut Breakout */}
-        <section className="py-12 border-b border-text/10" id="meerut">
+        <section className="py-12 border-b border-[#2A2A2A]" id="meerut">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">MILITARY · REBELLION</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">MILITARY · REBELLION</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Meerut Outbreak &amp; March on Delhi
               </h3>
               <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
