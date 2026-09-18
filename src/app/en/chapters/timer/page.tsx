@@ -97,34 +97,34 @@ export default function ConquestChapterPage() {
         </section>
 
         {/* 1. BATTLE OF PLASSEY */}
-        <section className="py-12 border-b border-text/10" id="plassey">
+        <section className="py-12 border-b border-[#2A2A2A]" id="plassey">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">CONQUEST · MILITARY COUP</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">CONQUEST · MILITARY COUP</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 Battle of Plassey &amp; the 1765 Diwani Grant
               </h3>
-              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
-                23 JUNE 1757 · PALASHI &amp; ALLAHABAD, BENGAL
+              <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-[#A3A39D] mb-8">
+                <span className="text-[#E53935]">23 JUNE 1757</span> · PALASHI &amp; ALLAHABAD, BENGAL
               </p>
 
-              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-text/85">
+              <div className="space-y-6 font-serif text-[17px] leading-[1.75] text-[#D6D6D0]">
                 <p>
-                  The confrontation at Palashi on the banks of the Bhagirathi River is traditionally chronicled as the genesis of British dominion in India. However, historical scrutiny reveals an engagement decided less by martial superiority than by clandestine financial negotiations. Robert Clive, commanding a modest detachment of <span className="text-accent font-semibold">3,000 Company troops</span>, faced the seemingly overwhelming <span className="text-accent font-semibold">50,000-strong army of Siraj ud-Daulah</span>, the Nawab of Bengal. Yet the outcome was preordained in the counting houses of Calcutta, where the Company had successfully conspired with the wealthy Jagat Seth banking family and Mir Jafar, the Nawab’s primary military commander.
+                  The confrontation at Palashi on the banks of the Bhagirathi River is traditionally chronicled as the genesis of British dominion in India. However, historical scrutiny reveals an engagement decided less by martial superiority than by clandestine financial negotiations. Robert Clive, commanding a modest detachment of <span className="font-semibold">3,000 Company troops</span>, faced the seemingly overwhelming <span className="font-semibold">50,000-strong army of Siraj ud-Daulah</span>, the Nawab of Bengal. Yet the outcome was preordained in the counting houses of Calcutta, where the Company had successfully conspired with the wealthy Jagat Seth banking family and Mir Jafar, the Nawab’s primary military commander.
                 </p>
                 <p>
-                  When the artillery commenced firing on the morning of 23 June, the vast majority of the Bengali army refused to engage. The betrayal caused the Nawab's forces to collapse from within. Over the subsequent years, this control was formalised by the <span className="text-accent font-semibold">Treaty of Allahabad in 1765</span> following the Battle of Buxar, granting the Company Diwani rights, the sovereign legal authority to collect land revenue directly from Bengal, Bihar, and Orissa.
+                  When the artillery commenced firing on the morning of 23 June, the vast majority of the Bengali army refused to engage. The betrayal caused the Nawab's forces to collapse from within. Over the subsequent years, this control was formalised by the <span className="font-semibold">Treaty of Allahabad in 1765</span> following the Battle of Buxar, granting the Company Diwani rights, the sovereign legal authority to collect land revenue directly from Bengal, Bihar, and Orissa.
                 </p>
 
                 <div className="pt-2">
                   <button
                     type="button"
                     onClick={() => handleOpenSourceDoc('doc-ior-diwani-1765')}
-                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-accent hover:underline font-bold"
+                    className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
                   >
                     [ VIEW PRIMARY ARCHIVE RECORD: 1765 DIWANI FIRMAN → ]
                   </button>
@@ -143,9 +143,9 @@ export default function ConquestChapterPage() {
               />
             </div>
 
-            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-text/40 uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
-              <div className="border-l border-text/20 pl-4 space-y-2">
-                <p className="text-accent font-bold">LEDGER METRICS</p>
+            <aside className="md:col-start-10 md:col-span-3 font-mono text-[13px] text-[#A3A39D] uppercase tracking-[0.1em] leading-[1.9] space-y-4 pt-8">
+              <div className="border-l border-[#2A2A2A] pl-4 space-y-2">
+                <p className="text-[#C62828] font-bold">LEDGER METRICS</p>
                 <p>3,000 COMPANY VS 50,000 NAWAB</p>
                 <p>£234,000 EXTRACTED BY CLIVE</p>
                 <p>1765 DIWANI SOVEREIGNTY</p>
@@ -155,15 +155,15 @@ export default function ConquestChapterPage() {
         </section>
 
         {/* 2. THE BENGAL FAMINE OF 1770 */}
-        <section className="py-12 border-b border-text/10" id="famine-1770">
+        <section className="py-12 border-b border-[#2A2A2A]" id="famine-1770">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-2">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent">FAMINE · POLICY EXTRACTION</p>
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">FAMINE · POLICY EXTRACTION</p>
               </div>
 
-              <h3 className="font-serif text-[28px] md:text-[36px] font-bold leading-tight mb-2">
+              <h3 className="font-serif text-[#F5F5F0] text-[28px] md:text-[36px] font-bold leading-tight mb-2">
                 The Bengal Famine of 1770
               </h3>
               <p className="font-mono text-[13px] uppercase tracking-[0.15em] text-text/40 mb-8">
