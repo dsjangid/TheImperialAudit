@@ -18,18 +18,18 @@ export const LiveSpendCounter: React.FC<{ lang?: 'en' | 'ru' }> = ({ lang = 'en'
       {/* Minimal Editorial Scale Comparison */}
       <div className="mt-8 border border-[#2A2A2A] p-6 space-y-4">
         <div className="flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em]">
-          <span className="text-accent font-semibold">[ SCALE COMPARISON ]</span>
-          <span className="text-text/40 border-l border-text/20 pl-3">COMPOUNDED VALUE</span>
+          <span className="text-[#C62828] font-semibold">[ SCALE COMPARISON ]</span>
+          <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">COMPOUNDED VALUE</span>
         </div>
 
         <div className="space-y-3 font-mono text-[13px]">
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-            <span className="text-accent font-bold sm:min-w-[130px] text-[15px]">≈ 5,095 YEARS</span>
-            <span className="text-text/60">at $1 million per hour to equal ~$44.63T</span>
+            <span className="text-[#E53935] font-bold sm:min-w-[130px] text-[15px]">≈ 5,095 YEARS</span>
+            <span className="text-[#D6D6D0]">at $1 million per hour to equal ~$44.63T</span>
           </div>
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-            <span className="text-text/90 font-bold sm:min-w-[130px] text-[15px]">173 YEARS</span>
-            <span className="text-text/60">of compounded annual surplus extraction (1765–1938)</span>
+            <span className="text-[#E53935] font-bold sm:min-w-[130px] text-[15px]">173 YEARS</span>
+            <span className="text-[#D6D6D0]">of compounded annual surplus extraction (1765–1938)</span>
           </div>
         </div>
       </div>
