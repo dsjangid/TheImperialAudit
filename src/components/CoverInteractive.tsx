@@ -36,9 +36,9 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
     <>
       <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-28 md:pt-32" vt-update="auto">
         {/* Masthead & Primary Metadata */}
-        <div className="border-b border-text/15 pb-8 mb-12">
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-text/50 mb-6">
-            <span className="text-accent font-semibold">HISTORICAL DISPATCH · SPECIAL INVESTIGATIVE ARCHIVE</span>
+        <div className="border-b border-[#2A2A2A] pb-8 mb-12">
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[13px] uppercase tracking-[0.25em] text-[#A3A39D] mb-6">
+            <span className="text-[#C62828] font-semibold">HISTORICAL DISPATCH · SPECIAL INVESTIGATIVE ARCHIVE</span>
             <span>VOL. I · DECLASSIFIED RECORD · 1757–1947</span>
             <span>INDIA · BRITISH ARCHIVAL RECORD · 1757–1947</span>
           </div>
@@ -47,27 +47,27 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             <div className="col-span-12 lg:col-span-8">
               <div className="flex flex-wrap items-center gap-3 mb-3">
                 <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
-                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-accent font-semibold">
+                <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">
                   AN UNREDACTED INVESTIGATION INTO 190 YEARS OF COLONIAL RULE
                 </p>
               </div>
 
               <h1
-                className="font-serif text-text text-[clamp(40px,7.5vw,110px)] leading-[0.93] tracking-[-0.01em] uppercase font-black"
+                className="font-serif text-[#F5F5F0] text-[clamp(40px,7.5vw,110px)] leading-[0.93] tracking-[-0.01em] uppercase font-black"
                 style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
               >
                 THE IMPERIAL<br />AUDIT · 1757–1947
               </h1>
-              <p className="font-serif italic text-[clamp(18px,2vw,24px)] text-text/75 mt-6 leading-snug max-w-[44ch]">
+              <p className="font-serif italic text-[clamp(18px,2vw,24px)] text-[#D6D6D0] mt-6 leading-snug max-w-[44ch]">
                 A forensic long-form chronicle of corporate conquest, fiscal extraction, engineered famines, and popular resistance in British India.
               </p>
             </div>
 
             {/* Masthead Aside Metadata */}
-            <div className="col-span-12 lg:col-span-4 font-mono text-[13px] text-text/60 space-y-4 pt-4 lg:pt-0 border-t lg:border-t-0 lg:border-l border-text/15 lg:pl-8">
+            <div className="col-span-12 lg:col-span-4 font-mono text-[13px] text-[#A3A39D] space-y-4 pt-4 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#2A2A2A] lg:pl-8">
               <div>
-                <span className="block text-[11px] uppercase tracking-[0.2em] text-text/35">CURATED BY</span>
-                <span className="text-text/90 font-medium">The Declassified Colonial Archive Project</span>
+                <span className="block text-[11px] uppercase tracking-[0.2em] text-[#A3A39D]/70">CURATED BY</span>
+                <span className="text-[#F5F5F0] font-medium">The Declassified Colonial Archive Project</span>
               </div>
 
               <div className="pt-2">
