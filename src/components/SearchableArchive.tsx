@@ -50,32 +50,32 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
   }, [allDocuments, searchTerm, selectedCategory, selectedEra, selectedRegion]);
 
   return (
-    <section className="my-20 border-t border-text/15 pt-16" id="searchable-archive">
+    <section className="my-20 border-t border-[#2A2A2A] pt-16" id="searchable-archive">
       {/* Section Header */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-4 border-b border-text/15">
+      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-4 border-b border-[#2A2A2A]">
         <div>
           <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-            <span className="text-accent font-semibold">RESEARCH INTERFACE</span>
-            <span className="text-text/40 border-l border-text/20 pl-3">AUDITED DOCUMENTARY CORPUS</span>
+            <span className="text-[#C62828] font-semibold">RESEARCH INTERFACE</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">AUDITED DOCUMENTARY CORPUS</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[48px] font-bold text-text">
+          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[48px] font-bold text-[#F5F5F0]">
             Searchable Archival Records
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-text/70 mt-1">
+          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#A3A39D] mt-1">
             Filter primary manuscripts, parliamentary inquiries, and economic datasets by era, category, and region.
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-text/40 uppercase tracking-[0.15em]">
+        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
           <span>{filteredDocs.length} OF {allDocuments.length} RECORDS INDEXED</span>
         </div>
       </div>
 
       {/* Filter Controls Bar */}
-      <div className="mb-10 pb-6 border-b border-text/15 space-y-4 font-mono text-[11px] uppercase tracking-[0.15em]">
+      <div className="mb-10 pb-6 border-b border-[#2A2A2A] space-y-4 font-mono text-[11px] uppercase tracking-[0.15em]">
         {/* Search Input */}
         <div>
-          <label htmlFor="archive-search" className="block text-text/50 mb-2 font-bold">
+          <label htmlFor="archive-search" className="block text-[#A3A39D] mb-2 font-bold">
             SEARCH ARCHIVE BY KEYWORD, SHELFMARK, OR TOPIC:
           </label>
           <input
@@ -84,7 +84,7 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="e.g. Famine, Council Bills, Dyer, Permanent Settlement, Awadh, 1857..."
-            className="w-full bg-transparent border-b border-text/25 py-2 text-text font-serif text-[16px] focus:outline-none focus:border-accent transition-colors placeholder:text-text/30"
+            className="w-full bg-transparent border-b border-[#2A2A2A] py-2 text-[#F5F5F0] font-serif text-[16px] focus:outline-none focus:border-[#C62828] transition-colors placeholder:text-[#A3A39D]"
           />
         </div>
 
@@ -92,15 +92,15 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
           {/* Era Filter */}
           <div>
-            <label className="block text-text/40 mb-1">CHRONOLOGICAL ERA:</label>
+            <label className="block text-[#A3A39D] mb-1">CHRONOLOGICAL ERA:</label>
             <select
               value={selectedEra}
               onChange={(e) => setSelectedEra(e.target.value)}
-              className="w-full bg-transparent border-b border-text/20 py-1 text-text text-[11px] focus:outline-none focus:border-accent cursor-pointer"
+              className="w-full bg-transparent border-b border-[#2A2A2A] py-1 text-[#D6D6D0] text-[11px] focus:outline-none focus:border-[#C62828] cursor-pointer"
             >
-              <option value="ALL" className="bg-black text-white">All Eras (1757–1947)</option>
-              <option value="1757_1858" className="bg-black text-white">Company Rule (1757–1858)</option>
-              <option value="1858_1947" className="bg-black text-white">Crown Raj (1858–1947)</option>
+              <option value="ALL" className="bg-[#0A0A0A] text-[#F5F5F0]">All Eras (1757–1947)</option>
+              <option value="1757_1858" className="bg-[#0A0A0A] text-[#F5F5F0]">Company Rule (1757–1858)</option>
+              <option value="1858_1947" className="bg-[#0A0A0A] text-[#F5F5F0]">Crown Raj (1858–1947)</option>
             </select>
           </div>
 
