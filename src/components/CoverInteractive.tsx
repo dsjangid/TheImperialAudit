@@ -2,20 +2,17 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { LiveSpendCounter } from '@/components/LiveSpendCounter';
-import { EyeIllustration } from '@/components/EyeIllustration';
-import { PageCornerBadges } from '@/components/PageCornerBadges';
 import { ImperialLedger } from '@/components/ImperialLedger';
 import { FollowTheMoney } from '@/components/FollowTheMoney';
 import { GeographyMap } from '@/components/GeographyMap';
 import { MythRecordInspector } from '@/components/MythRecordInspector';
 import { SearchableArchive } from '@/components/SearchableArchive';
 import { DocumentOfTheRecord } from '@/components/DocumentOfTheRecord';
-import { SourceViewerModal } from '@/components/SourceViewerModal';
 import { AuditFigureModal } from '@/components/AuditFigureModal';
 import { EvidenceBadge } from '@/components/EvidenceBadge';
 import { EvidentiaryStandardKey } from '@/components/EvidentiaryStandardKey';
-import { MonographWayfinder } from '@/components/MonographWayfinder';
 import { ResearchStatusFooter } from '@/components/ResearchStatusFooter';
 
 interface CoverInteractiveProps {
@@ -23,48 +20,29 @@ interface CoverInteractiveProps {
 }
 
 export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' }) => {
-  const [activeDocId, setActiveDocId] = useState<string | null>(null);
+  const router = useRouter();
   const [isAuditModalOpen, setIsAuditModalOpen] = useState<boolean>(false);
 
   const handleOpenSourceDoc = (docId: string) => {
-    setActiveDocId(docId);
-  };
-
-  const handleCloseSourceDoc = () => {
-    setActiveDocId(null);
+    router.push(lang === 'en' ? `/en/records/${docId}` : `/records/${docId}`);
   };
 
   return (
     <>
-      {/* Subtle Monograph Wayfinder & Progress Tracker */}
-      <MonographWayfinder />
 
-      <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-16 md:pt-24 pb-32" vt-update="auto">
+      <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-24 md:pt-32 pb-32" vt-update="auto">
         {/* =========================================================================
             ACT 01: MASTHEAD & EDITORIAL THESIS
         ========================================================================= */}
         <section id="act-prologue" className="pb-20 md:pb-28">
-          {/* Header Metadata Ribbon (De-duplicated & Refined) */}
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[12px] uppercase tracking-[0.25em] text-[#A3A39D] pb-6 mb-12 border-b border-[#2A2A2A]">
-            <div className="flex items-center gap-3">
-              <span className="text-[#C62828] font-bold text-[14px]">▪</span>
-              <span className="text-[#F5F5F0] font-semibold">HISTORICAL MONOGRAPH · VOL. I</span>
-            </div>
-            <div className="flex items-center gap-6">
-              <span className="hidden sm:inline">DECLASSIFIED COLONIAL ARCHIVE</span>
-              <span className="text-[#E53935] font-bold">1757 — 1947</span>
-            </div>
+          {/* Clean Editorial Masthead Dateline */}
+          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] pb-5 mb-12 border-b border-[#2A2A2A]">
+            <span className="text-[#F5F5F0] font-medium">HISTORICAL MONOGRAPH · 1757 — 1947</span>
+            <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
           </div>
 
           <div className="grid grid-cols-12 gap-8 lg:gap-12 items-end">
             <div className="col-span-12 lg:col-span-8">
-              <div className="flex flex-wrap items-center gap-3 mb-4">
-                <EvidenceBadge category="PRIMARY_RECORD" size="sm" showTier />
-                <span className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#C62828] font-semibold">
-                  FORENSIC INVESTIGATION INTO 190 YEARS OF COLONIAL GOVERNANCE
-                </span>
-              </div>
-
               <h1
                 className="font-serif text-[#F5F5F0] text-[clamp(42px,7.8vw,112px)] leading-[0.92] tracking-[-0.01em] uppercase font-black"
                 style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
@@ -114,10 +92,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="mt-20 pt-12 border-t border-[#2A2A2A]">
             <div className="grid grid-cols-12 gap-8 lg:gap-12">
               <div className="col-span-12 lg:col-span-8">
-                <div className="flex items-center gap-3 mb-6 font-mono text-[11px] uppercase tracking-[0.25em] text-[#C62828] font-bold">
-                  <span>SECTION 01 / 06</span>
-                  <span className="text-[#2A2A2A]">/</span>
-                  <span>EDITORIAL PROLOGUE</span>
+                <div className="mb-6 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+                  EDITORIAL PROLOGUE
                 </div>
 
                 <div className="space-y-6 font-serif text-[18px] md:text-[20px] leading-[1.8] text-[#D6D6D0] max-w-[65ch]">
@@ -136,7 +112,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
 
               {/* Monograph Core Principles Callout */}
               <aside className="col-span-12 lg:col-span-4 space-y-6 lg:pt-8 font-mono text-[12px]">
-                <div className="border border-[#2A2A2A] bg-[#0E0E0E] p-6 space-y-4">
+                <div className="border-y border-[#2A2A2A] py-6 space-y-4">
                   <div className="flex items-center gap-2 text-[#C62828] font-bold text-[11px] uppercase tracking-wider">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C62828]" />
                     <span>FORENSIC OBJECTIVE</span>
@@ -175,10 +151,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         <section id="act-drain" className="py-24 md:py-32 border-t border-[#2A2A2A]">
           <div className="grid grid-cols-12 gap-8 lg:gap-12">
             <div className="col-span-12 lg:col-span-8">
-              <div className="flex items-center gap-3 mb-4 font-mono text-[11px] uppercase tracking-[0.25em]">
-                <span className="text-[#C62828] font-bold">SECTION 02 / 06</span>
-                <span className="text-[#2A2A2A]">/</span>
-                <span className="text-[#A3A39D]">FISCAL EXTRACTION · THE DRAIN OF WEALTH</span>
+              <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+                FISCAL EXTRACTION · THE DRAIN OF WEALTH
               </div>
 
               <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -197,34 +171,33 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </p>
 
               {/* Primary High-Contrast Action Button */}
-              <div className="flex flex-wrap items-center gap-4 mb-10">
+              <div className="flex flex-wrap items-center gap-8 mb-10">
                 <button
                   type="button"
                   onClick={() => setIsAuditModalOpen(true)}
-                  className="px-6 py-3.5 bg-[#C62828] text-white font-mono text-[12px] uppercase tracking-[0.2em] font-bold hover:bg-[#E53935] transition-all flex items-center gap-2.5 shadow-lg"
+                  className="pb-1.5 text-[#C62828] hover:text-[#E53935] font-mono text-[12px] uppercase tracking-[0.2em] font-bold border-b-2 border-[#C62828] hover:border-[#E53935] transition-all flex items-center gap-2"
                 >
                   <span>AUDIT THE $45 TRILLION FIGURE &amp; METHODOLOGY</span>
                   <span className="text-sm">→</span>
                 </button>
 
-                <button
-                  type="button"
-                  onClick={() => handleOpenSourceDoc('doc-patnaik-drain-calc')}
-                  className="px-5 py-3.5 border border-[#2A2A2A] text-[#D6D6D0] hover:text-[#F5F5F0] hover:border-[#A3A39D] font-mono text-[12px] uppercase tracking-[0.15em] transition-all"
+                <Link
+                  href="/en/records/doc-patnaik-drain-calc/"
+                  className="pb-1.5 text-[#D6D6D0] hover:text-[#F5F5F0] font-mono text-[12px] uppercase tracking-[0.15em] border-b border-[#2A2A2A] hover:border-[#D6D6D0] transition-all flex items-center gap-1.5"
                 >
-                  [ VIEW ECONOMETRIC RECORD ]
-                </button>
+                  <span>[ VIEW ECONOMETRIC RECORD → ]</span>
+                </Link>
               </div>
 
               {/* Live Compounded Counter */}
-              <div className="p-6 md:p-8 border border-[#2A2A2A] bg-[#0A0A0A]">
+              <div className="py-8 border-y border-[#2A2A2A]">
                 <LiveSpendCounter lang="en" />
               </div>
             </div>
 
             {/* Contextual Methodology Card */}
             <aside className="col-span-12 lg:col-span-4 font-mono text-[12px] text-[#A3A39D] space-y-6 lg:pt-16">
-              <div className="border border-[#2A2A2A] p-6 space-y-4">
+              <div className="border-y border-[#2A2A2A] py-6 space-y-4">
                 <span className="text-[#C62828] font-bold uppercase tracking-wider block text-[11px]">
                   TRANSACTION MECHANISM
                 </span>
@@ -240,11 +213,6 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           </div>
         </section>
 
-        {/* Eye Illustration Transition */}
-        <div className="py-12 border-t border-[#2A2A2A]">
-          <EyeIllustration href="/en/chapters/timer" lang="en" />
-        </div>
-
         {/* =========================================================================
             ACT 03: THE FIVE CORE DISPATCHES (TABLE OF CONTENTS / ROADMAP)
             *Brought forward to establish clear editorial navigation early*
@@ -252,10 +220,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         <section id="act-dispatches" className="py-24 md:py-32 border-t border-[#2A2A2A]">
           <div className="flex flex-wrap justify-between items-baseline gap-4 mb-16 pb-6 border-b border-[#2A2A2A]">
             <div>
-              <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-                <span className="text-[#C62828] font-bold">SECTION 03 / 06</span>
-                <span className="text-[#2A2A2A]">/</span>
-                <span className="text-[#A3A39D]">THE NARRATIVE SPINE</span>
+              <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+                THE FIVE DISPATCHES
               </div>
               <h2 className="font-serif text-[#F5F5F0] text-[36px] sm:text-[48px] md:text-[56px] font-black leading-[0.95] tracking-tight">
                 The Five Dispatches
@@ -271,7 +237,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             </div>
           </div>
 
-          <div className="space-y-16">
+          <div className="divide-y divide-[#2A2A2A] border-y border-[#2A2A2A]">
             {[
               {
                 num: '01',
@@ -331,7 +297,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             ].map((item) => (
               <div
                 key={item.num}
-                className="group border border-[#2A2A2A] bg-[#0A0A0A] p-6 sm:p-8 md:p-10 hover:border-[#C62828] transition-colors"
+                className="group py-12 transition-colors"
               >
                 <div className="grid grid-cols-12 gap-8 items-center">
                   <div className="col-span-12 md:col-span-3 lg:col-span-2">
@@ -357,11 +323,11 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                       {item.desc}
                     </p>
 
-                    {/* Unambiguous Primary Action Link */}
+                    {/* Action Link with Underline */}
                     <div className="pt-4">
                       <Link
                         href={item.href}
-                        className="inline-flex items-center gap-2 px-4 py-2.5 bg-[#1A1A1A] hover:bg-[#C62828] text-[#F5F5F0] hover:text-white font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all border border-[#2A2A2A] hover:border-[#C62828]"
+                        className="inline-flex items-center gap-2 pb-1 text-[#C62828] hover:text-[#E53935] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all border-b border-[#C62828] hover:border-[#E53935]"
                       >
                         <span>{item.ctaLabel}</span>
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -388,10 +354,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         ========================================================================= */}
         <section id="act-evidence" className="py-24 md:py-32 border-t border-[#2A2A2A]">
           <div className="mb-12">
-            <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-              <span className="text-[#C62828] font-bold">SECTION 04 / 06</span>
-              <span className="text-[#2A2A2A]">/</span>
-              <span className="text-[#A3A39D]">PRIMARY EVIDENCE SPOTLIGHT</span>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+              PRIMARY EVIDENCE SPOTLIGHT
             </div>
             <h2 className="font-serif text-[#F5F5F0] text-[32px] sm:text-[44px] font-black leading-tight">
               Document of the Record
@@ -414,10 +378,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         ========================================================================= */}
         <section id="act-suite" className="py-24 md:py-32 border-t border-[#2A2A2A]">
           <div className="mb-16 pb-6 border-b border-[#2A2A2A]">
-            <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-              <span className="text-[#C62828] font-bold">SECTION 05 / 06</span>
-              <span className="text-[#2A2A2A]">/</span>
-              <span className="text-[#A3A39D]">INVESTIGATION SUITE</span>
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+              ANALYTICAL SUITE
             </div>
             <h2 className="font-serif text-[#F5F5F0] text-[36px] sm:text-[48px] font-black leading-tight">
               The Analytical Suite
@@ -496,10 +458,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="mb-20">
             <div className="flex justify-between items-baseline mb-8 pb-4 border-b border-[#2A2A2A]">
               <div>
-                <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-                  <span className="text-[#C62828] font-bold">SECTION 06 / 06</span>
-                  <span className="text-[#2A2A2A]">/</span>
-                  <span className="text-[#A3A39D]">ARCHIVAL REPOSITORIES &amp; DOSSIERS</span>
+                <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+                  ARCHIVAL REPOSITORIES &amp; DOSSIERS
                 </div>
                 <h2 className="font-serif text-[#F5F5F0] text-[32px] sm:text-[44px] font-black leading-tight">
                   Archival Portraits · 1757–1947
@@ -529,7 +489,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                 { src: '/TheImperialAudit/illustrations/dossiers/udham.jpg', name: 'UDHAM SINGH', role: 'Caxton Hall 1940', yr: '1899–1940' },
               ].map((item) => (
                 <div key={item.src} className="group">
-                  <div className="w-full h-44 sm:h-52 flex items-center justify-center overflow-hidden border border-[#2A2A2A] bg-[#0E0E0E] p-2">
+                  <div className="w-full h-44 sm:h-52 flex items-center justify-center overflow-hidden border-b border-[#2A2A2A] group-hover:border-[#C62828] pb-3 transition-colors">
                     <img
                       src={item.src}
                       alt={item.name}
@@ -562,15 +522,6 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
 
       {/* Research Status Footer */}
       <ResearchStatusFooter lang={lang} />
-
-      {/* Fixed Page Corner Badges */}
-      <PageCornerBadges fileNo="1757-1947" chapterTitle="ARCHIVE" pageNum="001" totalPages="190" />
-
-      {/* Global Archival Source Document Viewer Modal */}
-      <SourceViewerModal
-        docId={activeDocId}
-        onClose={handleCloseSourceDoc}
-      />
 
       {/* Global Audit Figure ($45T) Modal */}
       <AuditFigureModal
