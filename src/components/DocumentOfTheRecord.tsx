@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { primaryDocuments } from '@/data/primary-documents';
 import { EvidenceBadge } from './EvidenceBadge';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface DocumentOfTheRecordProps {
   docId: string;
@@ -17,6 +18,7 @@ export const DocumentOfTheRecord: React.FC<DocumentOfTheRecordProps> = ({
   recordNo = '014',
   className = '',
 }) => {
+  const { dict } = useLanguage();
   const doc = primaryDocuments[docId];
   if (!doc) return null;
 
@@ -59,7 +61,7 @@ export const DocumentOfTheRecord: React.FC<DocumentOfTheRecordProps> = ({
           href={`/en/records/${doc.id}/`}
           className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-1.5 transition-colors"
         >
-          <span>[ OPEN ARCHIVAL RECORD → ]</span>
+          <span>[ {dict.common.openRecord ? dict.common.openRecord.toUpperCase() : 'OPEN ARCHIVAL RECORD'} → ]</span>
         </Link>
       </div>
     </div>

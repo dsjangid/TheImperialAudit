@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { EvidenceBadge } from './EvidenceBadge';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface AuditFigureModalProps {
   isOpen: boolean;
@@ -14,6 +15,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
   onClose,
   onOpenSourceDoc,
 }) => {
+  const { dict } = useLanguage();
   const [activeTab, setActiveTab] = useState<'methodology' | 'dataset' | 'limitations' | 'alternatives'>(
     'methodology'
   );
@@ -63,7 +65,7 @@ export const AuditFigureModal: React.FC<AuditFigureModalProps> = ({
             className="font-mono text-[12px] uppercase tracking-[0.2em] text-[#A3A39D] hover:text-[#E53935] transition-colors flex items-center gap-1"
             aria-label="Close audit dossier"
           >
-            <span>[ CLOSE ESC ]</span>
+            <span>[ {dict.common.close ? dict.common.close.toUpperCase() : 'CLOSE'} ESC ]</span>
             <span className="text-lg leading-none">&times;</span>
           </button>
         </div>

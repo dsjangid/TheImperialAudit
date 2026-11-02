@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { useLanguage } from '@/context/LanguageContext';
 import { LiveSpendCounter } from '@/components/LiveSpendCounter';
 import { ImperialLedger } from '@/components/ImperialLedger';
 import { FollowTheMoney } from '@/components/FollowTheMoney';
@@ -21,6 +22,7 @@ interface CoverInteractiveProps {
 
 export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' }) => {
   const router = useRouter();
+  const { language, dict } = useLanguage();
   const [isAuditModalOpen, setIsAuditModalOpen] = useState<boolean>(false);
 
   const handleOpenSourceDoc = (docId: string) => {
@@ -51,37 +53,37 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </h1>
 
               <p className="font-serif italic text-[16px] sm:text-[clamp(18px,2.2vw,24px)] text-[#D6D6D0] mt-5 sm:mt-8 leading-snug max-w-[44ch]">
-                A forensic long-form chronicle of corporate conquest, fiscal extraction, engineered famines, and popular resistance in British India.
+                {dict.cover.thesisSubtitle}
               </p>
             </div>
 
             {/* Masthead Essential Provenance Card */}
             <div className="col-span-12 lg:col-span-4 font-mono text-[12px] text-[#A3A39D] space-y-5 pt-6 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#2A2A2A] lg:pl-8">
               <div>
-                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70 mb-1">CURATED REPOSITORY</span>
+                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70 mb-1">{dict.cover.curatedRepo}</span>
                 <span className="text-[#F5F5F0] font-medium block">The Declassified Colonial Archive Project</span>
                 <span className="text-[11px] text-[#A3A39D]">London · New Delhi · Edinburgh</span>
               </div>
 
               <div className="pt-2 border-t border-[#2A2A2A]/60">
-                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70 mb-1">BENCHMARK FISCAL TRANSFER</span>
+                <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70 mb-1">{dict.cover.fiscalBenchmark}</span>
                 <span className="text-[#E53935] font-bold text-[18px] block">~$45 Trillion (1765–1938)</span>
                 <button
                   type="button"
                   onClick={() => setIsAuditModalOpen(true)}
                   className="mt-2 inline-flex items-center gap-1.5 text-[11px] text-[#C62828] hover:text-[#E53935] uppercase tracking-[0.15em] font-bold transition-colors"
                 >
-                  <span>[ AUDIT THE FIGURE &amp; PROOF → ]</span>
+                  <span>[ {dict.cover.auditFigureBtn} → ]</span>
                 </button>
               </div>
 
               <div className="pt-2 border-t border-[#2A2A2A]/60 flex justify-between text-[11px]">
                 <div>
-                  <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70">STATE PAPERS</span>
+                  <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70">{dict.cover.statePapers}</span>
                   <span className="text-[#D6D6D0]">32 Parliamentary Records</span>
                 </div>
                 <div>
-                  <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70">EDITION</span>
+                  <span className="block text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/70">{dict.cover.edition}</span>
                   <span className="text-[#D6D6D0]">First Edition · 2026</span>
                 </div>
               </div>
@@ -93,7 +95,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             <div className="grid grid-cols-12 gap-8 lg:gap-12">
               <div className="col-span-12 lg:col-span-8">
                 <div className="mb-6 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
-                  EDITORIAL PROLOGUE
+                  {dict.cover.prologueTag}
                 </div>
 
                 <div className="space-y-6 font-serif text-[16px] sm:text-[18px] md:text-[20px] leading-[1.75] sm:leading-[1.8] text-[#D6D6D0] max-w-[65ch]">
@@ -152,7 +154,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="grid grid-cols-12 gap-8 lg:gap-12">
             <div className="col-span-12 lg:col-span-8">
               <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
-                FISCAL EXTRACTION · THE DRAIN OF WEALTH
+                {dict.cover.drainTag}
               </div>
 
               <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -163,11 +165,11 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
               </div>
 
               <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[42px] md:text-[48px] font-black leading-[1.05] sm:leading-[1.02] tracking-tight mb-4 sm:mb-6">
-                Compounded Imperial Transfer: ~$45 Trillion
+                {dict.cover.drainTitle}
               </h2>
 
               <p className="font-serif text-[15px] sm:text-[17px] md:text-[18px] text-[#D6D6D0] leading-[1.7] sm:leading-[1.8] max-w-[65ch] mb-6 sm:mb-8">
-                In a landmark econometric study published by Columbia University Press, economist Professor Utsa Patnaik calculated that between 1765 and 1938, Britain drained a total of <span className="text-[#E53935] font-bold">~$44.63 trillion (in 2016 USD)</span> from India. This extraction operated through the Council Bills mechanism and export surplus interception, where Indian tax revenues were used to buy Indian export goods for London without British capital outlay. The real-time counter below represents the compounded per-second rate of that historical transfer.
+                {dict.cover.drainDesc}
               </p>
 
               {/* Primary High-Contrast Action Button */}
@@ -177,7 +179,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                   onClick={() => setIsAuditModalOpen(true)}
                   className="pb-1.5 text-[#C62828] hover:text-[#E53935] font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.2em] font-bold border-b-2 border-[#C62828] hover:border-[#E53935] transition-all flex items-center gap-2"
                 >
-                  <span>AUDIT THE $45 TRILLION FIGURE &amp; METHODOLOGY</span>
+                  <span>{dict.cover.auditFigureBtn}</span>
                   <span className="text-sm">→</span>
                 </button>
 
@@ -185,13 +187,13 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                   href="/en/records/doc-patnaik-drain-calc/"
                   className="pb-1.5 text-[#D6D6D0] hover:text-[#F5F5F0] font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.15em] border-b border-[#2A2A2A] hover:border-[#D6D6D0] transition-all flex items-center gap-1.5"
                 >
-                  <span>[ VIEW ECONOMETRIC RECORD → ]</span>
+                  <span>{dict.cover.viewRecordBtn}</span>
                 </Link>
               </div>
 
               {/* Live Compounded Counter */}
               <div className="py-6 sm:py-8 border-y border-[#2A2A2A]">
-                <LiveSpendCounter lang="en" />
+                <LiveSpendCounter />
               </div>
             </div>
 
@@ -221,18 +223,18 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="flex flex-wrap justify-between items-baseline gap-4 mb-8 sm:mb-16 pb-4 sm:pb-6 border-b border-[#2A2A2A]">
             <div>
               <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
-                THE FIVE DISPATCHES
+                {dict.cover.dispatchesTag}
               </div>
               <h2 className="font-serif text-[#F5F5F0] text-[28px] xs:text-[34px] sm:text-[48px] md:text-[56px] font-black leading-[0.98] sm:leading-[0.95] tracking-tight">
-                The Five Dispatches
+                {dict.cover.dispatchesTitle}
               </h2>
               <p className="font-serif italic text-[15px] sm:text-[17px] md:text-[19px] text-[#B5B5AF] mt-2 sm:mt-3 max-w-[50ch]">
-                Five standalone investigative articles examining conquest, violent rupture, administrative actors, and the anatomy of massacre.
+                {dict.cover.dispatchesSubtitle}
               </p>
             </div>
 
             <div className="font-mono text-[11px] sm:text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-left sm:text-right">
-              <span>UNREDACTED EDITIONS</span>
+              <span>{dict.cover.unredactedEditions}</span>
               <span className="block text-[10px] sm:text-[11px] text-[#C62828] font-bold">5 STANDALONE ESSAYS</span>
             </div>
           </div>
@@ -240,59 +242,59 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="divide-y divide-[#2A2A2A] border-y border-[#2A2A2A]">
             {[
               {
-                num: '01',
+                num: dict.chapters.takeover.num,
                 tag: 'CONQUEST · 1757–1857',
-                title: 'Part I: The Corporate Takeover',
+                title: dict.chapters.takeover.title,
                 subtitle: 'How a Joint-Stock Trading Monopoly Conquered a Subcontinent',
                 desc: 'From Clive’s bribery at Plassey and the catastrophic 1770 Bengal Famine to the Polygar Wars, Kittur resistance, Anglo-Sikh Wars, the annexation of Awadh, and the Santhal Hul.',
                 readTime: '26 MIN READ · 12 INCIDENTS',
                 href: '/en/chapters/timer',
                 img: '/TheImperialAudit/illustrations/dossiers/clive.jpg',
-                ctaLabel: 'BEGIN READING DISPATCH 01: THE CORPORATE TAKEOVER',
+                ctaLabel: `[ ${dict.common.openRecord} 01 → ]`,
               },
               {
-                num: '02',
+                num: dict.chapters.rupture.num,
                 tag: 'REBELLION · 1857',
-                title: 'Part II: The Great Rupture',
+                title: dict.chapters.rupture.title,
                 subtitle: 'The Uprising, the Sieges, and the Abolition of Company Rule',
                 desc: 'Mangal Pandey at Barrackpore, the breakout at Meerut, the siege of Delhi, the massacres and counter-massacres at Kanpur, the defense of Lucknow, Rani Lakshmibai of Jhansi, and the brutal reprisals that reshaped imperial race theory.',
                 readTime: '30 MIN READ · 10 NARRATIVE INCIDENTS',
                 href: '/en/chapters/comparison',
                 img: '/TheImperialAudit/illustrations/dossiers/lakshmibai.jpg',
-                ctaLabel: 'BEGIN READING DISPATCH 02: THE GREAT RUPTURE',
+                ctaLabel: `[ ${dict.common.openRecord} 02 → ]`,
               },
               {
-                num: '03',
+                num: dict.chapters.dossiers.num,
                 tag: 'MONOGRAPHS · KEY FIGURES',
-                title: 'Part III: The Actors of Empire & Resistance',
+                title: dict.chapters.dossiers.title,
                 subtitle: 'Twelve Forensic Biographies of Administrators and Insurgents',
                 desc: 'Detailed primary-source dossiers on Robert Clive, Lord Dalhousie, Lord Curzon, General Dyer, Mangal Pandey, Rani Lakshmibai, Begum Hazrat Mahal, Dadabhai Naoroji, Bal Gangadhar Tilak, and Mahatma Gandhi.',
                 readTime: '24 MIN READ · 12 PROFILES',
                 href: '/en/chapters/dossiers',
                 img: '/TheImperialAudit/illustrations/dossiers/gandhi.jpg',
-                ctaLabel: 'INSPECT THE 12 ARCHIVAL DOSSIERS',
+                ctaLabel: `[ ${dict.common.openRecord} 03 → ]`,
               },
               {
-                num: '04',
+                num: dict.chapters.amritsar.num,
                 tag: 'SPECIAL INVESTIGATION · 13 APRIL 1919',
-                title: 'Part IV: Ten Minutes in Amritsar',
+                title: dict.chapters.amritsar.title,
                 subtitle: 'The Minute-by-Minute Anatomy of the Jallianwala Bagh Massacre',
                 desc: 'The wartime mobilization of Punjab, the Rowlatt Act, the arrest of Kitchlew and Satyapal, the Crawling Order, 1,650 rounds in ten minutes, the Hunter Commission testimony, Churchill’s parliamentary speech, and Udham Singh’s 21-year revenge.',
                 readTime: '35 MIN READ · MINUTE-BY-MINUTE FORENSIC RECORD',
                 href: '/en/chapters/share',
                 img: '/TheImperialAudit/illustrations/dossiers/jallianwala_bullet_marks.jpg',
-                ctaLabel: 'ENTER MINUTE-BY-MINUTE INVESTIGATION',
+                ctaLabel: `[ ${dict.common.openRecord} 04 → ]`,
               },
               {
-                num: '05',
+                num: dict.chapters.corpus.num,
                 tag: 'REGIONAL ATLAS & ARCHIVE',
-                title: 'Part V: The Subcontinental Corpus',
+                title: dict.chapters.corpus.title,
                 subtitle: 'Regional Incident Explorer, Historiography & Primary Bibliography',
                 desc: 'Organised chronicles across 10 distinct Indian regions, classification by resistance taxonomy (Tribal, Peasant, Revolutionary, Military, Famine), and full citations to the India Office Records and parliamentary papers.',
                 readTime: '20 MIN READ · 32 PRIMARY SOURCES',
                 href: '/en/chapters/action',
                 img: '/TheImperialAudit/illustrations/dossiers/bhagat.jpg',
-                ctaLabel: 'ACCESS SUBCONTINENTAL REGIONAL ATLAS',
+                ctaLabel: `[ ${dict.common.openRecord} 05 → ]`,
               },
             ].map((item) => (
               <div
@@ -355,13 +357,13 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         <section id="act-evidence" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
           <div className="mb-6 sm:mb-12">
             <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
-              PRIMARY EVIDENCE SPOTLIGHT
+              {dict.cover.evidenceSpotlightTag}
             </div>
             <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[44px] font-black leading-tight">
-              Document of the Record
+              {dict.cover.evidenceSpotlightTitle}
             </h2>
             <p className="font-serif italic text-[15px] sm:text-[18px] text-[#B5B5AF] mt-2 max-w-[55ch]">
-              An unredacted archival exhibit demonstrating the fiscal behavior of the imperial state during catastrophic crises.
+              {dict.cover.evidenceSpotlightDesc}
             </p>
           </div>
 
@@ -379,13 +381,13 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         <section id="act-suite" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
           <div className="mb-8 sm:mb-16 pb-4 sm:pb-6 border-b border-[#2A2A2A]">
             <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
-              ANALYTICAL SUITE
+              {dict.cover.suiteTag}
             </div>
             <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[48px] font-black leading-tight">
-              The Analytical Suite
+              {dict.cover.suiteTitle}
             </h2>
             <p className="font-serif italic text-[15px] sm:text-[17px] md:text-[19px] text-[#B5B5AF] mt-2 max-w-[55ch]">
-              Four interactive tools examining the chronological, territorial, and financial apparatus of imperial rule.
+              {dict.cover.suiteDesc}
             </p>
           </div>
 
@@ -459,17 +461,17 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             <div className="flex flex-wrap justify-between items-baseline gap-2 mb-6 sm:mb-8 pb-3 sm:pb-4 border-b border-[#2A2A2A]">
               <div>
                 <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
-                  ARCHIVAL REPOSITORIES &amp; DOSSIERS
+                  {dict.cover.portraitsTag}
                 </div>
                 <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[44px] font-black leading-tight">
-                  Archival Portraits · 1757–1947
+                  {dict.cover.portraitsTitle}
                 </h2>
               </div>
               <Link
                 href="/en/chapters/dossiers"
                 className="font-mono text-[10.5px] sm:text-[11px] text-[#C62828] hover:text-[#E53935] uppercase tracking-wider font-bold transition-colors"
               >
-                [ VIEW ALL 12 BIOGRAPHIES → ]
+                {dict.cover.viewAllBiographies}
               </Link>
             </div>
 

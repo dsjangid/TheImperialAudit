@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { NightLightProvider } from '@/context/NightLightContext';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 export const metadata: Metadata = {
   title: "The Imperial Audit · British Colonial Rule in India (1757–1947)",
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col bg-bg text-text selection:bg-accent selection:text-white">
-        <NightLightProvider>
-          {children}
-        </NightLightProvider>
+        <LanguageProvider>
+          <NightLightProvider>
+            {children}
+          </NightLightProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

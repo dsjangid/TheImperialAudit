@@ -1,4 +1,3 @@
-import { generateArchivalDocumentJsonLd } from '@/lib/schema-generator';
 'use client';
 
 import React from 'react';
@@ -8,6 +7,8 @@ import { Navbar } from '@/components/Navbar';
 import { ResearchStatusFooter } from '@/components/ResearchStatusFooter';
 import { EvidenceBadge } from '@/components/EvidenceBadge';
 import { primaryDocuments } from '@/data/primary-documents';
+import { useLanguage } from '@/context/LanguageContext';
+import { generateArchivalDocumentJsonLd } from '@/lib/schema-generator';
 
 interface RecordDetailViewProps {
   id: string;
@@ -16,6 +17,7 @@ interface RecordDetailViewProps {
 
 export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
   const router = useRouter();
+  const { language, dict } = useLanguage();
   const doc = primaryDocuments[id];
   if (!doc) return notFound();
 
@@ -41,7 +43,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
           >
             <span>←</span>
             <span className="border-b border-transparent hover:border-[#E53935] pb-0.5">
-              BACK TO ARCHIVE
+              {dict.common.backToArchive || 'BACK TO ARCHIVE'}
             </span>
           </button>
 
@@ -73,7 +75,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6 font-mono text-[11px]">
             <div>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
-                REPOSITORY ARCHIVE
+                {dict.archive.repository || 'REPOSITORY ARCHIVE'}
               </span>
               <p className="font-serif text-[13.5px] sm:text-[14px] text-[#F5F5F0] leading-snug">
                 {doc.repository}
@@ -82,7 +84,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
 
             <div>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
-                COLLECTION SERIES
+                {dict.archive.collection || 'COLLECTION SERIES'}
               </span>
               <p className="font-serif text-[13.5px] sm:text-[14px] text-[#D6D6D0] leading-snug">
                 {doc.collection}
@@ -91,7 +93,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
 
             <div>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
-                ACCESSION REFERENCE
+                {dict.archive.shelfmark || 'ACCESSION REFERENCE'}
               </span>
               <p className="font-serif text-[13.5px] sm:text-[14px] text-[#D6D6D0] leading-snug">
                 {doc.pageOrDispatch}
@@ -103,7 +105,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
         {/* Primary Archival Transcription / Excerpt */}
         <section className="py-8 sm:py-12 border-b border-[#2A2A2A]">
           <span className="font-mono text-[10.5px] sm:text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-3 sm:mb-4">
-            UNREDACTED PRIMARY RECORD TRANSCRIPTION
+            {dict.archive.transcription || 'UNREDACTED PRIMARY RECORD TRANSCRIPTION'}
           </span>
 
           <blockquote className="border-l-2 border-[#C62828] pl-4 sm:pl-6 py-1 sm:py-2 font-serif italic text-[17px] sm:text-[24px] md:text-[26px] leading-[1.6] text-[#F5F5F0]">
@@ -116,7 +118,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
             <div className="space-y-2.5 sm:space-y-3">
               <span className="font-mono text-[10.5px] sm:text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] font-bold block">
-                HISTORICAL CONTEXT &amp; PROVENANCE
+                {dict.archive.provenance || 'HISTORICAL CONTEXT & PROVENANCE'}
               </span>
               <p className="font-serif text-[14.5px] sm:text-[16px] leading-[1.75] sm:leading-[1.8] text-[#D6D6D0]">
                 {doc.context}
@@ -125,7 +127,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
 
             <div className="space-y-2.5 sm:space-y-3 border-t md:border-t-0 md:border-l border-[#2A2A2A] pt-6 md:pt-0 md:pl-10">
               <span className="font-mono text-[10.5px] sm:text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold block">
-                SYSTEMIC HISTORICAL SIGNIFICANCE
+                {dict.archive.significance || 'SYSTEMIC HISTORICAL SIGNIFICANCE'}
               </span>
               <p className="font-serif text-[14.5px] sm:text-[16px] leading-[1.75] sm:leading-[1.8] text-[#D6D6D0]">
                 {doc.significance}
@@ -144,7 +146,7 @@ export function RecordDetailView({ id, lang = 'en' }: RecordDetailViewProps) {
                 rel="noopener noreferrer"
                 className="text-[#D6D6D0] hover:text-[#F5F5F0] border-b border-[#2A2A2A] hover:border-[#D6D6D0] pb-0.5 uppercase tracking-[0.15em] transition-colors inline-flex items-center gap-1.5"
               >
-                <span>[ VERIFY SHELFMARK AT ARCHIVE ↗ ]</span>
+                <span>[ {dict.archive.verifyRecord || 'VERIFY SHELFMARK AT ARCHIVE'} ↗ ]</span>
               </a>
             )}
           </div>

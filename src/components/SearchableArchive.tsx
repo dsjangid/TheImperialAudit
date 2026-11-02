@@ -4,12 +4,14 @@ import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { primaryDocuments } from '@/data/primary-documents';
 import { EvidenceBadge } from './EvidenceBadge';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface SearchableArchiveProps {
   onOpenSourceDoc?: (docId: string) => void;
 }
 
 export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSourceDoc }) => {
+  const { dict } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
   const [selectedEra, setSelectedEra] = useState<string>('ALL');
@@ -84,7 +86,7 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            placeholder="e.g. Famine, Council Bills, Dyer, Permanent Settlement, Awadh, 1857..."
+            placeholder={dict.cover.searchPlaceholder || "e.g. Famine, Council Bills, Dyer, Permanent Settlement, Awadh, 1857..."}
             className="w-full bg-transparent border-b border-[#2A2A2A] py-2 text-[#F5F5F0] font-serif text-[16px] focus:outline-none focus:border-[#C62828] transition-colors placeholder:text-[#A3A39D]"
           />
         </div>
@@ -178,7 +180,7 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
                   href={`/en/records/${doc.id}/`}
                   className="mt-3 pb-1 text-[#C62828] hover:text-[#E53935] font-mono text-[11px] uppercase tracking-[0.15em] font-bold border-b border-[#C62828] hover:border-[#E53935] transition-colors inline-flex items-center gap-1.5"
                 >
-                  <span>[ OPEN RECORD ]</span>
+                  <span>[ {dict.common.openRecord ? dict.common.openRecord.toUpperCase() : 'OPEN RECORD'} ]</span>
                   <span>→</span>
                 </Link>
               </div>

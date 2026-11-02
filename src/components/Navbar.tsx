@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation';
 import { LiveClock } from '@/components/LiveClock';
 import { NightLightToggle } from '@/components/NightLightToggle';
 import { LanguageSelector } from '@/components/LanguageSelector';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface NavbarProps {
   lang?: 'en' | 'ru';
@@ -18,9 +19,10 @@ interface NavItem {
   id: string;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
+export const Navbar: React.FC<NavbarProps> = () => {
   const pathname = usePathname();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const { language, dict } = useLanguage();
 
   const getActiveChapterId = () => {
     if (pathname.includes('/methodology')) return 'methodology';
@@ -55,45 +57,45 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
 
   const navItems: NavItem[] = [
     {
-      num: '0',
-      title: lang === 'ru' ? 'ОБЛОЖКА' : 'COVER',
-      href: lang === 'en' ? '/en' : '/',
+      num: dict.chapters.cover.num,
+      title: dict.chapters.cover.title.toUpperCase(),
+      href: '/en',
       id: 'cover',
     },
     {
-      num: '1',
-      title: lang === 'ru' ? 'ЗАВОЕВАНИЕ (1757–1857)' : 'THE CORPORATE TAKEOVER (1757–1857)',
-      href: lang === 'en' ? '/en/chapters/timer' : '/chapters/timer',
+      num: dict.chapters.takeover.num,
+      title: dict.chapters.takeover.title.toUpperCase(),
+      href: '/en/chapters/timer',
       id: 'timeline',
     },
     {
-      num: '2',
-      title: lang === 'ru' ? 'ВЕЛИКИЙ РАЗРЫВ (1857)' : 'THE GREAT RUPTURE (1857)',
-      href: lang === 'en' ? '/en/chapters/comparison' : '/chapters/comparison',
+      num: dict.chapters.rupture.num,
+      title: dict.chapters.rupture.title.toUpperCase(),
+      href: '/en/chapters/comparison',
       id: 'comparison',
     },
     {
-      num: '3',
-      title: lang === 'ru' ? 'ФИГУРАНТЫ ИМПЕРИИ' : 'ACTORS OF EMPIRE & RESISTANCE',
-      href: lang === 'en' ? '/en/chapters/dossiers' : '/chapters/dossiers',
+      num: dict.chapters.dossiers.num,
+      title: dict.chapters.dossiers.title.toUpperCase(),
+      href: '/en/chapters/dossiers',
       id: 'dossiers',
     },
     {
-      num: '4',
-      title: lang === 'ru' ? 'ДЕСЯТЬ МИНУТ В АМРИТСАРЕ' : 'TEN MINUTES IN AMRITSAR (1919)',
-      href: lang === 'en' ? '/en/chapters/share' : '/chapters/share',
+      num: dict.chapters.amritsar.num,
+      title: dict.chapters.amritsar.title.toUpperCase(),
+      href: '/en/chapters/share',
       id: 'share',
     },
     {
-      num: '5',
-      title: lang === 'ru' ? 'РЕГИОНАЛЬНЫЙ АТЛАС' : 'THE SUBCONTINENTAL CORPUS',
-      href: lang === 'en' ? '/en/chapters/action' : '/chapters/action',
+      num: dict.chapters.corpus.num,
+      title: dict.chapters.corpus.title.toUpperCase(),
+      href: '/en/chapters/action',
       id: 'action',
     },
     {
-      num: '6',
-      title: lang === 'ru' ? 'МЕТОДОЛОГИЯ' : 'METHODOLOGY & CITATIONS',
-      href: lang === 'en' ? '/en/methodology' : '/methodology',
+      num: dict.chapters.methodology.num,
+      title: dict.chapters.methodology.title.toUpperCase(),
+      href: '/en/methodology',
       id: 'methodology',
     },
   ];
@@ -125,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
           {/* Center: Big Heading */}
           <div className="shrink-0 flex items-center justify-center text-center px-1">
             <Link
-              href={lang === 'en' ? '/en' : '/'}
+              href={language === 'en' ? '/en' : '/'}
               className="group flex flex-col items-center justify-center transition-colors select-none py-1"
             >
               <span
@@ -135,7 +137,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
                 THE IMPERIAL AUDIT
               </span>
               <span className="font-mono text-[8px] sm:text-[9.5px] tracking-[0.3em] uppercase text-[#A3A39D] mt-1 hidden md:block">
-                1757 — 1947 · ARCHIVAL RECORD
+                {dict.common.tagline}
               </span>
             </Link>
           </div>
@@ -176,7 +178,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
         {/* Minimal Header */}
         <div className="px-5 sm:px-8 py-4 sm:py-5 border-b border-[#2A2A2A] flex items-center justify-between">
           <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#A3A39D] font-bold">
-            INDEX
+            {dict.common.menu}
           </span>
           <button
             type="button"
@@ -184,7 +186,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
             className="font-mono text-[11px] text-[#A3A39D] hover:text-[#E53935] uppercase tracking-[0.15em] transition-colors"
             aria-label="Close navigation"
           >
-            [ CLOSE × ]
+            [ {dict.common.close} × ]
           </button>
         </div>
 

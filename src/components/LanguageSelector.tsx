@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-
-export type LanguageCode = 'en' | 'bn' | 'hi';
+import React from 'react';
+import { useLanguage } from '@/context/LanguageContext';
+import { LanguageCode } from '@/locales/translations';
 
 interface LanguageOption {
   code: LanguageCode;
@@ -17,21 +17,7 @@ const LANGUAGES: LanguageOption[] = [
 ];
 
 export const LanguageSelector: React.FC = () => {
-  const [selectedLang, setSelectedLang] = useState<LanguageCode>('en');
-
-  useEffect(() => {
-    const saved = localStorage.getItem('imperial_audit_lang') as LanguageCode;
-    if (saved && (saved === 'en' || saved === 'bn' || saved === 'hi')) {
-      setSelectedLang(saved);
-      document.documentElement.lang = saved;
-    }
-  }, []);
-
-  const handleSelectLanguage = (code: LanguageCode) => {
-    setSelectedLang(code);
-    localStorage.setItem('imperial_audit_lang', code);
-    document.documentElement.lang = code;
-  };
+  const { language, setLanguage } = useLanguage();
 
   return (
     <nav
@@ -39,7 +25,7 @@ export const LanguageSelector: React.FC = () => {
       className="inline-flex items-center gap-1 sm:gap-1.5 font-mono text-[10px] sm:text-[11px] tracking-wider uppercase select-none"
     >
       {LANGUAGES.map((lang, index) => {
-        const isCurrent = selectedLang === lang.code;
+        const isCurrent = language === lang.code;
         return (
           <React.Fragment key={lang.code}>
             {index > 0 && (
@@ -49,7 +35,7 @@ export const LanguageSelector: React.FC = () => {
             )}
             <button
               type="button"
-              onClick={() => handleSelectLanguage(lang.code)}
+              onClick={() => setLanguage(lang.code)}
               aria-current={isCurrent ? 'true' : undefined}
               title={`${lang.label} — ${lang.native}`}
               className={`transition-colors py-0.5 focus:outline-none ${
