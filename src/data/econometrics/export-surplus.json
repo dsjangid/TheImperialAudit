@@ -1,0 +1,40 @@
+[
+  {
+    "period": "1765-1772",
+    "annualSurplusMillionRupees": 4.1,
+    "primaryGoods": [
+      "Raw Silk",
+      "Cotton Cloth",
+      "Saltpetre"
+    ]
+  },
+  {
+    "period": "1834-1857",
+    "annualSurplusMillionRupees": 28.5,
+    "primaryGoods": [
+      "Opium",
+      "Indigo",
+      "Raw Cotton"
+    ]
+  },
+  {
+    "period": "1858-1900",
+    "annualSurplusMillionRupees": 142.0,
+    "primaryGoods": [
+      "Wheat",
+      "Jute",
+      "Tea",
+      "Hides"
+    ]
+  },
+  {
+    "period": "1901-1938",
+    "annualSurplusMillionRupees": 380.0,
+    "primaryGoods": [
+      "Raw Jute",
+      "Tea",
+      "Oilseeds",
+      "Cotton"
+    ]
+  }
+]
