@@ -1,0 +1,6 @@
+{
+  "benchmarkRate": 0.05,
+  "description": "Historical 5% commercial lending interest compounding rate used in Patnaik (2018)",
+  "formula": "Drain_t = ExportSurplus_t * (1 + r)^(2016 - t)",
+  "totalAggregated2016USD": 44600000000000
+}
