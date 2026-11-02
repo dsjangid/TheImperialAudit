@@ -1,0 +1,22 @@
+[
+  {
+    "famine": "Great Bengal Famine (1769-1770)",
+    "mortalityEstimate": "7 to 10 million",
+    "reliefExpenditureSterling": 9000
+  },
+  {
+    "famine": "Orissa Famine (1866)",
+    "mortalityEstimate": "1.5 million",
+    "reliefExpenditureSterling": 145000
+  },
+  {
+    "famine": "Great Famine of 1876-1878 (Temple Ration)",
+    "mortalityEstimate": "5.5 to 8 million",
+    "dailyRationCalories": 1627
+  },
+  {
+    "famine": "Bengal Famine of 1943",
+    "mortalityEstimate": "2.1 to 3.8 million",
+    "grainExportedWhileFamineActive": "70,000 tons"
+  }
+]
