@@ -1,3 +1,4 @@
+import { generateArchivalDocumentJsonLd } from '@/lib/schema-generator';
 'use client';
 
 import React from 'react';
