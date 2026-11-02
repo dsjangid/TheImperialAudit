@@ -6,7 +6,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="border border-[#2A2A2A] bg-[#0E0E0E] p-5 md:p-6 transition-all duration-300">
+    <div className="border-y border-[#2A2A2A] py-6 transition-all duration-300">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-[#C62828]" />
@@ -18,15 +18,15 @@ export const EvidentiaryStandardKey: React.FC = () => {
         <button
           type="button"
           onClick={() => setIsExpanded(!isExpanded)}
-          className="font-mono text-[11px] text-[#C62828] hover:text-[#E53935] uppercase tracking-[0.15em] font-semibold transition-colors flex items-center gap-1"
+          className="font-mono text-[11px] text-[#C62828] hover:text-[#E53935] uppercase tracking-[0.15em] font-semibold transition-colors flex items-center gap-1 border-b border-transparent hover:border-[#E53935] pb-0.5"
         >
           <span>{isExpanded ? '[ COLLAPSE METHODOLOGY − ]' : '[ INSPECT CITATION TIERS + ]'}</span>
         </button>
       </div>
 
       {/* Primary 3-Tier Badges Strip (Always Visible) */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 pt-4 border-t border-[#2A2A2A] font-mono text-[11px]">
-        <div className="flex items-center gap-3 p-2.5 border border-[#C62828]/50 bg-[#C62828]/5">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6 pt-4 border-t border-[#2A2A2A] font-mono text-[11px]">
+        <div className="flex items-start gap-3 pb-3 border-b-2 border-[#C62828]">
           <span className="font-bold text-[#E53935] text-[12px]">01</span>
           <div>
             <span className="block text-[#E53935] font-bold uppercase tracking-wider text-[10px]">
@@ -38,7 +38,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 p-2.5 border border-[#2A2A2A] bg-[#141414]">
+        <div className="flex items-start gap-3 pb-3 border-b border-[#D6D6D0]/50">
           <span className="font-bold text-[#F5F5F0] text-[12px]">02</span>
           <div>
             <span className="block text-[#F5F5F0] font-bold uppercase tracking-wider text-[10px]">
@@ -50,7 +50,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-3 p-2.5 border border-[#2A2A2A] bg-[#0E0E0E]">
+        <div className="flex items-start gap-3 pb-3 border-b border-[#2A2A2A]">
           <span className="font-bold text-[#A3A39D] text-[12px]">03</span>
           <div>
             <span className="block text-[#D6D6D0] font-bold uppercase tracking-wider text-[10px]">
@@ -71,7 +71,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2 font-mono text-[11px]">
-            <div className="space-y-1.5 p-3 border border-[#2A2A2A] bg-[#0A0A0A]">
+            <div className="space-y-1.5 pb-4 border-b border-[#2A2A2A]">
               <span className="text-[#E53935] font-bold uppercase block tracking-wider text-[10px]">
                 1. PRIMARY EVIDENCE (PROVENANCE)
               </span>
@@ -80,7 +80,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
               </p>
             </div>
 
-            <div className="space-y-1.5 p-3 border border-[#2A2A2A] bg-[#0A0A0A]">
+            <div className="space-y-1.5 pb-4 border-b border-[#2A2A2A]">
               <span className="text-[#F5F5F0] font-bold uppercase block tracking-wider text-[10px]">
                 2. SCHOLARLY CONSENSUS
               </span>
@@ -89,7 +89,7 @@ export const EvidentiaryStandardKey: React.FC = () => {
               </p>
             </div>
 
-            <div className="space-y-1.5 p-3 border border-[#2A2A2A] bg-[#0A0A0A]">
+            <div className="space-y-1.5 pb-4 border-b border-[#2A2A2A]">
               <span className="text-[#D6D6D0] font-bold uppercase block tracking-wider text-[10px]">
                 3. FORENSIC AUDIT NOTES
               </span>
