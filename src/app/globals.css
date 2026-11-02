@@ -171,3 +171,13 @@ input, select, textarea {
     scroll-behavior: auto !important;
   }
 }
+
+@media print {
+  nav, aside, button, .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
