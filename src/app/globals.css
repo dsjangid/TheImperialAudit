@@ -181,3 +181,7 @@ input, select, textarea {
     color: #000 !important;
   }
 }
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
