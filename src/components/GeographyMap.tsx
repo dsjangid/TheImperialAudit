@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { regionalAudits, RegionalAudit } from '@/data/geography-regions';
-import { EvidenceBadge } from './EvidenceBadge';
 
 interface GeographyMapProps {
   onOpenSourceDoc?: (docId: string) => void;
@@ -11,7 +10,7 @@ interface GeographyMapProps {
 
 type MapFilterMode = 'all' | '1857' | 'famine' | 'ports';
 
-export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) => {
+export const GeographyMap: React.FC<GeographyMapProps> = () => {
   const [selectedRegionId, setSelectedRegionId] = useState<string>('bengal');
   const [hoveredRegionId, setHoveredRegionId] = useState<string | null>(null);
   const [filterMode, setFilterMode] = useState<MapFilterMode>('all');
@@ -31,113 +30,81 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
   };
 
   return (
-    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="geography-of-empire">
-      {/* Section Masthead */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+    <section className="my-20 border-t border-[#2A2A2A] pt-14" id="geography-of-empire">
+      {/* Minimal Masthead */}
+      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-4 border-b border-[#2A2A2A]">
         <div>
-          <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
-            <span className="text-[#C62828] font-semibold">CARTOGRAPHIC INVESTIGATION</span>
-            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">
-              ARCHIVAL MAP OF BRITISH INDIA · 1890 SURVEY
-            </span>
-          </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
-            THE GEOGRAPHY OF EMPIRE
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
+            CARTOGRAPHIC ARCHIVE · 10 JURISDICTIONS
+          </span>
+          <h2 className="font-serif text-[30px] sm:text-[40px] font-black uppercase tracking-tight text-[#F5F5F0]">
+            The Geography of Empire
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2 max-w-[70ch]">
-            An unredacted cartographic audit of territorial conquest, agrarian extraction regimes, and popular resistance across the Indian Subcontinent before Partition.
-          </p>
         </div>
 
-        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] flex flex-col items-end gap-1">
-          <span>10 HISTORICAL JURISDICTIONS</span>
-          <span className="text-[#C62828] font-bold">PRE-PARTITION ARCHIVE</span>
-        </div>
-      </div>
-
-      {/* State & Province Navigation Ribbon */}
-      <div className="mb-6 pb-4 border-b border-[#2A2A2A] font-mono text-[11px] uppercase">
-        <div className="flex items-center justify-between mb-3 text-[#A3A39D] tracking-[0.2em]">
-          <span>SELECT ANY STATE / PROVINCE TO AUDIT ITS COMPLETE HISTORY:</span>
-          <span className="hidden sm:inline text-[#C62828] font-bold">10 AUDITED JURISDICTIONS</span>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-          {Object.values(regionalAudits).map((region) => {
-            const isSelected = selectedRegion.id === region.id;
-            const isHovered = hoveredRegionId === region.id;
-            const isDimmed = !isHighlighted(region.id);
-
-            return (
-              <button
-                key={region.id}
-                onClick={() => setSelectedRegionId(region.id)}
-                onMouseEnter={() => setHoveredRegionId(region.id)}
-                onMouseLeave={() => setHoveredRegionId(null)}
-                className={`px-3 py-1.5 transition-all text-[11px] tracking-[0.12em] font-semibold border ${
-                  isSelected
-                    ? 'border-[#C62828] text-[#C62828] bg-[#C62828]/10'
-                    : isHovered
-                    ? 'border-[#D6D6D0] text-[#F5F5F0]'
-                    : isDimmed
-                    ? 'border-[#2A2A2A] text-[#D6D6D0]/40 hover:border-[#2A2A2A] hover:text-[#D6D6D0]'
-                    : 'border-[#2A2A2A] text-[#D6D6D0] hover:border-[#D6D6D0]/50 hover:text-[#F5F5F0]'
-                }`}
-              >
-                {region.name}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Thematic Lens Filter Toolbar */}
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-3 border-b border-[#2A2A2A] font-mono text-[11px]">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="text-[#A3A39D] uppercase tracking-[0.15em] mr-2">AUDIT LENS:</span>
+        {/* Minimal Lens Filter */}
+        <div className="flex items-center gap-4 font-mono text-[11px]">
           {[
-            ['all', '[ ALL 10 STATES ]'],
-            ['1857', '[ 1857 REVOLT CORRIDOR ]'],
-            ['famine', '[ FAMINE MORTALITY ZONES ]'],
-            ['ports', '[ FISCAL EXTRACTION PORTS ]'],
-          ].map(([id, label]) => (
+            ['all', 'All States'],
+            ['1857', '1857 Corridor'],
+            ['famine', 'Famine Zones'],
+            ['ports', 'Export Ports'],
+          ].map(([mode, label]) => (
             <button
-              key={id}
-              onClick={() => setFilterMode(id as MapFilterMode)}
-              className={`px-2 py-0.5 uppercase tracking-[0.15em] transition-colors ${
-                filterMode === id
-                  ? 'text-[#C62828] font-bold border-b border-[#C62828]'
-                  : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
+              key={mode}
+              onClick={() => setFilterMode(mode as MapFilterMode)}
+              className={`uppercase tracking-[0.15em] pb-0.5 transition-colors ${
+                filterMode === mode
+                  ? 'text-[#E53935] font-bold border-b border-[#E53935]'
+                  : 'text-[#A3A39D] hover:text-[#F5F5F0]'
               }`}
             >
               {label}
             </button>
           ))}
         </div>
-
-        <div className="text-[#A3A39D] text-[11px] uppercase tracking-wider hidden md:block">
-          Click map pins or state tabs above to explore
-        </div>
       </div>
 
-      {/* Two-Column Side-by-Side Grid: Map on Left (Col 6), Forensic State History on Right (Col 6) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-        {/* LEFT COLUMN: Real Historical Pre-Partition Map Image (6 Cols) */}
-        <div className="lg:col-span-6 relative border border-[#2A2A2A] bg-[#060606] p-4 sm:p-5 select-none">
-          {/* Map Header / Archival Registry */}
-          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#2A2A2A] pb-3 mb-4 font-mono text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]">
-            <span className="text-[#C62828] font-bold">PLATE IV / SURVEY OF INDIA</span>
-            <span className="text-[#B5B5AF] font-semibold">PRE-PARTITION IMPERIAL MAP · c. 1890</span>
+      {/* State Quick Selector */}
+      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-10 pb-4 border-b border-[#2A2A2A] font-mono text-[11px] uppercase tracking-[0.14em]">
+        {Object.values(regionalAudits).map((region) => {
+          const isSelected = selectedRegion.id === region.id;
+          const isDimmed = !isHighlighted(region.id);
+
+          return (
+            <button
+              key={region.id}
+              onClick={() => setSelectedRegionId(region.id)}
+              className={`pb-1 transition-colors ${
+                isSelected
+                  ? 'text-[#F5F5F0] font-bold border-b-2 border-[#C62828]'
+                  : isDimmed
+                  ? 'text-[#A3A39D]/30 hover:text-[#A3A39D]'
+                  : 'text-[#A3A39D] hover:text-[#F5F5F0]'
+              }`}
+            >
+              {region.name}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Two-Column Minimal Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        {/* LEFT COLUMN: Clean Cartographic View */}
+        <div className="lg:col-span-6 relative border-y border-[#2A2A2A] py-3 select-none">
+          <div className="flex items-center justify-between pb-2 mb-3 border-b border-[#2A2A2A] font-mono text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]">
+            <span>SURVEY OF INDIA · c. 1890</span>
             <button
               type="button"
               onClick={() => setIsMapZoomed(!isMapZoomed)}
-              className="text-[#A3A39D] hover:text-[#E53935] font-bold transition-colors underline"
+              className="hover:text-[#E53935] transition-colors border-b border-transparent hover:border-[#E53935]"
             >
               {isMapZoomed ? '[ FIT VIEW ]' : '[ ZOOM IN ]'}
             </button>
           </div>
 
-          {/* Real Archival Map Container with Calibrated Hotspots */}
+          {/* Map Surface */}
           <div
             className={`relative w-full overflow-hidden bg-black transition-all duration-300 ${
               isMapZoomed ? 'scale-110 cursor-zoom-out' : 'cursor-default'
@@ -145,17 +112,14 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
             style={{ aspectRatio: '1200 / 896' }}
             onClick={() => isMapZoomed && setIsMapZoomed(false)}
           >
-            {/* The Real Historical Steel-Engraved Map Image */}
             <img
               src="/TheImperialAudit/illustrations/maps/british_india_map_prepartition.jpg"
-              alt="Authentic historical map of British India before 1947 partition, showing historical provinces, rivers, and boundaries"
-              className="w-full h-full object-fill block opacity-95 transition-opacity duration-300"
-              style={{
-                filter: 'grayscale(100%) contrast(1.15) brightness(0.95)',
-              }}
+              alt="Historical map of British India before 1947 partition"
+              className="w-full h-full object-fill block opacity-95"
+              style={{ filter: 'grayscale(100%) contrast(1.15) brightness(0.95)' }}
             />
 
-            {/* Interactive State Hotspot Layer Overlaid on Exact Locations */}
+            {/* Minimal Hotspots */}
             <div className="absolute inset-0 pointer-events-auto">
               {Object.values(regionalAudits).map((region) => {
                 const isSelected = selectedRegion.id === region.id;
@@ -173,48 +137,35 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
                       left: `${region.mapPosition.leftPercent}%`,
                       top: `${region.mapPosition.topPercent}%`,
                     }}
-                    className={`absolute -translate-x-1/2 -translate-y-1/2 group transition-all duration-200 focus:outline-none ${
-                      isFiltered ? 'opacity-100' : 'opacity-25'
+                    className={`absolute -translate-x-1/2 -translate-y-1/2 group transition-all duration-150 focus:outline-none ${
+                      isFiltered ? 'opacity-100' : 'opacity-20'
                     }`}
                     aria-label={`Audit ${region.name}`}
                   >
-                    {/* Active Pulsing Ring */}
-                    {isSelected && (
-                      <span className="absolute -inset-3 rounded-full border-2 border-accent animate-ping opacity-80" />
-                    )}
-
-                    {/* Outer Target Ring & Core Pin */}
+                    {/* Minimal Pin Dot */}
                     <span
-                      className={`relative flex items-center justify-center rounded-full transition-all duration-200 ${
+                      className={`block rounded-full transition-all duration-150 ${
                         isSelected
-                          ? 'w-5 h-5 bg-accent border-2 border-white shadow-xl ring-2 ring-black'
+                          ? 'w-3.5 h-3.5 bg-[#E53935] ring-4 ring-[#E53935]/30'
                           : isHovered
-                          ? 'w-4 h-4 bg-accent border border-white shadow-md'
-                          : 'w-3 h-3 bg-accent/90 border border-white/90 ring-1 ring-black/70 hover:scale-125'
+                          ? 'w-3 h-3 bg-[#E53935]'
+                          : 'w-2 h-2 bg-[#E53935]/90'
                       }`}
-                    >
-                      <span
-                        className={`rounded-full ${
-                          isSelected
-                            ? 'w-1.5 h-1.5 bg-white'
-                            : 'w-1 h-1 bg-black/60'
-                        }`}
-                      />
-                    </span>
+                    />
 
-                    {/* Monospace Territory Label Tag */}
+                    {/* Minimal Territory Label */}
                     <span
-                      className={`absolute left-1/2 -translate-x-1/2 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider whitespace-nowrap pointer-events-none transition-all duration-150 ${
-                        region.mapPosition.topPercent < 20 ? 'top-6' : '-top-6'
+                      className={`absolute left-1/2 -translate-x-1/2 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider whitespace-nowrap pointer-events-none transition-opacity duration-150 ${
+                        region.mapPosition.topPercent < 20 ? 'top-4' : '-top-5'
                       } ${
                         isSelected
-                          ? 'bg-accent text-white font-bold opacity-100 z-30 shadow-md'
+                          ? 'text-[#F5F5F0] bg-black border-b border-[#C62828] font-bold opacity-100 z-30'
                           : isHovered
-                          ? 'bg-black text-[#F5F5F0] border border-[#2A2A2A] font-semibold opacity-100 z-20'
-                          : 'bg-black/80 text-[#D6D6D0] border border-[#2A2A2A] opacity-0 group-hover:opacity-100'
+                          ? 'text-[#D6D6D0] bg-black opacity-100 z-20'
+                          : 'opacity-0'
                       }`}
                     >
-                      {region.code} · {region.name.split(' ')[0]}
+                      {region.name}
                     </span>
                   </button>
                 );
@@ -222,139 +173,108 @@ export const GeographyMap: React.FC<GeographyMapProps> = ({ onOpenSourceDoc }) =
             </div>
           </div>
 
-          {/* Archival Map Legend Footer */}
-          <div className="mt-4 pt-3 border-t border-[#2A2A2A] flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] text-[#A3A39D] uppercase">
-            <div className="flex items-center gap-4">
-              <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 bg-accent inline-block" />
-                <span>Selected State Pin</span>
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-accent/90 border border-white inline-block" />
-                <span>Audited Province</span>
-              </span>
-            </div>
-            <span>REPOSITORY: INDIA OFFICE ARCHIVE · LONDON</span>
+          <div className="mt-3 pt-2 border-t border-[#2A2A2A] flex items-center justify-between font-mono text-[10px] text-[#A3A39D] uppercase tracking-wider">
+            <span>PRE-PARTITION BOUNDARIES</span>
+            <span>INDIA OFFICE ARCHIVE</span>
           </div>
         </div>
 
-        {/* RIGHT COLUMN: Selected State Complete History Dossier (6 Cols, Sticky) */}
-        <div className="lg:col-span-6 lg:sticky lg:top-28 space-y-6">
-          {/* Territory Header */}
-          <div className="flex flex-wrap items-baseline justify-between gap-4 border-b border-[#2A2A2A] pb-4">
-            <div>
-              <div className="flex items-center gap-2 mb-1 font-mono text-[11px]">
-                <span className="uppercase tracking-[0.2em] text-[#C62828] font-bold">
-                  STATE DOSSIER · {selectedRegion.code}
-                </span>
-                <EvidenceBadge category={selectedRegion.evidenceStatus} size="sm" />
-              </div>
-
-              <h3 className="font-serif text-[28px] sm:text-[38px] font-bold text-[#F5F5F0] leading-tight">
-                {selectedRegion.name}
-              </h3>
-              <p className="font-mono text-[11px] text-[#B5B5AF] uppercase mt-1">
-                HISTORICAL SEAT: {selectedRegion.capital}
-              </p>
+        {/* RIGHT COLUMN: Minimal State Dossier */}
+        <div className="lg:col-span-6 space-y-6">
+          {/* Header */}
+          <div className="pb-4 border-b border-[#2A2A2A]">
+            <div className="flex items-center justify-between font-mono text-[11px] text-[#A3A39D] uppercase tracking-[0.15em] mb-2">
+              <span className="text-[#C62828] font-bold">STATE DOSSIER · {selectedRegion.code}</span>
+              <span>ANNEXED {selectedRegion.annexationYear}</span>
             </div>
-
-            <div className="font-mono text-[11px] text-left sm:text-right space-y-0.5 border-t sm:border-t-0 pt-2 sm:pt-0">
-              <span className="text-[#A3A39D] uppercase block">CONQUEST / ANNEXATION</span>
-              <span className="text-[#E53935] font-bold text-[13px]">{selectedRegion.annexationYear}</span>
-            </div>
+            <h3 className="font-serif text-[28px] sm:text-[34px] font-bold text-[#F5F5F0] leading-tight">
+              {selectedRegion.name}
+            </h3>
+            <p className="font-mono text-[11px] text-[#A3A39D] mt-1 uppercase tracking-wider">
+              Seat: {selectedRegion.capital} · Scope: {selectedRegion.territory}
+            </p>
           </div>
 
-          {/* Territory & Geographic Scope */}
-          <div className="font-mono text-[12px]">
-            <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-0.5">
-              PRIMARY DISTRICTS &amp; JURISDICTIONS
-            </span>
-            <p className="text-[#D6D6D0]">{selectedRegion.territory}</p>
-          </div>
-
-          {/* Subtitle & Historical Context */}
-          <div className="space-y-3">
-            <p className="font-serif italic text-[16px] text-[#B5B5AF]">
+          {/* Context Narrative */}
+          <div className="space-y-3 font-serif text-[15px] sm:text-[16px] leading-[1.8] text-[#D6D6D0]">
+            <p className="italic text-[#B5B5AF] text-[16px]">
               {selectedRegion.subtitle}
             </p>
-            <div className="font-serif text-[15px] sm:text-[16px] leading-[1.8] text-[#D6D6D0]">
+            <p>
               {selectedRegion.economicExtraction}
-            </div>
+            </p>
           </div>
 
-          {/* Key Administrative & Extractive Attributes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 border-y border-[#2A2A2A] font-mono text-[12px]">
+          {/* Revenue & Annexation Details */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-4 border-y border-[#2A2A2A] font-mono text-[11px]">
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
-                REVENUE EXTRACTION MODEL
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
+                REVENUE SYSTEM
               </span>
-              <p className="font-serif text-[14px] text-[#D6D6D0] mt-1">{selectedRegion.revenueSystem}</p>
+              <p className="font-serif text-[14px] text-[#D6D6D0] leading-snug">{selectedRegion.revenueSystem}</p>
             </div>
             <div>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
                 ANNEXATION MECHANISM
               </span>
-              <p className="font-serif text-[14px] text-[#D6D6D0] mt-1">{selectedRegion.annexationMechanism}</p>
+              <p className="font-serif text-[14px] text-[#D6D6D0] leading-snug">{selectedRegion.annexationMechanism}</p>
             </div>
           </div>
 
-          {/* Documented Historical Incidents Checklist */}
+          {/* Documented Historical Events */}
           <div>
-            <div className="flex items-center justify-between mb-2 font-mono text-[11px]">
+            <div className="flex items-center justify-between mb-3 font-mono text-[11px]">
               <span className="uppercase tracking-[0.2em] text-[#A3A39D]">
-                CHRONOLOGY OF DOCUMENTED INCIDENTS
+                DOCUMENTED CHRONOLOGY
               </span>
               <span className="text-[#C62828] font-bold">
                 {selectedRegion.keyIncidents.length} RECORDED EVENTS
               </span>
             </div>
-
-            <div className="divide-y divide-[#2A2A2A]">
+            <div className="divide-y divide-[#2A2A2A]/40 font-mono text-[12px]">
               {selectedRegion.keyIncidents.map((incident, i) => (
-                <div key={i} className="py-2.5 font-mono text-[12px] flex items-baseline justify-between gap-4">
-                  <span className="text-[#D6D6D0] font-medium">{incident}</span>
-                  <span className="text-[10px] text-[#A3A39D] font-mono tracking-wider shrink-0">№ {String(i + 1).padStart(2, '0')}</span>
+                <div key={i} className="py-2 flex items-baseline justify-between gap-4">
+                  <span className="text-[#D6D6D0]">{incident}</span>
+                  <span className="text-[10px] text-[#A3A39D]/60 shrink-0">№ 0{i + 1}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Key Historical Actors */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-[12px] pt-2">
+          {/* Key Figures: Resistance vs Administration */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-1 font-mono text-[11px]">
             <div>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
-                KEY RESISTANCE ACTORS
+                RESISTANCE LEADERS
               </span>
-              <div className="space-y-0.5 text-[#D6D6D0] font-serif text-[14px]">
-                {selectedRegion.keyFigures.resistance.map((figure) => (
-                  <p key={figure}>{figure}</p>
+              <div className="space-y-0.5 font-serif text-[13px] text-[#D6D6D0]">
+                {selectedRegion.keyFigures.resistance.map((f) => (
+                  <p key={f}>{f}</p>
                 ))}
               </div>
             </div>
-
             <div>
               <span className="text-[10px] uppercase tracking-[0.2em] text-[#A3A39D] block mb-1">
                 COLONIAL ADMINISTRATORS
               </span>
-              <div className="space-y-0.5 text-[#B5B5AF] font-serif text-[14px]">
-                {selectedRegion.keyFigures.administrators.map((figure) => (
-                  <p key={figure}>{figure}</p>
+              <div className="space-y-0.5 font-serif text-[13px] text-[#B5B5AF]">
+                {selectedRegion.keyFigures.administrators.map((f) => (
+                  <p key={f}>{f}</p>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Primary Sources & Chapter Dispatch Navigation */}
-          <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[#2A2A2A] font-mono text-[12px]">
+          {/* Dispatch Link */}
+          <div className="pt-4 border-t border-[#2A2A2A] flex items-center justify-between font-mono text-[11px]">
             <Link
               href={selectedRegion.dispatchHref}
-              className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1"
+              className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.15em] flex items-center gap-1.5"
             >
               <span>{selectedRegion.dispatchTitle}</span>
               <span>→</span>
             </Link>
-
-            <span className="text-[#A3A39D] text-[11px]">
+            <span className="text-[#A3A39D] text-[10px] uppercase">
               {selectedRegion.primarySourceCitations[0] || 'India Office Records'}
             </span>
           </div>
