@@ -1,0 +1,26 @@
+[
+  {
+    "year": 1765,
+    "region": "Bengal Presidency",
+    "nominalDemandRupees": 14700000,
+    "proportionOfGrossProduce": "45-50%"
+  },
+  {
+    "year": 1793,
+    "region": "Bengal (Permanent Settlement)",
+    "nominalDemandRupees": 26800000,
+    "proportionOfGrossProduce": "50-60%"
+  },
+  {
+    "year": 1855,
+    "region": "Madras Presidency (Ryotwari)",
+    "nominalDemandRupees": 35200000,
+    "proportionOfGrossProduce": "50%"
+  },
+  {
+    "year": 1878,
+    "region": "Bombay Presidency",
+    "nominalDemandRupees": 41800000,
+    "proportionOfGrossProduce": "40-50%"
+  }
+]
