@@ -1,20 +1,20 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { primaryDocuments } from '@/data/primary-documents';
 import { EvidenceBadge } from './EvidenceBadge';
 
 interface DocumentOfTheRecordProps {
   docId: string;
   recordNo?: string;
-  onOpenSourceDoc: (docId: string) => void;
+  onOpenSourceDoc?: (docId: string) => void;
   className?: string;
 }
 
 export const DocumentOfTheRecord: React.FC<DocumentOfTheRecordProps> = ({
   docId,
   recordNo = '014',
-  onOpenSourceDoc,
   className = '',
 }) => {
   const doc = primaryDocuments[docId];
@@ -36,9 +36,11 @@ export const DocumentOfTheRecord: React.FC<DocumentOfTheRecordProps> = ({
       </div>
 
       <div className="mb-4">
-        <h4 className="font-serif text-[22px] sm:text-[26px] font-bold leading-tight text-[#F5F5F0] group-hover:text-[#E53935] transition-colors">
-          {doc.title}
-        </h4>
+        <Link href={`/en/records/${doc.id}/`}>
+          <h4 className="font-serif text-[22px] sm:text-[26px] font-bold leading-tight text-[#F5F5F0] group-hover:text-[#E53935] transition-colors">
+            {doc.title}
+          </h4>
+        </Link>
         <p className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#A3A39D] mt-1">
           SHELFMARK: {doc.archiveRef} · {doc.repository}
         </p>
@@ -53,13 +55,12 @@ export const DocumentOfTheRecord: React.FC<DocumentOfTheRecordProps> = ({
           REPOSITORY: {doc.repository}
         </span>
 
-        <button
-          type="button"
-          onClick={() => onOpenSourceDoc(doc.id)}
+        <Link
+          href={`/en/records/${doc.id}/`}
           className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold uppercase tracking-[0.2em] flex items-center gap-1.5 transition-colors"
         >
           <span>[ OPEN ARCHIVAL RECORD → ]</span>
-        </button>
+        </Link>
       </div>
     </div>
   );
