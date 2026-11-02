@@ -1,0 +1,17 @@
+[
+  {
+    "year": 1813,
+    "britishImportDutyOnIndianCalico": "67.5%",
+    "indianDutyOnBritishGoods": "2.5%"
+  },
+  {
+    "year": 1830,
+    "britishImportDutyOnIndianMuslin": "71.0%",
+    "indianDutyOnBritishGoods": "2.5%"
+  },
+  {
+    "year": 1882,
+    "britishImportDutyOnIndianGoods": "0%",
+    "indianCountervailingExciseOnOwnMills": "3.5%"
+  }
+]
