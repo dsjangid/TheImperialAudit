@@ -1,0 +1,8 @@
+{
+  "scheme": "Old Guarantee System (1849-1869)",
+  "guaranteedInterestRate": 0.05,
+  "exchangeRateFixation": "1s 10d per rupee",
+  "costPerMileBuiltIndia": 18000,
+  "costPerMileBuiltUSEquivalent": 4000,
+  "drainRemittedUnderGuaranteeSterling": 56000000
+}
