@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { mythRecordAudits, MythRecordItem } from '@/data/myths-records';
 import { EvidenceBadge } from './EvidenceBadge';
 
@@ -110,14 +111,13 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
                     <p className="font-serif text-[14px] text-[#D6D6D0] mt-1">{ev.finding}</p>
                   </div>
 
-                  {ev.docId && onOpenSourceDoc && (
-                    <button
-                      type="button"
-                      onClick={() => onOpenSourceDoc(ev.docId!)}
+                  {ev.docId && (
+                    <Link
+                      href={`/en/records/${ev.docId}/`}
                       className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold text-[11px] uppercase tracking-[0.15em] shrink-0 transition-colors"
                     >
                       [ VIEW ARCHIVE → ]
-                    </button>
+                    </Link>
                   )}
                 </div>
               ))}
