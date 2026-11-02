@@ -5,9 +5,9 @@ export function generateArchivalDocumentJsonLd(doc: PrimaryDocument) {
     '@context': 'https://schema.org',
     '@type': 'ArchiveComponent',
     'name': doc.title,
-    'identifier': doc.shelfmark,
+    'identifier': doc.archiveRef,
     'dateCreated': doc.date,
-    'description': doc.quote,
+    'description': doc.excerpt,
     'holdingArchive': {
       '@type': 'ArchiveOrganization',
       'name': doc.repository,
