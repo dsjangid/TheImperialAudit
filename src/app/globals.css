@@ -156,3 +156,9 @@ input, select, textarea {
   background-color: #E53935;
   color: #FFFFFF;
 }
+
+/* Keyboard Focus States */
+:focus-visible {
+  outline: 2px solid #E53935;
+  outline-offset: 3px;
+}
