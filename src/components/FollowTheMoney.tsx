@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { revenueFlowNodes } from '@/data/flow-revenue';
 import { EvidenceBadge } from './EvidenceBadge';
 
@@ -42,17 +43,17 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
           SELECT A FISCAL STAGE TO AUDIT:
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 border-y border-[#2A2A2A] py-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 border-y border-[#2A2A2A] py-6">
           {revenueFlowNodes.map((node, index) => {
             const isSelected = selectedNode.id === node.id;
             return (
               <button
                 key={node.id}
                 onClick={() => setSelectedNodeId(node.id)}
-                className={`text-left p-3.5 transition-all relative border flex flex-col justify-between ${
+                className={`text-left pb-3 transition-all relative border-b-2 flex flex-col justify-between ${
                   isSelected
-                    ? 'border-[#C62828] bg-[#C62828]/[0.08] text-[#C62828]'
-                    : 'border-[#2A2A2A] bg-text/[0.01] text-[#D6D6D0] hover:text-[#F5F5F0] hover:border-[#A3A39D]/40'
+                    ? 'border-[#C62828] text-[#C62828]'
+                    : 'border-transparent text-[#D6D6D0] hover:text-[#F5F5F0] hover:border-[#2A2A2A]'
                 }`}
               >
                 <div>
@@ -150,14 +151,13 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
               <span className="text-[#A3A39D] text-[11px] ml-2">({selectedNode.primarySource.archiveRef})</span>
             </div>
 
-            {selectedNode.primarySource.docId && onOpenSourceDoc && (
-              <button
-                type="button"
-                onClick={() => onOpenSourceDoc(selectedNode.primarySource.docId!)}
+            {selectedNode.primarySource.docId && (
+              <Link
+                href={`/en/records/${selectedNode.primarySource.docId}/`}
                 className="font-mono text-[11px] uppercase tracking-[0.15em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold transition-colors"
               >
                 [ VIEW ARCHIVAL RECORD → ]
-              </button>
+              </Link>
             )}
           </div>
         </div>
