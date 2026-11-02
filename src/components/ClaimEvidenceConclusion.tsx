@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { EvidenceCategory } from '@/data/primary-documents';
 import { EvidenceBadge } from './EvidenceBadge';
 
@@ -48,14 +49,13 @@ export const ClaimEvidenceConclusion: React.FC<ClaimEvidenceConclusionProps> = (
         <p className="font-serif text-[15px] leading-relaxed text-[#D6D6D0]">
           {evidence}
         </p>
-        {sourceDocId && onOpenSourceDoc && (
-          <button
-            type="button"
-            onClick={() => onOpenSourceDoc(sourceDocId)}
+        {sourceDocId && (
+          <Link
+            href={`/en/records/${sourceDocId}/`}
             className="mt-2 font-mono text-[11px] uppercase tracking-[0.15em] text-[#C62828] hover:text-[#E53935] hover:underline font-bold block transition-colors"
           >
             [ VIEW ARCHIVAL RECORD {sourceRef ? `(${sourceRef})` : ''} → ]
-          </button>
+          </Link>
         )}
       </div>
 
