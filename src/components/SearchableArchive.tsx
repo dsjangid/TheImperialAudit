@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { primaryDocuments } from '@/data/primary-documents';
 import { EvidenceBadge } from './EvidenceBadge';
 
 interface SearchableArchiveProps {
-  onOpenSourceDoc: (docId: string) => void;
+  onOpenSourceDoc?: (docId: string) => void;
 }
 
 export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSourceDoc }) => {
@@ -160,9 +161,11 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
                   <EvidenceBadge category={doc.category} size="sm" />
                 </div>
 
-                <h3 className="font-serif text-[19px] sm:text-[22px] font-bold text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-snug">
-                  {doc.title}
-                </h3>
+                <Link href={`/en/records/${doc.id}/`}>
+                  <h3 className="font-serif text-[19px] sm:text-[22px] font-bold text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-snug">
+                    {doc.title}
+                  </h3>
+                </Link>
 
                 <p className="font-serif text-[14px] text-[#D6D6D0] line-clamp-2 leading-relaxed">
                   {doc.excerpt}
@@ -171,14 +174,13 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
 
               <div className="md:w-1/4 flex flex-col md:items-end justify-between self-stretch font-mono text-[11px]">
                 <span className="text-[#B5B5AF] text-[10px] uppercase">{doc.repository}</span>
-                <button
-                  type="button"
-                  onClick={() => onOpenSourceDoc(doc.id)}
-                  className="mt-3 px-3 py-1.5 bg-[#C62828] hover:bg-[#E53935] text-white font-mono text-[11px] uppercase tracking-[0.15em] font-bold transition-colors inline-flex items-center gap-1.5"
+                <Link
+                  href={`/en/records/${doc.id}/`}
+                  className="mt-3 pb-1 text-[#C62828] hover:text-[#E53935] font-mono text-[11px] uppercase tracking-[0.15em] font-bold border-b border-[#C62828] hover:border-[#E53935] transition-colors inline-flex items-center gap-1.5"
                 >
                   <span>[ OPEN RECORD ]</span>
                   <span>→</span>
-                </button>
+                </Link>
               </div>
             </div>
           ))}
