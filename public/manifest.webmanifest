@@ -1,1 +1,16 @@
-{"name":"Народный Аудит · Издание I · MMXXVI","short_name":"Народный Аудит","description":"Открытый аудит федерального бюджета РФ на 2026 год. Каждая цифра верифицирована. Издано DEVOCO STUDIO.","start_url":"/","display":"standalone","background_color":"#0A0A0A","theme_color":"#0A0A0A","lang":"ru-RU","icons":[{"src":"/favicon.ico","sizes":"any","type":"image/x-icon"}]}
+{
+  "name": "The Imperial Audit \u00b7 British Colonial Rule in India (1757\u20131947)",
+  "short_name": "Imperial Audit",
+  "description": "An academic and forensic digital archive documenting 190 years of British colonial governance in India.",
+  "start_url": "/TheImperialAudit/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#0A0A0A",
+  "icons": [
+    {
+      "src": "/TheImperialAudit/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
