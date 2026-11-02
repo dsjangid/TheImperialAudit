@@ -30,13 +30,13 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
   return (
     <>
 
-      <main className="max-w-[1440px] mx-auto w-full px-5 sm:px-8 md:px-12 lg:px-20 pt-24 md:pt-32 pb-32" vt-update="auto">
+      <main className="max-w-[1440px] mx-auto w-full px-4 sm:px-8 md:px-12 lg:px-20 pt-20 sm:pt-24 md:pt-32 pb-16 sm:pb-24 md:pb-32" vt-update="auto">
         {/* =========================================================================
             ACT 01: MASTHEAD & EDITORIAL THESIS
         ========================================================================= */}
-        <section id="act-prologue" className="pb-20 md:pb-28">
+        <section id="act-prologue" className="pb-12 sm:pb-20 md:pb-28">
           {/* Clean Editorial Masthead Dateline */}
-          <div className="flex flex-wrap items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] pb-5 mb-12 border-b border-[#2A2A2A]">
+          <div className="flex flex-wrap items-center justify-between gap-3 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#A3A39D] pb-4 sm:pb-5 mb-8 sm:mb-12 border-b border-[#2A2A2A]">
             <span className="text-[#F5F5F0] font-medium">HISTORICAL MONOGRAPH · 1757 — 1947</span>
             <EvidenceBadge category="PRIMARY_RECORD" size="sm" />
           </div>
@@ -44,13 +44,13 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           <div className="grid grid-cols-12 gap-8 lg:gap-12 items-end">
             <div className="col-span-12 lg:col-span-8">
               <h1
-                className="font-serif text-[#F5F5F0] text-[clamp(42px,7.8vw,112px)] leading-[0.92] tracking-[-0.01em] uppercase font-black"
+                className="font-serif text-[#F5F5F0] text-[32px] xs:text-[40px] sm:text-[clamp(42px,7.8vw,112px)] leading-[0.94] sm:leading-[0.92] tracking-[-0.01em] uppercase font-black"
                 style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
               >
                 THE IMPERIAL<br />AUDIT · 1757–1947
               </h1>
 
-              <p className="font-serif italic text-[clamp(18px,2.2vw,24px)] text-[#D6D6D0] mt-8 leading-snug max-w-[44ch]">
+              <p className="font-serif italic text-[16px] sm:text-[clamp(18px,2.2vw,24px)] text-[#D6D6D0] mt-5 sm:mt-8 leading-snug max-w-[44ch]">
                 A forensic long-form chronicle of corporate conquest, fiscal extraction, engineered famines, and popular resistance in British India.
               </p>
             </div>
@@ -89,16 +89,16 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
           </div>
 
           {/* Lead Editorial Narrative */}
-          <div className="mt-20 pt-12 border-t border-[#2A2A2A]">
+          <div className="mt-12 sm:mt-20 pt-8 sm:pt-12 border-t border-[#2A2A2A]">
             <div className="grid grid-cols-12 gap-8 lg:gap-12">
               <div className="col-span-12 lg:col-span-8">
                 <div className="mb-6 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   EDITORIAL PROLOGUE
                 </div>
 
-                <div className="space-y-6 font-serif text-[18px] md:text-[20px] leading-[1.8] text-[#D6D6D0] max-w-[65ch]">
+                <div className="space-y-6 font-serif text-[16px] sm:text-[18px] md:text-[20px] leading-[1.75] sm:leading-[1.8] text-[#D6D6D0] max-w-[65ch]">
                   <p>
-                    <span className="float-left text-[72px] leading-[0.75] font-serif font-bold text-[#C62828] pr-4 pt-2 select-none">I</span>
+                    <span className="float-left text-[56px] sm:text-[72px] leading-[0.75] font-serif font-bold text-[#C62828] pr-3 sm:pr-4 pt-1 sm:pt-2 select-none">I</span>
                     n 1757, the East India Company, a private, profit-maximising joint-stock corporation chartered in London, won the Battle of Plassey through clandestine bribery and military treachery, establishing corporate dominion over the vast revenues of Bengal. In August 1947, the British Crown evacuated the subcontinent in a hasty, three-month partition that displaced 15 million people and left between 500,000 and one million dead in sectarian bloodshed.
                   </p>
                   <p>
@@ -148,7 +148,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         {/* =========================================================================
             ACT 02: THE METRIC OF EXTRACTION ($45 TRILLION AUDIT)
         ========================================================================= */}
-        <section id="act-drain" className="py-24 md:py-32 border-t border-[#2A2A2A]">
+        <section id="act-drain" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
           <div className="grid grid-cols-12 gap-8 lg:gap-12">
             <div className="col-span-12 lg:col-span-8">
               <div className="mb-4 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
@@ -162,20 +162,20 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                 </span>
               </div>
 
-              <h2 className="font-serif text-[#F5F5F0] text-[32px] sm:text-[42px] md:text-[48px] font-black leading-[1.02] tracking-tight mb-6">
+              <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[42px] md:text-[48px] font-black leading-[1.05] sm:leading-[1.02] tracking-tight mb-4 sm:mb-6">
                 Compounded Imperial Transfer: ~$45 Trillion
               </h2>
 
-              <p className="font-serif text-[17px] md:text-[18px] text-[#D6D6D0] leading-[1.8] max-w-[65ch] mb-8">
+              <p className="font-serif text-[15px] sm:text-[17px] md:text-[18px] text-[#D6D6D0] leading-[1.7] sm:leading-[1.8] max-w-[65ch] mb-6 sm:mb-8">
                 In a landmark econometric study published by Columbia University Press, economist Professor Utsa Patnaik calculated that between 1765 and 1938, Britain drained a total of <span className="text-[#E53935] font-bold">~$44.63 trillion (in 2016 USD)</span> from India. This extraction operated through the Council Bills mechanism and export surplus interception, where Indian tax revenues were used to buy Indian export goods for London without British capital outlay. The real-time counter below represents the compounded per-second rate of that historical transfer.
               </p>
 
               {/* Primary High-Contrast Action Button */}
-              <div className="flex flex-wrap items-center gap-8 mb-10">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 mb-8 sm:mb-10">
                 <button
                   type="button"
                   onClick={() => setIsAuditModalOpen(true)}
-                  className="pb-1.5 text-[#C62828] hover:text-[#E53935] font-mono text-[12px] uppercase tracking-[0.2em] font-bold border-b-2 border-[#C62828] hover:border-[#E53935] transition-all flex items-center gap-2"
+                  className="pb-1.5 text-[#C62828] hover:text-[#E53935] font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.16em] sm:tracking-[0.2em] font-bold border-b-2 border-[#C62828] hover:border-[#E53935] transition-all flex items-center gap-2"
                 >
                   <span>AUDIT THE $45 TRILLION FIGURE &amp; METHODOLOGY</span>
                   <span className="text-sm">→</span>
@@ -183,14 +183,14 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
 
                 <Link
                   href="/en/records/doc-patnaik-drain-calc/"
-                  className="pb-1.5 text-[#D6D6D0] hover:text-[#F5F5F0] font-mono text-[12px] uppercase tracking-[0.15em] border-b border-[#2A2A2A] hover:border-[#D6D6D0] transition-all flex items-center gap-1.5"
+                  className="pb-1.5 text-[#D6D6D0] hover:text-[#F5F5F0] font-mono text-[11px] sm:text-[12px] uppercase tracking-[0.15em] border-b border-[#2A2A2A] hover:border-[#D6D6D0] transition-all flex items-center gap-1.5"
                 >
                   <span>[ VIEW ECONOMETRIC RECORD → ]</span>
                 </Link>
               </div>
 
               {/* Live Compounded Counter */}
-              <div className="py-8 border-y border-[#2A2A2A]">
+              <div className="py-6 sm:py-8 border-y border-[#2A2A2A]">
                 <LiveSpendCounter lang="en" />
               </div>
             </div>
@@ -217,23 +217,23 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             ACT 03: THE FIVE CORE DISPATCHES (TABLE OF CONTENTS / ROADMAP)
             *Brought forward to establish clear editorial navigation early*
         ========================================================================= */}
-        <section id="act-dispatches" className="py-24 md:py-32 border-t border-[#2A2A2A]">
-          <div className="flex flex-wrap justify-between items-baseline gap-4 mb-16 pb-6 border-b border-[#2A2A2A]">
+        <section id="act-dispatches" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
+          <div className="flex flex-wrap justify-between items-baseline gap-4 mb-8 sm:mb-16 pb-4 sm:pb-6 border-b border-[#2A2A2A]">
             <div>
               <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                 THE FIVE DISPATCHES
               </div>
-              <h2 className="font-serif text-[#F5F5F0] text-[36px] sm:text-[48px] md:text-[56px] font-black leading-[0.95] tracking-tight">
+              <h2 className="font-serif text-[#F5F5F0] text-[28px] xs:text-[34px] sm:text-[48px] md:text-[56px] font-black leading-[0.98] sm:leading-[0.95] tracking-tight">
                 The Five Dispatches
               </h2>
-              <p className="font-serif italic text-[17px] md:text-[19px] text-[#B5B5AF] mt-3 max-w-[50ch]">
+              <p className="font-serif italic text-[15px] sm:text-[17px] md:text-[19px] text-[#B5B5AF] mt-2 sm:mt-3 max-w-[50ch]">
                 Five standalone investigative articles examining conquest, violent rupture, administrative actors, and the anatomy of massacre.
               </p>
             </div>
 
-            <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-right">
+            <div className="font-mono text-[11px] sm:text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-left sm:text-right">
               <span>UNREDACTED EDITIONS</span>
-              <span className="block text-[11px] text-[#C62828] font-bold">5 STANDALONE ESSAYS</span>
+              <span className="block text-[10px] sm:text-[11px] text-[#C62828] font-bold">5 STANDALONE ESSAYS</span>
             </div>
           </div>
 
@@ -297,37 +297,37 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             ].map((item) => (
               <div
                 key={item.num}
-                className="group py-12 transition-colors"
+                className="group py-8 sm:py-12 transition-colors"
               >
-                <div className="grid grid-cols-12 gap-8 items-center">
+                <div className="grid grid-cols-12 gap-5 sm:gap-8 items-center">
                   <div className="col-span-12 md:col-span-3 lg:col-span-2">
-                    <span className="font-mono text-[48px] sm:text-[60px] leading-none text-text/20 group-hover:text-[#E53935] transition-colors font-black block">
+                    <span className="font-mono text-[36px] sm:text-[60px] leading-none text-text/20 group-hover:text-[#E53935] transition-colors font-black block">
                       {item.num}
                     </span>
-                    <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] mt-3 block font-bold">
+                    <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#C62828] mt-2 sm:mt-3 block font-bold">
                       {item.tag}
                     </span>
-                    <span className="font-mono text-[11px] uppercase tracking-[0.1em] text-[#A3A39D] mt-1 block">
+                    <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.1em] text-[#A3A39D] mt-1 block">
                       {item.readTime}
                     </span>
                   </div>
 
-                  <div className="col-span-12 md:col-span-6 lg:col-span-7 space-y-3">
-                    <h3 className="font-serif text-[#F5F5F0] text-[26px] sm:text-[32px] md:text-[36px] font-bold leading-tight group-hover:text-[#F5F5F0] transition-colors">
+                  <div className="col-span-12 md:col-span-6 lg:col-span-7 space-y-2.5 sm:space-y-3">
+                    <h3 className="font-serif text-[#F5F5F0] text-[21px] xs:text-[24px] sm:text-[32px] md:text-[36px] font-bold leading-tight group-hover:text-[#F5F5F0] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-serif italic text-[16px] sm:text-[18px] text-[#B5B5AF]">
+                    <p className="font-serif italic text-[15px] sm:text-[18px] text-[#B5B5AF]">
                       {item.subtitle}
                     </p>
-                    <p className="font-serif text-[15px] sm:text-[16px] text-[#D6D6D0] leading-relaxed pt-1">
+                    <p className="font-serif text-[14px] sm:text-[16px] text-[#D6D6D0] leading-relaxed pt-1">
                       {item.desc}
                     </p>
 
                     {/* Action Link with Underline */}
-                    <div className="pt-4">
+                    <div className="pt-3 sm:pt-4">
                       <Link
                         href={item.href}
-                        className="inline-flex items-center gap-2 pb-1 text-[#C62828] hover:text-[#E53935] font-mono text-[11px] uppercase tracking-[0.18em] font-bold transition-all border-b border-[#C62828] hover:border-[#E53935]"
+                        className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 pb-1 text-[#C62828] hover:text-[#E53935] font-mono text-[10.5px] sm:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.18em] font-bold transition-all border-b border-[#C62828] hover:border-[#E53935]"
                       >
                         <span>{item.ctaLabel}</span>
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
@@ -352,15 +352,15 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         {/* =========================================================================
             ACT 04: PRIMARY EVIDENCE SPOTLIGHT (DOCUMENT OF THE RECORD)
         ========================================================================= */}
-        <section id="act-evidence" className="py-24 md:py-32 border-t border-[#2A2A2A]">
-          <div className="mb-12">
+        <section id="act-evidence" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
+          <div className="mb-6 sm:mb-12">
             <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
               PRIMARY EVIDENCE SPOTLIGHT
             </div>
-            <h2 className="font-serif text-[#F5F5F0] text-[32px] sm:text-[44px] font-black leading-tight">
+            <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[44px] font-black leading-tight">
               Document of the Record
             </h2>
-            <p className="font-serif italic text-[16px] sm:text-[18px] text-[#B5B5AF] mt-2 max-w-[55ch]">
+            <p className="font-serif italic text-[15px] sm:text-[18px] text-[#B5B5AF] mt-2 max-w-[55ch]">
               An unredacted archival exhibit demonstrating the fiscal behavior of the imperial state during catastrophic crises.
             </p>
           </div>
@@ -376,29 +376,29 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             ACT 05: FORENSIC INVESTIGATION SUITE (INTERACTIVE TOOLS)
             *Framed with clear editorial context and breathing room*
         ========================================================================= */}
-        <section id="act-suite" className="py-24 md:py-32 border-t border-[#2A2A2A]">
-          <div className="mb-16 pb-6 border-b border-[#2A2A2A]">
+        <section id="act-suite" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
+          <div className="mb-8 sm:mb-16 pb-4 sm:pb-6 border-b border-[#2A2A2A]">
             <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
               ANALYTICAL SUITE
             </div>
-            <h2 className="font-serif text-[#F5F5F0] text-[36px] sm:text-[48px] font-black leading-tight">
+            <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[48px] font-black leading-tight">
               The Analytical Suite
             </h2>
-            <p className="font-serif italic text-[17px] md:text-[19px] text-[#B5B5AF] mt-2 max-w-[55ch]">
+            <p className="font-serif italic text-[15px] sm:text-[17px] md:text-[19px] text-[#B5B5AF] mt-2 max-w-[55ch]">
               Four interactive tools examining the chronological, territorial, and financial apparatus of imperial rule.
             </p>
           </div>
 
-          <div className="space-y-28">
+          <div className="space-y-12 sm:space-y-16 md:space-y-24 lg:space-y-28">
             {/* Tool 1: The Imperial Ledger */}
             <div>
-              <div className="mb-6 flex items-center justify-between">
-                <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+              <div className="mb-4 sm:mb-6 flex flex-wrap items-center justify-between gap-2">
+                <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   TOOL 01 · CHRONOLOGICAL LEDGER (1757–1947)
                 </span>
                 <Link
                   href="/en/chapters/timer"
-                  className="font-mono text-[11px] text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-wider transition-colors"
+                  className="font-mono text-[10px] sm:text-[11px] text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-wider transition-colors"
                 >
                   [ VIEW IN DISPATCH 01 → ]
                 </Link>
@@ -407,12 +407,12 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             </div>
 
             {/* Tool 2: Follow the Money */}
-            <div className="pt-16 border-t border-[#2A2A2A]">
-              <div className="mb-6 flex items-center justify-between">
-                <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+            <div className="pt-8 sm:pt-12 md:pt-16 border-t border-[#2A2A2A]">
+              <div className="mb-4 sm:mb-6 flex flex-wrap items-center justify-between gap-2">
+                <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   TOOL 02 · FISCAL PIPELINE &amp; LEDGER
                 </span>
-                <span className="font-mono text-[11px] text-[#A3A39D] uppercase tracking-wider">
+                <span className="font-mono text-[10px] sm:text-[11px] text-[#A3A39D] uppercase tracking-wider">
                   COUNCIL BILLS MECHANISM
                 </span>
               </div>
@@ -420,14 +420,14 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             </div>
 
             {/* Tool 3: Geography of Empire */}
-            <div className="pt-16 border-t border-[#2A2A2A]">
-              <div className="mb-6 flex items-center justify-between">
-                <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
+            <div className="pt-8 sm:pt-12 md:pt-16 border-t border-[#2A2A2A]">
+              <div className="mb-4 sm:mb-6 flex flex-wrap items-center justify-between gap-2">
+                <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   TOOL 03 · SUBCONTINENTAL ATLAS
                 </span>
                 <Link
                   href="/en/chapters/action"
-                  className="font-mono text-[11px] text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-wider transition-colors"
+                  className="font-mono text-[10px] sm:text-[11px] text-[#A3A39D] hover:text-[#F5F5F0] uppercase tracking-wider transition-colors"
                 >
                   [ VIEW REGIONAL CHAPTER → ]
                 </Link>
@@ -436,8 +436,8 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
             </div>
 
             {/* Tool 4: Auditing the Myths */}
-            <div className="pt-16 border-t border-[#2A2A2A]">
-              <div className="mb-6 flex items-center justify-between">
+            <div className="pt-8 sm:pt-12 md:pt-16 border-t border-[#2A2A2A]">
+              <div className="mb-4 sm:mb-6 flex flex-wrap items-center justify-between gap-2">
                 <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   TOOL 04 · COLONIAL MYTH VS. HISTORICAL RECORD
                 </span>
@@ -453,27 +453,27 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
         {/* =========================================================================
             ACT 06: HISTORICAL FIGURES GALLERY & COMPLETE ARCHIVAL CATALOG
         ========================================================================= */}
-        <section id="act-archive" className="py-24 md:py-32 border-t border-[#2A2A2A]">
+        <section id="act-archive" className="py-12 sm:py-16 md:py-24 lg:py-32 border-t border-[#2A2A2A]">
           {/* Archival Portraits Strip */}
-          <div className="mb-20">
-            <div className="flex justify-between items-baseline mb-8 pb-4 border-b border-[#2A2A2A]">
+          <div className="mb-12 sm:mb-20">
+            <div className="flex flex-wrap justify-between items-baseline gap-2 mb-6 sm:mb-8 pb-3 sm:pb-4 border-b border-[#2A2A2A]">
               <div>
                 <div className="mb-2 font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold">
                   ARCHIVAL REPOSITORIES &amp; DOSSIERS
                 </div>
-                <h2 className="font-serif text-[#F5F5F0] text-[32px] sm:text-[44px] font-black leading-tight">
+                <h2 className="font-serif text-[#F5F5F0] text-[26px] xs:text-[30px] sm:text-[44px] font-black leading-tight">
                   Archival Portraits · 1757–1947
                 </h2>
               </div>
               <Link
                 href="/en/chapters/dossiers"
-                className="font-mono text-[11px] text-[#C62828] hover:text-[#E53935] uppercase tracking-wider font-bold transition-colors"
+                className="font-mono text-[10.5px] sm:text-[11px] text-[#C62828] hover:text-[#E53935] uppercase tracking-wider font-bold transition-colors"
               >
                 [ VIEW ALL 12 BIOGRAPHIES → ]
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-6">
               {[
                 { src: '/TheImperialAudit/illustrations/dossiers/gandhi.jpg', name: 'M. K. GANDHI', role: 'Civil Disobedience', yr: '1869–1948' },
                 { src: '/TheImperialAudit/illustrations/dossiers/bhagat.jpg', name: 'BHAGAT SINGH', role: 'HSRA Revolutionary', yr: '1907–1931' },
@@ -489,7 +489,7 @@ export const CoverInteractive: React.FC<CoverInteractiveProps> = ({ lang = 'en' 
                 { src: '/TheImperialAudit/illustrations/dossiers/udham.jpg', name: 'UDHAM SINGH', role: 'Caxton Hall 1940', yr: '1899–1940' },
               ].map((item) => (
                 <div key={item.src} className="group">
-                  <div className="w-full h-44 sm:h-52 flex items-center justify-center overflow-hidden border-b border-[#2A2A2A] group-hover:border-[#C62828] pb-3 transition-colors">
+                  <div className="w-full h-36 sm:h-52 flex items-center justify-center overflow-hidden border-b border-[#2A2A2A] group-hover:border-[#C62828] pb-2 sm:pb-3 transition-colors">
                     <img
                       src={item.src}
                       alt={item.name}

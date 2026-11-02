@@ -103,10 +103,10 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
       {/* =========================================================================
           PRIMARY HEADER
       ========================================================================= */}
-      <nav className="fixed top-0 left-0 right-0 z-50 h-[72px] sm:h-[80px] border-b border-[#2A2A2A] transition-[background-color,backdrop-filter] duration-200 bg-bg/95 backdrop-blur-md">
-        <div className="h-full max-w-[1536px] mx-auto px-4 sm:px-8 md:px-12 flex items-center justify-between gap-4">
+      <nav className="fixed top-0 left-0 right-0 z-50 h-[64px] sm:h-[80px] border-b border-[#2A2A2A] transition-[background-color,backdrop-filter] duration-200 bg-bg/95 backdrop-blur-md">
+        <div className="h-full max-w-[1536px] mx-auto px-4 sm:px-8 md:px-12 flex items-center justify-between gap-2 sm:gap-4">
           {/* Left: Menu / Index Drawer Trigger */}
-          <div className="w-1/4 sm:w-1/3 flex items-center justify-start">
+          <div className="flex-1 flex items-center justify-start">
             <button
               type="button"
               onClick={() => setDrawerOpen(true)}
@@ -123,13 +123,13 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
           </div>
 
           {/* Center: Big Heading */}
-          <div className="w-2/4 sm:w-1/3 flex items-center justify-center text-center">
+          <div className="shrink-0 flex items-center justify-center text-center px-1">
             <Link
               href={lang === 'en' ? '/en' : '/'}
               className="group flex flex-col items-center justify-center transition-colors select-none py-1"
             >
               <span
-                className="font-serif font-black uppercase tracking-[0.06em] sm:tracking-[0.14em] text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-none whitespace-nowrap"
+                className="font-serif font-black uppercase tracking-[0.04em] sm:tracking-[0.14em] text-[15px] xs:text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-none whitespace-nowrap"
                 style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
               >
                 THE IMPERIAL AUDIT
@@ -141,7 +141,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
           </div>
 
           {/* Right: Controls */}
-          <div className="w-1/4 sm:w-1/3 flex items-center justify-end gap-3 sm:gap-4 shrink-0 font-mono text-[11px]">
+          <div className="flex-1 flex items-center justify-end gap-2 sm:gap-4 shrink-0 font-mono text-[11px]">
             <LanguageSelector />
             <NightLightToggle />
             <div className="hidden lg:inline-block border-l border-[#2A2A2A] pl-3 text-[#A3A39D]">
@@ -174,7 +174,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
         }`}
       >
         {/* Minimal Header */}
-        <div className="px-6 sm:px-8 py-5 border-b border-[#2A2A2A] flex items-center justify-between">
+        <div className="px-5 sm:px-8 py-4 sm:py-5 border-b border-[#2A2A2A] flex items-center justify-between">
           <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#A3A39D] font-bold">
             INDEX
           </span>
@@ -189,7 +189,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
         </div>
 
         {/* Minimal Navigation List: 0 1 2 3 continued by name */}
-        <nav className="flex-1 px-6 sm:px-8 py-6 overflow-y-auto space-y-1">
+        <nav className="flex-1 px-5 sm:px-8 py-4 sm:py-6 overflow-y-auto space-y-1">
           {navItems.map((item) => {
             const isActive = activeId === item.id;
             return (
@@ -197,19 +197,19 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
                 key={item.id}
                 href={item.href}
                 onClick={() => setDrawerOpen(false)}
-                className={`flex items-baseline gap-4 py-3 border-b border-[#2A2A2A]/40 transition-colors group ${
+                className={`flex items-baseline gap-3 sm:gap-4 py-2.5 sm:py-3 border-b border-[#2A2A2A]/40 transition-colors group ${
                   isActive ? 'text-[#E53935]' : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
                 }`}
               >
                 <span
-                  className={`font-mono text-[14px] font-bold tracking-wider shrink-0 transition-colors ${
+                  className={`font-mono text-[13px] sm:text-[14px] font-bold tracking-wider shrink-0 transition-colors ${
                     isActive ? 'text-[#E53935]' : 'text-[#A3A39D]/50 group-hover:text-[#E53935]'
                   }`}
                 >
                   {item.num}
                 </span>
                 <span
-                  className={`font-serif text-[17px] sm:text-[18px] tracking-tight transition-colors ${
+                  className={`font-serif text-[15px] sm:text-[18px] tracking-tight transition-colors ${
                     isActive
                       ? 'font-bold underline underline-offset-4 decoration-[#E53935]'
                       : 'font-normal group-hover:underline group-hover:underline-offset-4'
@@ -223,7 +223,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
         </nav>
 
         {/* Minimal Footer */}
-        <div className="px-6 sm:px-8 py-4 border-t border-[#2A2A2A] flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/60">
+        <div className="px-5 sm:px-8 py-3.5 sm:py-4 border-t border-[#2A2A2A] flex items-center justify-between font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/60">
           <span>1757 — 1947</span>
           <span>THE IMPERIAL AUDIT</span>
         </div>

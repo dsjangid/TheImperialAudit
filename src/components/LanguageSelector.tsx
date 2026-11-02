@@ -36,7 +36,7 @@ export const LanguageSelector: React.FC = () => {
   return (
     <nav
       aria-label="Language options"
-      className="inline-flex items-center gap-1.5 font-mono text-[10px] sm:text-[11px] tracking-wider uppercase select-none"
+      className="inline-flex items-center gap-1 sm:gap-1.5 font-mono text-[10px] sm:text-[11px] tracking-wider uppercase select-none"
     >
       {LANGUAGES.map((lang, index) => {
         const isCurrent = selectedLang === lang.code;

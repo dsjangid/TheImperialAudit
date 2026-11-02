@@ -16,34 +16,34 @@ export const FollowTheMoney: React.FC<FollowTheMoneyProps> = ({ onOpenSourceDoc 
     revenueFlowNodes.find((n) => n.id === selectedNodeId) || revenueFlowNodes[0];
 
   return (
-    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="follow-the-money">
+    <section className="my-10 sm:my-24 border-t border-[#2A2A2A] pt-6 sm:pt-16" id="follow-the-money">
       {/* Section Masthead */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-10">
+      <div className="flex flex-wrap items-baseline justify-between gap-3 sm:gap-4 mb-6 sm:mb-10">
         <div>
-          <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
+          <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
             <span className="text-[#C62828] font-semibold">FISCAL FLOW DIAGRAM</span>
-            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">STRUCTURAL DRAIN ARCHITECTURE</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-2.5 sm:pl-3">STRUCTURAL DRAIN ARCHITECTURE</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
+          <h2 className="font-serif text-[24px] xs:text-[28px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.98] sm:leading-[0.95]">
             FOLLOW THE MONEY
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2">
+          <p className="font-serif italic text-[15px] sm:text-[18px] text-[#D6D6D0] mt-1.5 sm:mt-2">
             How Revenue Moved Through the Colonial System: From Indian Agrarian Taxes to the Metropolitan Treasury
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
+        <div className="font-mono text-[10.5px] sm:text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
           <span>7-STAGE FISCAL PIPELINE</span>
         </div>
       </div>
 
       {/* Interactive Flow Pathway List */}
-      <div className="mb-10">
-        <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] mb-4">
+      <div className="mb-6 sm:mb-10">
+        <p className="font-mono text-[10.5px] sm:text-[11px] uppercase tracking-[0.2em] text-[#A3A39D] mb-3 sm:mb-4">
           SELECT A FISCAL STAGE TO AUDIT:
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 border-y border-[#2A2A2A] py-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 border-y border-[#2A2A2A] py-4 sm:py-6">
           {revenueFlowNodes.map((node, index) => {
             const isSelected = selectedNode.id === node.id;
             return (

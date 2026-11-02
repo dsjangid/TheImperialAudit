@@ -51,23 +51,23 @@ export const SearchableArchive: React.FC<SearchableArchiveProps> = ({ onOpenSour
   }, [allDocuments, searchTerm, selectedCategory, selectedEra, selectedRegion]);
 
   return (
-    <section className="my-20 border-t border-[#2A2A2A] pt-16" id="searchable-archive">
+    <section className="my-10 sm:my-20 border-t border-[#2A2A2A] pt-6 sm:pt-16" id="searchable-archive">
       {/* Section Header */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-4 border-b border-[#2A2A2A]">
+      <div className="flex flex-wrap items-baseline justify-between gap-3 sm:gap-4 mb-6 sm:mb-8 pb-3 sm:pb-4 border-b border-[#2A2A2A]">
         <div>
-          <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
+          <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
             <span className="text-[#C62828] font-semibold">RESEARCH INTERFACE</span>
-            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">AUDITED DOCUMENTARY CORPUS</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-2.5 sm:pl-3">AUDITED DOCUMENTARY CORPUS</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[48px] font-bold text-[#F5F5F0]">
+          <h2 className="font-serif text-[24px] xs:text-[28px] sm:text-[44px] md:text-[48px] font-bold text-[#F5F5F0]">
             Searchable Archival Records
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#A3A39D] mt-1">
+          <p className="font-serif italic text-[15px] sm:text-[18px] text-[#A3A39D] mt-1">
             Filter primary manuscripts, parliamentary inquiries, and economic datasets by era, category, and region.
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
+        <div className="font-mono text-[10.5px] sm:text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-left sm:text-right">
           <span>{filteredDocs.length} OF {allDocuments.length} RECORDS INDEXED</span>
         </div>
       </div>

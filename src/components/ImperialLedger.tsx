@@ -49,32 +49,32 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
   };
 
   return (
-    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="imperial-ledger">
+    <section className="my-10 sm:my-24 border-t border-[#2A2A2A] pt-6 sm:pt-16" id="imperial-ledger">
       {/* Section Masthead */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8">
+      <div className="flex flex-wrap items-baseline justify-between gap-3 sm:gap-4 mb-6 sm:mb-8">
         <div>
-          <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
+          <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
             <span className="text-[#C62828] font-semibold">SIGNATURE TIMELINE</span>
-            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">CHRONOLOGY · 1757–1947</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-2.5 sm:pl-3">CHRONOLOGY · 1757–1947</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
+          <h2 className="font-serif text-[24px] xs:text-[28px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.98] sm:leading-[0.95]">
             THE IMPERIAL LEDGER
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2">
+          <p className="font-serif italic text-[15px] sm:text-[18px] text-[#D6D6D0] mt-1.5 sm:mt-2">
             1757 — 1947 / A Chronological Record of Extraction, Resistance, and Direct Rule
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-right">
+        <div className="font-mono text-[10.5px] sm:text-[12px] text-[#A3A39D] uppercase tracking-[0.15em] text-left sm:text-right">
           <span>{filteredEvents.length} DOCUMENTED MILESTONES</span>
-          <span className="block text-[10px] text-[#A3A39D]/60">AUDITED HISTORICAL CORPUS</span>
+          <span className="block text-[9px] sm:text-[10px] text-[#A3A39D]/60">AUDITED HISTORICAL CORPUS</span>
         </div>
       </div>
 
       {/* Era & Category Filter Tabs */}
-      <div className="space-y-4 mb-10 pb-6 border-b border-[#2A2A2A] font-mono text-[11px] uppercase tracking-[0.15em]">
+      <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-10 pb-4 sm:pb-6 border-b border-[#2A2A2A] font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.15em]">
         {/* Era Selector */}
-        <div className="flex flex-wrap items-center gap-4">
+        <div className="flex flex-wrap items-center gap-2.5 sm:gap-4">
           <span className="text-[#A3A39D]">ERA:</span>
           {[
             { key: 'ALL', label: 'ALL 190 YEARS' },

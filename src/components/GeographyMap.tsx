@@ -30,20 +30,20 @@ export const GeographyMap: React.FC<GeographyMapProps> = () => {
   };
 
   return (
-    <section className="my-20 border-t border-[#2A2A2A] pt-14" id="geography-of-empire">
+    <section className="my-10 sm:my-20 border-t border-[#2A2A2A] pt-6 sm:pt-14" id="geography-of-empire">
       {/* Minimal Masthead */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-8 pb-4 border-b border-[#2A2A2A]">
+      <div className="flex flex-wrap items-baseline justify-between gap-3 sm:gap-4 mb-6 sm:mb-8 pb-3 sm:pb-4 border-b border-[#2A2A2A]">
         <div>
-          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#C62828] font-bold block mb-2">
+          <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.2em] text-[#C62828] font-bold block mb-1.5 sm:mb-2">
             CARTOGRAPHIC ARCHIVE · 10 JURISDICTIONS
           </span>
-          <h2 className="font-serif text-[30px] sm:text-[40px] font-black uppercase tracking-tight text-[#F5F5F0]">
+          <h2 className="font-serif text-[24px] xs:text-[28px] sm:text-[40px] font-black uppercase tracking-tight text-[#F5F5F0]">
             The Geography of Empire
           </h2>
         </div>
 
         {/* Minimal Lens Filter */}
-        <div className="flex items-center gap-4 font-mono text-[11px]">
+        <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 font-mono text-[10px] sm:text-[11px]">
           {[
             ['all', 'All States'],
             ['1857', '1857 Corridor'],
@@ -53,7 +53,7 @@ export const GeographyMap: React.FC<GeographyMapProps> = () => {
             <button
               key={mode}
               onClick={() => setFilterMode(mode as MapFilterMode)}
-              className={`uppercase tracking-[0.15em] pb-0.5 transition-colors ${
+              className={`uppercase tracking-[0.12em] sm:tracking-[0.15em] pb-0.5 transition-colors ${
                 filterMode === mode
                   ? 'text-[#E53935] font-bold border-b border-[#E53935]'
                   : 'text-[#A3A39D] hover:text-[#F5F5F0]'
@@ -66,7 +66,7 @@ export const GeographyMap: React.FC<GeographyMapProps> = () => {
       </div>
 
       {/* State Quick Selector */}
-      <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mb-10 pb-4 border-b border-[#2A2A2A] font-mono text-[11px] uppercase tracking-[0.14em]">
+      <div className="flex flex-wrap items-center gap-x-4 sm:gap-x-6 gap-y-1.5 sm:gap-y-2 mb-6 sm:mb-10 pb-3 sm:pb-4 border-b border-[#2A2A2A] font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.14em]">
         {Object.values(regionalAudits).map((region) => {
           const isSelected = selectedRegion.id === region.id;
           const isDimmed = !isHighlighted(region.id);

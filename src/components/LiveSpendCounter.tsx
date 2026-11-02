@@ -6,7 +6,7 @@ export const LiveSpendCounter: React.FC<{ lang?: 'en' | 'ru' }> = ({ lang = 'en'
   return (
     <div>
       <div
-        className="font-serif text-[#E53935] text-[clamp(36px,8vw,100px)] tracking-[-0.02em] leading-none tabular-nums"
+        className="font-serif text-[#E53935] text-[28px] xs:text-[34px] sm:text-[clamp(36px,8vw,100px)] tracking-[-0.02em] leading-none tabular-nums"
         style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
       >
         ~$44.63 TRILLION

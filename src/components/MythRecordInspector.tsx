@@ -18,29 +18,29 @@ export const MythRecordInspector: React.FC<MythRecordInspectorProps> = ({
     mythRecordAudits.find((c) => c.id === selectedCaseId) || mythRecordAudits[0];
 
   return (
-    <section className="my-24 border-t border-[#2A2A2A] pt-16" id="myth-record">
+    <section className="my-10 sm:my-24 border-t border-[#2A2A2A] pt-6 sm:pt-16" id="myth-record">
       {/* Section Masthead */}
-      <div className="flex flex-wrap items-baseline justify-between gap-4 mb-10">
+      <div className="flex flex-wrap items-baseline justify-between gap-3 sm:gap-4 mb-6 sm:mb-10">
         <div>
-          <div className="flex items-center gap-3 mb-2 font-mono text-[11px] uppercase tracking-[0.25em]">
+          <div className="flex items-center gap-2 sm:gap-3 mb-1.5 sm:mb-2 font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] sm:tracking-[0.25em]">
             <span className="text-[#C62828] font-semibold">CRITICAL HISTORIOGRAPHY</span>
-            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-3">CLAIM · EVIDENCE · ASSESSMENT</span>
+            <span className="text-[#A3A39D] border-l border-[#2A2A2A] pl-2.5 sm:pl-3">CLAIM · EVIDENCE · ASSESSMENT</span>
           </div>
-          <h2 className="font-serif text-[32px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.95]">
+          <h2 className="font-serif text-[24px] xs:text-[28px] sm:text-[44px] md:text-[54px] font-black uppercase tracking-tight text-[#F5F5F0] leading-[0.98] sm:leading-[0.95]">
             AUDITING THE RECORD
           </h2>
-          <p className="font-serif italic text-[16px] sm:text-[18px] text-[#D6D6D0] mt-2">
+          <p className="font-serif italic text-[15px] sm:text-[18px] text-[#D6D6D0] mt-1.5 sm:mt-2">
             Examining Pervasive Historical Claims Against Archival Dispatches and Economic Datasets
           </p>
         </div>
 
-        <div className="font-mono text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
+        <div className="font-mono text-[10.5px] sm:text-[12px] text-[#A3A39D] uppercase tracking-[0.15em]">
           <span>4 FORENSIC CASE AUDITS</span>
         </div>
       </div>
 
       {/* Case Selector Tabs */}
-      <div className="flex flex-wrap items-center gap-4 mb-10 pb-4 border-b border-[#2A2A2A] font-mono text-[11px] uppercase tracking-[0.15em]">
+      <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 mb-6 sm:mb-10 pb-3 sm:pb-4 border-b border-[#2A2A2A] font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.12em] sm:tracking-[0.15em]">
         <span className="text-[#A3A39D]">CASE:</span>
         {mythRecordAudits.map((item) => {
           const isSelected = currentCase.id === item.id;
