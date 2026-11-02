@@ -1,20 +1,26 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { chaptersNav, translations } from '@/data/translations';
 import { LiveClock } from '@/components/LiveClock';
 import { NightLightToggle } from '@/components/NightLightToggle';
+import { LanguageSelector } from '@/components/LanguageSelector';
 
 interface NavbarProps {
   lang?: 'en' | 'ru';
 }
 
+interface NavItem {
+  num: string;
+  title: string;
+  href: string;
+  id: string;
+}
+
 export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
   const pathname = usePathname();
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const t = translations[lang];
+  const [drawerOpen, setDrawerOpen] = useState(false);
 
   const getActiveChapterId = () => {
     if (pathname.includes('/methodology')) return 'methodology';
@@ -28,158 +34,200 @@ export const Navbar: React.FC<NavbarProps> = ({ lang = 'en' }) => {
 
   const activeId = getActiveChapterId();
 
+  // Close drawer on Escape key & lock body scroll
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setDrawerOpen(false);
+    };
+
+    if (drawerOpen) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('keydown', handleKeyDown);
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [drawerOpen]);
+
+  const navItems: NavItem[] = [
+    {
+      num: '0',
+      title: lang === 'ru' ? 'ОБЛОЖКА' : 'COVER',
+      href: lang === 'en' ? '/en' : '/',
+      id: 'cover',
+    },
+    {
+      num: '1',
+      title: lang === 'ru' ? 'ЗАВОЕВАНИЕ (1757–1857)' : 'THE CORPORATE TAKEOVER (1757–1857)',
+      href: lang === 'en' ? '/en/chapters/timer' : '/chapters/timer',
+      id: 'timeline',
+    },
+    {
+      num: '2',
+      title: lang === 'ru' ? 'ВЕЛИКИЙ РАЗРЫВ (1857)' : 'THE GREAT RUPTURE (1857)',
+      href: lang === 'en' ? '/en/chapters/comparison' : '/chapters/comparison',
+      id: 'comparison',
+    },
+    {
+      num: '3',
+      title: lang === 'ru' ? 'ФИГУРАНТЫ ИМПЕРИИ' : 'ACTORS OF EMPIRE & RESISTANCE',
+      href: lang === 'en' ? '/en/chapters/dossiers' : '/chapters/dossiers',
+      id: 'dossiers',
+    },
+    {
+      num: '4',
+      title: lang === 'ru' ? 'ДЕСЯТЬ МИНУТ В АМРИТСАРЕ' : 'TEN MINUTES IN AMRITSAR (1919)',
+      href: lang === 'en' ? '/en/chapters/share' : '/chapters/share',
+      id: 'share',
+    },
+    {
+      num: '5',
+      title: lang === 'ru' ? 'РЕГИОНАЛЬНЫЙ АТЛАС' : 'THE SUBCONTINENTAL CORPUS',
+      href: lang === 'en' ? '/en/chapters/action' : '/chapters/action',
+      id: 'action',
+    },
+    {
+      num: '6',
+      title: lang === 'ru' ? 'МЕТОДОЛОГИЯ' : 'METHODOLOGY & CITATIONS',
+      href: lang === 'en' ? '/en/methodology' : '/methodology',
+      id: 'methodology',
+    },
+  ];
+
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 h-[60px] border-b border-[#2A2A2A] transition-[background-color,backdrop-filter] duration-200 bg-bg/90 backdrop-blur-md">
-        <div className="h-full px-5 sm:px-8 md:px-10 lg:px-12 flex items-center justify-between font-mono text-[12px] uppercase">
-          {/* Main Brand Title - Guaranteed shrink-0 prominence, never hidden */}
-          <Link
-            href={lang === 'en' ? '/en' : '/'}
-            className="shrink-0 flex items-center gap-2.5 font-bold tracking-[0.22em] text-text hover:text-accent transition-colors z-10"
-          >
-            <span className="text-accent font-black text-[14px]">▪</span>
-            <span className="text-text font-black text-[13px] tracking-[0.24em] whitespace-nowrap">
-              THE IMPERIAL AUDIT
-            </span>
-            <span className="hidden sm:inline text-[#A3A39D] text-[11px] font-medium tracking-[0.18em] pl-2 border-l border-[#2A2A2A] whitespace-nowrap">
-              <span className="text-[#E53935]">1757–1947</span>
-            </span>
-          </Link>
-
-          {/* Chapter / Page Navigation - Smooth Horizontal Scroll (No Visible Scrollbar) */}
-          <div className="hidden md:flex flex-1 min-w-0 overflow-x-auto no-scrollbar mx-4 lg:mx-8 py-1 items-center justify-start xl:justify-center">
-            <div className="flex items-center gap-5 lg:gap-6 xl:gap-7 whitespace-nowrap px-2">
-              {chaptersNav.map((ch) => {
-                const isActive = activeId === ch.id;
-                const href = lang === 'en' ? ch.path.en : ch.path.ru;
-                return (
-                  <Link
-                    key={ch.id}
-                    href={href}
-                    className={`relative tracking-[0.18em] transition-colors py-1 ${
-                      isActive
-                        ? 'text-accent font-bold'
-                        : 'text-text/60 hover:text-text'
-                    }`}
-                  >
-                    <span
-                      className="absolute -bottom-0.5 left-0 right-0 h-[2px] bg-accent transition-all duration-200"
-                      style={{
-                        opacity: isActive ? 1 : 0,
-                        transform: isActive ? 'scaleX(1)' : 'scaleX(0)',
-                      }}
-                      aria-hidden="true"
-                    />
-                    <span className="text-text/40 mr-1 text-[11px]">{ch.num}:</span>
-                    <span>{ch.title[lang]}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Right Controls: Night Light Moon Icon + Live Clock + Mobile Toggle */}
-          <div className="shrink-0 flex items-center gap-2.5 sm:gap-4 z-10">
-            <NightLightToggle />
-            <div className="hidden lg:inline-block">
-              <LiveClock />
-            </div>
-
+      {/* =========================================================================
+          PRIMARY HEADER
+      ========================================================================= */}
+      <nav className="fixed top-0 left-0 right-0 z-50 h-[72px] sm:h-[80px] border-b border-[#2A2A2A] transition-[background-color,backdrop-filter] duration-200 bg-bg/95 backdrop-blur-md">
+        <div className="h-full max-w-[1536px] mx-auto px-4 sm:px-8 md:px-12 flex items-center justify-between gap-4">
+          {/* Left: Menu / Index Drawer Trigger */}
+          <div className="w-1/4 sm:w-1/3 flex items-center justify-start">
             <button
               type="button"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden flex flex-col justify-center w-7 h-7 -mr-1 group focus:outline-none"
-              aria-label={mobileOpen ? t.nav.closeMenu : t.nav.openMenu}
-              aria-expanded={mobileOpen}
-              aria-controls="chapter-nav-menu"
+              onClick={() => setDrawerOpen(true)}
+              className="group flex items-center py-2 text-[#D6D6D0] hover:text-[#E53935] transition-colors focus:outline-none"
+              aria-label="Open Navigation Drawer"
+              aria-expanded={drawerOpen}
+            >
+              <div className="flex flex-col justify-center gap-[4.5px] w-5 h-4">
+                <span className="block h-[1.5px] w-5 bg-current transition-transform duration-200 group-hover:scale-x-110" />
+                <span className="block h-[1.5px] w-3 bg-current transition-all duration-200 group-hover:w-5" />
+                <span className="block h-[1.5px] w-5 bg-current transition-transform duration-200 group-hover:scale-x-110" />
+              </div>
+            </button>
+          </div>
+
+          {/* Center: Big Heading */}
+          <div className="w-2/4 sm:w-1/3 flex items-center justify-center text-center">
+            <Link
+              href={lang === 'en' ? '/en' : '/'}
+              className="group flex flex-col items-center justify-center transition-colors select-none py-1"
             >
               <span
-                className="block h-px w-6 bg-text transition-transform duration-300 ease-out origin-center"
-                style={{
-                  transform: mobileOpen
-                    ? 'rotate(45deg) translateY(0px)'
-                    : 'translateY(-3px)',
-                }}
-              />
-              <span
-                className="block h-px w-6 bg-text transition-transform duration-300 ease-out origin-center"
-                style={{
-                  transform: mobileOpen
-                    ? 'rotate(-45deg) translateY(-1px)'
-                    : 'translateY(3px)',
-                }}
-              />
-            </button>
+                className="font-serif font-black uppercase tracking-[0.06em] sm:tracking-[0.14em] text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-[#F5F5F0] group-hover:text-[#E53935] transition-colors leading-none whitespace-nowrap"
+                style={{ fontVariationSettings: '"opsz" 60', fontWeight: 900 }}
+              >
+                THE IMPERIAL AUDIT
+              </span>
+              <span className="font-mono text-[8px] sm:text-[9.5px] tracking-[0.3em] uppercase text-[#A3A39D] mt-1 hidden md:block">
+                1757 — 1947 · ARCHIVAL RECORD
+              </span>
+            </Link>
+          </div>
+
+          {/* Right: Controls */}
+          <div className="w-1/4 sm:w-1/3 flex items-center justify-end gap-3 sm:gap-4 shrink-0 font-mono text-[11px]">
+            <LanguageSelector />
+            <NightLightToggle />
+            <div className="hidden lg:inline-block border-l border-[#2A2A2A] pl-3 text-[#A3A39D]">
+              <LiveClock />
+            </div>
           </div>
         </div>
       </nav>
 
-      {/* Mobile Drawer Menu */}
+      {/* =========================================================================
+          MINIMAL NAVIGATION DRAWER
+      ========================================================================= */}
+      {/* Backdrop */}
       <div
-        id="chapter-nav-menu"
-        className={`md:hidden fixed inset-0 z-40 bg-bg transition-all duration-300 ${
-          mobileOpen
-            ? 'pointer-events-auto opacity-100'
-            : 'pointer-events-none opacity-0'
+        onClick={() => setDrawerOpen(false)}
+        className={`fixed inset-0 z-50 bg-black/80 backdrop-blur-sm transition-opacity duration-250 ${
+          drawerOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
         }`}
-        style={{
-          clipPath: mobileOpen ? 'inset(0 0 0% 0)' : 'inset(0 0 100% 0)',
-          WebkitClipPath: mobileOpen
-            ? 'inset(0 0 0% 0)'
-            : 'inset(0 0 100% 0)',
-          transition:
-            'clip-path 320ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-clip-path 320ms cubic-bezier(0.4, 0, 0.2, 1)',
-        }}
-        aria-hidden={!mobileOpen}
-      >
-        <div className="h-full pt-[80px] pb-12 px-8 flex flex-col justify-between overflow-y-auto">
-          <ul className="flex-1 flex flex-col">
-            {chaptersNav.map((ch) => {
-              const isActive = activeId === ch.id;
-              const href = lang === 'en' ? ch.path.en : ch.path.ru;
-              return (
-                <li key={ch.id} className="border-b border-[#2A2A2A]">
-                  <Link
-                    href={href}
-                    onClick={() => setMobileOpen(false)}
-                    className="flex items-baseline gap-6 py-6 group"
-                  >
-                    <span className="font-mono text-[13px] tracking-[0.25em] text-text/45 w-9 shrink-0">
-                      {ch.num}
-                    </span>
-                    <span
-                      className={`font-serif text-[30px] sm:text-[34px] leading-[0.95] tracking-[0.01em] ${
-                        isActive
-                          ? 'text-accent font-bold'
-                          : 'text-text/75 group-hover:text-text'
-                      }`}
-                      style={{
-                        fontVariationSettings: '"opsz" 60',
-                        fontWeight: 700,
-                      }}
-                    >
-                      {ch.title[lang]}
-                    </span>
-                    <span
-                      className="ml-auto w-2 h-2 rounded-full self-center transition-opacity duration-200"
-                      style={{
-                        backgroundColor: 'var(--accent)',
-                        opacity: isActive ? 1 : 0,
-                      }}
-                      aria-hidden="true"
-                    />
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+        aria-hidden="true"
+      />
 
-          <div className="pt-8 flex items-center justify-between font-mono text-[12px] uppercase tracking-[0.25em] text-text/45">
-            <LiveClock />
-            <span>1757–1947</span>
-          </div>
+      {/* Drawer Panel */}
+      <aside
+        id="chapter-drawer"
+        role="dialog"
+        aria-label="Chapter Navigation Drawer"
+        aria-modal="true"
+        className={`fixed top-0 left-0 bottom-0 z-50 w-full sm:w-[380px] max-w-[88vw] bg-[#0A0A0A] border-r border-[#2A2A2A] text-[#F5F5F0] flex flex-col justify-between overflow-y-auto transition-transform duration-250 ease-out shadow-2xl ${
+          drawerOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        {/* Minimal Header */}
+        <div className="px-6 sm:px-8 py-5 border-b border-[#2A2A2A] flex items-center justify-between">
+          <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#A3A39D] font-bold">
+            INDEX
+          </span>
+          <button
+            type="button"
+            onClick={() => setDrawerOpen(false)}
+            className="font-mono text-[11px] text-[#A3A39D] hover:text-[#E53935] uppercase tracking-[0.15em] transition-colors"
+            aria-label="Close navigation"
+          >
+            [ CLOSE × ]
+          </button>
         </div>
-      </div>
+
+        {/* Minimal Navigation List: 0 1 2 3 continued by name */}
+        <nav className="flex-1 px-6 sm:px-8 py-6 overflow-y-auto space-y-1">
+          {navItems.map((item) => {
+            const isActive = activeId === item.id;
+            return (
+              <Link
+                key={item.id}
+                href={item.href}
+                onClick={() => setDrawerOpen(false)}
+                className={`flex items-baseline gap-4 py-3 border-b border-[#2A2A2A]/40 transition-colors group ${
+                  isActive ? 'text-[#E53935]' : 'text-[#D6D6D0] hover:text-[#F5F5F0]'
+                }`}
+              >
+                <span
+                  className={`font-mono text-[14px] font-bold tracking-wider shrink-0 transition-colors ${
+                    isActive ? 'text-[#E53935]' : 'text-[#A3A39D]/50 group-hover:text-[#E53935]'
+                  }`}
+                >
+                  {item.num}
+                </span>
+                <span
+                  className={`font-serif text-[17px] sm:text-[18px] tracking-tight transition-colors ${
+                    isActive
+                      ? 'font-bold underline underline-offset-4 decoration-[#E53935]'
+                      : 'font-normal group-hover:underline group-hover:underline-offset-4'
+                  }`}
+                >
+                  {item.title}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
+
+        {/* Minimal Footer */}
+        <div className="px-6 sm:px-8 py-4 border-t border-[#2A2A2A] flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-[#A3A39D]/60">
+          <span>1757 — 1947</span>
+          <span>THE IMPERIAL AUDIT</span>
+        </div>
+      </aside>
     </>
   );
 };
