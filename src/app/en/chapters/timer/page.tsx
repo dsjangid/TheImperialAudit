@@ -1,19 +1,19 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Navbar } from '@/components/Navbar';
 import { PageCornerBadges } from '@/components/PageCornerBadges';
 import { EvidenceBadge } from '@/components/EvidenceBadge';
-import { SourceViewerModal } from '@/components/SourceViewerModal';
 import { ClaimEvidenceConclusion } from '@/components/ClaimEvidenceConclusion';
 import { ResearchStatusFooter } from '@/components/ResearchStatusFooter';
 
 export default function ConquestChapterPage() {
-  const [activeDocId, setActiveDocId] = useState<string | null>(null);
+  const router = useRouter();
 
   const handleOpenSourceDoc = (docId: string) => {
-    setActiveDocId(docId);
+    router.push(`/en/records/${docId}`);
   };
 
   return (
@@ -319,11 +319,6 @@ export default function ConquestChapterPage() {
 
       <ResearchStatusFooter lang="en" />
 
-      {/* Global Archival Source Document Viewer Modal */}
-      <SourceViewerModal
-        docId={activeDocId}
-        onClose={() => setActiveDocId(null)}
-      />
     </div>
   );
 }
