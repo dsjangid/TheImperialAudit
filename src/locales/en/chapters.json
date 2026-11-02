@@ -1,0 +1,30 @@
+{
+  "cover": {
+    "num": "0",
+    "title": "Cover"
+  },
+  "takeover": {
+    "num": "1",
+    "title": "The Corporate Takeover (1757\u20131857)"
+  },
+  "rupture": {
+    "num": "2",
+    "title": "The Great Rupture (1857)"
+  },
+  "dossiers": {
+    "num": "3",
+    "title": "Actors of Empire & Resistance"
+  },
+  "amritsar": {
+    "num": "4",
+    "title": "Ten Minutes in Amritsar (1919)"
+  },
+  "corpus": {
+    "num": "5",
+    "title": "The Subcontinental Corpus"
+  },
+  "methodology": {
+    "num": "6",
+    "title": "Methodology & Citations"
+  }
+}
