@@ -256,14 +256,13 @@ export const ImperialLedger: React.FC<ImperialLedgerProps> = ({ onOpenSourceDoc 
               <div className="flex flex-wrap items-center gap-3">
                 <span className="text-[#F5F5F0] font-semibold">{currentEvent.primarySource.name}</span>
                 <span className="text-[#A3A39D] text-[11px]">({currentEvent.primarySource.archiveRef})</span>
-                {currentEvent.primarySource.docId && onOpenSourceDoc && (
-                  <button
-                    type="button"
-                    onClick={() => onOpenSourceDoc(currentEvent.primarySource.docId!)}
+                {currentEvent.primarySource.docId && (
+                  <Link
+                    href={`/en/records/${currentEvent.primarySource.docId}/`}
                     className="text-[#C62828] hover:text-[#E53935] hover:underline font-bold text-[11px] uppercase tracking-[0.15em] ml-1"
                   >
                     [ VIEW ARCHIVAL RECORD → ]
-                  </button>
+                  </Link>
                 )}
               </div>
             </div>
